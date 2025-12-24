@@ -1,0 +1,209 @@
+{
+  "name": "Blotato Jekyll Post",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "07b884ad-fb62-4d88-b6ef-f33171c0a35f",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "0edb5263-a7a3-4611-b1de-dac3a5df477a",
+      "name": "Webhook",
+      "webhookId": "07b884ad-fb62-4d88-b6ef-f33171c0a35f"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Analyze this blog post content and create an engaging title, excerpt, and tags:\n\n{{ $json.body.text }}\n\nRequirements:\n- Title: Catchy, clickable, under 60 characters, optimized for engagement\n- Excerpt: 2-3 compelling sentences that hook the reader, under 160 characters\n- Tags: 2-3 relevant tags that capture the main topics/themes (as an array)\n- Slug: A URL-friendly version of the title (lowercase, hyphens instead of spaces, no special characters)\n- Category: Choose the most appropriate category from: Network Security, Malware Analysis, Web Security, Cryptography, Pentesting, Reverse Engineering, Vulnerabilities, DevSecOps, Blue Team\n\nReturn your response as valid JSON in this exact format:\n{\n  \"title\": \"Your title here\",\n  \"excerpt\": \"Your excerpt here\",\n  \"tags\": [\"tag1\", \"tag2\", \"tag3\"],\n  \"slug\": \"your-title-here\",\n  \"category\": \"Category Name\"\n}\n\nImportant: Respond with ONLY the JSON object, no explanations or additional text.",
+        "hasOutputParser": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "2595dfa9-873c-466e-915f-2027c1e3c0cb",
+      "name": "AI Agent",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "model": "google/gemini-2.5-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        160,
+        192
+      ],
+      "id": "24c7a5bb-d134-43a3-9e09-692f6c27e0b1",
+      "name": "OpenRouter Chat Model",
+      "credentials": {
+        "openRouterApi": {
+          "id": "Zoio14rz2rCqVeXG",
+          "name": "OpenRouter account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"title\": {\n      \"type\": \"string\",\n      \"description\": \"An engaging, clickable title for the blog post (under 60 characters)\"\n    },\n    \"excerpt\": {\n      \"type\": \"string\",\n      \"description\": \"A compelling excerpt that hooks the reader (2-3 sentences, under 160 characters)\"\n    },\n    \"tags\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"string\"\n      },\n      \"minItems\": 2,\n      \"maxItems\": 3,\n      \"description\": \"2-3 relevant tags that capture the main topics/themes of the blog post\"\n    },\n    \"slug\": {\n      \"type\": \"string\",\n      \"description\": \"URL-friendly version of the title (lowercase, hyphens, no special chars)\"\n    },\n    \"category\": {\n      \"type\": \"string\",\n      \"description\": \"The blog post category\"\n    }\n  },\n  \"required\": [\"title\", \"excerpt\", \"tags\", \"slug\", \"category\"],\n  \"additionalProperties\": false\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        512,
+        224
+      ],
+      "id": "2835f201-c2e4-4e21-ae26-5e6037f22344",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "date",
+              "name": "date",
+              "value": "={{ $now.format('yyyy-MM-dd') }}",
+              "type": "string"
+            },
+            {
+              "id": "filename",
+              "name": "filename",
+              "value": "={{ $now.format('yyyy-MM-dd') }}-{{ $json.output.slug }}.md",
+              "type": "string"
+            },
+            {
+              "id": "filepath",
+              "name": "filepath",
+              "value": "=_posts/{{ $now.format('yyyy-MM-dd') }}-{{ $json.output.slug }}.md",
+              "type": "string"
+            },
+            {
+              "id": "content",
+              "name": "content",
+              "value": "=---\nlayout: post\ntitle: \"{{ $json.output.title }}\"\ncategory: {{ $json.output.category }}\ntags: [{{ $json.output.tags.map(t => '\"' + t + '\"').join(', ') }}]\nauthor: Admin\nexcerpt: \"{{ $json.output.excerpt }}\"\n---\n\n{{ $('Webhook').first().json.body.text }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        640,
+        0
+      ],
+      "id": "format-post-data",
+      "name": "Format Post Data"
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "create",
+        "owner": "mda1125",
+        "repository": "bytesizedsecurity",
+        "filePath": "={{ $json.filepath }}",
+        "fileContent": "={{ $json.content }}",
+        "commitMessage": "=Add blog post: {{ $('AI Agent').first().json.output.title }}",
+        "additionalParameters": {}
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [
+        880,
+        0
+      ],
+      "id": "github-create-file",
+      "name": "GitHub Create Post",
+      "credentials": {
+        "githubApi": {
+          "id": "YOUR_GITHUB_CREDENTIAL_ID",
+          "name": "GitHub account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Format Post Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Post Data": {
+      "main": [
+        [
+          {
+            "node": "GitHub Create Post",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "jekyll-blog-v1",
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "instanceId": "2229f07adad0e437dd2f5c83ed1aaa999a295881910ac526d2c75560babf2b41"
+  },
+  "id": "jekyll-blog-post",
+  "tags": []
+}
+
