@@ -91,9 +91,15 @@
               "type": "string"
             },
             {
+              "id": "imageUrl",
+              "name": "imageUrl",
+              "value": "={{ $('Webhook').first().json.body.mediaUrls?.[0] ?? '' }}",
+              "type": "string"
+            },
+            {
               "id": "content",
               "name": "content",
-              "value": "=---\nlayout: post\ntitle: \"{{ $json.output.title }}\"\ncategory: {{ $json.output.category }}\ntags: [{{ $json.output.tags.map(t => '\"' + t + '\"').join(', ') }}]\nauthor: Admin\nexcerpt: \"{{ $json.output.excerpt }}\"\n---\n\n{{ $('Webhook').first().json.body.text }}",
+              "value": "=---\nlayout: post\ntitle: \"{{ $json.output.title }}\"\ncategory: {{ $json.output.category }}\ntags: [{{ $json.output.tags.map(t => '\"' + t + '\"').join(', ') }}]\nauthor: Admin\nexcerpt: \"{{ $json.output.excerpt }}\"{{ $('Webhook').first().json.body.mediaUrls?.[0] ? '\\nimage: \"' + $('Webhook').first().json.body.mediaUrls[0] + '\"' : '' }}\n---\n\n{{ $('Webhook').first().json.body.text }}",
               "type": "string"
             }
           ]
