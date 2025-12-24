@@ -14,23 +14,6 @@ linkedin_username: "bytesizedsecurity"
 #pinterest_username: username
 #youtube_username: username
 
-# Categories for sidebar
-categories:
-  - name: "Network Security"
-    count: 12
-  - name: "Malware Analysis"
-    count: 8
-  - name: "CTFs & Wargames"
-    count: 5
-  - name: "Web Security"
-    count: 24
-  - name: "DevSecOps"
-    count: 3
-  - name: "Cryptography"
-    count: 7
-  - name: "Blue Team"
-    count: 15
-
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
