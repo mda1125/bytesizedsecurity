@@ -1,30 +1,59 @@
 ---
 layout: default
 ---
-<link href="/css/override.css" rel="stylesheet" type="text/css">
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {% assign author = page.author | default: site.author %}
-      {%- if author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
-  </header>
+<div class="flex flex-col lg:flex-row gap-12">
+  <article class="flex-1 bg-white border border-gray-200 p-6 md:p-10">
+    <header class="mb-8 border-b border-gray-200 pb-8">
+      <div class="flex items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-3">
+        <span>{{ page.category | default: page.tags | first | default: "Security" }}</span>
+        <span class="text-gray-400">•</span>
+        <time class="text-gray-500" datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%B %-d, %Y" }}
+        </time>
+      </div>
+      
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+        {{ page.title | escape }}
+      </h1>
+      
+      <div class="flex items-center gap-4 text-sm font-sans text-gray-500">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-lg">person</span>
+          <span class="text-gray-700 font-semibold">{{ page.author | default: site.author }}</span>
+        </div>
+        {% if page.tags.size > 0 %}
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-lg">sell</span>
+          {% for tag in page.tags %}
+          <span class="bg-gray-100 px-2 py-0.5 rounded text-xs">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </header>
 
-  <div class="share-links">
-    {% include sharelinks.html %}
-  </div>
+    {% if page.image %}
+    <div class="w-full mb-8 border border-gray-200 p-1 bg-white shadow-sm">
+      <img alt="{{ page.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ page.image | relative_url }}">
+    </div>
+    {% endif %}
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-    {% include navlinks.html %}
-  </div>
+    <div class="prose prose-lg text-gray-700 max-w-none font-serif">
+      {{ content }}
+    </div>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+    <!-- Share Links -->
+    <div class="mt-10 pt-8 border-t border-gray-200">
+      <h4 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 mb-4">Share This Article</h4>
+      {% include sharelinks.html %}
+    </div>
+
+    <!-- Post Navigation -->
+    <div class="mt-10 pt-8 border-t border-gray-200">
+      {% include navlinks.html %}
+    </div>
+  </article>
+  
+  {% include sidebar.html %}
+</div>

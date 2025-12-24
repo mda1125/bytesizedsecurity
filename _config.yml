@@ -1,19 +1,35 @@
-title: "My Blogs Name"
-author: "Default Author Name"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: "ByteSizedSecurity"
+author: "Admin"
+description: "Cybersecurity Insights & Analysis - Providing in-depth analysis on the latest security threats, vulnerabilities, and defense mechanisms."
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
-linkedin_username: "linkedinuser"
+email: "contact@bytesizedsecurity.com"
+twitter_username: "bytesizedsec"
+github_username: "bytesizedsecurity"
+linkedin_username: "bytesizedsecurity"
 #facebook_username: username
 #flickr_username: username
 #instagram_username: username
 #pinterest_username: username
 #youtube_username: username
-#googleplus_username: +username
+
+# Categories for sidebar
+categories:
+  - name: "Network Security"
+    count: 12
+  - name: "Malware Analysis"
+    count: 8
+  - name: "CTFs & Wargames"
+    count: 5
+  - name: "Web Security"
+    count: 24
+  - name: "DevSecOps"
+    count: 3
+  - name: "Cryptography"
+    count: 7
+  - name: "Blue Team"
+    count: 15
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
@@ -40,3 +56,4 @@ defaults:
       type: post
     values:
       tags: Other
+      category: "Security"

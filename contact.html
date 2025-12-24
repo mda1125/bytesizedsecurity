@@ -1,0 +1,72 @@
+---
+layout: default
+title: Contact
+---
+
+<div class="flex flex-col lg:flex-row gap-12">
+  <div class="flex-1">
+    <div class="bg-white border border-gray-200 p-6 md:p-10">
+      <header class="mb-8 border-b border-gray-200 pb-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-2">Contact Us</h1>
+        <p class="text-gray-600 font-sans">Get in touch with the ByteSizedSecurity team.</p>
+      </header>
+
+      <div class="prose prose-lg text-gray-700 max-w-none font-serif mb-8">
+        <p>
+          Have a security topic you'd like us to cover? Found a bug in one of our code examples? 
+          Want to collaborate on research? We'd love to hear from you.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-surface border border-gray-200 p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-3xl text-primary">mail</span>
+            <h3 class="font-sans font-bold text-lg text-gray-900">Email</h3>
+          </div>
+          <p class="text-gray-600 mb-2">For general inquiries and feedback:</p>
+          <a href="mailto:{{ site.email }}" class="text-link font-bold hover:underline">{{ site.email }}</a>
+        </div>
+
+        <div class="bg-surface border border-gray-200 p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-3xl text-primary">tag</span>
+            <h3 class="font-sans font-bold text-lg text-gray-900">Social</h3>
+          </div>
+          <p class="text-gray-600 mb-2">Follow us for the latest updates:</p>
+          <div class="flex gap-3">
+            {% if site.twitter_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}" class="text-link font-bold hover:underline">Twitter</a>
+            {% endif %}
+            {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}" class="text-link font-bold hover:underline">GitHub</a>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="bg-surface border border-gray-200 p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-3xl text-primary">bug_report</span>
+            <h3 class="font-sans font-bold text-lg text-gray-900">Report a Vulnerability</h3>
+          </div>
+          <p class="text-gray-600">
+            Found a security issue? Please report responsibly. We take all reports seriously.
+          </p>
+        </div>
+
+        <div class="bg-surface border border-gray-200 p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-3xl text-primary">edit_note</span>
+            <h3 class="font-sans font-bold text-lg text-gray-900">Guest Posts</h3>
+          </div>
+          <p class="text-gray-600">
+            Interested in contributing? We welcome well-researched security content from the community.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {% include sidebar.html %}
+</div>
+

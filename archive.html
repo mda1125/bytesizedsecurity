@@ -1,0 +1,45 @@
+---
+layout: default
+title: Blog Archive
+---
+
+<div class="flex flex-col lg:flex-row gap-12">
+  <div class="flex-1">
+    <div class="bg-white border border-gray-200 p-6 md:p-10">
+      <header class="mb-8 border-b border-gray-200 pb-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-2">Blog Archive</h1>
+        <p class="text-gray-600 font-sans">All posts organized by category and date.</p>
+      </header>
+
+      {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      
+      {% for year in posts_by_year %}
+      <div class="mb-10">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4 font-sans border-b-2 border-primary pb-2 inline-block">{{ year.name }}</h2>
+        <ul class="space-y-4">
+          {% for post in year.items %}
+          <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 p-4 bg-surface border border-gray-200 hover:border-primary transition-colors">
+            <span class="text-sm font-sans text-gray-500 md:w-32 shrink-0">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <div class="flex-1">
+              <a href="{{ post.url | relative_url }}" class="text-lg font-bold text-link hover:underline">{{ post.title }}</a>
+              <span class="text-xs font-sans font-bold uppercase text-primary ml-2">{{ post.category | default: post.tags | first | default: "Security" }}</span>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+
+      {% if site.posts.size == 0 %}
+      <div class="text-center py-12">
+        <span class="material-symbols-outlined text-6xl text-gray-300 mb-4">folder_open</span>
+        <h2 class="text-2xl font-bold text-gray-600 mb-2">No Posts Yet</h2>
+        <p class="text-gray-500">Check back soon for security insights and analysis.</p>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  
+  {% include sidebar.html %}
+</div>
+

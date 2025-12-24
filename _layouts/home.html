@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+<div class="flex flex-col lg:flex-row gap-12">
+  <div class="flex-1 flex flex-col">
+    
+    {% assign posts = site.posts %}
+    {% if posts.size > 0 %}
+    
+    <!-- Featured Post (First Post) -->
+    {% assign featured = posts.first %}
+    <article class="mb-12 border-b border-gray-300 pb-12">
+      <header class="mb-4">
+        <div class="flex items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-2">
+          <span>Featured Analysis</span>
+          <span class="text-gray-400">•</span>
+          <span class="text-gray-500">{{ featured.date | date: "%B %-d, %Y" }}</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4 hover:text-link cursor-pointer">
+          <a href="{{ featured.url | relative_url }}" class="no-underline hover:text-link">{{ featured.title | escape }}</a>
+        </h2>
+      </header>
+      
+      {% if featured.image %}
+      <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
+        <img alt="{{ featured.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ featured.image | relative_url }}">
+      </div>
+      {% else %}
+      <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
+        <div class="w-full h-[250px] bg-gradient-to-r from-slate-800 via-slate-700 to-slate-900 flex items-center justify-center">
+          <span class="material-symbols-outlined text-6xl text-primary opacity-50">security</span>
+        </div>
+      </div>
+      {% endif %}
+      
+      <div class="prose prose-lg text-gray-700 max-w-none mb-4 font-serif">
+        <p>{{ featured.excerpt | strip_html | truncatewords: 50 }}</p>
+      </div>
+      <a class="inline-flex items-center gap-1 text-link font-bold font-sans text-sm hover:underline uppercase tracking-wide" href="{{ featured.url | relative_url }}">
+        Continue Reading <span class="material-symbols-outlined text-sm">arrow_forward</span>
+      </a>
+    </article>
+    
+    <!-- Latest Intel Section -->
+    <div class="flex items-center gap-4 mb-8">
+      <h3 class="text-xl font-bold font-sans uppercase tracking-widest text-gray-900">Latest Intel</h3>
+      <div class="h-px bg-gray-300 flex-1"></div>
+    </div>
+    
+    <div class="flex flex-col gap-10">
+      {% for post in posts offset:1 limit:4 %}
+      <article class="flex flex-col md:flex-row gap-6 pb-10 border-b border-gray-200 border-dashed last:border-0">
+        <div class="w-full md:w-1/3 shrink-0">
+          <div class="border border-gray-200 p-1 bg-white shadow-sm">
+            {% if post.image %}
+            <div class="aspect-video bg-cover bg-center" style="background-image: url('{{ post.image | relative_url }}');"></div>
+            {% else %}
+            <div class="aspect-video bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
+              <span class="material-symbols-outlined text-4xl text-primary opacity-40">article</span>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex gap-2 mb-2 font-sans text-xs font-bold uppercase tracking-wide text-primary">
+            <span>{{ post.category | default: post.tags | first | default: "Security" }}</span>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-2 leading-tight hover:text-link cursor-pointer">
+            <a href="{{ post.url | relative_url }}" class="no-underline hover:text-link">{{ post.title | escape }}</a>
+          </h3>
+          <div class="text-xs font-sans text-gray-500 mb-3">
+            Posted on {{ post.date | date: "%B %-d, %Y" }} by <span class="text-gray-700 font-semibold">{{ post.author | default: site.author }}</span>
+          </div>
+          <p class="text-gray-700 mb-3 line-clamp-3">
+            {{ post.excerpt | strip_html | truncatewords: 30 }}
+          </p>
+          <a class="text-link font-bold font-sans text-xs hover:underline uppercase" href="{{ post.url | relative_url }}">Read More »</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    
+    <!-- Pagination -->
+    {% if posts.size > 5 %}
+    <div class="flex items-center gap-2 mt-12 pt-6 border-t border-gray-300">
+      <span class="text-sm font-sans text-gray-500 mr-2">{{ posts.size }} posts total</span>
+      <a href="{{ '/archive' | relative_url }}" class="px-3 py-1 bg-white hover:bg-gray-100 text-link font-sans text-sm font-bold border border-gray-300 rounded-sm">View All »</a>
+    </div>
+    {% endif %}
+    
+    {% else %}
+    <!-- No posts yet -->
+    <div class="text-center py-12">
+      <span class="material-symbols-outlined text-6xl text-gray-300 mb-4">edit_note</span>
+      <h2 class="text-2xl font-bold text-gray-600 mb-2">No Posts Yet</h2>
+      <p class="text-gray-500">Check back soon for security insights and analysis.</p>
+    </div>
+    {% endif %}
+    
+  </div>
+  
+  {% include sidebar.html %}
+</div>
+

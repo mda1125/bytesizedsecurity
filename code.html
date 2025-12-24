@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ByteSizedSecurity - Blog Home</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+            extend: {
+                colors: {
+                    "primary": "#b91c1c", // Classic security red/brick
+                    "primary-dark": "#991b1b",
+                    "background": "#ffffff",
+                    "surface": "#f3f4f6",
+                    "text-main": "#111827",
+                    "text-muted": "#4b5563",
+                    "link": "#1d4ed8", // Classic link blue
+                },
+                fontFamily: {
+                    "serif": ["Merriweather", "serif"],
+                    "sans": ["Inter", "sans-serif"]
+                },
+                boxShadow: {
+                    "classic": "0 1px 2px 0 rgba(0, 0, 0, 0.05)"
+                }
+            },
+            },
+        }
+    </script>
+<style>body {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body class="bg-[#f9f9f9] text-text-main font-serif antialiased">
+<div class="flex min-h-screen w-full flex-col">
+<header class="bg-white border-b-4 border-primary pt-6 pb-6 px-4 lg:px-8 shadow-sm">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">shield_lock</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-3xl font-black tracking-tight text-gray-900 font-sans uppercase">ByteSizedSecurity</h1>
+<span class="text-sm text-gray-500 font-sans tracking-widest uppercase">Cybersecurity Insights &amp; Analysis</span>
+</div>
+</div>
+<div class="flex flex-col items-center md:items-end gap-3 w-full md:w-auto">
+<div class="relative w-full md:w-64">
+<input class="w-full border border-gray-300 bg-white py-1.5 pl-3 pr-10 text-sm font-sans placeholder-gray-400 focus:border-primary focus:ring-1 focus:ring-primary rounded-sm" placeholder="Search archives..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</button>
+</div>
+<nav class="flex items-center gap-6 font-sans text-sm font-bold uppercase tracking-wide text-gray-600">
+<a class="hover:text-primary hover:underline transition-colors" href="#">Home</a>
+<a class="hover:text-primary hover:underline transition-colors" href="#">About</a>
+<a class="hover:text-primary hover:underline transition-colors" href="#">Archives</a>
+<a class="hover:text-primary hover:underline transition-colors" href="#">Contact</a>
+<a class="flex items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined text-[18px]">rss_feed</span> RSS
+                    </a>
+</nav>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-6xl mx-auto w-full py-8 px-4 lg:px-8">
+<div class="flex flex-col lg:flex-row gap-12">
+<div class="flex-1 flex flex-col">
+<article class="mb-12 border-b border-gray-300 pb-12">
+<header class="mb-4">
+<div class="flex items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-2">
+<span>Featured Analysis</span>
+<span class="text-gray-400">•</span>
+<span class="text-gray-500">May 14, 2024</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4 hover:text-link cursor-pointer">
+                            Understanding Zero Trust Architecture: A Deep Dive
+                        </h2>
+</header>
+<div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
+<img alt="Abstract blue digital network visualization" class="w-full h-auto object-cover max-h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdVBuPDtnbLDDOj1tZkKqPuCs4AVYekPwHUCumyH8BUPq_sKSpDQDIU5UZKXvKyNAYFfbDNVYll-xz-yBcQPmIIf4dUL2jME_Wq7UsknkgMSbTSLMc-OuthqhuSXFPhunj99Csq2CTHKaZik5FpiiavBsXcI1UfgvgqyUeljVppF0K6tMBMaSzYFNoI5iTynJk8uxgGNwoREs-qDBc4Ba4pWBhBVOAR6a8YU2HPyjR1ewjzqyHOmdSkOTCdM1F7JO1qGg3bxLGCaQ"/>
+</div>
+<div class="prose prose-lg text-gray-700 max-w-none mb-4 font-serif">
+<p>
+                            Explore the modern security framework that assumes no implicit trust, analyzing every request as if it originates from an open network. In an era where perimeter defenses are no longer sufficient, Zero Trust offers a comprehensive strategy to secure infrastructure and data...
+                        </p>
+</div>
+<a class="inline-flex items-center gap-1 text-link font-bold font-sans text-sm hover:underline uppercase tracking-wide" href="#">
+                        Continue Reading <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</article>
+<div class="flex items-center gap-4 mb-8">
+<h3 class="text-xl font-bold font-sans uppercase tracking-widest text-gray-900">Latest Intel</h3>
+<div class="h-px bg-gray-300 flex-1"></div>
+</div>
+<div class="flex flex-col gap-10">
+<article class="flex flex-col md:flex-row gap-6 pb-10 border-b border-gray-200 border-dashed last:border-0">
+<div class="w-full md:w-1/3 shrink-0">
+<div class="border border-gray-200 p-1 bg-white shadow-sm">
+<div class="aspect-video bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2OrP9vBk8-DSJJQuv1IT8ZLaVd2nHbb25GBYsUfGNr_PN7f6-sDQ3ivSV6wl0sfUHnTwDkawl1XMxuTNlHV2zLGVJq_05GbjmHbx36lSIpVXKFNPNR3eAHixkp0RiUMLfBPIfmU5Ufv_qH_1DEfxfTKphXZcI5Lwv3PoOsq4Iyez_6p0IpqD9e_3cUwAEj121GUjYleEdytinTueW1az4dc1olu2bQYN20L6xYimWJbIRUGdTgI0_EiQUJlUaH91ty4mwBBWiRio");'></div>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex gap-2 mb-2 font-sans text-xs font-bold uppercase tracking-wide text-primary">
+<span>Pentesting</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-2 leading-tight hover:text-link cursor-pointer">
+<a href="#">Top 5 Pentesting Tools for 2024</a>
+</h3>
+<div class="text-xs font-sans text-gray-500 mb-3">Posted on May 12, 2024 by <span class="text-gray-700 font-semibold">Admin</span></div>
+<p class="text-gray-700 mb-3 line-clamp-3">
+                                A roundup of the essential tools every ethical hacker needs in their arsenal this year. From network scanners to exploitation frameworks, we cover the industry standards.
+                            </p>
+<a class="text-link font-bold font-sans text-xs hover:underline uppercase" href="#">Read More »</a>
+</div>
+</article>
+<article class="flex flex-col md:flex-row gap-6 pb-10 border-b border-gray-200 border-dashed last:border-0">
+<div class="w-full md:w-1/3 shrink-0">
+<div class="border border-gray-200 p-1 bg-white shadow-sm">
+<div class="aspect-video bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxEFtso6gQ70C17JY5jXTdqx5zDl1c8DtcX4bX3JL7_pbkwYkgMjb3ylLFB6L-srU7sBp319kFTbyrOtStmxCJNTzrVSETPtyVjJvYVQO9BDjKUaTcp_WIPRbD23oL1-ssSHUg5OVxLnvHFIazxly0VvhKccLqY1PBrsn6PaYz10-QbIUH_i4hmY2qese0CA_AzgaAJ1t__fHxCuS4jDm3nJTBAJN4GW_FRu83AaS6HcmIciHy9RcyiScDt_zp4bjJyxWugDG3rUs");'></div>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex gap-2 mb-2 font-sans text-xs font-bold uppercase tracking-wide text-primary">
+<span>Vulnerabilities</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-2 leading-tight hover:text-link cursor-pointer">
+<a href="#">Analyzing the Log4j Vulnerability</a>
+</h3>
+<div class="text-xs font-sans text-gray-500 mb-3">Posted on May 10, 2024 by <span class="text-gray-700 font-semibold">Admin</span></div>
+<p class="text-gray-700 mb-3 line-clamp-3">
+                                A technical breakdown of the critical RCE vulnerability that shook the internet infrastructure. We dive into the JNDI lookup mechanism and how it was exploited.
+                            </p>
+<a class="text-link font-bold font-sans text-xs hover:underline uppercase" href="#">Read More »</a>
+</div>
+</article>
+<article class="flex flex-col md:flex-row gap-6 pb-10 border-b border-gray-200 border-dashed last:border-0">
+<div class="w-full md:w-1/3 shrink-0">
+<div class="border border-gray-200 p-1 bg-white shadow-sm">
+<div class="aspect-video bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAc6fWurEwe5e33_8lwlLfJJtXm7zgqoddkPdtlEzlkyk6sKppicvLFiZ_0HGnyPMfBjOSINlj5rENVhmX0R_fiivQwFBirPHoG98BjQb1vILLG4oOyCdbKZ0J43CNU4ie8fZxbM_Uv6cHhe98HW65QdnU0uALJSPm3Lxe_3mJ8EeD96DUabyDH3chbf_VAQ4v4Ujkby6QWrTbiHhF2eJAIyJB7L9sqefSpObr-gc_XfLoex4C6I3aiwlJeA8pmQ1I245sWAn8J20M");'></div>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex gap-2 mb-2 font-sans text-xs font-bold uppercase tracking-wide text-primary">
+<span>Crypto</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-2 leading-tight hover:text-link cursor-pointer">
+<a href="#">How to Secure Your SSH Keys</a>
+</h3>
+<div class="text-xs font-sans text-gray-500 mb-3">Posted on May 08, 2024 by <span class="text-gray-700 font-semibold">Admin</span></div>
+<p class="text-gray-700 mb-3 line-clamp-3">
+                                Best practices for generating, storing, and managing SSH keys for secure server access. Stop using passwords and start using public key authentication.
+                            </p>
+<a class="text-link font-bold font-sans text-xs hover:underline uppercase" href="#">Read More »</a>
+</div>
+</article>
+<article class="flex flex-col md:flex-row gap-6 pb-10 border-b border-gray-200 border-dashed last:border-0">
+<div class="w-full md:w-1/3 shrink-0">
+<div class="border border-gray-200 p-1 bg-white shadow-sm">
+<div class="aspect-video bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSw9cj5qUeOVRPQutbowIEEtRU8GkXPpyXctVTD0MgQWjH0XASm7k0_Z_9UpwH9dcJl5tLaHWG-bIwsyDa_Y0HCPdsmM8ZvcKGEu8DkP-IjDvPA8Zeqx-rQcfuOKzAVRlQ3qkPq-UhkyqOUc1vlfzBLeI1DRMWNMpT0jTlSuHueyQCLt7T1cRXbrEeAlSP8h3MUcP5XBnyf0zgU66gFR8nPXuGOvMArMV0f9dhz7V6FrnQbyILCAKAiVrV4u6QDo0QEUgbvUXoGlQ");'></div>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex gap-2 mb-2 font-sans text-xs font-bold uppercase tracking-wide text-primary">
+<span>Reverse Engineering</span>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-2 leading-tight hover:text-link cursor-pointer">
+<a href="#">Reverse Engineering Basics</a>
+</h3>
+<div class="text-xs font-sans text-gray-500 mb-3">Posted on May 05, 2024 by <span class="text-gray-700 font-semibold">Admin</span></div>
+<p class="text-gray-700 mb-3 line-clamp-3">
+                                Getting started with Ghidra and IDA Pro for analyzing malware binaries. A beginner's guide to disassembling code.
+                            </p>
+<a class="text-link font-bold font-sans text-xs hover:underline uppercase" href="#">Read More »</a>
+</div>
+</article>
+</div>
+<div class="flex items-center gap-2 mt-12 pt-6 border-t border-gray-300">
+<span class="text-sm font-sans text-gray-500 mr-2">Page 1 of 42</span>
+<button class="px-3 py-1 bg-gray-200 hover:bg-gray-300 text-gray-700 font-sans text-sm font-bold border border-gray-300 rounded-sm">1</button>
+<button class="px-3 py-1 bg-white hover:bg-gray-100 text-link font-sans text-sm font-bold border border-gray-300 rounded-sm">2</button>
+<button class="px-3 py-1 bg-white hover:bg-gray-100 text-link font-sans text-sm font-bold border border-gray-300 rounded-sm">3</button>
+<span class="text-gray-400">...</span>
+<button class="px-3 py-1 bg-white hover:bg-gray-100 text-link font-sans text-sm font-bold border border-gray-300 rounded-sm">Next »</button>
+</div>
+</div>
+<aside class="w-full lg:w-[300px] shrink-0 flex flex-col gap-10">
+<div class="bg-white p-5 border border-gray-200">
+<h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-primary pb-2 mb-4">About</h3>
+<p class="text-sm text-gray-600 mb-4">
+<strong class="text-gray-900">ByteSizedSecurity</strong> is an independent blog dedicated to investigating cybercrime and security trends.
+                    </p>
+<a class="text-xs font-bold text-link uppercase hover:underline" href="#">More About Us »</a>
+</div>
+<div class="bg-surface p-5 border border-gray-200">
+<h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-primary pb-2 mb-4">Security Briefing</h3>
+<p class="text-xs text-gray-600 mb-3">Get the latest exploits delivered to your inbox.</p>
+<form class="flex flex-col gap-2">
+<input class="h-8 bg-white border border-gray-300 text-xs px-2 focus:ring-1 focus:ring-primary focus:border-primary w-full" placeholder="email@domain.com" type="email"/>
+<button class="h-8 bg-text-main text-white text-xs font-bold uppercase tracking-wide hover:bg-primary transition-colors" type="button">Subscribe</button>
+</form>
+</div>
+<div>
+<h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Categories</h3>
+<ul class="flex flex-col text-sm divide-y divide-gray-200 border-t border-b border-gray-200">
+<li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="#">Network Security <span class="text-gray-400 text-xs ml-1">(12)</span></a></li>
+<li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="#">Malware Analysis <span class="text-gray-400 text-xs ml-1">(8)</span></a></li>
+<li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="#">CTFs &amp; Wargames <span class="text-gray-400 text-xs ml-1">(5)</span></a></li>
+<li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="#">Web Security <span class="text-gray-400 text-xs ml-1">(24)</span></a></li>
+<li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="#">DevSecOps <span class="text-gray-400 text-xs ml-1">(3)</span></a></li>
+<li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="#">Cryptography <span class="text-gray-400 text-xs ml-1">(7)</span></a></li>
+<li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="#">Blue Team <span class="text-gray-400 text-xs ml-1">(15)</span></a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Trending Posts</h3>
+<ul class="flex flex-col gap-4">
+<li class="flex flex-col gap-1">
+<a class="text-base font-bold text-link hover:underline leading-tight" href="#">XSS in Modern React Apps</a>
+<span class="text-xs text-gray-500 font-sans">2 days ago</span>
+</li>
+<li class="flex flex-col gap-1">
+<a class="text-base font-bold text-link hover:underline leading-tight" href="#">Bypassing WAFs with ease</a>
+<span class="text-xs text-gray-500 font-sans">5 days ago</span>
+</li>
+<li class="flex flex-col gap-1">
+<a class="text-base font-bold text-link hover:underline leading-tight" href="#">Setting up a Home Lab</a>
+<span class="text-xs text-gray-500 font-sans">1 week ago</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Meta</h3>
+<ul class="text-sm list-square pl-4 text-link space-y-1">
+<li><a class="hover:underline" href="#">Log in</a></li>
+<li><a class="hover:underline" href="#">Entries feed</a></li>
+<li><a class="hover:underline" href="#">Comments feed</a></li>
+<li><a class="hover:underline" href="#">WordPress.org</a></li>
+</ul>
+</div>
+</aside>
+</div>
+</main>
+<footer class="bg-gray-800 text-gray-300 py-12 mt-12 border-t-4 border-primary">
+<div class="max-w-6xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between gap-8">
+<div class="flex flex-col gap-4 max-w-sm">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-2xl">shield_lock</span>
+<span class="font-bold text-xl font-sans uppercase">ByteSizedSecurity</span>
+</div>
+<p class="text-sm text-gray-400 leading-relaxed">
+                    Providing in-depth analysis on the latest security threats, vulnerabilities, and defense mechanisms since 2024.
+                </p>
+</div>
+<div class="flex gap-12 text-sm font-sans">
+<div class="flex flex-col gap-2">
+<h4 class="font-bold text-white uppercase tracking-wider mb-2">Sitemap</h4>
+<a class="hover:text-white hover:underline" href="#">Home</a>
+<a class="hover:text-white hover:underline" href="#">Archives</a>
+<a class="hover:text-white hover:underline" href="#">About</a>
+<a class="hover:text-white hover:underline" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-bold text-white uppercase tracking-wider mb-2">Legal</h4>
+<a class="hover:text-white hover:underline" href="#">Privacy Policy</a>
+<a class="hover:text-white hover:underline" href="#">Terms of Service</a>
+<a class="hover:text-white hover:underline" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+<div class="max-w-6xl mx-auto px-4 lg:px-8 mt-12 pt-8 border-t border-gray-700 text-xs text-center md:text-left font-sans text-gray-500">
+            © 2024 ByteSizedSecurity. Open source under MIT License.
+        </div>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,32 @@
+<footer class="bg-gray-800 text-gray-300 py-12 mt-12 border-t-4 border-primary">
+  <div class="max-w-6xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row justify-between gap-8">
+    <div class="flex flex-col gap-4 max-w-sm">
+      <a href="{{ '/' | relative_url }}" class="flex items-center gap-2 text-white no-underline">
+        <span class="material-symbols-outlined text-2xl">shield_lock</span>
+        <span class="font-bold text-xl font-sans uppercase">{{ site.title }}</span>
+      </a>
+      <p class="text-sm text-gray-400 leading-relaxed">
+        Providing in-depth analysis on the latest security threats, vulnerabilities, and defense mechanisms since 2024.
+      </p>
+    </div>
+    <div class="flex gap-12 text-sm font-sans">
+      <div class="flex flex-col gap-2">
+        <h4 class="font-bold text-white uppercase tracking-wider mb-2">Sitemap</h4>
+        <a class="hover:text-white hover:underline" href="{{ '/' | relative_url }}">Home</a>
+        <a class="hover:text-white hover:underline" href="{{ '/archive' | relative_url }}">Archives</a>
+        <a class="hover:text-white hover:underline" href="{{ '/about' | relative_url }}">About</a>
+        <a class="hover:text-white hover:underline" href="{{ '/contact' | relative_url }}">Contact</a>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h4 class="font-bold text-white uppercase tracking-wider mb-2">Legal</h4>
+        <a class="hover:text-white hover:underline" href="#">Privacy Policy</a>
+        <a class="hover:text-white hover:underline" href="#">Terms of Service</a>
+        <a class="hover:text-white hover:underline" href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-4 lg:px-8 mt-12 pt-8 border-t border-gray-700 text-xs text-center md:text-left font-sans text-gray-500">
+    © {{ 'now' | date: "%Y" }} {{ site.title }}. Open source under MIT License.
+  </div>
+</footer>
+

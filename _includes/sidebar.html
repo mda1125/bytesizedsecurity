@@ -1,0 +1,57 @@
+<aside class="w-full lg:w-[300px] shrink-0 flex flex-col gap-10">
+  <!-- About Section -->
+  <div class="bg-white p-5 border border-gray-200">
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-primary pb-2 mb-4">About</h3>
+    <p class="text-sm text-gray-600 mb-4">
+      <strong class="text-gray-900">{{ site.title }}</strong> is an independent blog dedicated to investigating cybercrime and security trends.
+    </p>
+    <a class="text-xs font-bold text-link uppercase hover:underline" href="{{ '/about' | relative_url }}">More About Us »</a>
+  </div>
+
+  <!-- Newsletter Section -->
+  <div class="bg-surface p-5 border border-gray-200">
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-primary pb-2 mb-4">Security Briefing</h3>
+    <p class="text-xs text-gray-600 mb-3">Get the latest exploits delivered to your inbox.</p>
+    <form class="flex flex-col gap-2">
+      <input class="h-8 bg-white border border-gray-300 text-xs px-2 focus:ring-1 focus:ring-primary focus:border-primary w-full" placeholder="email@domain.com" type="email">
+      <button class="h-8 bg-text-main text-white text-xs font-bold uppercase tracking-wide hover:bg-primary transition-colors" type="button">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- Categories Section -->
+  <div>
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Categories</h3>
+    <ul class="flex flex-col text-sm divide-y divide-gray-200 border-t border-b border-gray-200">
+      {% for category in site.categories %}
+      <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="{{ '/archive' | relative_url }}#{{ category.name | slugify }}">{{ category.name }} <span class="text-gray-400 text-xs ml-1">({{ category.count }})</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Trending Posts Section -->
+  <div>
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Trending Posts</h3>
+    <ul class="flex flex-col gap-4">
+      {% assign recent_posts = site.posts | slice: 0, 3 %}
+      {% for post in recent_posts %}
+      <li class="flex flex-col gap-1">
+        <a class="text-base font-bold text-link hover:underline leading-tight" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="text-xs text-gray-500 font-sans">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Meta Section -->
+  <div>
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Meta</h3>
+    <ul class="text-sm list-disc pl-4 text-link space-y-1">
+      <li><a class="hover:underline" href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></li>
+      <li><a class="hover:underline" href="{{ '/archive' | relative_url }}">Archives</a></li>
+      {% if site.github_username %}
+      <li><a class="hover:underline" href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</aside>
+

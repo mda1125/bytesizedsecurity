@@ -1,21 +1,25 @@
-<hr>
-<div class="post_navi">
+<div class="flex flex-col md:flex-row gap-4 mt-8 pt-8 border-t border-gray-200">
   {%- if page.previous.url -%}
-  <a class="post_navi-item nav_prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Previous Post</div><div><span>{{ page.previous.title }}</span></div>
+  <a class="flex-1 p-4 bg-surface border border-gray-200 hover:border-primary transition-colors group" href="{{ page.previous.url }}">
+    <span class="text-xs font-sans font-bold uppercase tracking-wider text-gray-400 group-hover:text-primary">← Previous Post</span>
+    <span class="block text-link font-bold mt-1 group-hover:underline">{{ page.previous.title }}</span>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_prev" href="{{ 'archive.html' | absolute_url }}" title="Blog Archive">
-    <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Blog Archive</div><div><span>Archive of all previous blog posts</span></div>
+  <a class="flex-1 p-4 bg-surface border border-gray-200 hover:border-primary transition-colors group" href="{{ '/archive' | relative_url }}">
+    <span class="text-xs font-sans font-bold uppercase tracking-wider text-gray-400 group-hover:text-primary">← Archive</span>
+    <span class="block text-link font-bold mt-1 group-hover:underline">View all posts</span>
   </a>
   {%- endif -%}
+  
   {%- if page.next.url -%}
-  <a class="post_navi-item nav_next" href="{{ page.next.url }}" title="{{ page.next.title }}">
-    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Post</div><div><span>{{ page.next.title }}</span></div>
+  <a class="flex-1 p-4 bg-surface border border-gray-200 hover:border-primary transition-colors group text-right" href="{{ page.next.url }}">
+    <span class="text-xs font-sans font-bold uppercase tracking-wider text-gray-400 group-hover:text-primary">Next Post →</span>
+    <span class="block text-link font-bold mt-1 group-hover:underline">{{ page.next.title }}</span>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_next" href="{{ 'archive.html' | absolute_url }}" title="Blog Archive">
-    <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Blog Archive</div><div><span>Archive of all previous blog posts</span></div>
+  <a class="flex-1 p-4 bg-surface border border-gray-200 hover:border-primary transition-colors group text-right" href="{{ '/archive' | relative_url }}">
+    <span class="text-xs font-sans font-bold uppercase tracking-wider text-gray-400 group-hover:text-primary">Archive →</span>
+    <span class="block text-link font-bold mt-1 group-hover:underline">View all posts</span>
   </a>
   {%- endif -%}
 </div>

@@ -1,0 +1,62 @@
+---
+layout: default
+title: About
+---
+
+<div class="flex flex-col lg:flex-row gap-12">
+  <div class="flex-1">
+    <div class="bg-white border border-gray-200 p-6 md:p-10">
+      <header class="mb-8 border-b border-gray-200 pb-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-2">About ByteSizedSecurity</h1>
+        <p class="text-gray-600 font-sans">Cybersecurity insights in digestible portions.</p>
+      </header>
+
+      <div class="prose prose-lg text-gray-700 max-w-none font-serif">
+        <p class="text-xl leading-relaxed mb-6">
+          <strong>ByteSizedSecurity</strong> is an independent cybersecurity blog dedicated to breaking down complex security topics into understandable, actionable insights.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Our Mission</h2>
+        <p>
+          In an era of increasingly sophisticated cyber threats, staying informed is your first line of defense. We aim to bridge the gap between technical security research and practical understanding, making cybersecurity accessible to everyone from beginners to seasoned professionals.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">What We Cover</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Vulnerability Analysis</strong> — Deep dives into the latest CVEs and how they impact your systems</li>
+          <li><strong>Penetration Testing</strong> — Tools, techniques, and methodologies for ethical hacking</li>
+          <li><strong>Malware Research</strong> — Reverse engineering and analysis of malicious software</li>
+          <li><strong>Web Security</strong> — XSS, CSRF, SQL injection, and modern web attack vectors</li>
+          <li><strong>Cryptography</strong> — Understanding encryption, hashing, and secure communications</li>
+          <li><strong>Blue Team Operations</strong> — Defense strategies, incident response, and threat hunting</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Get In Touch</h2>
+        <p>
+          Have questions, suggestions, or want to contribute? Reach out via our social channels or drop us an email. We're always happy to hear from fellow security enthusiasts.
+        </p>
+
+        <div class="flex gap-4 mt-6">
+          {% if site.twitter_username %}
+          <a href="https://twitter.com/{{ site.twitter_username }}" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
+            Twitter
+          </a>
+          {% endif %}
+          {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
+            GitHub
+          </a>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
+            LinkedIn
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {% include sidebar.html %}
+</div>
+
