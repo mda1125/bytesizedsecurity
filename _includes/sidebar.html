@@ -12,8 +12,12 @@
   <div class="bg-surface p-5 border border-gray-200">
     <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-primary pb-2 mb-4">Security Briefing</h3>
     <p class="text-xs text-gray-600 mb-3">Get the latest exploits delivered to your inbox.</p>
-    <form method="post" action="https://sendfox.com/form/3z6ooe/1ydnre" class="sendfox-form flex flex-col gap-2" id="1ydnre" data-async="true" data-recaptcha="false">
+    <form method="post" action="https://sendfox.com/form/3z6ooe/1ydnre" class="sendfox-form flex flex-col gap-3" id="1ydnre" data-async="true" data-recaptcha="false">
       <input type="email" id="sendfox_form_email" name="email" required placeholder="email@domain.com" class="h-8 bg-white border border-gray-300 text-xs px-2 focus:ring-1 focus:ring-primary focus:border-primary w-full">
+      <label class="flex items-start gap-2 text-xs text-gray-600 cursor-pointer">
+        <input type="checkbox" name="gdpr" value="1" required class="mt-0.5 accent-primary">
+        <span>I agree to receive email updates and promotions.</span>
+      </label>
       <!-- honeypot -->
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off"></div>
       <button type="submit" class="h-8 bg-text-main text-white text-xs font-bold uppercase tracking-wide hover:bg-primary transition-colors cursor-pointer">Subscribe</button>
