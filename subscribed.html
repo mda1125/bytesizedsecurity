@@ -1,0 +1,60 @@
+---
+layout: default
+title: Subscription Confirmed
+---
+
+<div class="flex flex-col lg:flex-row gap-12">
+  <div class="flex-1">
+    <div class="bg-white border border-gray-200 p-6 md:p-10 text-center">
+      
+      <div class="mb-8">
+        <span class="material-symbols-outlined text-7xl text-primary">mark_email_read</span>
+      </div>
+      
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+        You're In! 🎉
+      </h1>
+      
+      <p class="text-xl text-gray-600 font-serif mb-8 max-w-lg mx-auto">
+        Thanks for subscribing to the <strong>Security Briefing</strong>. You'll now receive the latest cybersecurity insights delivered straight to your inbox.
+      </p>
+
+      <div class="bg-surface border border-gray-200 p-6 rounded-sm max-w-md mx-auto mb-8">
+        <h2 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 mb-4">What to Expect</h2>
+        <ul class="text-left text-gray-700 space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-lg mt-0.5">security</span>
+            <span>Latest vulnerability analyses and security news</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-lg mt-0.5">lightbulb</span>
+            <span>Practical tips to improve your security posture</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-primary text-lg mt-0.5">code</span>
+            <span>Technical deep-dives and tutorials</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="border-t border-gray-200 pt-8 max-w-md mx-auto">
+        <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 mb-3">Our Promise to You</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          <strong>We respect your inbox.</strong> We'll never spam you, and you can unsubscribe at any time with one click. 
+          Your email is safe with us — <strong>we never rent, sell, or share your information</strong> with anyone.
+        </p>
+      </div>
+
+      <div class="mt-8">
+        <a href="{{ '/' | relative_url }}" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-sans text-sm font-bold uppercase hover:bg-primary-dark transition-colors">
+          <span class="material-symbols-outlined text-lg">home</span>
+          Back to Homepage
+        </a>
+      </div>
+
+    </div>
+  </div>
+  
+  {% include sidebar.html %}
+</div>
+
