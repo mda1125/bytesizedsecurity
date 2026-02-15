@@ -7,7 +7,7 @@ layout: default
     <header class="mb-8 border-b border-gray-200 pb-8">
       <div class="flex items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-3">
         <span>{{ page.category | default: page.tags | first | default: "Security" }}</span>
-        <span class="text-gray-400">•</span>
+        <span class="text-gray-500">•</span>
         <time class="text-gray-500" datetime="{{ page.date | date_to_xmlschema }}">
           {{ page.date | date: "%B %-d, %Y" }}
         </time>
