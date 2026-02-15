@@ -1,6 +1,10 @@
 title: "ByteSizedSecurity"
 author: "Marc"
 description: "Cybersecurity Insights & Analysis - Providing in-depth analysis on the latest security threats, vulnerabilities, and defense mechanisms."
+url: "https://blog.bytesizedsecurity.show"
+
+# Logo used by jekyll-seo-tag for JSON-LD publisher schema
+logo: "/favicon-96x96.png"
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -27,7 +31,11 @@ kramdown:
     
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
+
+exclude:
+  - SECURITY.md
 
 titles_from_headings:
   strip_title: true
@@ -40,3 +48,4 @@ defaults:
     values:
       tags: Other
       category: "Security"
+      image: "/favicon-96x96.png"
