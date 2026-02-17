@@ -22,6 +22,7 @@ linkedin_username: "marccdavid"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
+permalink: /:year/:month/:day/:title/
 
 rss: rss
 
