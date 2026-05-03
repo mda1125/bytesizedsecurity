@@ -18,11 +18,40 @@
         <input type="checkbox" name="gdpr" value="1" required class="mt-0.5 accent-primary">
         <span>I agree to receive email updates and promotions.</span>
       </label>
-      <!-- honeypot -->
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off"></div>
       <button type="submit" class="h-8 bg-text-main text-white text-xs font-bold uppercase tracking-wide hover:bg-primary transition-colors cursor-pointer">Subscribe</button>
     </form>
     <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
+    <script>
+    document.getElementById('1ydnre').addEventListener('submit', function(e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      var form = this;
+      var btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      btn.textContent = 'Subscribing...';
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'X-Requested-With': 'XMLHttpRequest' },
+        body: new FormData(form)
+      }).then(function(res) {
+        if (res.ok) {
+          window.location.href = '{{ "/subscribed" | relative_url }}';
+        } else {
+          return res.json().then(function(data) {
+            if (data.errors) alert(data.errors[0]);
+            else alert('Something went wrong. Please try again.');
+            btn.disabled = false;
+            btn.textContent = 'Subscribe';
+          });
+        }
+      }).catch(function() {
+        alert('Network error. Please try again.');
+        btn.disabled = false;
+        btn.textContent = 'Subscribe';
+      });
+    }, true);
+    </script>
   </div>
 
   <!-- Categories Section -->
