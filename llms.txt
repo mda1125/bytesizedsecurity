@@ -1,0 +1,30 @@
+# ByteSizedSecurity
+
+> Cybersecurity insights and analysis — investigating cybercrime, security trends, vulnerabilities, and defense strategies.
+
+## About This Site
+
+ByteSizedSecurity is an independent cybersecurity blog by Marc David covering threat intelligence, privacy, career guidance, and technical deep-dives for security professionals and enthusiasts.
+
+## Key Pages
+
+- [About](https://blog.bytesizedsecurity.show/about/): Who we are and our mission
+- [Archive](https://blog.bytesizedsecurity.show/archive/): All posts organized by category
+- [Podcast](https://bytesizedsecurity.show/): The ByteSizedSecurity podcast
+
+## Notable Posts
+
+- [AI Fuels Cybersecurity Boom: Your Career Guide](https://blog.bytesizedsecurity.show/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/): How AI is reshaping cybersecurity careers and what skills to develop now
+- [The Ultimate Free Cybersecurity Career Roadmap](https://blog.bytesizedsecurity.show/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/): Comprehensive free resources and paths into cybersecurity
+- [Understanding Zero Trust Architecture: A Deep Dive](https://blog.bytesizedsecurity.show/2024/05/14/understanding-zero-trust-architecture/): Core principles and implementation of zero-trust security models
+- [Infostealers: From Passwords to Your Full Identity](https://blog.bytesizedsecurity.show/2026/02/21/infostealers-from-passwords-to-your-full-identity/): How modern infostealers escalate from credential theft to full identity compromise
+- [Credential Theft: The New Normal in Cyber Attacks](https://blog.bytesizedsecurity.show/2026/04/12/credential-theft-new-normal-cyber-attacks/): Why credential-based attacks dominate the threat landscape
+- [2FA: The 5-Minute Fix That Stops 99% of Account Attacks](https://blog.bytesizedsecurity.show/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/): Practical guide to enabling two-factor authentication everywhere
+- [Encryption Backdoors: Canada's Bill C-22 Threatens Global Security](https://blog.bytesizedsecurity.show/2026/05/13/encryption-backdoors-canada-bill-c22-threatens-global-security/): Analysis of legislative threats to end-to-end encryption
+- [LexisNexis Breach: Unpatched App, Leaky IAM, and Your Data](https://blog.bytesizedsecurity.show/2026/03/06/lexisnexis-breach-unpatched-app-leaky-iam-and-your-data/): Breakdown of a major data breach caused by IAM misconfigurations
+- [Boost Your Privacy: Small Steps, Big Impact](https://blog.bytesizedsecurity.show/2025/12/24/boost-your-privacy-small-steps-big-impact/): Actionable privacy improvements anyone can implement today
+- [Analyzing the Log4j Vulnerability](https://blog.bytesizedsecurity.show/2024/05/10/analyzing-log4j-vulnerability/): Technical analysis of CVE-2021-44228 (Log4Shell) and its impact
+
+## License
+
+Content: CC BY-NC 4.0. AI training: prohibited. AI search citation: permitted.
