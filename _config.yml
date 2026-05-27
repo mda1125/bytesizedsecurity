@@ -2,13 +2,12 @@ title: "ByteSizedSecurity"
 description: "Cybersecurity Insights & Analysis - Providing in-depth analysis on the latest security threats, vulnerabilities, and defense mechanisms."
 url: "https://blog.bytesizedsecurity.show"
 
-# Author (used by jekyll-seo-tag for BlogPosting author schema)
+# Author
 author:
   name: "Marc David"
   twitter: "marc_david"
   url: "https://blog.bytesizedsecurity.show/about/"
 
-# Publisher logo used by jekyll-seo-tag for JSON-LD (must be ≥ 112×112)
 logo: "/assets/img/bytesizedsecurity-logo-600x60.png"
 
 # Social media usernames
@@ -32,7 +31,6 @@ kramdown:
     
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
 
 exclude:

@@ -21,9 +21,37 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}" />
   <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}" />
   
-  <!-- Begin SEO (JSON-LD disabled — hand-authored schema in schema-blogposting.html) -->
-  {% seo json_ld=false %}
-  <!-- End SEO -->
+  <!-- SEO meta (replaces jekyll-seo-tag to avoid its duplicate JSON-LD) -->
+  {% assign seo_description = page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description %}
+  {% assign seo_title = page.title | default: site.title %}
+  {% assign seo_image = page.image | default: "/favicon-96x96.png" %}
+  {% if seo_image contains "://" %}{% assign seo_image_url = seo_image %}{% else %}{% assign seo_image_url = seo_image | prepend: site.url %}{% endif %}
+
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
+  <meta name="description" content="{{ seo_description }}">
+  <meta name="author" content="{{ site.author.name }}">
+
+  <meta property="og:title" content="{{ seo_title }}">
+  <meta property="og:description" content="{{ seo_description }}">
+  <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:image" content="{{ seo_image_url }}">
+  <meta property="og:locale" content="en_US">
+  {% if page.layout == 'post' %}
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:modified_time" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">
+  {% else %}
+  <meta property="og:type" content="website">
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ seo_title }}">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  <meta name="twitter:image" content="{{ seo_image_url }}">
+  {% if site.twitter_username %}
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  {% endif %}
 
   {% if page.url == "/" %}
   <script type="application/ld+json">
