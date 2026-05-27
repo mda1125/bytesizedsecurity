@@ -1,0 +1,29 @@
+{
+  "name": "bytesizedsecurity",
+  "version": "1.0.0",
+  "description": "A cybersecurity blog delivering insights, tutorials, and analysis on security threats, vulnerabilities, and defense strategies.",
+  "main": "mobile-test.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.min.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.min.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mda1125/bytesizedsecurity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mda1125/bytesizedsecurity/issues"
+  },
+  "homepage": "https://github.com/mda1125/bytesizedsecurity#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "playwright": "^1.58.2",
+    "tailwindcss": "^4.3.0"
+  }
+}

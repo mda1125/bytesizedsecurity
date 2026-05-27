@@ -37,6 +37,10 @@ plugins:
 
 exclude:
   - SECURITY.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - assets/css/input.css
 
 titles_from_headings:
   strip_title: true
