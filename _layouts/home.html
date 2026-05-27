@@ -24,7 +24,7 @@ layout: default
       
       {% if featured.image %}
       <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
-        <img alt="{{ featured.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ featured.image | relative_url }}">
+        <img alt="{{ featured.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ featured.image | relative_url }}" width="1200" height="630" fetchpriority="high" loading="eager">
       </div>
       {% else %}
       <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">

@@ -5,7 +5,7 @@ category: Network Security
 tags: ["data privacy", "linkedin", "surveillance"]
 author: Marc
 excerpt: "Verifying identity on LinkedIn means handing over sensitive data like passports and biometrics to a US company. This data is shared with 17 subprocessors, including AI firms, and used for training their AI. Your data is accessible to US law enforcement under the CLOUD Act, with limited liability for breaches."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/92375fd3-f992-4562-b994-73facc977f54.jpeg"
+image: "/assets/img/posts/linkedin-blue-check-what-you-sacrifice-for-a-badge.webp"
 ---
 
 Title: LinkedIn Verification: What You're Handing Over for a Blue Checkmark

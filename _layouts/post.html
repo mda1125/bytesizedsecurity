@@ -38,9 +38,9 @@ layout: default
     {% if page.image %}
     <div class="w-full mb-8 border border-gray-200 p-1 bg-white shadow-sm">
       {% if page.image contains '://' %}
-      <img alt="{{ page.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ page.image }}">
+      <img alt="{{ page.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ page.image }}" width="1200" height="630" fetchpriority="high" loading="eager">
       {% else %}
-      <img alt="{{ page.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ page.image | relative_url }}">
+      <img alt="{{ page.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ page.image | relative_url }}" width="1200" height="630" fetchpriority="high" loading="eager">
       {% endif %}
     </div>
     {% endif %}

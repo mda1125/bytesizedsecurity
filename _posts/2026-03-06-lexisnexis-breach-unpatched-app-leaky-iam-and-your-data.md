@@ -5,7 +5,7 @@ category: Vulnerabilities
 tags: ["Data Breach", "Cloud Security", "IAM"]
 author: Marc
 excerpt: "LexisNexis confirms a data breach involving 2GB of sensitive data due to an unpatched React app and overly permissive IAM. Learn what happened and how to protect yourself now. This is their second breach in two years."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/91bde95d-0e97-4b32-8f54-6c84a8e24c8c.jpeg"
+image: "/assets/img/posts/lexisnexis-breach-unpatched-app-leaky-iam-and-your-data.webp"
 ---
 
 Title: LexisNexis Confirms Data Breach: What Happened, How It Happened, and What You Should Do Right Now

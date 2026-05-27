@@ -5,7 +5,7 @@ category: DevSecOps
 tags: ["Cybersecurity Jobs", "Career Advice", "Hiring Trends"]
 author: Marc
 excerpt: "The cybersecurity job market is tougher than ever, especially for entry and mid-level roles. AI-driven hiring processes are creating chaos, but there's a new playbook for success."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/44f02e5f-2891-44d1-b550-03531795b568.jpeg"
+image: "/assets/img/posts/navigating-the-broken-cybersecurity-job-market.webp"
 ---
 
 Title: The Cybersecurity Job Market Is Broken ... Here's What's Really Happening and How to Navigate It

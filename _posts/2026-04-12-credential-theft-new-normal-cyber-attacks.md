@@ -5,7 +5,7 @@ category: Network Security
 tags: ["Credential Theft", "Cybersecurity", "AI Security"]
 author: Marc
 excerpt: "Nearly one in three cyber intrusions now use valid employee credentials, fueled by AI. Is your security ready for breaches that look like a normal Tuesday?"
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/118c4a69-2cbc-48a2-8101-c3c157d91cff.jpeg"
+image: "/assets/img/posts/credential-theft-new-normal-cyber-attacks.webp"
 ---
 
 Your Next Breach Won't Look Like an Attack. It'll Look Like a Normal Tuesday.

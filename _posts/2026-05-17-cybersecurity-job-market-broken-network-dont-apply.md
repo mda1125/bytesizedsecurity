@@ -5,7 +5,7 @@ category: Blue Team
 tags: ["cybersecurity jobs", "career advice", "networking"]
 author: Marc
 excerpt: "A viral Reddit thread reveals experienced cyber pros can't get hired through applications. Discover why the traditional job search fails and what worked for those who landed jobs: networking."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/2f03bf3f-b591-4f5c-98e8-91ddd91691f4.jpeg"
+image: "/assets/img/posts/cybersecurity-job-market-broken-network-dont-apply.webp"
 ---
 
 # The Cybersecurity Job Market Is Broken... Here's What Works

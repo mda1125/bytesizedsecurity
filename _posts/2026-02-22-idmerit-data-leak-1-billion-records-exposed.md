@@ -5,7 +5,7 @@ category: Vulnerabilities
 tags: ["data breach", "KYC", "data privacy"]
 author: Marc
 excerpt: "A misconfigured MongoDB database exposed a billion identity records from 26 countries. This leak highlights critical flaws in the KYC supply chain and the lasting impact of permanent data exposure."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/4b03cd3e-2eb1-4f42-a251-af8af0cc33fc.jpeg"
+image: "/assets/img/posts/idmerit-data-leak-1-billion-records-exposed.webp"
 ---
 
 # 1 Billion Identity Records Exposed: Inside the IDMerit Data Leak

@@ -41,6 +41,7 @@ exclude:
   - package.json
   - package-lock.json
   - assets/css/input.css
+  - scripts
 
 titles_from_headings:
   strip_title: true

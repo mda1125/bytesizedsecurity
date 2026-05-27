@@ -5,7 +5,7 @@ category: DevSecOps
 tags: ["AI Security", "Social Engineering", "Disinformation"]
 author: Marc
 excerpt: "Multi-agent AI simulations can predict human behavior with striking accuracy, offering powerful tools for market research. But this capability also opens a new era for adversarial social engineering and disinformation. Security teams, pay attention!"
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/fc7b34a9-f5f6-46f3-b4f6-fee9c3a23a98.jpeg"
+image: "/assets/img/posts/ai-simulations-a-new-frontier-for-cyber-threats.webp"
 ---
 
 AI Can Now Simulate Entire Populations. Security Teams Should Pay Attention.

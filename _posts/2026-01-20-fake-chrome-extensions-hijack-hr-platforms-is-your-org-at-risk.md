@@ -5,7 +5,7 @@ category: Web Security
 tags: ["Web Security", "Malware Analysis", "Vulnerabilities"]
 author: Marc
 excerpt: "Think your Chrome extensions are safe? A new campaign used fake productivity tools to steal login tokens from major HR platforms. Discover if your organization is vulnerable and what steps to take now."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/d7183d4e-157d-44e3-8ee2-4c637c4c73c4.png"
+image: "/assets/img/posts/fake-chrome-extensions-hijack-hr-platforms-is-your-org-at-risk.webp"
 ---
 
 Think your Chrome extensions are safe?

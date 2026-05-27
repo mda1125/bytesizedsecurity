@@ -5,7 +5,7 @@ category: Blue Team
 tags: ["Identity Theft", "Credit Freeze", "LexisNexis"]
 author: Marc
 excerpt: "Discover how LexisNexis data affects you and why freezing your credit at all three bureaus, plus your children's, is crucial for identity theft protection. It's free, fast, and vital."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/a01310dd-72f6-495e-86d0-d7db72d1442c.jpeg"
+image: "/assets/img/posts/lexisnexis-credit-freezes-your-guide-to-identity-protection.webp"
 ---
 
 Title: Why You Should Request Your LexisNexis Consumer Disclosure Report and Freeze Your Credit Today

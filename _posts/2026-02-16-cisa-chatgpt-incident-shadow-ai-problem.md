@@ -5,7 +5,7 @@ category: Blue Team
 tags: ["Shadow AI", "Cybersecurity", "Data Governance"]
 author: Marc
 excerpt: "CISA's acting director uploaded sensitive documents to ChatGPT, exposing a crucial cybersecurity blind spot. Shadow AI is rampant, and most organizations have zero visibility into employees' use of public AI tools, risking data exposure."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/035e0eec-1e36-4fbf-a272-9390b1a86be1.jpeg"
+image: "/assets/img/posts/cisa-chatgpt-incident-shadow-ai-problem.webp"
 ---
 
 The CISA ChatGPT Incident: What Shadow AI Means for Every Organization

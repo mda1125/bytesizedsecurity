@@ -5,7 +5,7 @@ category: Network Security
 tags: ["cybersecurity career", "free resources", "career roadmap"]
 author: Marc
 excerpt: "Discover Okurrrr, a free, all-in-one cybersecurity career roadmap by Moe B. It offers 627 certifications, 759 free resources, a Career Pathfinder, and more. This comprehensive tool helps you launch or level up your cybersecurity career."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/2b312e8c-9102-498d-8e45-d9a214da9bb6.jpeg"
+image: "/assets/img/posts/okurrrr-ultimate-free-cybersecurity-career-roadmap.webp"
 ---
 
 # Okurrrr ... The Free Cybersecurity Career Roadmap Everyone Needs to Know About

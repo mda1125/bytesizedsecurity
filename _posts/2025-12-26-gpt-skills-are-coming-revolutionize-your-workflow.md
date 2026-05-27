@@ -5,7 +5,7 @@ category: DevSecOps
 tags: ["GPTs", "AI Skills", "GPT Automation"]
 author: Marc
 excerpt: "Custom GPTs are getting a major upgrade with 'Skills,' enabling reusable workflows and automated tasks. Discover how this shift from prompt engineering to 'productivity engineering' will transform how you build and interact with AI."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/0bfbb63d-d366-482b-892c-81d3136b93b7.png"
+image: "/assets/img/posts/gpt-skills-are-coming-revolutionize-your-workflow.webp"
 ---
 
 Custom GPTs are about to get a whole lot smarter.
