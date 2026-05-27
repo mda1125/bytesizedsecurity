@@ -1,21 +1,21 @@
 title: "ByteSizedSecurity"
-author: "Marc"
 description: "Cybersecurity Insights & Analysis - Providing in-depth analysis on the latest security threats, vulnerabilities, and defense mechanisms."
 url: "https://blog.bytesizedsecurity.show"
 
-# Logo used by jekyll-seo-tag for JSON-LD publisher schema
-logo: "/favicon-96x96.png"
+# Author (used by jekyll-seo-tag for BlogPosting author schema)
+author:
+  name: "Marc David"
+  twitter: "marc_david"
+  url: "https://blog.bytesizedsecurity.show/about/"
 
-# Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
+# Publisher logo used by jekyll-seo-tag for JSON-LD (must be ≥ 112×112)
+logo: "/assets/img/bytesizedsecurity-logo-600x60.png"
+
+# Social media usernames
 email: "marc@bytesizedsecurity.show"
 twitter_username: "marc_david"
 github_username: "mda1125"
 linkedin_username: "marccdavid"
-#facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
 youtube_username: "@ByteSizedSecurity"
 
 #########################################################################################

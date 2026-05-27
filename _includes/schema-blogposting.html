@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ site.url }}/#organization",
+    "name": "ByteSizedSecurity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/img/bytesizedsecurity-logo-600x60.png",
+      "width": 600,
+      "height": 60
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  }{% if page.image %},
+  "image": "{% if page.image contains '://' %}{{ page.image }}{% else %}{{ site.url }}{{ page.image }}{% endif %}"{% endif %}
+}
+</script>
