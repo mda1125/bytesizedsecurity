@@ -7,15 +7,22 @@
     "@id": "{{ site.url }}/#person",
     "name": "Marc David",
     "url": "{{ site.url }}/about/",
-    "jobTitle": "Cybersecurity Analyst",
+    "image": "{{ site.url }}/assets/img/marc-david-headshot.webp",
+    "jobTitle": "Staff Security Engineer",
     "worksFor": {
       "@id": "{{ site.url }}/#organization"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "url": "https://www.credly.com/users/marcdavid",
+      "credentialCategory": "Professional Certification"
     },
     "sameAs": [
       "https://x.com/{{ site.twitter_username }}",
       "https://github.com/{{ site.github_username }}",
       "https://linkedin.com/in/{{ site.linkedin_username }}",
-      "https://www.youtube.com/{{ site.youtube_username }}"
+      "https://www.youtube.com/{{ site.youtube_username }}",
+      "https://www.credly.com/users/marcdavid"
     ]
   }
 }

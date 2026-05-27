@@ -14,6 +14,24 @@ title: About
       </header>
 
       <div class="prose prose-lg text-gray-700 max-w-none font-serif">
+
+        <!-- Author Bio Section -->
+        <div class="flex flex-col md:flex-row gap-6 items-start mb-8 p-6 bg-surface border border-gray-200 rounded not-prose">
+          <img src="{{ '/assets/img/marc-david-headshot.webp' | relative_url }}" alt="Marc David — Staff Security Engineer" width="400" height="400" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-primary shrink-0">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-2xl font-bold text-gray-900 font-sans m-0">Marc David</h2>
+            <p class="text-primary font-bold font-sans text-sm uppercase tracking-wide m-0">Staff Security Engineer</p>
+            <p class="text-gray-700 text-base mt-2 mb-0">
+              Marc is a Staff Security Engineer with expertise in threat detection, vulnerability research, and security architecture. He created ByteSizedSecurity to bridge the gap between technical security research and practical understanding.
+            </p>
+            <div class="flex items-center gap-3 mt-3">
+              <a href="https://www.credly.com/users/marcdavid" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-xs font-sans font-bold text-link hover:underline uppercase">
+                <span class="material-symbols-outlined text-sm">verified</span> Verified Credentials
+              </a>
+            </div>
+          </div>
+        </div>
+
         <p class="text-xl leading-relaxed mb-6">
           <strong>ByteSizedSecurity</strong> is an independent cybersecurity blog dedicated to breaking down complex security topics into understandable, actionable insights.
         </p>
@@ -38,27 +56,30 @@ title: About
           Have questions, suggestions, or want to contribute? Reach out via our social channels or drop us an email. We're always happy to hear from fellow security enthusiasts.
         </p>
 
-        <div class="flex gap-4 mt-6">
+        <div class="flex flex-wrap gap-3 mt-6">
           {% if site.twitter_username %}
-          <a href="https://x.com/{{ site.twitter_username }}" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
+          <a href="https://x.com/{{ site.twitter_username }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
             X
           </a>
           {% endif %}
           {% if site.github_username %}
-          <a href="https://github.com/{{ site.github_username }}" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
             GitHub
           </a>
           {% endif %}
           {% if site.linkedin_username %}
-          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
+          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
             LinkedIn
           </a>
           {% endif %}
           {% if site.youtube_username %}
-          <a href="https://www.youtube.com/{{ site.youtube_username }}" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
+          <a href="https://www.youtube.com/{{ site.youtube_username }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
             YouTube
           </a>
           {% endif %}
+          <a href="https://www.credly.com/users/marcdavid" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white font-sans text-sm font-bold uppercase hover:bg-primary transition-colors">
+            Credly
+          </a>
         </div>
       </div>
     </div>
