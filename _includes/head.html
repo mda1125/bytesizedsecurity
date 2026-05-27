@@ -51,12 +51,13 @@
   <!-- End Google Analytics -->
   {%- endif %}
 
-  <!-- Begin highlight.js support -->
+  {% if page.layout == 'post' %}
+  <!-- highlight.js — only loaded on post pages -->
   <link rel="stylesheet" href="{{ '/js/highlightjs/styles/github.css' | relative_url }}">
-  <script src="{{ '/js/highlightjs/highlight.min.js' | relative_url }}"></script>
-  <script src="{{ '/js/highlightjs/languages/plaintext.min.js' | relative_url }}"></script>
-  <script src="{{ '/js/highlightjs/languages/powershell.min.js' | relative_url }}"></script>
-  <script src="{{ '/js/highlightjs/languages/tsql.min.js' | relative_url }}"></script>
-  <script>hljs.highlightAll();</script>
-  <!-- end highlight.js support -->
+  <script defer src="{{ '/js/highlightjs/highlight.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/js/highlightjs/languages/plaintext.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/js/highlightjs/languages/powershell.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/js/highlightjs/languages/tsql.min.js' | relative_url }}"></script>
+  <script defer>document.addEventListener('DOMContentLoaded', function() { hljs.highlightAll(); });</script>
+  {% endif %}
 </head>
