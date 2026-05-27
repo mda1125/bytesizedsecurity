@@ -18,7 +18,7 @@ On March 3, 2026, LexisNexis Legal and Professional confirmed to BleepingCompute
 
 This is the same company holding consumer data on nearly every adult in the United States.
 
-What Was Stolen
+## What Was Stolen
 
 According to both LexisNexis and the threat actor's public disclosure, the breach exposed:
 
@@ -35,29 +35,29 @@ LexisNexis says the data was "mostly legacy, deprecated data from prior to 2020"
 
 But legacy data is still your data. Old addresses, old business contacts, old account identifiers. Identity thieves piece together profiles from exactly this kind of information.
 
-How the Breach Happened
+## How the Breach Happened
 
 For the technically minded, this breach is a case study in what goes wrong when basic cloud security practices are skipped.
 
-Step 1: The Initial Entry Point
+## Step 1: The Initial Entry Point
 
 FulcrumSec exploited a vulnerability known as React2Shell in an unpatched React frontend application. This gave them code execution inside an AWS container (ECS task).
 
 The lesson: Public-facing applications are your perimeter. If you're running unpatched containers with known vulnerabilities, you're leaving the front door open. Patch management for containerized apps is not optional.
 
-Step 2: Lateral Movement via Overly Permissive IAM
+## Step 2: Lateral Movement via Overly Permissive IAM
 
 Once inside the container, the attacker found the ECS task role had read access to every secret in the AWS Secrets Manager account. This included the production Redshift master credential.
 
 This is a textbook violation of the principle of least privilege. A single container, running a frontend web application, should never have permissions to read every secret in production. IAM roles should be scoped to the absolute minimum required for the workload.
 
-Step 3: Data Exfiltration
+## Step 3: Data Exfiltration
 
 With the Redshift master credential in hand, the attacker accessed 536 Redshift tables and 430+ VPC database tables. They exfiltrated 2GB of structured data.
 
 No alerts. No containment. The attacker had time to map the entire VPC infrastructure, enumerate secrets, query databases, and exfiltrate everything.
 
-Lessons for Security Teams
+## Lessons for Security Teams
 
 1. Patch your public-facing applications. A known vulnerability in a React frontend gave the attacker their foothold. Container images need regular scanning and patching cycles.
 
@@ -69,7 +69,7 @@ Lessons for Security Teams
 
 5. Segment your VPC. If a frontend container has network access to your production databases, your network architecture is too flat. Use security groups and network ACLs to isolate workloads.
 
-What You Should Do Right Now
+## What You Should Do Right Now
 
 Whether you're a security professional reading this for the technical breakdown or someone wanting to protect their personal data, the action steps are the same as last week but more urgent:
 

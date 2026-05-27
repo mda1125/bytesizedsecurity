@@ -18,7 +18,7 @@ LexisNexis, one of the largest data analytics companies in the world, maintains 
 
 Insurance companies, employers, landlords, and financial institutions use LexisNexis data to make decisions about you. If the information in your file is inaccurate, or if someone has been using your identity, you face consequences without ever understanding the reason.
 
-How to Request Your Free Report
+## How to Request Your Free Report
 
 Under the Fair Credit Reporting Act (FCRA), you have the right to request a copy of your Consumer Disclosure Report from LexisNexis at no cost. You have three options:
 
@@ -31,7 +31,7 @@ Atlanta, GA 30348-5108
 
 3. By Phone: Call 1-866-897-8126 to request your report.
 
-What to Look For
+## What to Look For
 
 When you receive your report, review it carefully for:
 
@@ -45,7 +45,7 @@ If you find errors, dispute them directly with LexisNexis. Inaccurate informatio
 
 If you see information clearly belonging to someone else using your personal details, your identity has been compromised.
 
-Freeze Your Credit at All Three Bureaus
+## Freeze Your Credit at All Three Bureaus
 
 After reviewing your LexisNexis report, the next step is freezing your credit at all three major credit bureaus:
 
@@ -66,7 +66,7 @@ Key facts about credit freezes:
 - It does not affect your credit score
 - It does not prevent you from using your existing credit cards or accounts
 
-Don't Forget Your Children
+## Don't Forget Your Children
 
 If you have children, freeze their credit too. This is one of the most overlooked steps in personal security.
 
@@ -74,7 +74,7 @@ Children are attractive targets for identity thieves because they have clean Soc
 
 Each credit bureau has a process for freezing a minor's credit. You'll need to provide documentation proving you're the parent or guardian, but the process is straightforward and free.
 
-The Bottom Line
+## The Bottom Line
 
 Requesting your LexisNexis Consumer Disclosure Report and freezing your credit at all three bureaus takes about 15 to 20 minutes total. This small investment of time gives you visibility into what data companies have on you and a strong layer of protection against identity theft.
 

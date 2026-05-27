@@ -12,7 +12,7 @@ AI Can Now Simulate Entire Populations. Security Teams Should Pay Attention.
 
 TL;DR: Multi-agent AI simulation technology creates thousands of virtual personas to predict public opinion and consumer behavior in minutes. The same capability is a roadmap for adversarial social engineering, disinformation modeling, and influence operations at scale. Here's what security professionals need to understand.
 
-The Technology
+## The Technology
 
 In early March 2026, a service called MiroFish went viral on GitHub. Built by a 20-year-old Chinese college student, it takes a data input (a news article, a policy draft, a financial report) and automatically generates thousands of AI personas, each with unique personalities and biases. These personas are placed in a simulated social media environment, and the system watches how they react, debate, and shift positions over time.
 
@@ -28,7 +28,7 @@ Stanford researchers were early pioneers here. Dr. Park Junseong's 2023 study pl
 
 Even the research giants are moving in. Nielsen launched BASES AI Screener, combining real purchase data with generative AI. Ipsos commercialized Personabot for real-time virtual consumer conversations.
 
-Why Security Professionals Should Care
+## Why Security Professionals Should Care
 
 The legitimate use cases are clear: faster market research, cheaper polling, better product testing. But every capability described above has a direct adversarial application.
 
@@ -52,13 +52,13 @@ If AI personas accurately replicate human opinion formation, they are also deplo
 
 The ability to specify a demographic profile ("50-year-old male, two children, conservative") and predict behavior creates a precision-targeting capability. In marketing, it's personalization. In the hands of a threat actor, it's profiling for spear-phishing, influence operations, or social manipulation.
 
-What the Researchers Say
+## What the Researchers Say
 
 The experts are measured. They describe these systems as "tools for exploring possibilities, not absolute predictors." They note that AI struggles to simulate physical experiences or truly unpredictable behavior. Fair points.
 
 But security has always been about preparing for the adversary who uses a tool differently than its creators intended. The gap between "exploring possibilities" and "planning attacks" comes down to intent, not capability.
 
-What To Watch
+## What To Watch
 
 A few things to track as this space matures:
 
@@ -70,7 +70,7 @@ Commercial validation. When Nielsen, Ipsos, and billion-dollar startups are all 
 
 Regulatory vacuum. There's no framework governing the use of simulated populations for influence testing. Election integrity, consumer protection, and information security regulations haven't caught up.
 
-The Bottom Line
+## The Bottom Line
 
 Multi-agent AI simulation is a legitimate and valuable technology for market research and social science. It's also a dual-use capability that gives adversaries a way to rehearse influence operations, optimize social engineering, and manufacture consensus at scale.
 

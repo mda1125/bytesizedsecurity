@@ -8,7 +8,7 @@ excerpt: "Think your Chrome extensions are safe? A new campaign used fake produc
 image: "/assets/img/posts/fake-chrome-extensions-hijack-hr-platforms-is-your-org-at-risk.webp"
 ---
 
-Think your Chrome extensions are safe?
+## Think your Chrome extensions are safe?
 
 One fake “productivity tool” might hijack your HR platform in seconds:
 

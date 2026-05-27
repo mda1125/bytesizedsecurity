@@ -20,7 +20,7 @@ But in cybersecurity, the opposite is happening.
 
 On 5/24/2026, the New York Times published "One Job Is Growing in the A.I. Era? Cybersecurity Experts." The article lays out what many of us in the field already feel: demand for security talent is outpacing supply, and AI is the primary driver.
 
-The Numbers
+## The Numbers
 
 According to the article:
 
@@ -32,7 +32,7 @@ According to the article:
 
 Austin Cowan, a headhunter at Heidrick & Struggles, summarized it: "Roles typically come along every 12 months. We're seeing those roles come along every week."
 
-Why AI Is Fueling Security Demand
+## Why AI Is Fueling Security Demand
 
 Three forces are converging:
 
@@ -48,7 +48,7 @@ Anthropic's Mythos model, announced last month, is exceptional at discovering an
 
 AI is being integrated into systems faster than security teams assess the risk. This creates gaps. And gaps create demand for people who identify and close them.
 
-What This Means for Different Career Stages
+## What This Means for Different Career Stages
 
 If you're trying to break into cybersecurity:
 
@@ -68,7 +68,7 @@ The pressure is real. Companies want executives with breach response experience,
 
 The article suggests companies are paying $7-8M packages to attract top security leaders. This signals how seriously boards are taking this risk.
 
-The Bigger Picture
+## The Bigger Picture
 
 Meta cut 8,000 people. Amazon cut 16,000. Snap, Stripe, and Block shed thousands. These layoffs are real, and they're affecting real people.
 
@@ -78,7 +78,7 @@ More AI-generated code means more bugs. More advanced AI models mean more sophis
 
 This isn't a bubble. It's structural demand.
 
-What to Do Right Now
+## What to Do Right Now
 
 1. Build with AI. Use AI tools in your work. Document what you learn. Add it to your portfolio.
 2. Understand the threat. Read about Mythos, GPT-5.4-Cyber, and how these models change the threat picture. You'll be asked about them in interviews.
@@ -86,7 +86,7 @@ What to Do Right Now
 4. Show your work publicly. Write about what you're learning. Post case studies. Share your lab projects. The article shows demonstrating adaptability is what separates candidates who land roles from those who don't.
 5. Don't wait for the perfect role. The market is moving fast. If you see an opportunity stretching you, take it.
 
-Final Thought
+## Final Thought
 
 The cybersecurity profession isn't being replaced by AI. It's being reshaped by it. The people who adapt will have more opportunities, better compensation, and more interesting work than ever before.
 

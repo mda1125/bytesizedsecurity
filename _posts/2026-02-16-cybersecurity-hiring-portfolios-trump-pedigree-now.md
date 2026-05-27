@@ -7,13 +7,13 @@ author: Marc
 excerpt: "New data reveals side projects, GitHub, and internships are key for cybersecurity jobs. Stop stacking credentials, start building proof."
 ---
 
-Portfolios Over Pedigree: What Actually Gets You Hired in Cybersecurity Now
+## Portfolios Over Pedigree: What Actually Gets You Hired in Cybersecurity Now
 
 TL;DR: A new survey of 200+ engineering leaders found that side projects, GitHub portfolios, and internships are the top hiring signals... while school prestige and credentialing programs barely register. If you're trying to break into cybersecurity, stop stacking credentials and start building proof. The market is tighter, but the opportunities have shifted to people who show up with evidence.
 
 ---
 
-The Data Is In: Degrees Don't Get You Hired Anymore
+## The Data Is In: Degrees Don't Get You Hired Anymore
 
 For years, the pitch was simple. Get a computer science degree. Maybe add a cybersecurity certification. Apply to jobs. Get hired.
 
@@ -25,7 +25,7 @@ The headline numbers: 38% of respondents said their company reduced entry-level 
 
 But the more revealing data is about what signals matter when companies do hire.
 
-What Engineering Leaders Actually Look For
+## What Engineering Leaders Actually Look For
 
 When asked what matters most outside the interview process, engineering leaders overwhelmingly pointed to proof of real-world skills over formal credentials:
 
@@ -40,7 +40,7 @@ Read that last number again. Four percent of engineering leaders said credential
 
 This doesn't mean certifications are worthless. They're not. But it does mean that if your entire job search strategy is "get certs, apply, repeat," you're optimizing for the wrong signal.
 
-What This Means for Cybersecurity
+## What This Means for Cybersecurity
 
 This data comes from engineering leaders broadly, but the pattern maps directly onto what I've seen in cybersecurity hiring for years.
 
@@ -63,7 +63,7 @@ Find a security project on GitHub and contribute. Even small contributions like 
 5. Post your work publicly.
 The survey found that 34% of leaders value public code portfolios. In cybersecurity, this means making your work visible. Write-ups on LinkedIn. Projects on GitHub. Blog posts explaining what you've learned. If hiring managers can't find evidence of your skills online, you're invisible to them.
 
-The AI Factor
+## The AI Factor
 
 The CodePath survey also highlighted a shift in what skills employers expect from early-career hires. Greater fluency with AI tools and frameworks was the most common expectation, followed by faster time to writing production-ready code and the ability to learn new tools quickly.
 
@@ -81,7 +81,7 @@ The market is genuinely tighter. That's not fearmongering... it's reality. But t
 
 Stop optimizing for credentials that carry less weight than they used to. Start building tangible proof that you can do the work. And make sure hiring managers can actually find that proof when they look for you.
 
-The Bottom Line
+## The Bottom Line
 
 The hiring market has shifted. Degrees and certifications still have value, but they're no longer the primary signal employers use to evaluate candidates. What matters now is evidence: projects, portfolios, internships, and public proof that you can actually do the job.
 

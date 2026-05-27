@@ -30,7 +30,7 @@ CHIME, representing over 100 healthcare organizations, pushed back—hard.
 
 Why?
 
-Because HHS says MFA takes 1.5 hours to deploy.
+## Because HHS says MFA takes 1.5 hours to deploy.
 
 A hospital CISO says it takes months.
 
@@ -42,7 +42,7 @@ And while these updates are critical—especially after Change Healthcare's rans
 
 Secure networks don't protect patients if clinical care grinds to a halt.
 
-So what's the fix?
+## So what's the fix?
 
 - Stronger financial support (like the Cybersecurity & Resilience Act proposes)
 - Clear, prioritized rollouts based on actual risk
@@ -53,6 +53,6 @@ You don’t protect patient data by forcing hospitals into chaos.
 
 You do it by understanding how hospitals operate—and building security around that.
 
-Want progress?
+## Want progress?
 
 Start with workable standards, not wishful timelines.

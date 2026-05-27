@@ -14,7 +14,7 @@ TL;DR: Amazon's Ring doorbell division scrapped a planned integration with polic
 
 ---
 
-A Super Bowl Ad That Spooked America
+## A Super Bowl Ad That Spooked America
 
 Super Bowl ads are supposed to sell you on a product. Amazon Ring's 30-second spot tried to do exactly that ... showing a lost dog found through a neighborhood network of cameras using artificial intelligence. Heartwarming on the surface, right?
 
@@ -24,7 +24,7 @@ Viewers took to social media almost immediately, calling the ad "sinister" and "
 
 And honestly? That concern isn't unfounded.
 
-What Was the Ring-Flock Safety Partnership?
+## What Was the Ring-Flock Safety Partnership?
 
 To understand the backlash, you need to know what was happening behind the scenes.
 
@@ -36,7 +36,7 @@ Following the Super Bowl backlash, Ring announced the partnership was being term
 
 But let's be clear: the timing of this announcement, coming right after a wave of public outrage, speaks volumes.
 
-Why This Matters Beyond the Ad
+## Why This Matters Beyond the Ad
 
 This story isn't just about one commercial or one partnership. It sits at the intersection of several major privacy concerns that affect all of us:
 
@@ -48,7 +48,7 @@ This story isn't just about one commercial or one partnership. It sits at the in
 
 ... Immigration enforcement concerns: Flock Safety has also faced scrutiny amid the current immigration enforcement climate. While Flock maintains it doesn't partner directly with ICE, they've acknowledged that police departments using their cameras can choose to share data with federal agencies ... and Flock "has no ability to override that decision."
 
-What Can You Actually Do?
+## What Can You Actually Do?
 
 If you own a Ring doorbell (or any smart home camera), here are some practical steps:
 
@@ -60,7 +60,7 @@ If you own a Ring doorbell (or any smart home camera), here are some practical s
 
 ... Vote with your wallet ... and your voice. This story proves that consumer backlash works. Amazon scrapped a major surveillance partnership because people spoke up. Democratic Senator Edward Markey has already urged Amazon to discontinue its "Familiar Faces" technology based on this public opposition.
 
-The Bigger Picture
+## The Bigger Picture
 
 Here's what this moment really shows us: the line between "smart home convenience" and "mass surveillance infrastructure" is thinner than most people realize.
 

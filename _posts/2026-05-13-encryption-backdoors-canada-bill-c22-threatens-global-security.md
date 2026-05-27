@@ -8,13 +8,13 @@ excerpt: "Canada's Bill C-22 mandates encryption backdoors, user data retention,
 image: "/assets/img/posts/encryption-backdoors-canada-bill-c22-threatens-global-security.webp"
 ---
 
-Canada's Bill C-22: Why Encryption Backdoors Are a Threat to Everyone
+## Canada's Bill C-22: Why Encryption Backdoors Are a Threat to Everyone
 
 TL;DR: Canada's Bill C-22, the Lawful Access Act, would force tech companies to retain user metadata for a year, share it with foreign governments, and build backdoors into encrypted services on demand. The government claims this won't create systemic vulnerabilities. History proves otherwise. The 2024 Salt Typhoon hack exploited exactly this kind of lawful access infrastructure, and when the UK tried a similar mandate, Apple pulled its encryption feature from the country entirely.
 
 ---
 
-What is Bill C-22?
+## What is Bill C-22?
 
 Canada's government introduced Bill C-22, officially called the Lawful Access Act, in the spring of 2026. It's a sequel to last year's Bill C-2, which attracted so much backlash from the privacy community that it never even reached committee. Bill C-22 makes minor tweaks but keeps the same core problems.
 
@@ -43,7 +43,7 @@ The bill also leaves the definitions of "systemic vulnerability" and "encryption
 
 ---
 
-We Already Have Proof: Salt Typhoon
+## We Already Have Proof: Salt Typhoon
 
 This isn't a theoretical debate. We have a case study.
 
@@ -57,7 +57,7 @@ Salt Typhoon wasn't a failure of implementation. It was a failure of the concept
 
 ---
 
-The UK Precedent: What Happened When Apple Was Asked
+## The UK Precedent: What Happened When Apple Was Asked
 
 The United Kingdom tried a similar approach in 2025. Under the Investigatory Powers Act, the UK government demanded that Apple build a backdoor into its Advanced Data Protection (ADP) feature, which provides end-to-end encryption for data stored in iCloud.
 
@@ -71,7 +71,7 @@ Bill C-22 would give Canada similar authority. If history repeats, Canadians cou
 
 ---
 
-Who's Pushing Back and Why
+## Who's Pushing Back and Why
 
 Opposition to Bill C-22 is broad and growing.
 
@@ -87,7 +87,7 @@ The privacy and security community is aligned: this bill would make Canadians le
 
 ---
 
-Why This Matters Beyond Canada
+## Why This Matters Beyond Canada
 
 Bill C-22 isn't an isolated proposal. It's part of a global pattern.
 
@@ -101,7 +101,7 @@ Neither outcome is good for security.
 
 ---
 
-What You Can Do
+## What You Can Do
 
 If you're in Canada:
 - Follow Bill C-22's progress through Parliament

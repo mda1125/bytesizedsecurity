@@ -18,7 +18,7 @@ The blue checkmark on LinkedIn seems harmless. In a platform full of fake recrui
 
 When you tap "verify," LinkedIn redirects you to Persona Identities, Inc., a San Francisco-based company. You might never hear their name during the process. By design.
 
-What Persona Collects
+## What Persona Collects
 
 For a three-minute identity check, here's what gets collected:
 
@@ -35,7 +35,7 @@ For a three-minute identity check, here's what gets collected:
 
 And behavioral data too. Persona tracks whether you hesitated during the process and whether you copy-pasted information instead of typing it. Behavioral biometrics on top of physical biometrics. For a LinkedIn badge.
 
-They Also Ran a Background Check
+## They Also Ran a Background Check
 
 Persona didn't stop at what you provided. They cross-referenced you against their "global network of trusted third-party data sources," including:
 
@@ -48,7 +48,7 @@ Persona didn't stop at what you provided. They cross-referenced you against thei
 
 You scanned your passport for a checkmark. They ran a full background check.
 
-17 Companies, Zero in the EU
+## 17 Companies, Zero in the EU
 
 Persona maintains a public list of subprocessors. There are 17 of them. 16 in the United States. 1 in Canada. Zero in the EU.
 
@@ -62,13 +62,13 @@ AWS handles "Image Processing" (your face going through Amazon's infrastructure)
 
 If you scanned a European passport for a European professional network, your data went exclusively to North American companies.
 
-Your Face Is Training Data
+## Your Face Is Training Data
 
 Buried in Persona's privacy policy: they use uploaded images of identity documents to train their AI. They're teaching their system to recognize passports from different countries. They also use your selfie to "identify improvements in the Service."
 
 The legal basis isn't consent. It's "legitimate interest," meaning they decided on their own it was fine. Under GDPR, they're supposed to balance their interest against your fundamental rights. Whether feeding European passports into machine learning models passes this test is a question worth asking.
 
-The CLOUD Act Problem
+## The CLOUD Act Problem
 
 Persona has data centers in the United States and Germany. If you're in Europe, you might assume your data sits in Germany, protected by GDPR.
 
@@ -80,7 +80,7 @@ Persona's privacy policy confirms this. They state they will "access, disclose, 
 
 National security requests under US law come with gag orders. Persona couldn't tell you they handed over your data even if they wanted to.
 
-The EU-US Data Privacy Framework Won't Save You
+## The EU-US Data Privacy Framework Won't Save You
 
 Persona says they comply with the EU-US Data Privacy Framework (DPF), the replacement for Privacy Shield, which the European Court of Justice struck down in 2020 because US surveillance laws made it impossible to guarantee European data was safe.
 
@@ -88,7 +88,7 @@ The DPF exists because of a US Executive Order (14086) promising better behavior
 
 Privacy activists have already challenged the DPF. The legal foundation your data is "protected" by is, at best, temporary.
 
-The $50 Safety Net
+## The $50 Safety Net
 
 If there's a breach and your passport scan, facial geometry, and national ID number end up in the wrong hands, Persona's Terms of Service cap their liability at $50.
 
@@ -96,7 +96,7 @@ They also require mandatory binding arbitration. No court, no jury, no class act
 
 For EU/EEA residents, Irish law governs the contract. But US law governs the company. The CLOUD Act doesn't care what your contract says.
 
-What You Should Do
+## What You Should Do
 
 If you've already verified, here's what the author of the original investigation recommends:
 
@@ -105,7 +105,7 @@ If you've already verified, here's what the author of the original investigation
 3. Contact their DPO. Email dpo@withpersona.com to object to them using your documents as AI training data under "legitimate interests."
 4. Think twice before verifying. A blue checkmark is cosmetic. Biometric data is permanent. You won't change your face like you change a password.
 
-The Bottom Line
+## The Bottom Line
 
 The whole verification process takes three minutes. Understanding what you agreed to took the original author an entire weekend reading 34 pages of legal documents.
 

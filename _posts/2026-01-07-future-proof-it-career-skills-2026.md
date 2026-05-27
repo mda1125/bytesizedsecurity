@@ -12,7 +12,7 @@ image: "/assets/img/posts/future-proof-it-career-skills-2026.webp"
 
 Companies don’t just want resumes. They want people who are *ready to work* — from day one. That means real skills > generic experience.
 
-🔥 Want to stand out?
+## 🔥 Want to stand out?
 
 1. Pick your niche — cloud, cybersecurity, GRC... whatever sparks your interest.
 2. Learn the skills companies need today (and tomorrow).

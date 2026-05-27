@@ -8,13 +8,13 @@ excerpt: "CISA's acting director uploaded sensitive documents to ChatGPT, exposi
 image: "/assets/img/posts/cisa-chatgpt-incident-shadow-ai-problem.webp"
 ---
 
-The CISA ChatGPT Incident: What Shadow AI Means for Every Organization
+## The CISA ChatGPT Incident: What Shadow AI Means for Every Organization
 
 TL;DR: CISA's acting director uploaded sensitive government documents to a public ChatGPT instance, triggering internal security alerts. While the agency calls it "authorized," the incident exposes a much bigger problem: shadow AI is happening at every organization, and most have zero visibility into it. The fix isn't banning AI... it's building safe environments and clear policies.
 
 ---
 
-When the Nation's Top Cybersecurity Agency Makes a Basic Data Handling Mistake
+## When the Nation's Top Cybersecurity Agency Makes a Basic Data Handling Mistake
 
 In January 2026, Politico reported that Madhu Gottumukkala, the acting director of the Cybersecurity and Infrastructure Security Agency (CISA), uploaded sensitive government documents to a public instance of ChatGPT.
 
@@ -24,7 +24,7 @@ Let that sink in for a second.
 
 CISA is the agency that advises every other federal agency... and the private sector... on cybersecurity best practices. Their acting director triggered their own internal security monitoring by doing something most cybersecurity professionals would immediately flag as a risk.
 
-CISA's Response
+## CISA's Response
 
 CISA confirmed that Gottumukkala was granted permission to use ChatGPT under a temporary, short-term exception with DHS controls in place. According to CISA's Director of Public Affairs, the use was "short-term and limited."
 
@@ -32,7 +32,7 @@ Officials said Gottumukkala last used ChatGPT in mid-July 2025 under that tempor
 
 However, Politico's reporting indicated that security alerts continued into early August, which doesn't quite align with CISA's timeline.
 
-The Expert Reaction
+## The Expert Reaction
 
 The response from the cybersecurity community was swift and pointed.
 
@@ -42,7 +42,7 @@ AJ Grotto, a former senior White House director for cyber policy during both the
 
 House Homeland Security Ranking Member Bennie Thompson went further, questioning Gottumukkala's fitness to lead the agency entirely: "At best, he's in over his head, if not unfit to lead."
 
-The Real Story: Shadow AI Is Everywhere
+## The Real Story: Shadow AI Is Everywhere
 
 Here's what I think most people are missing in this story.
 
@@ -63,7 +63,7 @@ Interestingly, one AI governance expert actually praised CISA for catching the a
 
 That's the uncomfortable reality. If CISA, with its dedicated cybersecurity monitoring infrastructure, barely caught this, what's happening at organizations without those controls?
 
-Why Blanket Bans Don't Work
+## Why Blanket Bans Don't Work
 
 The instinct for many organizations is to ban public AI tools outright. Block ChatGPT. Block Claude. Block everything.
 
@@ -75,7 +75,7 @@ Former CISA staffers confirmed this dynamic exists even within the agency. There
 
 But that hesitation doesn't eliminate the need. It just pushes it into the shadows where there's no monitoring, no guardrails, and no accountability.
 
-What Organizations Should Actually Do
+## What Organizations Should Actually Do
 
 Instead of banning AI, organizations need to manage it. Here's what a practical AI governance approach looks like:
 
@@ -94,7 +94,7 @@ Create controlled environments where teams can experiment with AI using syntheti
 5. Educate, don't just enforce.
 Most shadow AI isn't malicious. People are trying to do their jobs more efficiently. Meet them where they are with training that explains why the guardrails exist, not just that they do.
 
-The Bigger Picture
+## The Bigger Picture
 
 This incident comes at a rough time for CISA. The agency has been without a Senate-confirmed director for nearly a year. Multiple senior executives have departed. Budget pressure, reorganization, and workforce reductions have all taken their toll.
 
@@ -102,7 +102,7 @@ Meanwhile, the administration's executive order is actively encouraging AI adopt
 
 AI is moving faster than policy. That gap between capability and governance is the real vulnerability here... not any one person's decision to upload a document.
 
-The Bottom Line
+## The Bottom Line
 
 The CISA ChatGPT incident is a wake-up call, but not for the reason most headlines suggest. The real lesson isn't that one official made a mistake. It's that shadow AI is the fastest-growing blind spot in organizational security, and most companies are flying completely blind.
 

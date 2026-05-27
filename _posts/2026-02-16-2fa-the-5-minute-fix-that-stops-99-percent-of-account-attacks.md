@@ -8,13 +8,13 @@ excerpt: "Discover how two-factor authentication (2FA) can protect your accounts
 image: "/assets/img/posts/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks.webp"
 ---
 
-Why Two-Factor Authentication Is the Easiest Security Win You Are Not Using
+## Why Two-Factor Authentication Is the Easiest Security Win You Are Not Using
 
 TL;DR: Two-factor authentication (2FA) blocks over 99% of automated account attacks, takes minutes to set up, and costs nothing. If you only do one security thing this year, make it this. Start with your email -- it is the master key to everything else.
 
 ---
 
-The Five-Minute Fix That Stops 99% of Account Attacks
+## The Five-Minute Fix That Stops 99% of Account Attacks
 
 Last year I helped a friend recover an Instagram account that got hijacked. The attacker changed the email, changed the password, and started messaging their contacts -- all within minutes.
 
@@ -22,7 +22,7 @@ How did it happen? A reused password from a 2019 data breach. No two-factor auth
 
 "I didn't think it would happen to me." I hear that line constantly. And every time, the fix would have taken less than five minutes.
 
-What Is Two-Factor Authentication?
+## What Is Two-Factor Authentication?
 
 Two-factor authentication (2FA) adds a second verification step when you log in to an account. Instead of just a password (something you know), you also prove your identity with something you have -- like your phone.
 
@@ -33,13 +33,13 @@ Think of it this way:
 
 Even if an attacker gets your password through a phishing email, a data breach, or a brute-force attack, they still cannot get in without that second factor.
 
-The Numbers Don't Lie
+## The Numbers Don't Lie
 
 This isn't theoretical. Microsoft's research across millions of enterprise accounts found that 2FA blocks over 99.9% of automated account compromise attacks. Google's data tells a similar story -- accounts with 2FA are significantly less likely to be taken over.
 
 For something that costs nothing and takes minutes to set up, that's an extraordinary return on investment.
 
-2FA Methods Ranked: Best to Worst
+## 2FA Methods Ranked: Best to Worst
 
 Not all second factors are created equal. Here's how they stack up:
 
@@ -55,7 +55,7 @@ A code sent to your phone number via text message. Better than no 2FA, but vulne
 4. Email-Based Codes
 A code sent to your email. The weakest option because if your email is already compromised, this second factor is useless. Best for: avoid if possible.
 
-Which Accounts to Protect First
+## Which Accounts to Protect First
 
 If you're just getting started, prioritize in this order:
 
@@ -65,7 +65,7 @@ If you're just getting started, prioritize in this order:
 4. Cloud storage -- Google Drive, Dropbox, iCloud. These often contain sensitive documents, photos, and backups.
 5. Work accounts -- Especially if you access company systems, Slack, or internal tools.
 
-How to Set It Up
+## How to Set It Up
 
 The process is similar across most services:
 
@@ -78,7 +78,7 @@ The process is similar across most services:
 
 Most major platforms make this straightforward: Google, Microsoft, Apple, Facebook, Instagram, Twitter/X, LinkedIn, and most banks all support 2FA.
 
-Common Objections (And Why They Don't Hold Up)
+## Common Objections (And Why They Don't Hold Up)
 
 "It's too inconvenient."
 Most authenticator apps auto-fill or require a single tap. Many services only ask for the second factor on new devices or after a set period. The 10 seconds it adds to logging in is nothing compared to the hours or days spent recovering a compromised account.
@@ -89,7 +89,7 @@ Attackers don't just steal data -- they use compromised accounts to send phishin
 "My password is strong enough."
 Even the strongest password in the world is useless if it's been leaked in a data breach. Over 24 billion credentials have been exposed in known breaches. Chances are, at least one of your passwords is already out there. Check at haveibeenpwned.com.
 
-The Bottom Line
+## The Bottom Line
 
 Two-factor authentication is the closest thing to a free lunch in cybersecurity. It costs nothing, takes minutes to set up, and dramatically reduces your risk of account compromise.
 

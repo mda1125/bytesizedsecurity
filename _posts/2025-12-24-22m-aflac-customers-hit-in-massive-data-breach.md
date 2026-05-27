@@ -15,6 +15,6 @@ Hackers hit fast, and Aflac says they stopped it within hours, but the damage wa
 
 If you’re an Aflac customer, check your mail. They're offering free identity protection for two years. Don’t wait—enroll by April 2026.  
 
-Stay alert. This is part of a bigger wave of attacks hitting the insurance industry lately.  
+Stay alert. This is part of a bigger wave of attacks hitting the insurance industry lately.
 
 #CyberSecurity #DataBreach #Aflac #ProtectYourInfo

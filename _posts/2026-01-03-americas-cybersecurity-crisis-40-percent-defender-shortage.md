@@ -14,7 +14,7 @@ Here's why that number should scare you—and what’s at risk:
 
 Imagine your company had nearly half of its security team gone overnight.
 
-That’s the current state of the U.S. federal cybersecurity workforce at CISA.
+## That’s the current state of the U.S. federal cybersecurity workforce at CISA.
 
 I used to think government agencies were slow but stable. But right now, critical IT experts are furloughed or gone. Hiring is frozen. Contracts are expiring with no renewals in sight.
 

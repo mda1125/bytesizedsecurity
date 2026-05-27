@@ -22,4 +22,4 @@ Some ideas worth exploring: cross-subsidies like universal service funds, user-c
 
 The decisions made in the next few years will shape how billions of people interact with AI. Getting the incentives right matters more than getting to market first.
 
-What's your take? Are ads in AI inevitable, or can we build something better?
+## What's your take? Are ads in AI inevitable, or can we build something better?

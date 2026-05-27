@@ -8,7 +8,7 @@ excerpt: "Think your browser extensions are safe? Many secretly harvest your dat
 image: "/assets/img/posts/browser-extensions-are-they-spying-on-you.webp"
 ---
 
-Your browser extensions are watching you
+## Your browser extensions are watching you
 
 Sarah clicked "Add to Chrome" without reading the permissions.
 
@@ -42,6 +42,6 @@ Remove anything that requests access to:
 
 Your digital privacy depends on it.
 
-Have you checked your browser extensions lately? When did you last audit what you've installed?
+## Have you checked your browser extensions lately? When did you last audit what you've installed?
 
 The extensions are still active. The data collection continues. The choice is yours.
