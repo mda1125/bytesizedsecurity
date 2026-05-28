@@ -1,30 +1,67 @@
+---
+layout: null
+permalink: /llms.txt
+---
 # ByteSizedSecurity
 
 > Cybersecurity insights and analysis — investigating cybercrime, security trends, vulnerabilities, and defense strategies.
 
-## About This Site
+## Author
 
-ByteSizedSecurity is an independent cybersecurity blog by Marc David covering threat intelligence, privacy, career guidance, and technical deep-dives for security professionals and enthusiasts.
+Marc David — Senior Security Engineer, ISC2 CISSP
+Credentials: https://www.credly.com/users/marcdavid
+Site: https://blog.bytesizedsecurity.show
+LinkedIn: https://linkedin.com/in/marccdavid
+
+## About
+
+ByteSizedSecurity is an independent cybersecurity blog covering threat intelligence, privacy, career guidance, and technical deep-dives for security professionals and enthusiasts. Published since 2024 with 37+ articles across 8 topic areas.
+
+## Topic Taxonomy
+
+- Network Security — privacy legislation, encryption policy, credential theft, insider threats
+- Vulnerabilities — CVE analysis, data breaches, cloud misconfigurations
+- DevSecOps — AI in security, career guidance, automation, future skills
+- Web Security — browser extensions, malware delivery, Chrome zero-days
+- Blue Team — incident response, identity protection, credit freezes, HIPAA compliance
+- Pentesting — tools, ethical hacking, AI-assisted testing
+- Cryptography — encryption, secure communications
+- Reverse Engineering — malware analysis, binary internals
 
 ## Key Pages
 
-- [About](https://blog.bytesizedsecurity.show/about/): Who we are and our mission
+- [About](https://blog.bytesizedsecurity.show/about/): Author bio, credentials, and mission
 - [Archive](https://blog.bytesizedsecurity.show/archive/): All posts organized by category
 - [Podcast](https://bytesizedsecurity.show/): The ByteSizedSecurity podcast
 
-## Notable Posts
+## Recent Articles
 
-- [AI Fuels Cybersecurity Boom: Your Career Guide](https://blog.bytesizedsecurity.show/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/): How AI is reshaping cybersecurity careers and what skills to develop now
-- [The Ultimate Free Cybersecurity Career Roadmap](https://blog.bytesizedsecurity.show/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/): Comprehensive free resources and paths into cybersecurity
-- [Understanding Zero Trust Architecture: A Deep Dive](https://blog.bytesizedsecurity.show/2024/05/14/understanding-zero-trust-architecture/): Core principles and implementation of zero-trust security models
-- [Infostealers: From Passwords to Your Full Identity](https://blog.bytesizedsecurity.show/2026/02/21/infostealers-from-passwords-to-your-full-identity/): How modern infostealers escalate from credential theft to full identity compromise
-- [Credential Theft: The New Normal in Cyber Attacks](https://blog.bytesizedsecurity.show/2026/04/12/credential-theft-new-normal-cyber-attacks/): Why credential-based attacks dominate the threat landscape
-- [2FA: The 5-Minute Fix That Stops 99% of Account Attacks](https://blog.bytesizedsecurity.show/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/): Practical guide to enabling two-factor authentication everywhere
-- [Encryption Backdoors: Canada's Bill C-22 Threatens Global Security](https://blog.bytesizedsecurity.show/2026/05/13/encryption-backdoors-canada-bill-c22-threatens-global-security/): Analysis of legislative threats to end-to-end encryption
-- [LexisNexis Breach: Unpatched App, Leaky IAM, and Your Data](https://blog.bytesizedsecurity.show/2026/03/06/lexisnexis-breach-unpatched-app-leaky-iam-and-your-data/): Breakdown of a major data breach caused by IAM misconfigurations
-- [Boost Your Privacy: Small Steps, Big Impact](https://blog.bytesizedsecurity.show/2025/12/24/boost-your-privacy-small-steps-big-impact/): Actionable privacy improvements anyone can implement today
-- [Analyzing the Log4j Vulnerability](https://blog.bytesizedsecurity.show/2024/05/10/analyzing-log4j-vulnerability/): Technical analysis of CVE-2021-44228 (Log4Shell) and its impact
+- 2026-05-26: [AI Fuels Cybersecurity Boom: Your Career Guide](https://blog.bytesizedsecurity.show/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/)
+- 2026-05-17: [Cybersecurity Job Market Broken? Network, Don't Apply](https://blog.bytesizedsecurity.show/2026/05/17/cybersecurity-job-market-broken-network-dont-apply/)
+- 2026-05-13: [Encryption Backdoors: Canada's Bill C-22 Threatens Global Security](https://blog.bytesizedsecurity.show/2026/05/13/encryption-backdoors-canada-bill-c22-threatens-global-security/)
+- 2026-05-05: [Utah's VPN Law: A Threat to Internet Privacy](https://blog.bytesizedsecurity.show/2026/05/05/utahs-vpn-law-a-threat-to-internet-privacy/)
+- 2026-04-12: [Credential Theft: The New Normal in Cyber Attacks](https://blog.bytesizedsecurity.show/2026/04/12/credential-theft-new-normal-cyber-attacks/)
+- 2026-04-12: [AI Simulations: A New Frontier for Cyber Threats](https://blog.bytesizedsecurity.show/2026/04/12/ai-simulations-a-new-frontier-for-cyber-threats/)
+- 2026-03-18: [The Ultimate Free Cybersecurity Career Roadmap](https://blog.bytesizedsecurity.show/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/)
+- 2026-03-06: [LexisNexis Breach: Unpatched App, Leaky IAM, and Your Data](https://blog.bytesizedsecurity.show/2026/03/06/lexisnexis-breach-unpatched-app-leaky-iam-and-your-data/)
+- 2026-02-26: [LexisNexis & Credit Freezes: Your Guide to Identity Protection](https://blog.bytesizedsecurity.show/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/)
+- 2026-02-24: [LinkedIn Blue Check: What You Sacrifice for a Badge](https://blog.bytesizedsecurity.show/2026/02/24/linkedin-blue-check-what-you-sacrifice-for-a-badge/)
+- 2026-02-22: [IDMerit Data Leak: 1 Billion Records Exposed](https://blog.bytesizedsecurity.show/2026/02/22/idmerit-data-leak-1-billion-records-exposed/)
+- 2026-02-21: [Infostealers: From Passwords to Your Full Identity](https://blog.bytesizedsecurity.show/2026/02/21/infostealers-from-passwords-to-your-full-identity/)
+- 2026-02-18: [Navigating the Broken Cybersecurity Job Market](https://blog.bytesizedsecurity.show/2026/02/18/navigating-the-broken-cybersecurity-job-market/)
+- 2026-02-17: [Ring Backtracks: Super Bowl Ad Sparks Privacy Pushback](https://blog.bytesizedsecurity.show/2026/02/17/ring-backtracks-super-bowl-ad-sparks-privacy-pushback/)
+- 2026-02-17: [Chrome First 2026 Zero-Day: Update Now](https://blog.bytesizedsecurity.show/2026/02/17/chrome-first-2026-zero-day-update-now/)
+- 2026-02-17: [287 Chrome Extensions Caught Spying on 37M Users](https://blog.bytesizedsecurity.show/2026/02/17/287-chrome-extensions-caught-spying-37m-users-what-to-do/)
+- 2026-02-16: [2FA: The 5-Minute Fix That Stops 99% of Account Attacks](https://blog.bytesizedsecurity.show/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/)
+- 2026-02-16: [Cybersecurity Hiring: Portfolios Trump Pedigree Now](https://blog.bytesizedsecurity.show/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/)
+- 2026-02-16: [CISA ChatGPT Incident: The Shadow AI Problem](https://blog.bytesizedsecurity.show/2026/02/16/cisa-chatgpt-incident-shadow-ai-problem/)
+- 2026-02-15: [Browser Extensions: Are They Spying On You?](https://blog.bytesizedsecurity.show/2026/02/15/browser-extensions-are-they-spying-on-you/)
+
+## Full Article Index
+
+See [/llms-full.txt](https://blog.bytesizedsecurity.show/llms-full.txt) for the complete article index with descriptions.
 
 ## License
 
-Content: CC BY-NC 4.0. AI training: prohibited. AI search citation: permitted.
+Content is CC BY-NC 4.0. AI training on this content is prohibited.
+AI search engines may cite and quote passages with attribution to ByteSizedSecurity (blog.bytesizedsecurity.show) and author Marc David.
