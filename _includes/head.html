@@ -24,7 +24,7 @@
   <!-- SEO meta (replaces jekyll-seo-tag to avoid its duplicate JSON-LD) -->
   {% assign seo_description = page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description %}
   {% assign seo_title = page.title | default: site.title %}
-  {% assign seo_image = page.image | default: "/favicon-96x96.png" %}
+  {% assign seo_image = page.image | default: "/assets/img/default-og.png" %}
   {% if seo_image contains "://" %}{% assign seo_image_url = seo_image %}{% else %}{% assign seo_image_url = seo_image | prepend: site.url %}{% endif %}
 
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
@@ -57,23 +57,54 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "{{ site.url }}/#organization",
-    "name": "ByteSizedSecurity",
-    "url": "{{ site.url }}/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/img/bytesizedsecurity-logo-600x60.png",
-      "width": 600,
-      "height": 60
-    },
-    "description": "Independent cybersecurity blog by Marc David — threat intelligence, breaches, privacy, careers.",
-    "founder": { "@id": "{{ site.url }}/#person" },
-    "sameAs": [
-      "https://x.com/{{ site.twitter_username }}",
-      "https://github.com/{{ site.github_username }}",
-      "https://www.linkedin.com/in/{{ site.linkedin_username }}",
-      "https://www.youtube.com/{{ site.youtube_username }}"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "name": "ByteSizedSecurity",
+        "url": "{{ site.url }}/",
+        "publisher": { "@id": "{{ site.url }}/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ site.url }}/archive/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "{{ site.url }}/#organization",
+        "name": "ByteSizedSecurity",
+        "url": "{{ site.url }}/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/assets/img/bytesizedsecurity-logo-600x60.png",
+          "width": 600,
+          "height": 60
+        },
+        "description": "Independent cybersecurity blog by Marc David — threat intelligence, breaches, privacy, careers.",
+        "founder": { "@id": "{{ site.url }}/#person" },
+        "sameAs": [
+          "https://x.com/{{ site.twitter_username }}",
+          "https://github.com/{{ site.github_username }}",
+          "https://www.linkedin.com/in/{{ site.linkedin_username }}",
+          "https://www.youtube.com/{{ site.youtube_username }}"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ site.url }}/#person",
+        "name": "Marc David",
+        "url": "{{ site.url }}/about/",
+        "image": "{{ site.url }}/assets/img/marc-david-headshot.webp",
+        "jobTitle": "Senior Security Engineer",
+        "description": "CISSP-certified Senior Security Engineer with 8+ years of cybersecurity experience.",
+        "sameAs": [
+          "https://x.com/{{ site.twitter_username }}",
+          "https://github.com/{{ site.github_username }}",
+          "https://www.linkedin.com/in/{{ site.linkedin_username }}",
+          "https://www.credly.com/users/marcdavid"
+        ]
+      }
     ]
   }
   </script>

@@ -1,8 +1,12 @@
+{% assign bp_description = page.excerpt | strip_html | strip_newlines | strip | truncate: 300 %}
+{% assign bp_image = page.image | default: "/assets/img/default-og.png" %}
+{% if bp_image contains "://" %}{% assign bp_image_url = bp_image %}{% else %}{% assign bp_image_url = bp_image | prepend: site.url %}{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "{{ page.title | escape }}",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ bp_description | jsonify }},
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
   "author": {
@@ -27,7 +31,12 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ site.url }}{{ page.url }}"
-  }{% if page.image %},
-  "image": "{% if page.image contains '://' %}{{ page.image }}{% else %}{{ site.url }}{{ page.image }}{% endif %}"{% endif %}
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ bp_image_url }}",
+    "width": 1200,
+    "height": 630
+  }
 }
 </script>
