@@ -90,7 +90,7 @@ The professionals who figure out how to navigate around those broken systems ...
 
 The market is tough. But it's not impossible. It just requires a different playbook than the one most people are using.
 
-If you're building your roadmap, check out [Okurrrr — a free cybersecurity career resource](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) with 627 certifications and 759 free training resources organized by specialty and level.
+If you're building your roadmap, check out [Okurrrr — a free cybersecurity career resource](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) with 627 certifications and 759 free training resources organized by specialty and level. For the full strategy — from building proof to beating the ATS — read our [Cybersecurity Career Guide](/cybersecurity-career-guide/).
 
 ---
 

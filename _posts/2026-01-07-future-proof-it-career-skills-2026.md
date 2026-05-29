@@ -19,7 +19,7 @@ Companies don’t just want resumes. They want people who are *ready to work* �
 3. Embrace AI. Tools like ChatGPT aren’t threats — they’re allies. Learn how to work *with* them.
 4. Build a roadmap. Set clear goals. Level up with purpose.
 
-Need a structured path? [Okurrrr is a free cybersecurity career roadmap](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) with 627 certifications and 759 free resources. And new survey data shows [portfolios beat degrees](/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/) as the top hiring signal — so start building proof now.
+Need a structured path? [Okurrrr is a free cybersecurity career roadmap](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) with 627 certifications and 759 free resources. And for the full strategy on breaking into security, see our [Cybersecurity Career Guide](/cybersecurity-career-guide/).
 
 The future of tech belongs to the bold and prepared. Make sure that’s you.
 

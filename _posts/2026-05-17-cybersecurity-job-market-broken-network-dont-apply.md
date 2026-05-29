@@ -73,6 +73,6 @@ The people who found jobs in this market did not out-apply everyone else. They o
 
 If you know someone who's job hunting right now, send them this post. It might be the most useful thing you do for them today.
 
-**Related reading:** New data shows [AI is actually creating more cybersecurity jobs](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/), not fewer — but the roles are evolving. And if you're still early in your career, research confirms that [portfolios now trump pedigree](/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/) in hiring decisions.
+**Related reading:** New data shows [AI is actually creating more cybersecurity jobs](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/), not fewer — but the roles are evolving. And if you're still early in your career, research confirms that [portfolios now trump pedigree](/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/) in hiring decisions. For the full strategy, see our [Cybersecurity Career Guide](/cybersecurity-career-guide/).
 
 **Source:** [Reddit... r/cybersecurity: "Lost. Tempted to throw in the towel."](https://www.reddit.com/r/cybersecurity/comments/1te5dah/lost_tempted_to_throw_in_the_towel/)

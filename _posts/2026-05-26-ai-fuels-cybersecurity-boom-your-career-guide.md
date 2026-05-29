@@ -96,4 +96,4 @@ As Brian Gaudenti put it: "People who are not doing this and waiting for their o
 
 The demand is real. The question is whether you're building the skills to meet it.
 
-If you're mapping your path, [Okurrrr is a free career roadmap](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) with 627 certifications and 759 free resources. And for a brutally honest look at what the application pipeline looks like right now, see our breakdown of [why networking beats applying](/2026/05/17/cybersecurity-job-market-broken-network-dont-apply/).
+If you're mapping your path, [Okurrrr is a free career roadmap](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) with 627 certifications and 759 free resources. And for the complete playbook on breaking into the field — including a 90-day action plan — read our [Cybersecurity Career Guide](/cybersecurity-career-guide/).
