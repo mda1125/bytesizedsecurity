@@ -27,4 +27,6 @@ Installation is straightforward for any team familiar with Python 3. After insta
 
 With NeuroSploit v2, the future of offensive security testing has arrived. Combining the intelligence of cutting-edge LLMs with a mature, extensible architecture, the framework positions itself as a must-have in any modern cybersecurity arsenal.
 
+AI is reshaping both sides of security. For a look at how [AI-powered simulations are becoming a social engineering threat](/2026/04/12/ai-simulations-a-new-frontier-for-cyber-threats/), and how [AI is driving cybersecurity hiring](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/), see our recent coverage.
+
 Source: https://github.com/CyberSecurityUP/NeuroSploit

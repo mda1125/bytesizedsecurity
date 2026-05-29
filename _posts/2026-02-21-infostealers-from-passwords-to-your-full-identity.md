@@ -75,6 +75,7 @@ Whether you're protecting yourself or your organization, the approach is the sam
 For individuals:
 - Stop reusing passwords across services. Period.
 - Use a dedicated password manager instead of browser-based credential storage
+- Enable [two-factor authentication](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/) on every account that supports it
 - Treat personal device security with the same discipline as your work environment
 - Rotate passwords on critical accounts regularly, not when prompted
 
@@ -89,7 +90,7 @@ For organizations:
 
 Infostealers have evolved from simple credential theft tools into identity reconstruction engines. A single infection on a personal device provides enough data to identify a person, map their employer and role, access their active sessions, and correlate their activity across dozens of services.
 
-The boundary between personal and professional identity no longer exists once this data is in an attacker's hands. Reducing password reuse and monitoring for exposed credentials are the most direct ways to break this chain.
+The boundary between personal and professional identity no longer exists once this data is in an attacker's hands. Reducing password reuse and monitoring for exposed credentials are the most direct ways to break this chain. For a deeper look at how stolen credentials are weaponized in corporate environments, read our breakdown of [credential theft as the new normal in cyber attacks](/2026/04/12/credential-theft-new-normal-cyber-attacks/).
 
 Your corporate perimeter doesn't end at your office network. It extends to every personal device where an employee has ever logged into a work account.
 

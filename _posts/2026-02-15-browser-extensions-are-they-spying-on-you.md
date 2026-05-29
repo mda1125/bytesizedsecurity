@@ -45,3 +45,5 @@ Your digital privacy depends on it.
 ## Have you checked your browser extensions lately? When did you last audit what you've installed?
 
 The extensions are still active. The data collection continues. The choice is yours.
+
+For the full investigation, including which companies are receiving your data, read our detailed breakdown: [287 Chrome extensions caught spying on 37M users](/2026/02/17/287-chrome-extensions-caught-spying-37m-users-what-to-do/). And if your organization uses Chrome, be aware that [fake extensions are now targeting HR platforms](/2026/01/20/fake-chrome-extensions-hijack-hr-platforms-is-your-org-at-risk/) like Workday and SAP.

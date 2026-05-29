@@ -89,4 +89,6 @@ If you're trying to break into cybersecurity, the path forward isn't more studyi
 
 Stop waiting for permission. Start building proof.
 
+For a practical look at how broken the application pipeline has become and why networking now outperforms applying, read our deep dive on [navigating the broken cybersecurity job market](/2026/02/18/navigating-the-broken-cybersecurity-job-market/). And if you need free resources to start building skills, [Okurrrr offers 759 curated free training materials](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) organized by specialty.
+
 Source: Fortune / CodePath survey of 200+ engineering leaders (https://fortune.com/2025/12/18/tech-hiring-slow-but-not-fully-stalled-exclusive-codepath-data-new-secret-to-land-tech-role/)

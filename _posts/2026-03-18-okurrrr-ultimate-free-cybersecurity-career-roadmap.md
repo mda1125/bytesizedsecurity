@@ -50,4 +50,6 @@ Moe B. put real work into this. The least we can do is make sure it reaches the 
 
 **Check it out here:** [https://juliussmokes.github.io/Okurrrr/](https://juliussmokes.github.io/Okurrrr/)
 
+**More career resources:** For context on why building proof matters more than stacking credentials, read [why portfolios now trump pedigree in hiring](/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/). And for the latest on market demand, see how [AI is fueling a cybersecurity hiring boom](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/).
+
 If this helps you, share it with your network. Like it. Repost it. Send it to someone who’s been asking how to break into the field. Let’s make sure this gets the visibility it deserves.

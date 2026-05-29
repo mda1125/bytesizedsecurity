@@ -12,7 +12,7 @@ Title: LexisNexis Confirms Data Breach: What Happened, How It Happened, and What
 
 TL;DR: LexisNexis has confirmed hackers breached their AWS infrastructure and exfiltrated 2GB of data including 3.9M database records and 400K user profiles. The attacker exploited an unpatched React app and leveraged an overly permissive IAM role. If you haven't already, request your free LexisNexis Consumer Disclosure Report and freeze your credit at all three bureaus. This is the company's second breach in two years.
 
-Last week we published an article about why everyone should request their free LexisNexis Consumer Disclosure Report, review it for errors, and freeze their credit at all three major bureaus. The timing of what happened next is hard to ignore.
+Last week we published an article about why everyone should [request their free LexisNexis Consumer Disclosure Report and freeze their credit](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/) at all three major bureaus. The timing of what happened next is hard to ignore.
 
 On March 3, 2026, LexisNexis Legal and Professional confirmed to BleepingComputer hackers breached their servers and accessed customer and business information. A threat actor named FulcrumSec leaked 2GB of stolen files on underground forums.
 
@@ -33,7 +33,7 @@ According to both LexisNexis and the threat actor's public disclosure, the breac
 
 LexisNexis says the data was "mostly legacy, deprecated data from prior to 2020" and did not include Social Security numbers, financial information, or active passwords. They say products and services were not affected.
 
-But legacy data is still your data. Old addresses, old business contacts, old account identifiers. Identity thieves piece together profiles from exactly this kind of information.
+But legacy data is still your data. Old addresses, old business contacts, old account identifiers. Identity thieves piece together profiles from exactly this kind of information — as we explained in our piece on [how infostealers reconstruct full identities from fragmented data](/2026/02/21/infostealers-from-passwords-to-your-full-identity/).
 
 ## How the Breach Happened
 

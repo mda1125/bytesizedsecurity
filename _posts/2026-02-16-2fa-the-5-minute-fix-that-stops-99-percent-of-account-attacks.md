@@ -87,7 +87,7 @@ Most authenticator apps auto-fill or require a single tap. Many services only as
 Attackers don't just steal data -- they use compromised accounts to send phishing emails to your contacts, spread malware, or impersonate you. Your account has value even if you think it doesn't.
 
 "My password is strong enough."
-Even the strongest password in the world is useless if it's been leaked in a data breach. Over 24 billion credentials have been exposed in known breaches. Chances are, at least one of your passwords is already out there. Check at haveibeenpwned.com.
+Even the strongest password in the world is useless if it's been leaked in a data breach. Over 24 billion credentials have been exposed in known breaches. Chances are, at least one of your passwords is already out there. Check at haveibeenpwned.com. And modern [infostealers don't just grab passwords — they harvest your entire identity](/2026/02/21/infostealers-from-passwords-to-your-full-identity/) from a single infection.
 
 ## The Bottom Line
 
@@ -96,3 +96,5 @@ Two-factor authentication is the closest thing to a free lunch in cybersecurity.
 If you only make one security improvement this year, make it this one. Start with your email. Then work through the priority list. Five minutes per account.
 
 That's the best ROI in personal security -- and you don't need a cert or a security degree to do it.
+
+While you're hardening your accounts, consider [freezing your credit](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/) as well — it takes 15 minutes and stops most identity theft before it starts.

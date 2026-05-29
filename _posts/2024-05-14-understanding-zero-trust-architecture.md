@@ -62,6 +62,8 @@ Zero Trust is not just a trend—it's becoming the standard for enterprise secur
 
 *Stay tuned for our next article where we'll dive into practical implementation of Zero Trust using Azure AD and Conditional Access policies.*
 
+Zero Trust is especially critical now that [credential theft accounts for nearly one in three intrusions](/2026/04/12/credential-theft-new-normal-cyber-attacks/) — attackers log in with real credentials, making traditional perimeter defenses irrelevant. Start with the basics: enable [two-factor authentication](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/) on every account.
+
 
 
 

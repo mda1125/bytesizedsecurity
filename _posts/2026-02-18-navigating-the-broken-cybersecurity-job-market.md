@@ -66,7 +66,7 @@ Generalists are drowning in a sea of similar resumes. The roles that are still c
 
 ### 3. Build Proof of Work
 
-In a world where anyone can list certifications and buzzwords on a resume, tangible proof of your abilities stands out. Write blog posts breaking down vulnerabilities. Contribute to open-source security tools. Build a home lab and document what you learn. Speak at a local BSides conference. These artifacts are harder to fake and easier for hiring managers to evaluate.
+In a world where anyone can list certifications and buzzwords on a resume, tangible proof of your abilities stands out. Write blog posts breaking down vulnerabilities. Contribute to open-source security tools. Build a home lab and document what you learn. Speak at a local BSides conference. These artifacts are harder to fake and easier for hiring managers to evaluate. Survey data backs this up — [portfolios now outrank degrees and certifications](/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/) as the top hiring signal among engineering leaders.
 
 ### 4. Be Strategic About Certifications
 
@@ -89,6 +89,8 @@ But cybersecurity has a unique wrinkle: the threat landscape isn't slowing down.
 The professionals who figure out how to navigate around those broken systems ... through networking, specialization, and proof of work ... will be the ones who come out ahead.
 
 The market is tough. But it's not impossible. It just requires a different playbook than the one most people are using.
+
+If you're building your roadmap, check out [Okurrrr — a free cybersecurity career resource](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) with 627 certifications and 759 free training resources organized by specialty and level.
 
 ---
 

@@ -138,6 +138,8 @@ Use isolated environments:
 
 *Reverse engineering is a skill that takes time to develop. Start with simple programs and gradually work up to more complex binaries. Happy hunting!*
 
+Building reverse engineering skills? Check out [our pentesting tools roundup](/2024/05/12/top-5-pentesting-tools-2024/) for the tools that complement RE work. And if you're building a career in security, see the [free cybersecurity career roadmap](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) with curated paths for every specialty.
+
 
 
 

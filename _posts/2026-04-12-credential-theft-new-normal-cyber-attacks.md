@@ -30,7 +30,7 @@ The supply chain makes this worse. A single set of credentials in an interconnec
 
 ## AI Changed the Math
 
-Information-stealing malware (the primary way credentials get stolen) has surged 84% over the last year. On the supply side, the pipeline is flooding.
+Information-stealing malware (the primary way credentials get stolen) has surged 84% over the last year. We covered how [infostealers now reconstruct entire identities from a single infection](/2026/02/21/infostealers-from-passwords-to-your-full-identity/) — the problem is no longer just stolen passwords. On the supply side, the pipeline is flooding.
 
 On the deployment side, AI has removed the technical skill requirement entirely. In the past, launching a credential-based attack at scale required custom scripts, the ability to move through a network undetected, and the tradecraft to blend into normal traffic patterns.
 
@@ -46,7 +46,7 @@ Dark Web and underground forum monitoring needs to feed directly into active res
 
 2. Deploy phish-resistant MFA
 
-Traditional SMS or push-based MFA no longer stops modern adversary-in-the-middle attacks. Move toward FIDO2-compliant hardware keys or certificate-based authentication. If the "something you have" gets intercepted by a proxy, it's no longer a secure second factor.
+Traditional SMS or push-based MFA no longer stops modern adversary-in-the-middle attacks. Move toward FIDO2-compliant hardware keys or certificate-based authentication. If the "something you have" gets intercepted by a proxy, it's no longer a secure second factor. If your organization hasn't deployed MFA yet, start with our [2FA implementation guide](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/) — it blocks over 99% of automated attacks.
 
 3. Treat authentication as continuous
 

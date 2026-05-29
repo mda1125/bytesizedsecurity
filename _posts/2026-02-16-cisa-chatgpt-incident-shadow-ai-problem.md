@@ -109,3 +109,5 @@ The CISA ChatGPT incident is a wake-up call, but not for the reason most headlin
 If the nation's top cybersecurity agency got caught, you can be certain it's happening in your organization too. The question isn't whether your employees are using public AI tools with sensitive data. They are.
 
 The question is whether you know about it.
+
+For more on how AI is reshaping cybersecurity from both sides, read our analysis of [AI-powered population simulations as a social engineering threat](/2026/04/12/ai-simulations-a-new-frontier-for-cyber-threats/). And if you're navigating the career implications of AI in security, see how [AI is actually fueling cybersecurity hiring](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/).

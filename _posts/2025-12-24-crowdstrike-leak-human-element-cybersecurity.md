@@ -22,4 +22,6 @@ If your security plan is all tools and no trust, you’re already vulnerable.
 
 Security isn’t just tech. It’s humans too.
 
+For a deeper look at how authentication and identity are being weaponized, read about [credential theft becoming the new normal](/2026/04/12/credential-theft-new-normal-cyber-attacks/) in cyber attacks. And learn why [Zero Trust architecture](/2024/05/14/understanding-zero-trust-architecture/) is the modern answer to insider threat risk.
+
 #CyberSecurity #InsiderThreats #HumanRisk

@@ -140,6 +140,8 @@ This creates a key that requires physical touch to use, providing excellent prot
 
 *Security starts with good key hygiene. Take the time to properly manage your SSH keys—your servers will thank you.*
 
+Credential management goes beyond SSH keys. Learn why [two-factor authentication](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/) is essential for every account, and how [credential theft has become the new normal](/2026/04/12/credential-theft-new-normal-cyber-attacks/) in cyber attacks.
+
 
 
 

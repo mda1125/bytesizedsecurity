@@ -78,4 +78,6 @@ Security teams should be tracking this space. Red teams should be considering it
 
 The technology simulates how people think. The security implications of that are significant, and they're arriving faster than the safeguards.
 
+AI's dual-use nature is playing out across the industry. For a real-world example of AI governance failures, see how [CISA's own acting director triggered security alerts using ChatGPT](/2026/02/16/cisa-chatgpt-incident-shadow-ai-problem/). And on the credential theft front, [AI has made stealing and deploying credentials 84% more effective](/2026/04/12/credential-theft-new-normal-cyber-attacks/) year over year.
+
 Source: AI Simulations Replace Polls in Minutes, The Chosun Daily (https://www.chosun.com/english/industry-en/2026/04/02/WJ5VST6GR5DN5MRQNIEBEOHZVA/)

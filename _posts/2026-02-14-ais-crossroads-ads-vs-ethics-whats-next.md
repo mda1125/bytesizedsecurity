@@ -22,4 +22,6 @@ Some ideas worth exploring: cross-subsidies like universal service funds, user-c
 
 The decisions made in the next few years will shape how billions of people interact with AI. Getting the incentives right matters more than getting to market first.
 
+For a real-world example of what happens when AI governance fails, see how [CISA's own director triggered security alerts using ChatGPT](/2026/02/16/cisa-chatgpt-incident-shadow-ai-problem/). And if you're wondering how AI affects your career in security, [the data shows AI is creating more cybersecurity jobs](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/), not fewer.
+
 ## What's your take? Are ads in AI inevitable, or can we build something better?

@@ -39,7 +39,7 @@ This one's straightforward:
 
 If this feels like deja vu, it should. Google spent most of 2025 playing whac-a-mole with actively exploited Chrome bugs ... eight confirmed zero-days across the year. CVE-2026-2441 suggests 2026 is picking up right where 2025 left off.
 
-And this patch lands in a rough week for Chrome's security reputation. Just days ago, researchers revealed that 287 Chrome extensions ... with tens of millions of installs between them ... were quietly siphoning users' browsing histories to data brokers. That's a separate issue, but it's a reminder: browser security isn't just about the browser itself. It's about the entire ecosystem bolted onto it.
+And this patch lands in a rough week for Chrome's security reputation. Just days ago, researchers revealed that [287 Chrome extensions were quietly siphoning users' browsing histories](/2026/02/17/287-chrome-extensions-caught-spying-37m-users-what-to-do/) to data brokers. That's a separate issue, but it's a reminder: browser security isn't just about the browser itself. It's about the entire ecosystem bolted onto it.
 
 ## What Is a Use-After-Free Vulnerability?
 

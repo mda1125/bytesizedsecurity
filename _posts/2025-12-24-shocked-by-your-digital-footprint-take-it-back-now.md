@@ -19,5 +19,7 @@ Start now. Your future self will thank you.
 
 #PrivacyTips #OptOutOctober #DigitalHygiene
 
+For practical next steps, see our guide to [boosting your privacy with small daily actions](/2025/12/24/boost-your-privacy-small-steps-big-impact/). And if you want to lock down your identity, [freeze your credit for free in under 15 minutes](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/).
+
 Sources:
 - https://www.eff.org/deeplinks/2025/09/opt-out-october-daily-tips-protect-your-privacy-and-security

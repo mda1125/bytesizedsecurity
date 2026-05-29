@@ -83,4 +83,6 @@ As John Carberry summed it up: "If you aren't paying for the product with your w
 
 Take five minutes today to audit your browser extensions. Your future self will thank you.
 
+Extensions aren't just a privacy risk — they're an active attack vector. We recently covered how [fake Chrome extensions hijacked HR platforms](/2026/01/20/fake-chrome-extensions-hijack-hr-platforms-is-your-org-at-risk/) like Workday and SAP SuccessFactors, stealing session tokens for full account takeover. And this week, Google patched [Chrome's first zero-day of 2026](/2026/02/17/chrome-first-2026-zero-day-update-now/) — update your browser now.
+
 Source: Hackread... 287 Chrome Extensions Caught Harvesting Browsing Data from 37M Users (https://hackread.com/chrome-extensions-harvest-browsing-data-37m-users/)

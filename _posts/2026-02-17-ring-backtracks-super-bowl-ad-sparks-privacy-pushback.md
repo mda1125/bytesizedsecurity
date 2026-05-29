@@ -70,4 +70,6 @@ The good news? Public pressure still matters. Amazon's decision to scrap this pa
 
 Your smart home should work for you, not watch you.
 
+For more on protecting your privacy, see our practical guide on [small steps that make a big impact on your digital footprint](/2025/12/24/boost-your-privacy-small-steps-big-impact/). And if you're concerned about how companies monetize your data, read about [what LinkedIn's verification badge actually costs you](/2026/02/24/linkedin-blue-check-what-you-sacrifice-for-a-badge/) in terms of biometric data.
+
 Source: SecurityWeek ... Amazon Scraps Partnership With Surveillance Company After Super Bowl Ad Backlash (https://www.securityweek.com/amazon-scraps-partnership-with-surveillance-company-after-super-bowl-ad-backlash/)

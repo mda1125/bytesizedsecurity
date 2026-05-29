@@ -87,4 +87,6 @@ The KYC ecosystem depends on trust in third-party providers. When those provider
 
 Regulation is catching up, but slowly. Until accountability frameworks match the sensitivity of the data being handled, incidents like this will keep happening.
 
+This breach shares a disturbing pattern with the [LexisNexis breach](/2026/03/06/lexisnexis-breach-unpatched-app-leaky-iam-and-your-data/) — basic security failures exposing permanent personal data at scale. Protect yourself: [freeze your credit](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/) and enable [two-factor authentication](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/) on all financial accounts.
+
 **Source:** [Cybernews - Global data leak exposes a billion records](https://cybernews.com/security/global-data-leak-exposes-billion-records/)

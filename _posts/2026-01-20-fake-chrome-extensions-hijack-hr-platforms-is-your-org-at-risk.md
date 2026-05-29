@@ -39,3 +39,5 @@ Ignore this, and your entire org could be exposed to ransomware and data theft w
 Security isn’t just about firewalls anymore.
 
 Sometimes, the threat is already running in your browser.
+
+This campaign is part of a broader pattern. Security researchers recently found [287 Chrome extensions secretly harvesting data from 37 million users](/2026/02/17/287-chrome-extensions-caught-spying-37m-users-what-to-do/) — including popular ad blockers and theme customizers. If your team hasn't audited their browser extensions recently, now is the time.

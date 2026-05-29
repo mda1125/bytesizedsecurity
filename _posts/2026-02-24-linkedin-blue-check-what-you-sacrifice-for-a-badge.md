@@ -113,4 +113,6 @@ For a small blue checkmark, you hand a US company your passport, your face, and 
 
 The only person in the dark is the one holding their passport up to the camera.
 
+For more on how companies collect and mishandle your personal data, read about the [IDMerit data leak that exposed 1 billion identity records](/2026/02/22/idmerit-data-leak-1-billion-records-exposed/) — another KYC provider with similar data collection practices. And to protect yourself, [freeze your credit for free](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/) and enable [two-factor authentication](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/) on every account.
+
 Original investigation by The Local Stack: https://thelocalstack.eu/posts/linkedin-identity-verification-privacy/

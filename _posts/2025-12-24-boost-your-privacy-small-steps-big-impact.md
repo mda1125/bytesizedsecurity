@@ -18,5 +18,7 @@ Privacy isn’t one big leap — it’s a bunch of small steps that add up.
 
 #PrivacyTip #OptOutOctober #DigitalHygiene #TakeControl
 
+Want to go further? [Freeze your credit for free in 15 minutes](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/) — it's one of the most effective identity theft protections available. And check whether [your browser extensions are spying on you](/2026/02/15/browser-extensions-are-they-spying-on-you/).
+
 Sources:
 - https://www.eff.org/deeplinks/2025/09/opt-out-october-daily-tips-protect-your-privacy-and-security

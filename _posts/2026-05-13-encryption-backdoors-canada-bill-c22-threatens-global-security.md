@@ -115,6 +115,8 @@ If you're anywhere:
 
 Encryption protects your messages, your photos, your financial data, and your medical records. It's not a criminal tool. It's a safety tool. When governments weaken it, everyone pays the price.
 
+This is part of a growing pattern of governments targeting privacy tools. [Utah just became the first U.S. state to regulate VPN usage](/2026/05/05/utahs-vpn-law-a-threat-to-internet-privacy/) — and the precedent is spreading internationally.
+
 ---
 
 Sources and Further Reading:

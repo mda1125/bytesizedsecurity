@@ -49,3 +49,5 @@ List 3 repeatable tasks you do with GPT.
 These will make great first-generation Skills.
 
 This is where prompt engineering becomes true productivity engineering.
+
+AI tools are transforming every field, including cybersecurity. See how [AI is fueling a cybersecurity hiring boom](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/) — and why AI literacy is now a top hiring signal. For the risks of unmanaged AI adoption at work, read about the [CISA ChatGPT incident and shadow AI](/2026/02/16/cisa-chatgpt-incident-shadow-ai-problem/).

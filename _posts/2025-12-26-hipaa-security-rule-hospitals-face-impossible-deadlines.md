@@ -56,3 +56,5 @@ You do it by understanding how hospitals operate—and building security around 
 ## Want progress?
 
 Start with workable standards, not wishful timelines.
+
+The healthcare sector faces compounding risks: [America is already short 40% of its cyber defenders](/2026/01/03/americas-cybersecurity-crisis-40-percent-defender-shortage/), making these mandates even harder to meet. And MFA — which HHS says takes 1.5 hours — is genuinely [the single most effective defense against credential attacks](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/), even if hospital-wide deployment takes months, not hours.

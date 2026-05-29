@@ -17,4 +17,6 @@ If you’re an Aflac customer, check your mail. They're offering free identity p
 
 Stay alert. This is part of a bigger wave of attacks hitting the insurance industry lately.
 
+If your data was exposed, take action now: [freeze your credit at all three bureaus](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/) (it's free and takes 15 minutes) and enable [two-factor authentication](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/) on every account.
+
 #CyberSecurity #DataBreach #Aflac #ProtectYourInfo

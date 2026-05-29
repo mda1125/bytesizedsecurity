@@ -79,3 +79,5 @@ Each credit bureau has a process for freezing a minor's credit. You'll need to p
 Requesting your LexisNexis Consumer Disclosure Report and freezing your credit at all three bureaus takes about 15 to 20 minutes total. This small investment of time gives you visibility into what data companies have on you and a strong layer of protection against identity theft.
 
 Don't wait until something goes wrong. Check your report. Freeze your credit. Protect your kids. It's free, it's easy, and it's one of the most effective things you do to protect your identity.
+
+**Update:** Just days after we published this guide, [LexisNexis confirmed a data breach](/2026/03/06/lexisnexis-breach-unpatched-app-leaky-iam-and-your-data/) exposing 3.9 million records — their second breach in two years. If you haven't frozen your credit yet, the urgency just went up.

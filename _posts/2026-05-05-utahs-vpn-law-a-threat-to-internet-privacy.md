@@ -85,4 +85,6 @@ As the EFF puts it: "Lawmakers who can't distinguish between a security tool and
 
 ## Source
 
+Utah's law is part of a global pattern of governments targeting privacy tools. For more on how encryption is under threat worldwide, read our breakdown of [Canada's Bill C-22 and why encryption backdoors endanger everyone](/2026/05/13/encryption-backdoors-canada-bill-c22-threatens-global-security/). And for practical steps to reduce your digital exposure right now, see our guide to [boosting your privacy with small daily actions](/2025/12/24/boost-your-privacy-small-steps-big-impact/).
+
 Full EFF article: https://www.eff.org/deeplinks/2026/04/utahs-new-law-regulating-vpns-goes-effect-next-week
