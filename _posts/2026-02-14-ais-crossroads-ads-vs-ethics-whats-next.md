@@ -6,6 +6,7 @@ tags: ["AI Ethics", "AI Business Models", "Tech Industry"]
 author: Marc
 excerpt: "The AI industry faces its 'ads vs. subscriptions' moment. Will commercial pressures lead to surveillance capitalism, or can we build a better, ethical future for AI?"
 image: "/assets/img/posts/ais-crossroads-ads-vs-ethics-whats-next.webp"
+last_modified_at: 2026-05-28
 ---
 
 The AI industry is having its "ads vs. subscriptions" moment, and it's revealing something important about where we're headed.

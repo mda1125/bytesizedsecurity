@@ -6,6 +6,7 @@ tags: ["cybersecurity jobs", "career advice", "networking"]
 author: Marc
 excerpt: "A viral Reddit thread reveals experienced cyber pros can't get hired through applications. Discover why the traditional job search fails and what worked for those who landed jobs: networking."
 image: "/assets/img/posts/cybersecurity-job-market-broken-network-dont-apply.webp"
+last_modified_at: 2026-05-28
 ---
 
 # The Cybersecurity Job Market Is Broken... Here's What Works

@@ -6,6 +6,7 @@ tags: ["cybersecurity", "federal defense", "threat intelligence"]
 author: Marc
 excerpt: "A staggering 40% of America's cyber defenders are missing, leaving federal agencies vulnerable. This brain drain impacts threat intelligence, incident response, and supply chain security."
 image: "/assets/img/posts/americas-cybersecurity-crisis-40-percent-defender-shortage.webp"
+last_modified_at: 2026-05-28
 ---
 
 40% of America's cyber defenders are missing.

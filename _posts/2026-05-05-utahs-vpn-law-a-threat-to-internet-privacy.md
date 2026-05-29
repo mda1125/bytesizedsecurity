@@ -6,6 +6,7 @@ tags: ["Internet Privacy", "VPN", "Censorship"]
 author: Marc
 excerpt: "Utah's new law criminalizes sharing VPN info and holds sites liable regardless of VPN use. This sets a dangerous precedent for digital privacy rights. Learn how this affects you."
 image: "/assets/img/posts/utahs-vpn-law-a-threat-to-internet-privacy.webp"
+last_modified_at: 2026-05-28
 ---
 
 Utah's New VPN Law Is a Warning Sign for Internet Privacy Everywhere

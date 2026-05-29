@@ -6,6 +6,7 @@ tags: ["2FA", "Account Security", "Cybersecurity"]
 author: Marc
 excerpt: "Discover how two-factor authentication (2FA) can protect your accounts from over 99% of automated attacks. This quick and free setup is your best defense against cyber threats."
 image: "/assets/img/posts/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks.webp"
+last_modified_at: 2026-05-28
 ---
 
 ## Why Two-Factor Authentication Is the Easiest Security Win You Are Not Using

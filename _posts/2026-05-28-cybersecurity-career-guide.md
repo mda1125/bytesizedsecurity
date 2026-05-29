@@ -7,6 +7,7 @@ author: Marc
 excerpt: "Everyone says break into security. Almost nobody tells you the truth about how the path works now, or how to walk it anyway. This is the honest guide — from someone who spent 19 years being told he lacked cyber experience."
 image: "/assets/img/posts/cybersecurity-career-guide.png"
 permalink: /cybersecurity-career-guide/
+last_modified_at: 2026-05-28
 ---
 
 Everyone wants into cybersecurity right now, and the field keeps telling them to come in while quietly bolting the door behind it.

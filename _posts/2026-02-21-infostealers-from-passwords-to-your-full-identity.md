@@ -6,6 +6,7 @@ tags: ["Infostealers", "Cybersecurity", "Data Breach"]
 author: Marc
 excerpt: "Modern infostealers do more than steal passwords. They collect a trove of data to reconstruct your entire identity, blurring personal and professional lines. Learn how they work and what you can do to protect yourself."
 image: "/assets/img/posts/infostealers-from-passwords-to-your-full-identity.webp"
+last_modified_at: 2026-05-28
 ---
 
 Title: How Infostealers Turn Stolen Credentials Into Real Identities
