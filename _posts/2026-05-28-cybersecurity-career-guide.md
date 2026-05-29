@@ -5,7 +5,7 @@ category: DevSecOps
 tags: ["cybersecurity careers", "career guide", "job market", "hiring"]
 author: Marc
 excerpt: "Everyone says break into security. Almost nobody tells you the truth about how the path works now, or how to walk it anyway. This is the honest guide — from someone who spent 19 years being told he lacked cyber experience."
-image: "/assets/img/posts/cybersecurity-career-guide.webp"
+image: "/assets/img/posts/cybersecurity-career-guide.png"
 permalink: /cybersecurity-career-guide/
 ---
 
