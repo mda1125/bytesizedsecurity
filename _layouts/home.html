@@ -37,7 +37,7 @@ layout: default
       <div class="prose prose-lg text-gray-700 max-w-none mb-4 font-serif">
         <p>{{ featured.excerpt | strip_html | truncatewords: 50 }}</p>
       </div>
-      <a class="inline-flex items-center gap-1 text-link font-bold font-sans text-sm hover:underline uppercase tracking-wide" href="{{ featured.url | relative_url }}">
+      <a class="inline-flex items-center gap-1 min-h-[44px] py-2 text-link font-bold font-sans text-sm hover:underline uppercase tracking-wide" href="{{ featured.url | relative_url }}">
         Continue Reading <span class="material-symbols-outlined text-sm">arrow_forward</span>
       </a>
     </article>
@@ -79,7 +79,7 @@ layout: default
           <p class="text-gray-700 mb-3 line-clamp-3">
             {{ post.excerpt | strip_html | truncatewords: 30 }}
           </p>
-          <a class="text-link font-bold font-sans text-xs hover:underline uppercase" href="{{ post.url | relative_url }}">Read More »</a>
+          <a class="inline-flex items-center min-h-[44px] py-2 text-link font-bold font-sans text-xs hover:underline uppercase" href="{{ post.url | relative_url }}">Read More »</a>
         </div>
       </article>
       {% endfor %}
