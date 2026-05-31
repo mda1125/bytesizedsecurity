@@ -6,6 +6,7 @@ tags: ["cybersecurity careers", "soft skills", "professional development"]
 author: Marc
 excerpt: "Technical skills aren't everything. Discover the crucial personality traits that truly define success in cybersecurity, from curiosity to empathy."
 image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/c26956b9-1fcf-445f-9fc8-95b21f2dbd62.jpeg"
+last_modified_at: 2026-06-01
 ---
 
 What Makes Someone Good at Cybersecurity Has Nothing to Do With Hacking
@@ -55,6 +56,8 @@ After 8+ years, I agree. The best people to work with are curious, patient, hone
 Technical skills are trainable. These traits aren't.
 
 Ask yourself: "Am I curious enough to keep learning, patient enough to explain things twice, and honest enough to say when I don't know?" If yes, you'll do fine.
+
+If you're building these traits and want the full playbook on breaking into the field, read our [Cybersecurity Career Guide](/cybersecurity-career-guide/). And for data on what actually gets you hired beyond personality, see why [portfolios now trump pedigree](/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/) in hiring decisions.
 
 ---
 
