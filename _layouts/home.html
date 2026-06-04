@@ -34,7 +34,7 @@ layout: default
       {% else %}
       <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
         <div class="w-full h-[250px] bg-gradient-to-r from-slate-800 via-slate-700 to-slate-900 flex items-center justify-center">
-          <span class="material-symbols-outlined text-6xl text-primary opacity-50">security</span>
+          <span class="text-6xl text-primary opacity-50">{% include icon.html name="security" %}</span>
         </div>
       </div>
       {% endif %}
@@ -43,7 +43,7 @@ layout: default
         <p>{{ featured.excerpt | strip_html | truncatewords: 50 }}</p>
       </div>
       <a class="inline-flex items-center gap-1 min-h-[44px] py-2 text-link font-bold font-sans text-sm hover:underline uppercase tracking-wide" href="{{ featured.url | relative_url }}">
-        Continue Reading <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        Continue Reading <span class="text-sm">{% include icon.html name="arrow_forward" %}</span>
       </a>
     </article>
     
@@ -66,7 +66,7 @@ layout: default
             {% endif %}
             {% else %}
             <div class="aspect-video bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
-              <span class="material-symbols-outlined text-4xl text-primary opacity-40">article</span>
+              <span class="text-4xl text-primary opacity-40">{% include icon.html name="article" %}</span>
             </div>
             {% endif %}
           </div>
@@ -101,7 +101,7 @@ layout: default
     {% else %}
     <!-- No posts yet -->
     <div class="text-center py-12">
-      <span class="material-symbols-outlined text-6xl text-gray-300 mb-4">edit_note</span>
+      <span class="text-6xl text-gray-300 mb-4">{% include icon.html name="edit_note" %}</span>
       <h2 class="text-2xl font-bold text-gray-600 mb-2">No Posts Yet</h2>
       <p class="text-gray-500">Check back soon for security insights and analysis.</p>
     </div>

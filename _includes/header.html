@@ -1,8 +1,8 @@
 <header class="bg-white border-b-4 border-primary pt-6 pb-6 px-4 lg:px-8 shadow-sm">
   <div class="max-w-6xl mx-auto flex items-center justify-between gap-4">
     <a href="{{ '/' | relative_url }}" class="flex items-center gap-3 no-underline">
-      <div class="flex items-center justify-center text-primary">
-        <span class="material-symbols-outlined text-4xl">shield_lock</span>
+      <div class="flex items-center justify-center text-primary text-4xl">
+        {% include icon.html name="shield_lock" %}
       </div>
       <div class="flex flex-col">
         <span class="text-2xl md:text-3xl font-black tracking-tight text-gray-900 font-sans uppercase">{{ site.title }}</span>
@@ -11,8 +11,9 @@
     </a>
 
     <!-- Mobile hamburger button -->
-    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-12 h-12 text-gray-700 hover:text-primary transition-colors" aria-label="Toggle menu">
-      <span class="material-symbols-outlined text-3xl" id="menu-icon">menu</span>
+    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-12 h-12 text-gray-700 hover:text-primary transition-colors text-3xl" aria-label="Toggle menu">
+      <span id="menu-icon-open">{% include icon.html name="menu" %}</span>
+      <span id="menu-icon-close" class="hidden">{% include icon.html name="close" %}</span>
     </button>
 
     <!-- Desktop nav -->
@@ -22,10 +23,10 @@
       <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/archive' | relative_url }}">Archives</a>
       <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/contact' | relative_url }}">Contact</a>
       <a class="py-2 flex items-center gap-1 hover:text-primary hover:underline transition-colors" href="https://bytesizedsecurity.show/" target="_blank" rel="noopener">
-        <span class="material-symbols-outlined text-[18px]">podcasts</span> Podcast
+        <span class="text-[18px]">{% include icon.html name="podcasts" %}</span> Podcast
       </a>
       <a class="py-2 flex items-center gap-1 text-primary" href="{{ '/feed.xml' | relative_url }}">
-        <span class="material-symbols-outlined text-[18px]">rss_feed</span> RSS
+        <span class="text-[18px]">{% include icon.html name="rss_feed" %}</span> RSS
       </a>
     </nav>
   </div>
@@ -38,10 +39,10 @@
       <a class="py-3 hover:text-primary hover:underline transition-colors" href="{{ '/archive' | relative_url }}">Archives</a>
       <a class="py-3 hover:text-primary hover:underline transition-colors" href="{{ '/contact' | relative_url }}">Contact</a>
       <a class="py-3 flex items-center gap-1 hover:text-primary hover:underline transition-colors" href="https://bytesizedsecurity.show/" target="_blank" rel="noopener">
-        <span class="material-symbols-outlined text-[18px]">podcasts</span> Podcast
+        <span class="text-[18px]">{% include icon.html name="podcasts" %}</span> Podcast
       </a>
       <a class="py-3 flex items-center gap-1 text-primary" href="{{ '/feed.xml' | relative_url }}">
-        <span class="material-symbols-outlined text-[18px]">rss_feed</span> RSS
+        <span class="text-[18px]">{% include icon.html name="rss_feed" %}</span> RSS
       </a>
     </div>
   </nav>
@@ -50,8 +51,9 @@
 <script>
   document.getElementById('mobile-menu-btn').addEventListener('click', function() {
     var menu = document.getElementById('mobile-menu');
-    var icon = document.getElementById('menu-icon');
     menu.classList.toggle('hidden');
-    icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+    var isOpen = !menu.classList.contains('hidden');
+    document.getElementById('menu-icon-open').classList.toggle('hidden', isOpen);
+    document.getElementById('menu-icon-close').classList.toggle('hidden', !isOpen);
   });
 </script>
