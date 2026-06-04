@@ -53,4 +53,4 @@ defaults:
     values:
       tags: Other
       category: "Security"
-      image: "/favicon-96x96.png"
+      image: "/assets/img/default-og.png"
