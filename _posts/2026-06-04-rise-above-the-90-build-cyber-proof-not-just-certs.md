@@ -5,7 +5,7 @@ category: Blue Team
 tags: ["Cybersecurity Careers", "Blue Team", "SOC Analyst"]
 author: Marc
 excerpt: "Stop collecting cybersecurity certifications and start building undeniable proof of your skills. This guide shows you how to create a detection lab, investigate a real incident, and turn it into portfolio evidence that lands you the job."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/7cd0e6d7-13bb-4012-9d3e-bbc72671fa99.jpeg"
+image: "/assets/img/posts/rise-above-the-90-build-cyber-proof-not-just-certs.webp"
 ---
 
 # Stop Collecting Certifications. Start Building Proof.
