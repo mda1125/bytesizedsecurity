@@ -5,7 +5,7 @@ category: Blue Team
 tags: ["cybersecurity careers", "soft skills", "career advice"]
 author: Marc
 excerpt: "Technical skills aren't everything. Discover the crucial personality traits that truly define success in cybersecurity, according to industry professionals. You might be surprised!"
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/5826b8db-1489-445f-92e4-7c74802bcd45.jpeg"
+image: "/assets/img/posts/cybersecurity-success-not-about-hacking.webp"
 ---
 
 What Makes Someone Good at Cybersecurity Has Nothing to Do With Hacking

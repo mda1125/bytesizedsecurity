@@ -5,7 +5,7 @@ category: Blue Team
 tags: ["cybersecurity careers", "soft skills", "professional development"]
 author: Marc
 excerpt: "Technical skills aren't everything. Discover the crucial personality traits that truly define success in cybersecurity, from curiosity to empathy."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/c26956b9-1fcf-445f-9fc8-95b21f2dbd62.jpeg"
+image: "/assets/img/posts/unseen-traits-top-cybersecurity-pros.webp"
 last_modified_at: 2026-06-01
 ---
 
