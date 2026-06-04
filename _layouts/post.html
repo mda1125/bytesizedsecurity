@@ -34,7 +34,7 @@ layout: default
         </div>
         {% if page.tags.size > 0 %}
         <div class="flex flex-wrap items-center gap-2 md:ml-auto">
-          <span class="material-symbols-outlined text-lg">sell</span>
+          <span class="text-lg">{% include icon.html name="sell" %}</span>
           {% for tag in page.tags %}
           <span class="bg-gray-100 px-2 py-0.5 rounded text-xs">{{ tag }}</span>
           {% endfor %}
