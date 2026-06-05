@@ -4,7 +4,7 @@ title: "Reverse Engineering Basics"
 category: Reverse Engineering
 tags: [Ghidra, IDA Pro, Malware Analysis]
 author: Admin
-last_modified_at: 2026-05-28
+last_modified_at: 2024-05-05
 ---
 
 Getting started with Ghidra and IDA Pro for analyzing malware binaries. A beginner's guide to disassembling code.

@@ -6,7 +6,7 @@ tags: ["Privacy", "Surveillance", "Smart Home"]
 author: Marc
 excerpt: "Amazon Ring ends a surveillance partnership after public outcry over a Super Bowl ad. This move highlights growing consumer resistance to pervasive camera networks and AI tracking in smart homes. Your doorbell shouldn't be a surveillance system."
 image: "/assets/img/posts/ring-backtracks-super-bowl-ad-sparks-privacy-pushback.webp"
-last_modified_at: 2026-05-28
+last_modified_at: 2026-02-17
 ---
 
 Title: Amazon Ring Ends Surveillance Partnership After Super Bowl Ad Backlash ... Here's What It Means for Your Privacy

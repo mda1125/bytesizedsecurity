@@ -6,7 +6,7 @@ tags: ["Identity Theft", "Credit Freeze", "LexisNexis"]
 author: Marc
 excerpt: "Discover how LexisNexis data affects you and why freezing your credit at all three bureaus, plus your children's, is crucial for identity theft protection. It's free, fast, and vital."
 image: "/assets/img/posts/lexisnexis-credit-freezes-your-guide-to-identity-protection.webp"
-last_modified_at: 2026-05-28
+last_modified_at: 2026-02-26
 faq:
   - question: "What is a LexisNexis Consumer Disclosure Report?"
     answer: "LexisNexis maintains a consumer file separate from your credit report containing real estate transactions, property ownership records, liens, judgments, bankruptcy filings, professional license information, and historical addresses. Insurance companies, employers, landlords, and financial institutions use this data to make decisions about you."

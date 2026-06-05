@@ -5,7 +5,7 @@ category: Network Security
 tags: ["privacy", "digital-footprint", "online-security"]
 author: Admin
 excerpt: "Search your name online and see what strangers find. This October, reclaim your privacy with simple steps that protect your digital life."
-last_modified_at: 2026-05-28
+last_modified_at: 2025-12-24
 ---
 
 Think you're good at protecting your privacy? Try this:
