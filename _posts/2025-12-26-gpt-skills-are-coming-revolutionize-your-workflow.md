@@ -6,7 +6,7 @@ tags: ["GPTs", "AI Skills", "GPT Automation"]
 author: Marc
 excerpt: "Custom GPTs are getting a major upgrade with 'Skills,' enabling reusable workflows and automated tasks. Discover how this shift from prompt engineering to 'productivity engineering' will transform how you build and interact with AI."
 image: "/assets/img/posts/gpt-skills-are-coming-revolutionize-your-workflow.webp"
-last_modified_at: 2026-05-28
+last_modified_at: 2025-12-26
 ---
 
 Custom GPTs are about to get a whole lot smarter.

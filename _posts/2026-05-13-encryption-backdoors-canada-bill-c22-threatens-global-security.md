@@ -6,7 +6,7 @@ tags: ["encryption", "privacy", "cybersecurity"]
 author: Marc
 excerpt: "Canada's Bill C-22 mandates encryption backdoors, user data retention, and sharing with foreign governments. This creates systemic vulnerabilities, as seen in the Salt Typhoon hack. History shows that mandating backdoors compromises security for everyone."
 image: "/assets/img/posts/encryption-backdoors-canada-bill-c22-threatens-global-security.webp"
-last_modified_at: 2026-05-28
+last_modified_at: 2026-05-13
 ---
 
 ## Canada's Bill C-22: Why Encryption Backdoors Are a Threat to Everyone

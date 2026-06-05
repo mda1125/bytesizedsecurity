@@ -6,7 +6,7 @@ tags: ["TechCareers", "FutureOfIT", "AIInTech"]
 author: Marc
 excerpt: "The IT job market is evolving, not shrinking. Discover the essential skills and strategies to stand out in 2026, including embracing AI and strategic niche specialization. Don't just get a job; build a future."
 image: "/assets/img/posts/future-proof-it-career-skills-2026.webp"
-last_modified_at: 2026-05-28
+last_modified_at: 2026-01-07
 ---
 
 🚀 The IT job market in 2026 isn’t shrinking — it’s evolving.

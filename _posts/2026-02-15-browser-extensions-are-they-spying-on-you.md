@@ -6,7 +6,7 @@ tags: ["Browser Security", "Data Privacy", "Cybercrime"]
 author: Marc
 excerpt: "Think your browser extensions are safe? Many secretly harvest your data, selling it for profit. Discover how to protect your digital privacy now."
 image: "/assets/img/posts/browser-extensions-are-they-spying-on-you.webp"
-last_modified_at: 2026-05-28
+last_modified_at: 2026-02-15
 ---
 
 ## Your browser extensions are watching you

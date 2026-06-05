@@ -6,7 +6,7 @@ tags: ["Chrome Extensions", "Data Privacy", "Cybersecurity"]
 author: Marc
 excerpt: "A recent investigation uncovered 287 Chrome extensions secretly collecting browsing data from millions of users. These aren't just obscure tools; popular ad blockers and theme customizers are among the culprits. Learn how to protect your privacy now."
 image: "/assets/img/posts/287-chrome-extensions-caught-spying-37m-users-what-to-do.webp"
-last_modified_at: 2026-05-28
+last_modified_at: 2026-02-17
 ---
 
 287 Chrome Extensions Caught Harvesting Data from 37M Users... Here's What You Need to Know

@@ -4,7 +4,7 @@ title: "Understanding Zero Trust Architecture: A Deep Dive"
 category: Network Security
 tags: [Zero Trust, Architecture, Enterprise Security]
 author: Admin
-last_modified_at: 2026-05-28
+last_modified_at: 2024-05-14
 ---
 
 Explore the modern security framework that assumes no implicit trust, analyzing every request as if it originates from an open network. In an era where perimeter defenses are no longer sufficient, Zero Trust offers a comprehensive strategy to secure infrastructure and data.
