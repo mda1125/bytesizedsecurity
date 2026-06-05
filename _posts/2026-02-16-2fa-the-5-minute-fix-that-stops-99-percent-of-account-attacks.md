@@ -7,6 +7,17 @@ author: Marc
 excerpt: "Discover how two-factor authentication (2FA) can protect your accounts from over 99% of automated attacks. This quick and free setup is your best defense against cyber threats."
 image: "/assets/img/posts/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks.webp"
 last_modified_at: 2026-05-28
+faq:
+  - question: "What is two-factor authentication (2FA)?"
+    answer: "Two-factor authentication adds a second verification step when you log in. Instead of just a password (something you know), you also prove your identity with something you have — like your phone or a hardware security key. Even if an attacker gets your password, they cannot access your account without the second factor."
+  - question: "Does 2FA really stop 99% of attacks?"
+    answer: "Yes. Microsoft's research across millions of enterprise accounts found that 2FA blocks over 99.9% of automated account compromise attacks. Google's data shows similar results — accounts with 2FA enabled are significantly less likely to be taken over."
+  - question: "What is the best type of 2FA?"
+    answer: "Hardware security keys (like YubiKey or Google Titan) are the gold standard because they verify the website's identity and are virtually impossible to phish. Authenticator apps (Google Authenticator, Authy) are the best option for most people. SMS codes are better than nothing but vulnerable to SIM-swapping. Email-based codes are the weakest option."
+  - question: "Which accounts should I enable 2FA on first?"
+    answer: "Start with email — it is the master key to everything else since password resets go through it. Then prioritize banking and financial accounts, social media, cloud storage (Google Drive, Dropbox, iCloud), and work accounts."
+  - question: "Is two-factor authentication inconvenient?"
+    answer: "Most authenticator apps auto-fill or require a single tap. Many services only ask for the second factor on new devices or after a set period. The 10 seconds it adds is nothing compared to the hours or days spent recovering a compromised account."
 ---
 
 ## Why Two-Factor Authentication Is the Easiest Security Win You Are Not Using

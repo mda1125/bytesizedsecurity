@@ -7,6 +7,36 @@ author: Marc
 excerpt: "Discover how LexisNexis data affects you and why freezing your credit at all three bureaus, plus your children's, is crucial for identity theft protection. It's free, fast, and vital."
 image: "/assets/img/posts/lexisnexis-credit-freezes-your-guide-to-identity-protection.webp"
 last_modified_at: 2026-05-28
+faq:
+  - question: "What is a LexisNexis Consumer Disclosure Report?"
+    answer: "LexisNexis maintains a consumer file separate from your credit report containing real estate transactions, property ownership records, liens, judgments, bankruptcy filings, professional license information, and historical addresses. Insurance companies, employers, landlords, and financial institutions use this data to make decisions about you."
+  - question: "How do I request my free LexisNexis report?"
+    answer: "Under the Fair Credit Reporting Act (FCRA), you can request your report for free three ways: online at consumer.risk.lexisnexis.com/consumer, by mail to LexisNexis Risk Solutions Consumer Center (P.O. Box 105108, Atlanta, GA 30348-5108), or by phone at 1-866-897-8126."
+  - question: "What is a credit freeze and how does it work?"
+    answer: "A credit freeze blocks lenders from pulling your credit report. When someone applies for credit in your name, the lender's request is blocked, so the fraudulent application is denied. You receive a PIN to temporarily lift the freeze when you need to apply for credit yourself."
+  - question: "Does a credit freeze affect my credit score?"
+    answer: "No. A credit freeze does not affect your credit score and does not prevent you from using your existing credit cards or accounts. It only blocks new credit inquiries. Freezing your credit is completely free, mandated by federal law since 2018."
+  - question: "Should I freeze my children's credit?"
+    answer: "Yes. Children are attractive targets for identity thieves because they have clean Social Security numbers and nobody monitors their credit. Fraud often goes undetected until they turn 18 and apply for their first credit card or student loan. Each credit bureau has a free process for freezing a minor's credit."
+howto:
+  name: "How to Freeze Your Credit and Request a LexisNexis Report"
+  description: "Step-by-step guide to requesting your free LexisNexis Consumer Disclosure Report and freezing your credit at all three major bureaus to protect against identity theft."
+  totalTime: "PT20M"
+  steps:
+    - name: "Request your LexisNexis Consumer Disclosure Report"
+      text: "Submit a free request online at consumer.risk.lexisnexis.com/consumer, by mail, or by calling 1-866-897-8126. Review the report for unfamiliar addresses, property transactions, liens, or judgments."
+      url: "https://consumer.risk.lexisnexis.com/consumer"
+    - name: "Freeze your credit at Equifax"
+      text: "Visit the Equifax credit freeze page and follow the prompts to place a free security freeze. Save the PIN or password you receive."
+      url: "https://www.equifax.com/personal/credit-report-services/credit-freeze/"
+    - name: "Freeze your credit at Experian"
+      text: "Visit the Experian freeze center and place a free security freeze. Save your PIN for future use when you need to temporarily lift the freeze."
+      url: "https://www.experian.com/freeze/center.html"
+    - name: "Freeze your credit at TransUnion"
+      text: "Visit TransUnion's credit freeze page and complete the free freeze process. Store your PIN securely."
+      url: "https://www.transunion.com/credit-freeze"
+    - name: "Freeze your children's credit"
+      text: "Contact each credit bureau to freeze your minor children's credit. You will need documentation proving you are the parent or guardian. The process is free at all three bureaus."
 ---
 
 Title: Why You Should Request Your LexisNexis Consumer Disclosure Report and Freeze Your Credit Today
