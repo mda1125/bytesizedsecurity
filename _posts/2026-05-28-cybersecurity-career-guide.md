@@ -24,31 +24,33 @@ faq:
 
 Everyone wants into cybersecurity right now, and the field keeps telling them to come in while quietly bolting the door behind it.
 
+**TL;DR:** The cybersecurity career path most people are sold is broken. This guide covers why the "talent shortage" is really a hiring and mentorship failure, why portfolios beat degrees, a 4-step playbook for breaking in from any background, how to choose certifications with data, how to get past automated hiring filters, and a concrete 90-day checklist you can start today.
+
 Enrollments in security programs doubled over the last two years. Schools keep printing degrees. And most graduates walking across the stage will send out a hundred applications before a single human replies. If you read one honest line today, read this one: the field is worth pursuing, the path most people sell you is broken, and you need a sharper strategy than the one your college handed you.
 
 I am not here to sell you hope. I spent 19 years in IT at an architect level and still heard "you lack cyber experience" in interview after interview. I built enterprise infrastructure. I designed networks. I managed complex systems, all the foundation work the internet tells you to get before you apply to security roles. Every interview ended the same way. One hiring manager finally took a chance on me, and that single decision is the only reason I work in security today.
 
 So when someone tells you to "cut your teeth in IT first," I believe them. I also know they leave out the hard part. Where do you cut your teeth? For how long? What counts as enough? Nobody answers those questions, so this guide will. Read it like a map, not a pep talk.
 
-## The talent shortage is a myth, and naming the real problem helps you
+## Is there really a cybersecurity talent shortage?
 
 You have heard a hundred times the industry faces a cybersecurity talent shortage. It does not. It faces a trust problem, a pipeline problem, and a mentorship problem. Once you see the difference, your whole strategy changes.
 
-Every week I see entry-level postings demanding five years of experience or a CISSP, a certification you are not allowed to earn without five years in the field. Read those two requirements together and the absurdity becomes obvious. The industry tells new people they need experience to get experience. Thousands of qualified graduates cannot land a single interview while companies insist nobody good is available.
+Every week I see entry-level postings demanding five years of experience or a [CISSP](https://www.isc2.org/certifications/cissp), a certification you are not allowed to earn without five years in the field. Read those two requirements together and the absurdity becomes obvious. The industry tells new people they need experience to get experience. Thousands of qualified graduates cannot land a single interview while companies insist nobody good is available.
 
 The entry point turned into a pay-to-play game. People spend thousands of dollars on certifications and still get ghosted by HR. Meanwhile the organizations doing the rejecting stopped growing talent. Instead of building analysts from the ground up, they expect candidates to arrive fully formed, or they outsource the junior pipeline entirely. A shortage looks like empty desks and no applicants. This looks like a flood of applicants and a leadership failure to develop them.
 
 > Cybersecurity does not have a talent shortage. It has a trust problem, a pipeline problem, and a mentorship problem. You fix all three by starting where you already stand.
 
-Here is the part nobody wants to say out loud. The traditional first rung of the ladder is disappearing. Junior IT roles, the help desk seats and support desks where a generation learned the trade, keep vanishing. Companies outsource support. Cloud platforms swallow the sysadmin work. Entry-level job postings dropped more than 50 percent since 2019. Even roles labeled "junior" now ask for two to four years of experience.
+Here is the part nobody wants to say out loud. The traditional first rung of the ladder is disappearing. Junior IT roles, the help desk seats and support desks where a generation learned the trade, keep vanishing. Companies outsource support. Cloud platforms swallow the sysadmin work. Entry-level job postings [dropped more than 50 percent since 2019](https://www.cyberseek.org/heatmap.html). Even roles labeled "junior" now ask for two to four years of experience.
 
-And a second wall went up on top of the first. The UK reported a 46 percent drop in tech graduate hiring as companies hand junior developer, analyst, and support work to automation. Those are the exact jobs that used to train the next wave of defenders. Saving money on entry-level labor today feels efficient. Ask one question and the logic falls apart: if nobody gets entry-level experience, who becomes your senior engineer five years from now? Tools do not replace defenders. They amplify the ones who already understand the systems they protect.
+And a second wall went up on top of the first. The UK reported a [46 percent drop in tech graduate hiring](https://www.instituteofcoding.org/) as companies hand junior developer, analyst, and support work to automation. Those are the exact jobs that used to train the next wave of defenders. Saving money on entry-level labor today feels efficient. Ask one question and the logic falls apart: if nobody gets entry-level experience, who becomes your senior engineer five years from now? Tools do not replace defenders. They amplify the ones who already understand the systems they protect.
 
 We covered this dynamic in detail: [America is already short 40% of its cyber defenders](/2026/01/03/americas-cybersecurity-crisis-40-percent-defender-shortage/), and the brain drain is accelerating.
 
 None of this is meant to discourage you. The opposite. If you have been grinding, learning, and wondering why the door feels locked, you are not imagining it and you are not the problem. You are trying to walk a path that barely exists anymore. The good news is you do not need that old path. You need a new one, and the rest of this guide lays it out.
 
-## What companies buy, and why it is never your degree
+## Do you need a degree to work in cybersecurity?
 
 Start with the truth at the center of every hiring decision. Companies do not hire degrees. They hire people who solve problems. The diploma gets you past a keyword filter at best. The skill gets you the offer.
 
@@ -102,7 +104,7 @@ Focus on segmentation, firewall best practices, and detection. You already under
 
 Computer science gives you a more versatile foundation than a narrow security degree, and starting in an IT role before pivoting is the path most successful security pros took. Learn how the systems work first. Learn to secure them second. The order matters more than the speed. For skills that matter most right now, see our breakdown of [future-proofing your IT career for 2026 and beyond](/2026/01/07/future-proof-it-career-skills-2026/).
 
-## The certification question, answered with data instead of guesses
+## Which cybersecurity certifications are actually worth getting?
 
 Certifications confuse more newcomers than almost any other topic, partly because the field argues with itself about them. Plenty of working professionals call certs overrated revenue generators and insist passing a test does not make anyone good at the job. They are not wrong. And the same people will tell you the sole purpose of a cert is to pass the hiring filter, so you need a few anyway. Both things are true at once. The trick is buying the right ones instead of collecting random badges.
 
@@ -114,7 +116,7 @@ Do not pad a resume with ten certifications that mean nothing to the people hiri
 
 This works because you stop guessing and start using evidence. The job descriptions show you the front-door requirement. The practitioner profiles show you what survived contact with reality. Treat a certification as your foot in the door, never as proof you do the job. It signals you take the craft seriously enough to study it. The interview is where you win, and you only win it by knowing how to do the work.
 
-## Beating the machine: how to get past automated hiring
+## How do you get past automated cybersecurity hiring systems?
 
 You will send applications into what feels like a void. Two hundred submissions, zero replies, no feedback. The silence is not a verdict on you. Swipe culture infected hiring, and an algorithm now decides whether a human ever sees your resume. Understanding the machine is your first step to getting past it.
 
@@ -142,7 +144,7 @@ Tools and rules age badly too, so keep your judgment current. Forcing password c
 
 > Do not confuse reality with rejection. The field is hard. You are not being pushed out. You are being prepared for the real game.
 
-## What "ready" actually looks like
+## When are you actually ready to apply for cybersecurity jobs?
 
 People wait to feel ready before they apply, before they call themselves a security person, before they claim the work. Readiness is not a feeling, and it does not arrive on a schedule. Readiness is how you show up where you stand right now.
 
@@ -150,7 +152,7 @@ The candidate who gets the call is rarely the one with the most years logged. It
 
 So treat readiness as a set of behaviors you adopt immediately. Get curious about how the things around you break. Volunteer for the security-adjacent task nobody wants. Document what you learn in public so the next person finds it. Ask the question exposing your gap instead of hiding it. None of these require a title, a budget, or anyone's approval. They require a decision to behave like a professional before the industry agrees to call you one.
 
-This matters more now than ever, because the automation reshaping the field rewards this exact kind of judgment. Machines handle repetitive work well. They do not decide what matters, weigh a messy trade-off, or earn a colleague's trust during a crisis. Those are human skills, grown through reps and reflection, and they keep you employable as tools absorb the routine tasks. The good news: [AI is creating more cybersecurity jobs, not fewer](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/). Job postings are up 11% year-over-year and pay is spiking. Build judgment, mentorship, and decision-making, and you become the person automation amplifies rather than the role it erases.
+This matters more now than ever, because the automation reshaping the field rewards this exact kind of judgment. Machines handle repetitive work well. They do not decide what matters, weigh a messy trade-off, or earn a colleague's trust during a crisis. Those are human skills, grown through reps and reflection, and they keep you employable as tools absorb the routine tasks. The good news: [AI is creating more cybersecurity jobs, not fewer](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/). [Job postings are up 11% year-over-year](https://www.cyberseek.org/heatmap.html) and pay is spiking. Build judgment, mentorship, and decision-making, and you become the person automation amplifies rather than the role it erases.
 
 The difficulty of the path says nothing about your potential. The door feels heavy because someone propped a system against it, not because you lack the strength to push through. So push.
 
