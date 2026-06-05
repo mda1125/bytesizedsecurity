@@ -1,4 +1,5 @@
 ---
+description: "New data shows side projects and GitHub activity outweigh degrees and certifications in cybersecurity hiring. How to build a portfolio that actually lands interviews."
 layout: post
 title: "Cybersecurity Hiring: Portfolios Trump Pedigree Now"
 category: DevSecOps

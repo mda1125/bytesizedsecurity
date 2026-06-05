@@ -1,4 +1,5 @@
 ---
+description: "How to request your free LexisNexis report and freeze your credit at all three bureaus in 15 minutes. Protect yourself and your children from identity theft for free."
 layout: post
 title: "LexisNexis & Credit Freezes: Your Guide to Identity Protection"
 category: Blue Team

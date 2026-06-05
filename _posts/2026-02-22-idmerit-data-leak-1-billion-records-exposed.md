@@ -1,4 +1,5 @@
 ---
+description: "A misconfigured database exposed 1 billion identity verification records from 26 countries. What this KYC supply chain failure means for permanent data exposure risks."
 layout: post
 title: "IDMerit Data Leak: 1 Billion Records Exposed"
 category: Vulnerabilities

@@ -1,4 +1,5 @@
 ---
+description: "Search your name and see what strangers find. Practical steps to audit, reduce, and reclaim your digital footprint before data brokers profit from your personal information."
 layout: post
 title: "Shocked by Your Digital Footprint? Take It Back Now"
 category: Network Security

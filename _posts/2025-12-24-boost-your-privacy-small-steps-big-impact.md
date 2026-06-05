@@ -1,4 +1,5 @@
 ---
+description: "Improve your digital privacy today with simple daily actions. Delete old accounts, disable location tracking, and reduce your data footprint — no technical expertise needed."
 layout: post
 title: "Boost Your Privacy: Small Steps, Big Impact"
 category: Network Security

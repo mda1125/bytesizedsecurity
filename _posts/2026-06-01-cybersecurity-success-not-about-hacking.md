@@ -1,4 +1,5 @@
 ---
+description: "Technical skills alone will not make you successful in cybersecurity. Industry professionals reveal the personality traits and soft skills that truly define top performers."
 layout: post
 title: "Cybersecurity Success: It is Not About Hacking"
 category: Blue Team

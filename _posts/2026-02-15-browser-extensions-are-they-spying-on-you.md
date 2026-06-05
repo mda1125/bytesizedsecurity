@@ -1,4 +1,5 @@
 ---
+description: "Many browser extensions secretly harvest and sell your browsing data. How to audit your installed extensions, spot the red flags, and protect your digital privacy."
 layout: post
 title: "Browser Extensions: Are They Spying On You?"
 category: Web Security

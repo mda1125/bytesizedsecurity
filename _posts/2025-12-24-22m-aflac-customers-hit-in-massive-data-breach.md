@@ -1,4 +1,5 @@
 ---
+description: "Aflac data breach exposes SSNs and health records of 22 million customers. What happened, who is affected, and how to enroll in free identity protection before the deadline."
 layout: post
 title: "22M Aflac Customers Hit in Massive Data Breach"
 category: Network Security

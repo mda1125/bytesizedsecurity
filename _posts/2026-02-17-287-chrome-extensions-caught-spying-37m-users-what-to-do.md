@@ -1,4 +1,5 @@
 ---
+description: "287 Chrome extensions secretly collected browsing data from 37 million users, including popular ad blockers. How to check your browser and remove compromised extensions now."
 layout: post
 title: "287 Chrome Extensions Caught Spying on 37M Users: What to Do"
 category: Web Security

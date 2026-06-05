@@ -1,4 +1,5 @@
 ---
+description: "A viral Reddit thread reveals every person who landed a cybersecurity job did it through networking, not applications. Why the traditional job search fails and what works instead."
 layout: post
 title: "Cybersecurity Job Market Broken? Network, Don't Apply"
 category: Blue Team

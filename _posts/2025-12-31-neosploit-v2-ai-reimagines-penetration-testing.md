@@ -1,4 +1,5 @@
 ---
+description: "NeuroSploit v2 uses modular AI agents powered by leading LLMs to automate penetration testing. How this framework is changing threat detection and security assessment."
 layout: post
 title: "NeuroSploit v2: AI Reimagines Penetration Testing"
 category: Pentesting

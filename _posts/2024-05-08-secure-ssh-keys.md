@@ -1,4 +1,5 @@
 ---
+description: "Stop using passwords for SSH. Learn how to generate, store, and manage SSH keys with Ed25519, set up key-based authentication, and follow security best practices."
 layout: post
 title: "How to Secure Your SSH Keys"
 category: Cryptography

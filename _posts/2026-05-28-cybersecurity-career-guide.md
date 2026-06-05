@@ -1,4 +1,5 @@
 ---
+description: "The honest cybersecurity career guide from someone rejected for 19 years. How to break in when the ladder is missing rungs: build proof, pick a niche, and network smart."
 layout: post
 title: "The Cybersecurity Career Guide for the Locked Front Door"
 category: DevSecOps

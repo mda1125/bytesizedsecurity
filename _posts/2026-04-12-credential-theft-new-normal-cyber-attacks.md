@@ -1,4 +1,5 @@
 ---
+description: "One in three cyber intrusions now use stolen employee credentials, accelerated by AI. Why breaches that look like normal logins are the hardest to detect and stop."
 layout: post
 title: "Credential Theft: The New Normal in Cyber Attacks"
 category: Network Security

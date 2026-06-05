@@ -1,4 +1,5 @@
 ---
+description: "Canada's Bill C-22 mandates encryption backdoors and data sharing with foreign governments. Why history — including the Salt Typhoon hack — proves backdoors endanger everyone."
 layout: post
 title: "Encryption Backdoors: Canada's Bill C-22 Threatens Global Security"
 category: Network Security

@@ -1,4 +1,5 @@
 ---
+description: "LexisNexis confirms their second breach in two years — an unpatched React app and overly permissive IAM exposed 2GB of sensitive data. How to protect yourself now."
 layout: post
 title: "LexisNexis Breach: Unpatched App, Leaky IAM, and Your Data"
 category: Vulnerabilities

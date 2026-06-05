@@ -1,4 +1,5 @@
 ---
+description: "Learn reverse engineering fundamentals with Ghidra and IDA Pro. A beginner's guide to disassembling malware binaries, finding vulnerabilities, and analyzing code."
 layout: post
 title: "Reverse Engineering Basics"
 category: Reverse Engineering

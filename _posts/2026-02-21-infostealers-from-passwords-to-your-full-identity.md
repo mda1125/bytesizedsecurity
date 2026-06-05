@@ -1,4 +1,5 @@
 ---
+description: "Modern infostealers don't just grab passwords — they harvest your entire digital identity from a single infection. How they work, what they steal, and how to defend yourself."
 layout: post
 title: "Infostealers: From Passwords to Your Full Identity"
 category: Vulnerabilities

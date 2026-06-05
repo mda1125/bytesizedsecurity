@@ -1,4 +1,5 @@
 ---
+description: "90% of cybersecurity applicants are indistinguishable. Build a detection lab, investigate a real incident, and create portfolio evidence that puts you in the top 5%."
 layout: post
 title: "Rise Above the 90%: Build Cyber Proof, Not Just Certs"
 category: Blue Team

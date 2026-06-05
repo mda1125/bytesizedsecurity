@@ -1,4 +1,5 @@
 ---
+description: "Two-factor authentication blocks 99% of automated attacks, takes 5 minutes to set up, and costs nothing. How to choose the right method and which accounts to protect first."
 layout: post
 title: "2FA: The 5-Minute Fix That Stops 99% of Account Attacks"
 category: Network Security

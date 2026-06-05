@@ -1,4 +1,5 @@
 ---
+description: "CISA's acting director uploaded sensitive documents to ChatGPT, exposing the shadow AI blind spot. Why most organizations have zero visibility into employee AI tool usage."
 layout: post
 title: "CISA ChatGPT Incident: The Shadow AI Problem"
 category: Blue Team

@@ -1,4 +1,5 @@
 ---
+description: "A top cybersecurity firm breached from the inside. The CrowdStrike leak proves even the best technology fails without human security awareness and insider threat controls."
 layout: post
 title: "CrowdStrike Leak: The Human Element of Cybersecurity"
 category: Network Security

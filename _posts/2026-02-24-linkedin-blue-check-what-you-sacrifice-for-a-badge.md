@@ -1,4 +1,5 @@
 ---
+description: "LinkedIn verification requires passports and biometrics shared with 17 subprocessors, including AI training firms. What you sacrifice for a blue check under the CLOUD Act."
 layout: post
 title: "LinkedIn Blue Check: What You Sacrifice for a Badge"
 category: Network Security

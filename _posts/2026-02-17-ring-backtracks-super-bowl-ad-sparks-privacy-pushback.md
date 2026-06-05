@@ -1,4 +1,5 @@
 ---
+description: "Amazon Ring ends a surveillance partnership after Super Bowl ad backlash. What growing consumer resistance means for smart home cameras and AI-powered tracking."
 layout: post
 title: "Ring Backtracks: Super Bowl Ad Sparks Privacy Pushback"
 category: Network Security
