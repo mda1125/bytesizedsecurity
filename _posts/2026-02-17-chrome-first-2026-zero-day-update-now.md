@@ -1,4 +1,5 @@
 ---
+description: "Google patches CVE-2026-2441, Chrome's first actively exploited zero-day of 2026. A critical use-after-free flaw — update your browser immediately to stay protected."
 layout: post
 title: "Chrome’s First 2026 Zero-Day: Update Now!"
 category: Vulnerabilities

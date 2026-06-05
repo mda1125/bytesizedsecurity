@@ -1,4 +1,5 @@
 ---
+description: "The new HIPAA Security Rule demands sweeping changes in 180 days. Why hospitals and cybersecurity experts say these deadlines are unrealistic and could endanger patient safety."
 layout: post
 title: "HIPAA Security Rule: Hospitals Face Impossible Deadlines"
 category: Network Security

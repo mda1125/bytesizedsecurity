@@ -1,4 +1,5 @@
 ---
+description: "AI-driven hiring and impossible job requirements are breaking the cybersecurity job market. A new playbook for entry and mid-level professionals to land roles despite the chaos."
 layout: post
 title: "Navigating the Broken Cybersecurity Job Market"
 category: DevSecOps

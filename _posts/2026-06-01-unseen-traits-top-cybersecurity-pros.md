@@ -1,4 +1,5 @@
 ---
+description: "Beyond technical skills: curiosity, empathy, and communication set the best cybersecurity professionals apart. The unseen traits that separate good analysts from exceptional ones."
 layout: post
 title: "Beyond Code: Unseen Traits of Top Cybersecurity Pros"
 category: Blue Team

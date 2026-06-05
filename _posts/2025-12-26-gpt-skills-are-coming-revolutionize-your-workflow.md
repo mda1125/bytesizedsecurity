@@ -1,4 +1,5 @@
 ---
+description: "Custom GPTs are getting reusable Skills for automated workflows. How this shift from prompt engineering to productivity engineering will transform AI-powered work."
 layout: post
 title: "GPT 'Skills' Are Coming: Revolutionize Your Workflow!"
 category: DevSecOps

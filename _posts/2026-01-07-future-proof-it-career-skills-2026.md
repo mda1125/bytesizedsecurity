@@ -1,4 +1,5 @@
 ---
+description: "The IT job market is evolving, not shrinking. Essential skills, AI integration strategies, and niche specializations to keep your career competitive through 2026 and beyond."
 layout: post
 title: "Future-Proof Your IT Career: Skills for 2026 & Beyond"
 category: DevSecOps

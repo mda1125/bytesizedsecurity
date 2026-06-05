@@ -1,4 +1,5 @@
 ---
+description: "AI is creating more cybersecurity jobs, not fewer — postings are up 11% year-over-year. How new AI-driven threats are fueling demand and what skills to build for the boom."
 layout: post
 title: "AI Fuels Cybersecurity Boom: Your Career Guide"
 category: DevSecOps

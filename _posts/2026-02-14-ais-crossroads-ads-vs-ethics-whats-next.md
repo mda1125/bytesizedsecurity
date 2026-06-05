@@ -1,4 +1,5 @@
 ---
+description: "The AI industry faces its defining moment: ad-driven surveillance or ethical subscriptions. What commercial pressures mean for privacy and the future of artificial intelligence."
 layout: post
 title: "AI's Crossroads: Ads vs. Ethics – What's Next?"
 category: Network Security

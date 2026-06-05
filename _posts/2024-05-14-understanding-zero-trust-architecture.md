@@ -1,4 +1,5 @@
 ---
+description: "Deep dive into Zero Trust Architecture — the security framework that verifies every request. Core principles, implementation strategies, and why perimeter defense alone fails."
 layout: post
 title: "Understanding Zero Trust Architecture: A Deep Dive"
 category: Network Security

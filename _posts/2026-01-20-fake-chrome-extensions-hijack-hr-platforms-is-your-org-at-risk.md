@@ -1,4 +1,5 @@
 ---
+description: "Fake productivity extensions stole login tokens from major HR platforms. How the attack worked, which organizations are at risk, and what your security team should do now."
 layout: post
 title: "Fake Chrome Extensions Hijack HR Platforms: Is Your Org at Risk?"
 category: Web Security

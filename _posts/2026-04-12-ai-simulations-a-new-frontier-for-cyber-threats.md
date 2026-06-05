@@ -1,4 +1,5 @@
 ---
+description: "Multi-agent AI simulations predict human behavior with striking accuracy. How adversaries could weaponize this technology for social engineering and disinformation at scale."
 layout: post
 title: "AI Simulations: A New Frontier for Cyber Threats"
 category: DevSecOps
