@@ -8,6 +8,17 @@ excerpt: "Everyone says break into security. Almost nobody tells you the truth a
 image: "/assets/img/posts/cybersecurity-career-guide.png"
 permalink: /cybersecurity-career-guide/
 last_modified_at: 2026-05-28
+faq:
+  - question: "Is there really a cybersecurity talent shortage?"
+    answer: "Not exactly. The industry has a trust problem, a pipeline problem, and a mentorship problem — not a talent shortage. Entry-level postings demand years of experience while companies stopped growing junior talent. Thousands of qualified graduates cannot land interviews while organizations insist nobody good is available."
+  - question: "Do I need a degree to work in cybersecurity?"
+    answer: "No. Companies hire people who solve problems, not degrees. A self-taught applicant who patched a vulnerability and documented how they did it will beat a graduating senior who cannot explain what DNS does. A degree may help pass keyword filters, but demonstrable skills and a portfolio of real work land offers."
+  - question: "What certifications should I get for cybersecurity?"
+    answer: "Use a data-driven method: pull 50 real job descriptions for your target role and note which certifications appear repeatedly, then check LinkedIn profiles of people in that role to see what they actually hold. Buy only the certifications the data points to. Treat certs as a foot in the door, not proof you can do the job."
+  - question: "How do I break into cybersecurity with no experience?"
+    answer: "Start in any IT role that puts you near real systems (help desk, sysadmin, developer, cloud support). Become the security person in your current job by patching, hardening, and reading logs. Build a home lab with Active Directory and a SIEM, document it on GitHub, pick one specialty (cloud, appsec, or IR), and network with one person already doing your target role."
+  - question: "What is the best cybersecurity career path?"
+    answer: "There is no single best path, but the most effective sequence is: (1) get into IT anywhere, (2) own security tasks in your current role, (3) build visible proof through a home lab and public write-ups, and (4) specialize in one area with unmet demand — cloud security, application security, or incident response — rather than staying a generalist."
 ---
 
 Everyone wants into cybersecurity right now, and the field keeps telling them to come in while quietly bolting the door behind it.
