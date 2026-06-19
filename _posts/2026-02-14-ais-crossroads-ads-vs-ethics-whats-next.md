@@ -1,5 +1,5 @@
 ---
-description: "The AI industry faces its defining moment: ad-driven surveillance or ethical subscriptions. What commercial pressures mean for privacy and the future of artificial intelligence."
+description: "The AI industry's defining choice: ad-driven surveillance or ethical subscriptions. What commercial pressure means for privacy in 2026."
 layout: post
 title: "AI's Crossroads: Ads vs. Ethics – What's Next?"
 category: Network Security
@@ -7,7 +7,9 @@ tags: ["AI Ethics", "AI Business Models", "Tech Industry"]
 author: Marc
 excerpt: "The AI industry faces its 'ads vs. subscriptions' moment. Will commercial pressures lead to surveillance capitalism, or can we build a better, ethical future for AI?"
 image: "/assets/img/posts/ais-crossroads-ads-vs-ethics-whats-next.webp"
-last_modified_at: 2026-02-14
+image_width: 1024
+image_height: 1024
+last_modified_at: 2026-06-19
 ---
 
 The AI industry is having its "ads vs. subscriptions" moment, and it's revealing something important about where we're headed.

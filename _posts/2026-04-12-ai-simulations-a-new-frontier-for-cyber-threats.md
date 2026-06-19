@@ -1,5 +1,5 @@
 ---
-description: "Multi-agent AI simulations predict human behavior with striking accuracy. How adversaries could weaponize this technology for social engineering and disinformation at scale."
+description: "Multi-agent AI simulations now predict human behavior with striking accuracy. How adversaries could weaponize them for social engineering at scale."
 layout: post
 title: "AI Simulations: A New Frontier for Cyber Threats"
 category: DevSecOps
@@ -7,7 +7,9 @@ tags: ["AI Security", "Social Engineering", "Disinformation"]
 author: Marc
 excerpt: "Multi-agent AI simulations can predict human behavior with striking accuracy, offering powerful tools for market research. But this capability also opens a new era for adversarial social engineering and disinformation. Security teams, pay attention!"
 image: "/assets/img/posts/ai-simulations-a-new-frontier-for-cyber-threats.webp"
-last_modified_at: 2026-04-12
+image_width: 1080
+image_height: 1350
+last_modified_at: 2026-06-19
 ---
 
 AI Can Now Simulate Entire Populations. Security Teams Should Pay Attention.

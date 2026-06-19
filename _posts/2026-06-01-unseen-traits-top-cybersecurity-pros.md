@@ -1,5 +1,5 @@
 ---
-description: "The 5 personality traits that matter more than certifications in cybersecurity: curiosity, patience, humility, composure, and empathy — ranked by practitioners on Reddit."
+description: "The 5 personality traits that matter more than certs in cybersecurity: curiosity, patience, humility, composure, and empathy — ranked by Reddit pros."
 layout: post
 title: "Beyond Code: Unseen Traits of Top Cybersecurity Pros"
 category: Blue Team
@@ -7,7 +7,9 @@ tags: ["cybersecurity careers", "soft skills", "professional development"]
 author: Marc
 excerpt: "Reddit's cybersecurity community ranked the personality traits that matter most. The top 5 — curiosity, patience, humility, composure, and empathy — aren't trainable the way technical skills are."
 image: "/assets/img/posts/unseen-traits-top-cybersecurity-pros.webp"
-last_modified_at: 2026-06-01
+image_width: 1200
+image_height: 670
+last_modified_at: 2026-06-19
 ---
 
 What Makes Someone Good at Cybersecurity Has Nothing to Do With Hacking

@@ -1,5 +1,5 @@
 ---
-description: "The IT job market is evolving, not shrinking. Essential skills, AI integration strategies, and niche specializations to keep your career competitive through 2026 and beyond."
+description: "The IT job market is evolving, not shrinking. The skills, AI integration moves, and niche specializations that keep your career competitive."
 layout: post
 title: "Future-Proof Your IT Career: Skills for 2026 & Beyond"
 category: DevSecOps
@@ -7,7 +7,9 @@ tags: ["TechCareers", "FutureOfIT", "AIInTech"]
 author: Marc
 excerpt: "The IT job market is evolving, not shrinking. Discover the essential skills and strategies to stand out in 2026, including embracing AI and strategic niche specialization. Don't just get a job; build a future."
 image: "/assets/img/posts/future-proof-it-career-skills-2026.webp"
-last_modified_at: 2026-01-07
+image_width: 1024
+image_height: 1024
+last_modified_at: 2026-06-19
 ---
 
 🚀 The IT job market in 2026 isn’t shrinking — it’s evolving.

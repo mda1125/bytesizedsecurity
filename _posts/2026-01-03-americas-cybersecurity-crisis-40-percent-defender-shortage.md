@@ -1,5 +1,5 @@
 ---
-description: "40% of America's cyber defense positions sit empty, leaving federal agencies exposed. How this brain drain impacts threat intelligence, incident response, and national security."
+description: "40% of America's cyber defense positions sit empty. How the brain drain hits threat intel, incident response, and national security."
 layout: post
 title: "America's Cybersecurity Crisis: 40% Defender Shortage"
 category: Network Security
@@ -7,7 +7,9 @@ tags: ["cybersecurity", "federal defense", "threat intelligence"]
 author: Marc
 excerpt: "A staggering 40% of America's cyber defenders are missing, leaving federal agencies vulnerable. This brain drain impacts threat intelligence, incident response, and supply chain security."
 image: "/assets/img/posts/americas-cybersecurity-crisis-40-percent-defender-shortage.webp"
-last_modified_at: 2026-01-03
+image_width: 1024
+image_height: 1024
+last_modified_at: 2026-06-19
 ---
 
 40% of America's cyber defenders are missing.

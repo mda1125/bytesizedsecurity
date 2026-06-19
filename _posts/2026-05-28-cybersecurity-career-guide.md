@@ -1,14 +1,16 @@
 ---
-description: "The honest cybersecurity career guide from someone rejected for 19 years. How to break in when the ladder is missing rungs: build proof, pick a niche, and network smart."
+description: "A 4-step playbook to break into cybersecurity from any background. Which certs actually matter, how to pass ATS filters, and a 90-day action plan."
 layout: post
-title: "The Cybersecurity Career Guide for the Locked Front Door"
+title: "Cybersecurity Career Guide 2026: Break In When the Ladder Is Missing Rungs"
 category: DevSecOps
 tags: ["cybersecurity careers", "career guide", "job market", "hiring"]
 author: Marc
 excerpt: "Everyone says break into security. Almost nobody tells you the truth about how the path works now, or how to walk it anyway. This is the honest guide — from someone who spent 19 years being told he lacked cyber experience."
 image: "/assets/img/posts/cybersecurity-career-guide.png"
+image_width: 1024
+image_height: 576
 permalink: /cybersecurity-career-guide/
-last_modified_at: 2026-05-28
+last_modified_at: 2026-06-19
 faq:
   - question: "Is there really a cybersecurity talent shortage?"
     answer: "Not exactly. The industry has a trust problem, a pipeline problem, and a mentorship problem — not a talent shortage. Entry-level postings demand years of experience while companies stopped growing junior talent. Thousands of qualified graduates cannot land interviews while organizations insist nobody good is available."

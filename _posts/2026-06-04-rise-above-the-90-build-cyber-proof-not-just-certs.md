@@ -1,5 +1,5 @@
 ---
-description: "90% of cybersecurity applicants are indistinguishable. Build a detection lab, investigate a real incident, and create portfolio evidence that puts you in the top 5%."
+description: "90% of cybersecurity applicants are indistinguishable. Build a detection lab, investigate a real incident, and create proof that puts you in the top 5%."
 layout: post
 title: "Rise Above the 90%: Build Cyber Proof, Not Just Certs"
 category: Blue Team
@@ -7,7 +7,9 @@ tags: ["Cybersecurity Careers", "Blue Team", "SOC Analyst"]
 author: Marc
 excerpt: "Stop collecting cybersecurity certifications and start building undeniable proof of your skills. This guide shows you how to create a detection lab, investigate a real incident, and turn it into portfolio evidence that lands you the job."
 image: "/assets/img/posts/rise-above-the-90-build-cyber-proof-not-just-certs.webp"
-last_modified_at: 2026-06-04
+image_width: 1200
+image_height: 670
+last_modified_at: 2026-06-19
 ---
 
 # Stop Collecting Certifications. Start Building Proof.

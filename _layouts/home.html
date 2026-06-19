@@ -28,8 +28,14 @@ layout: default
       </header>
       
       {% if featured.image %}
+      {% assign featured_w = featured.image_width | default: 1200 %}
+      {% assign featured_h = featured.image_height | default: 630 %}
       <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
-        <img alt="{{ featured.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ featured.image | relative_url }}" width="1200" height="630" fetchpriority="high" loading="eager">
+        {% if featured.image contains '://' %}
+        <img alt="{{ featured.title | escape }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ featured.image }}" width="{{ featured_w }}" height="{{ featured_h }}" fetchpriority="high" loading="eager">
+        {% else %}
+        <img alt="{{ featured.title | escape }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ featured.image | relative_url }}" width="{{ featured_w }}" height="{{ featured_h }}" fetchpriority="high" loading="eager">
+        {% endif %}
       </div>
       {% else %}
       <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">

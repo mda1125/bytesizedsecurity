@@ -1,13 +1,15 @@
 ---
-description: "AI-driven hiring and impossible job requirements are breaking the cybersecurity job market. A new playbook for entry and mid-level professionals to land roles despite the chaos."
+description: "Entry-level postings down 35%. ATS filters reject qualified candidates. Network, don't apply cold — and build proof that bypasses the filter entirely."
 layout: post
-title: "Navigating the Broken Cybersecurity Job Market"
+title: "The Cybersecurity Job Market Is Broken in 2026 — Here's How to Navigate It"
 category: DevSecOps
 tags: ["Cybersecurity Jobs", "Career Advice", "Hiring Trends"]
 author: Marc
 excerpt: "The cybersecurity job market is tougher than ever, especially for entry and mid-level roles. AI-driven hiring processes are creating chaos, but there's a new playbook for success."
 image: "/assets/img/posts/navigating-the-broken-cybersecurity-job-market.webp"
-last_modified_at: 2026-02-18
+image_width: 1080
+image_height: 1350
+last_modified_at: 2026-06-19
 ---
 
 Title: The Cybersecurity Job Market Is Broken ... Here's What's Really Happening and How to Navigate It

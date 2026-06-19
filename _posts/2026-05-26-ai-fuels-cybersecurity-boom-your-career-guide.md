@@ -1,13 +1,15 @@
 ---
-description: "AI is creating more cybersecurity jobs, not fewer — postings are up 11% year-over-year. How new AI-driven threats are fueling demand and what skills to build for the boom."
+description: "AI-generated code created a new wave of security demand. Job postings up 11%, pay spiking. The skills, roles, and strategy that get you hired in 2026."
 layout: post
-title: "AI Fuels Cybersecurity Boom: Your Career Guide"
+title: "Cybersecurity Hiring Is Up 11% in 2026 — Here's What Changed"
 category: DevSecOps
 tags: ["AI in Cyber", "Cybersecurity Careers", "Future of Work"]
 author: Marc
 excerpt: "AI isn't cutting cybersecurity jobs; it's creating more. Discover how AI generates new threats and opportunities, and what this means for your career. Adapt now or be left behind."
 image: "/assets/img/posts/ai-fuels-cybersecurity-boom-your-career-guide.webp"
-last_modified_at: 2026-05-26
+image_width: 1200
+image_height: 1200
+last_modified_at: 2026-06-19
 ---
 
 AI Is Creating More Cybersecurity Jobs, Not Fewer. Here's What It Means for You.

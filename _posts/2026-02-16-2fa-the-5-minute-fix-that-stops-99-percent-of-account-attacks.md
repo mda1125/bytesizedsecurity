@@ -1,5 +1,5 @@
 ---
-description: "Two-factor authentication blocks 99% of automated attacks, takes 5 minutes to set up, and costs nothing. How to choose the right method and which accounts to protect first."
+description: "2FA blocks 99% of automated account attacks, takes 5 minutes to set up, and costs $0. How to pick the right method and which accounts to do first."
 layout: post
 title: "2FA: The 5-Minute Fix That Stops 99% of Account Attacks"
 category: Network Security
@@ -7,7 +7,9 @@ tags: ["2FA", "Account Security", "Cybersecurity"]
 author: Marc
 excerpt: "Discover how two-factor authentication (2FA) can protect your accounts from over 99% of automated attacks. This quick and free setup is your best defense against cyber threats."
 image: "/assets/img/posts/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks.webp"
-last_modified_at: 2026-02-16
+image_width: 1080
+image_height: 1350
+last_modified_at: 2026-06-19
 faq:
   - question: "What is two-factor authentication (2FA)?"
     answer: "Two-factor authentication adds a second verification step when you log in. Instead of just a password (something you know), you also prove your identity with something you have — like your phone or a hardware security key. Even if an attacker gets your password, they cannot access your account without the second factor."

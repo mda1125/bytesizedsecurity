@@ -1,11 +1,11 @@
 ---
-description: "Stop using passwords for SSH. Learn how to generate, store, and manage SSH keys with Ed25519, set up key-based authentication, and follow security best practices."
+description: "Stop using passwords for SSH. How to generate, store, and rotate Ed25519 keys, set up key-based auth, and lock down access the right way."
 layout: post
 title: "How to Secure Your SSH Keys"
 category: Cryptography
 tags: [SSH, Authentication, Best Practices]
 author: Admin
-last_modified_at: 2024-05-08
+last_modified_at: 2026-06-19
 ---
 
 Best practices for generating, storing, and managing SSH keys for secure server access. Stop using passwords and start using public key authentication.

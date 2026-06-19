@@ -1,12 +1,12 @@
 ---
-description: "New data shows side projects and GitHub activity outweigh degrees and certifications in cybersecurity hiring. How to build a portfolio that actually lands interviews."
+description: "Side projects and GitHub activity now outweigh degrees and certs in cybersecurity hiring. How to build a portfolio that actually lands interviews."
 layout: post
 title: "Cybersecurity Hiring: Portfolios Trump Pedigree Now"
 category: DevSecOps
 tags: ["cybersecurity careers", "hiring trends", "tech careers"]
 author: Marc
 excerpt: "New data reveals side projects, GitHub, and internships are key for cybersecurity jobs. Stop stacking credentials, start building proof."
-last_modified_at: 2026-02-16
+last_modified_at: 2026-06-19
 ---
 
 ## Portfolios Over Pedigree: What Actually Gets You Hired in Cybersecurity Now

@@ -1,6 +1,18 @@
 {% assign bp_description = page.excerpt | strip_html | strip_newlines | strip | truncate: 300 %}
 {% assign bp_image = page.image | default: "/assets/img/default-og.png" %}
 {% if bp_image contains "://" %}{% assign bp_image_url = bp_image %}{% else %}{% assign bp_image_url = bp_image | prepend: site.url %}{% endif %}
+{%- comment -%}
+  Schema.org ImageObject dimensions must match the actual file or Google suppresses
+  rich-result thumbnails site-wide. Posts declare real dims via image_width/image_height
+  front matter; the fallback path uses default-og.png's actual size.
+{%- endcomment -%}
+{% if page.image %}
+  {% assign bp_image_width = page.image_width | default: 1200 %}
+  {% assign bp_image_height = page.image_height | default: 630 %}
+{% else %}
+  {% assign bp_image_width = 1536 %}
+  {% assign bp_image_height = 1024 %}
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -41,8 +53,8 @@
   "image": {
     "@type": "ImageObject",
     "url": "{{ bp_image_url }}",
-    "width": 1200,
-    "height": 630
+    "width": {{ bp_image_width }},
+    "height": {{ bp_image_height }}
   }
 }
 </script>

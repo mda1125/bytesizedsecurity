@@ -1,11 +1,11 @@
 ---
-description: "Learn reverse engineering fundamentals with Ghidra and IDA Pro. A beginner's guide to disassembling malware binaries, finding vulnerabilities, and analyzing code."
+description: "Reverse engineering fundamentals with Ghidra and IDA Pro: disassemble malware binaries, find vulnerabilities, and analyze code from scratch."
 layout: post
 title: "Reverse Engineering Basics"
 category: Reverse Engineering
 tags: [Ghidra, IDA Pro, Malware Analysis]
 author: Admin
-last_modified_at: 2024-05-05
+last_modified_at: 2026-06-19
 ---
 
 Getting started with Ghidra and IDA Pro for analyzing malware binaries. A beginner's guide to disassembling code.
