@@ -1,8 +1,10 @@
 ---
 ---
+# Default: allow all crawlers (search engines, archivers, etc.)
 User-agent: *
 Allow: /
 
+# AI search crawlers — explicitly allowed (matches llms.txt: citation OK)
 User-agent: GPTBot
 Allow: /
 
@@ -17,5 +19,16 @@ Allow: /
 
 User-agent: Google-Extended
 Allow: /
+
+# AI training-only crawlers — explicitly disallowed (enforces llms.txt
+# license: "AI training on this content is prohibited")
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
 
 Sitemap: {{ site.url }}/sitemap.xml

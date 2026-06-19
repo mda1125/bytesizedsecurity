@@ -34,7 +34,7 @@ Here’s what makes this resource stand out:
 - **759 curated free resources** ... training materials, courses, and learning paths from vetted providers, categorized by topic and difficulty.
 - **Career Pathfinder** ... select a job title, NICE Work Role, or CISSP domain and get a personalized roadmap with recommended certifications, training, tools, and milestones. It even tracks your progress.
 - **Full DEF CON Media archive** ... browse talks and presentations from the legendary security conference, sorted by year.
-- **10,000+ term NIST Glossary** ... a searchable reference covering terms from the NIST Cybersecurity Resource Center and the Trustworthy AI Resource Center.
+- **10,000+ term NIST Glossary** ... a searchable reference covering terms from the [NIST Computer Security Resource Center](https://csrc.nist.gov/glossary) and the Trustworthy AI Resource Center.
 - **MITRE CWE & CAPEC databases** ... 944 software/hardware weaknesses and 558 attack patterns, filterable by severity, likelihood, and abstraction level.
 - **Framework alignment** ... everything is mapped to the NIST NICE Framework, CSF, RMF, AI RMF, OWASP, and DoD 8140.
 

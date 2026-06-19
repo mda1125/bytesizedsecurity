@@ -20,7 +20,7 @@ TL;DR: CISA's acting director uploaded sensitive government documents to a publi
 
 ## When the Nation's Top Cybersecurity Agency Makes a Basic Data Handling Mistake
 
-In January 2026, Politico reported that Madhu Gottumukkala, the acting director of the Cybersecurity and Infrastructure Security Agency (CISA), uploaded sensitive government documents to a public instance of ChatGPT.
+In January 2026, [Politico reported](https://www.politico.com/news/2026/01/27/cisa-madhu-gottumukkala-chatgpt-00749361) that Madhu Gottumukkala, the acting director of the Cybersecurity and Infrastructure Security Agency (CISA), uploaded sensitive government documents to a public instance of ChatGPT.
 
 The documents were marked "for official use only." Not classified, but restricted from public dissemination. The uploads happened in mid-2025 and triggered multiple automated security warnings at both CISA and the Department of Homeland Security.
 

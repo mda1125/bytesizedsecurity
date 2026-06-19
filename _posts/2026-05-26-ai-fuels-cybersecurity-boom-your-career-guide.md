@@ -22,7 +22,7 @@ The narrative around AI and jobs tends to go one way: AI replaces humans. Layoff
 
 But in cybersecurity, the opposite is happening.
 
-On 5/24/2026, the New York Times published "One Job Is Growing in the A.I. Era? Cybersecurity Experts." The article lays out what many of us in the field already feel: demand for security talent is outpacing supply, and AI is the primary driver.
+On 5/24/2026, the New York Times published ["One Job Is Growing in the A.I. Era? Cybersecurity Experts."](https://www.nytimes.com/2026/05/24/technology/ai-cybersecurity-jobs.html) The article lays out what many of us in the field already feel: demand for security talent is outpacing supply, and AI is the primary driver.
 
 ## The Numbers
 
