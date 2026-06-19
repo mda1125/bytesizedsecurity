@@ -1,12 +1,12 @@
 ---
-description: "A top cybersecurity firm breached from the inside. The CrowdStrike leak proves even the best technology fails without human security awareness and insider threat controls."
+description: "A top cybersecurity firm breached from the inside. The CrowdStrike leak proves even the best tech fails without insider threat controls."
 layout: post
 title: "CrowdStrike Leak: The Human Element of Cybersecurity"
 category: Network Security
 tags: ["Insider Threats", "Cybersecurity", "Human Risk"]
 author: Admin
 excerpt: "A major cybersecurity firm just got hacked from the inside. This incident proves that even top security can be breached by human error. Your defense is only as strong as your people."
-last_modified_at: 2025-12-24
+last_modified_at: 2026-06-19
 ---
 
 An insider at *CrowdStrike*—a top cybersecurity firm—just leaked sensitive internal info to hackers.  

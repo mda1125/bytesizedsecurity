@@ -1,5 +1,5 @@
 ---
-description: "CISA's acting director uploaded sensitive documents to ChatGPT, exposing the shadow AI blind spot. Why most organizations have zero visibility into employee AI tool usage."
+description: "CISA's acting director uploaded sensitive docs to ChatGPT. Why most organizations have zero visibility into employee AI tool usage."
 layout: post
 title: "CISA ChatGPT Incident: The Shadow AI Problem"
 category: Blue Team
@@ -7,7 +7,9 @@ tags: ["Shadow AI", "Cybersecurity", "Data Governance"]
 author: Marc
 excerpt: "CISA's acting director uploaded sensitive documents to ChatGPT, exposing a crucial cybersecurity blind spot. Shadow AI is rampant, and most organizations have zero visibility into employees' use of public AI tools, risking data exposure."
 image: "/assets/img/posts/cisa-chatgpt-incident-shadow-ai-problem.webp"
-last_modified_at: 2026-02-16
+image_width: 1080
+image_height: 1350
+last_modified_at: 2026-06-19
 ---
 
 ## The CISA ChatGPT Incident: What Shadow AI Means for Every Organization
@@ -18,7 +20,7 @@ TL;DR: CISA's acting director uploaded sensitive government documents to a publi
 
 ## When the Nation's Top Cybersecurity Agency Makes a Basic Data Handling Mistake
 
-In January 2026, Politico reported that Madhu Gottumukkala, the acting director of the Cybersecurity and Infrastructure Security Agency (CISA), uploaded sensitive government documents to a public instance of ChatGPT.
+In January 2026, [Politico reported](https://www.politico.com/news/2026/01/27/cisa-madhu-gottumukkala-chatgpt-00749361) that Madhu Gottumukkala, the acting director of the Cybersecurity and Infrastructure Security Agency (CISA), uploaded sensitive government documents to a public instance of ChatGPT.
 
 The documents were marked "for official use only." Not classified, but restricted from public dissemination. The uploads happened in mid-2025 and triggered multiple automated security warnings at both CISA and the Department of Homeland Security.
 

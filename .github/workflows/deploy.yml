@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -62,3 +64,87 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  notify-indexnow:
+    # IndexNow lets Bing (and Yandex) re-crawl changed URLs within
+    # minutes instead of waiting on their normal crawl schedule.
+    # Faster Bing index = faster Microsoft Copilot / ChatGPT search
+    # citations, since both AI search products are fed by Bing's index.
+    runs-on: ubuntu-latest
+    needs: deploy
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Submit changed post URLs to IndexNow
+        env:
+          INDEXNOW_KEY: 91f9f03f8cbbfd886eec647946ac581a299c081cf537d8207d3d7de0c65615dd
+          SITE_HOST: blog.bytesizedsecurity.show
+        run: |
+          set -euo pipefail
+
+          # Diff against the previous commit to find newly added or
+          # modified posts. Excludes deletions (no point notifying
+          # IndexNow about a URL that just 404'd).
+          if ! git rev-parse HEAD^ >/dev/null 2>&1; then
+            echo "No previous commit (first push?); skipping IndexNow."
+            exit 0
+          fi
+
+          CHANGED_POSTS=$(git diff --name-only --diff-filter=AM HEAD^ HEAD -- _posts/ \
+            | grep -E '^_posts/[0-9]{4}-[0-9]{2}-[0-9]{2}-.+\.md$' || true)
+
+          if [ -z "$CHANGED_POSTS" ]; then
+            echo "No posts added/modified in this push; skipping IndexNow."
+            exit 0
+          fi
+
+          URLS=()
+          while IFS= read -r post; do
+            # Respect explicit permalink: front matter (the pillar uses
+            # /cybersecurity-career-guide/, not its date-based URL).
+            CUSTOM_PERMALINK=$(awk '/^---$/{c++; next} c==1 && /^permalink:/ {sub(/^permalink:[[:space:]]*/, ""); gsub(/^["'\'']/, ""); gsub(/["'\'']$/, ""); print; exit}' "$post" || true)
+
+            if [ -n "$CUSTOM_PERMALINK" ]; then
+              # Strip leading/trailing slashes then re-add a trailing slash for consistency.
+              URL_PATH=$(echo "$CUSTOM_PERMALINK" | sed -E 's|^/+||; s|/*$|/|')
+            else
+              # Fall back to the standard /:year/:month/:day/:title/ permalink.
+              base=$(basename "$post" .md)
+              year=$(echo "$base" | cut -d- -f1)
+              month=$(echo "$base" | cut -d- -f2)
+              day=$(echo "$base" | cut -d- -f3)
+              slug=$(echo "$base" | cut -d- -f4-)
+              URL_PATH="$year/$month/$day/$slug/"
+            fi
+
+            URLS+=("\"https://$SITE_HOST/$URL_PATH\"")
+          done <<< "$CHANGED_POSTS"
+
+          URL_LIST=$(IFS=','; echo "${URLS[*]}")
+
+          PAYLOAD=$(cat <<EOF
+          {
+            "host": "$SITE_HOST",
+            "key": "$INDEXNOW_KEY",
+            "keyLocation": "https://$SITE_HOST/$INDEXNOW_KEY.txt",
+            "urlList": [$URL_LIST]
+          }
+          EOF
+          )
+
+          echo "Submitting ${#URLS[@]} URL(s) to IndexNow:"
+          echo "$PAYLOAD"
+
+          # IndexNow is best-effort; a failed ping must not fail the
+          # workflow because the content already deployed successfully.
+          curl -X POST "https://api.indexnow.org/IndexNow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$PAYLOAD" \
+            -w "\nHTTP %{http_code}\n" \
+            --max-time 30 \
+            --fail-with-body \
+            || echo "IndexNow notification failed (non-fatal)."

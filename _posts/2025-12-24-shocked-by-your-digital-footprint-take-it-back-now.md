@@ -1,12 +1,12 @@
 ---
-description: "Search your name and see what strangers find. Practical steps to audit, reduce, and reclaim your digital footprint before data brokers profit from your personal information."
+description: "Search your name and see what strangers find. Practical steps to audit, shrink, and reclaim your digital footprint before brokers profit."
 layout: post
 title: "Shocked by Your Digital Footprint? Take It Back Now"
 category: Network Security
 tags: ["privacy", "digital-footprint", "online-security"]
 author: Admin
 excerpt: "Search your name online and see what strangers find. This October, reclaim your privacy with simple steps that protect your digital life."
-last_modified_at: 2025-12-24
+last_modified_at: 2026-06-19
 ---
 
 Think you're good at protecting your privacy? Try this:

@@ -1,5 +1,5 @@
 ---
-description: "Many browser extensions secretly harvest and sell your browsing data. How to audit your installed extensions, spot the red flags, and protect your digital privacy."
+description: "Many browser extensions secretly harvest and sell your browsing data. How to audit your installed ones, spot red flags, and lock things down."
 layout: post
 title: "Browser Extensions: Are They Spying On You?"
 category: Web Security
@@ -7,7 +7,9 @@ tags: ["Browser Security", "Data Privacy", "Cybercrime"]
 author: Marc
 excerpt: "Think your browser extensions are safe? Many secretly harvest your data, selling it for profit. Discover how to protect your digital privacy now."
 image: "/assets/img/posts/browser-extensions-are-they-spying-on-you.webp"
-last_modified_at: 2026-02-15
+image_width: 1024
+image_height: 1024
+last_modified_at: 2026-06-19
 ---
 
 ## Your browser extensions are watching you

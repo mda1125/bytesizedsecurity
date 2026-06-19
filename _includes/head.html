@@ -22,7 +22,18 @@
   <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}" />
   
   <!-- SEO meta (replaces jekyll-seo-tag to avoid its duplicate JSON-LD) -->
-  {% assign seo_description = page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | default: site.description %}
+  {%- comment -%}
+    Trust explicit per-post `description:` front matter as-authored (no truncate,
+    so SERP snippets don't get cut mid-word). Fall back to the excerpt only if
+    no description is set, and cap that fallback at the SERP-visible window.
+  {%- endcomment -%}
+  {% if page.description and page.description != "" %}
+    {% assign seo_description = page.description %}
+  {% elsif page.excerpt %}
+    {% assign seo_description = page.excerpt | strip_html | strip_newlines | truncate: 155 %}
+  {% else %}
+    {% assign seo_description = site.description %}
+  {% endif %}
   {% assign seo_title = page.title | default: site.title %}
   {% assign seo_image = page.image | default: "/assets/img/default-og.png" %}
   {% if seo_image contains "://" %}{% assign seo_image_url = seo_image %}{% else %}{% assign seo_image_url = seo_image | prepend: site.url %}{% endif %}
@@ -30,6 +41,14 @@
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
   <meta name="description" content="{{ seo_description }}">
   <meta name="author" content="{{ site.author.name }}">
+  {%- comment -%}
+    Per-page `noindex: true` front matter signals Google to drop the page from
+    the index (use for thin/duplicate/legacy URLs). `follow` lets link equity
+    still flow through any internal links on the page.
+  {%- endcomment -%}
+  {% if page.noindex %}
+  <meta name="robots" content="noindex,follow">
+  {% endif %}
 
   <meta property="og:title" content="{{ seo_title }}">
   <meta property="og:description" content="{{ seo_description }}">
@@ -119,11 +138,19 @@
   <link rel="stylesheet" href="{{ '/assets/css/tailwind.min.css' | relative_url }}">
 
   {% if page.image %}
-  <!-- Preload LCP hero image -->
+  <!-- Preload LCP hero image (post pages) -->
   {% if page.image contains '://' %}
   <link rel="preload" as="image" href="{{ page.image }}" fetchpriority="high">
   {% else %}
   <link rel="preload" as="image" href="{{ page.image | relative_url }}" fetchpriority="high">
+  {% endif %}
+  {% elsif page.url == "/" and site.posts.first.image %}
+  <!-- Preload LCP hero image (homepage featured post) -->
+  {% assign home_lcp = site.posts.first.image %}
+  {% if home_lcp contains '://' %}
+  <link rel="preload" as="image" href="{{ home_lcp }}" fetchpriority="high">
+  {% else %}
+  <link rel="preload" as="image" href="{{ home_lcp | relative_url }}" fetchpriority="high">
   {% endif %}
   {% endif %}
 

@@ -1,5 +1,5 @@
 ---
-description: "Two-factor authentication blocks 99% of automated attacks, takes 5 minutes to set up, and costs nothing. How to choose the right method and which accounts to protect first."
+description: "2FA blocks 99% of automated account attacks, takes 5 minutes to set up, and costs $0. How to pick the right method and which accounts to do first."
 layout: post
 title: "2FA: The 5-Minute Fix That Stops 99% of Account Attacks"
 category: Network Security
@@ -7,12 +7,14 @@ tags: ["2FA", "Account Security", "Cybersecurity"]
 author: Marc
 excerpt: "Discover how two-factor authentication (2FA) can protect your accounts from over 99% of automated attacks. This quick and free setup is your best defense against cyber threats."
 image: "/assets/img/posts/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks.webp"
-last_modified_at: 2026-02-16
+image_width: 1080
+image_height: 1350
+last_modified_at: 2026-06-19
 faq:
   - question: "What is two-factor authentication (2FA)?"
     answer: "Two-factor authentication adds a second verification step when you log in. Instead of just a password (something you know), you also prove your identity with something you have — like your phone or a hardware security key. Even if an attacker gets your password, they cannot access your account without the second factor."
   - question: "Does 2FA really stop 99% of attacks?"
-    answer: "Yes. Microsoft's research across millions of enterprise accounts found that 2FA blocks over 99.9% of automated account compromise attacks. Google's data shows similar results — accounts with 2FA enabled are significantly less likely to be taken over."
+    answer: "Yes. <a href=\"https://www.microsoft.com/en-us/security/blog/2019/08/20/one-simple-action-you-can-take-to-prevent-99-9-percent-of-account-attacks/\">Microsoft's research across millions of enterprise accounts found that 2FA blocks over 99.9% of automated account compromise attacks</a>. <a href=\"https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html\">Google's research with NYU and UCSD showed device-based prompts blocked 100% of automated bot attacks</a> and 99% of bulk phishing attempts."
   - question: "What is the best type of 2FA?"
     answer: "Hardware security keys (like YubiKey or Google Titan) are the gold standard because they verify the website's identity and are virtually impossible to phish. Authenticator apps (Google Authenticator, Authy) are the best option for most people. SMS codes are better than nothing but vulnerable to SIM-swapping. Email-based codes are the weakest option."
   - question: "Which accounts should I enable 2FA on first?"
@@ -48,7 +50,7 @@ Even if an attacker gets your password through a phishing email, a data breach, 
 
 ## The Numbers Don't Lie
 
-This isn't theoretical. Microsoft's research across millions of enterprise accounts found that 2FA blocks over 99.9% of automated account compromise attacks. Google's data tells a similar story -- accounts with 2FA are significantly less likely to be taken over.
+This isn't theoretical. [Microsoft's research across millions of enterprise accounts](https://www.microsoft.com/en-us/security/blog/2019/08/20/one-simple-action-you-can-take-to-prevent-99-9-percent-of-account-attacks/) found that 2FA blocks over 99.9% of automated account compromise attacks. [Google's research with NYU and UCSD](https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html) tells a similar story -- on-device prompts blocked 100% of automated bot attacks and 99% of bulk phishing attempts during their year-long study.
 
 For something that costs nothing and takes minutes to set up, that's an extraordinary return on investment.
 

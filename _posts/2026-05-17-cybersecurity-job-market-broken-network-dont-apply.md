@@ -1,5 +1,5 @@
 ---
-description: "A viral Reddit thread reveals every person who landed a cybersecurity job did it through networking, not applications. Why the traditional job search fails and what works instead."
+description: "A viral Reddit thread: every person who landed a cybersecurity job did it through networking, not applications. Why cold-applying fails."
 layout: post
 title: "Cybersecurity Job Market Broken? Network, Don't Apply"
 category: Blue Team
@@ -7,10 +7,12 @@ tags: ["cybersecurity jobs", "career advice", "networking"]
 author: Marc
 excerpt: "A viral Reddit thread reveals experienced cyber pros can't get hired through applications. Discover why the traditional job search fails and what worked for those who landed jobs: networking."
 image: "/assets/img/posts/cybersecurity-job-market-broken-network-dont-apply.webp"
-last_modified_at: 2026-05-17
+image_width: 1200
+image_height: 1200
+last_modified_at: 2026-06-19
 ---
 
-# The Cybersecurity Job Market Is Broken... Here's What Works
+## The Cybersecurity Job Market Is Broken... Here's What Works
 
 **TL;DR:** A Reddit thread from r/cybersecurity went viral... veterans with decades of experience aren't getting interviews, companies are posting fake jobs, and recruiters admit they prefer employed candidates. But the people who found jobs all had one thing in common: they got hired through their network, not through applications.
 

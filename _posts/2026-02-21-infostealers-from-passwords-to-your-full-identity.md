@@ -1,5 +1,5 @@
 ---
-description: "Modern infostealers don't just grab passwords — they harvest your entire digital identity from a single infection. How they work, what they steal, and how to defend yourself."
+description: "Modern infostealers don't just grab passwords — they harvest your full digital identity from a single infection. How they work and how to defend."
 layout: post
 title: "Infostealers: From Passwords to Your Full Identity"
 category: Vulnerabilities
@@ -7,7 +7,9 @@ tags: ["Infostealers", "Cybersecurity", "Data Breach"]
 author: Marc
 excerpt: "Modern infostealers do more than steal passwords. They collect a trove of data to reconstruct your entire identity, blurring personal and professional lines. Learn how they work and what you can do to protect yourself."
 image: "/assets/img/posts/infostealers-from-passwords-to-your-full-identity.webp"
-last_modified_at: 2026-02-21
+image_width: 1080
+image_height: 1350
+last_modified_at: 2026-06-19
 ---
 
 Title: How Infostealers Turn Stolen Credentials Into Real Identities

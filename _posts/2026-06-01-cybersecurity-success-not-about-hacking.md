@@ -1,5 +1,5 @@
 ---
-description: "After 8+ years of hiring and building security teams, here is what actually separates top performers: communication, empathy, and the mental resilience to avoid burnout."
+description: "After 8+ years hiring and building security teams: what actually separates top performers is communication, empathy, and resilience against burnout."
 layout: post
 title: "Cybersecurity Success: It is Not About Hacking"
 category: Blue Team
@@ -7,7 +7,9 @@ tags: ["cybersecurity careers", "soft skills", "career advice"]
 author: Marc
 excerpt: "A deep dive into the soft skills that define cybersecurity careers — communication, empathy, calm under pressure, and the mental health realities the field rarely discusses. Based on 8+ years of hiring and a candid Reddit thread."
 image: "/assets/img/posts/cybersecurity-success-not-about-hacking.webp"
-last_modified_at: 2026-06-01
+image_width: 1200
+image_height: 670
+last_modified_at: 2026-06-19
 ---
 
 What Makes Someone Good at Cybersecurity Has Nothing to Do With Hacking

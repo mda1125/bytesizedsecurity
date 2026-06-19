@@ -1,5 +1,5 @@
 ---
-description: "Okurrrr is a free cybersecurity career roadmap with 627 certifications, 759 free resources, and a Career Pathfinder. One tool to plan your path from entry level to expert."
+description: "Okurrrr is a free cybersecurity career roadmap: 627 certifications, 759 free resources, and a Career Pathfinder from entry level to expert."
 layout: post
 title: "Okurrrr: The Ultimate Free Cybersecurity Career Roadmap"
 category: Network Security
@@ -7,10 +7,12 @@ tags: ["cybersecurity career", "free resources", "career roadmap"]
 author: Marc
 excerpt: "Discover Okurrrr, a free, all-in-one cybersecurity career roadmap by Moe B. It offers 627 certifications, 759 free resources, a Career Pathfinder, and more. This comprehensive tool helps you launch or level up your cybersecurity career."
 image: "/assets/img/posts/okurrrr-ultimate-free-cybersecurity-career-roadmap.webp"
-last_modified_at: 2026-03-18
+image_width: 1024
+image_height: 560
+last_modified_at: 2026-06-19
 ---
 
-# Okurrrr ... The Free Cybersecurity Career Roadmap Everyone Needs to Know About
+## Okurrrr ... The Free Cybersecurity Career Roadmap Everyone Needs to Know About
 
 **TL;DR:** Okurrrr is a free, all-in-one cybersecurity career roadmap with 627 certifications, 759 free resources, a Career Pathfinder, the full DEF CON Media archive, and a 10,000+ term NIST Glossary. Built by Moe B., Cybersecurity Lead Engineer. Bookmark it and share it.
 
@@ -32,7 +34,7 @@ Here’s what makes this resource stand out:
 - **759 curated free resources** ... training materials, courses, and learning paths from vetted providers, categorized by topic and difficulty.
 - **Career Pathfinder** ... select a job title, NICE Work Role, or CISSP domain and get a personalized roadmap with recommended certifications, training, tools, and milestones. It even tracks your progress.
 - **Full DEF CON Media archive** ... browse talks and presentations from the legendary security conference, sorted by year.
-- **10,000+ term NIST Glossary** ... a searchable reference covering terms from the NIST Cybersecurity Resource Center and the Trustworthy AI Resource Center.
+- **10,000+ term NIST Glossary** ... a searchable reference covering terms from the [NIST Computer Security Resource Center](https://csrc.nist.gov/glossary) and the Trustworthy AI Resource Center.
 - **MITRE CWE & CAPEC databases** ... 944 software/hardware weaknesses and 558 attack patterns, filterable by severity, likelihood, and abstraction level.
 - **Framework alignment** ... everything is mapped to the NIST NICE Framework, CSF, RMF, AI RMF, OWASP, and DoD 8140.
 

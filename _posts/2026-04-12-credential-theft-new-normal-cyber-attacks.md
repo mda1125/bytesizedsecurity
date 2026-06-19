@@ -1,5 +1,5 @@
 ---
-description: "One in three cyber intrusions now use stolen employee credentials, accelerated by AI. Why breaches that look like normal logins are the hardest to detect and stop."
+description: "One in three cyber intrusions now uses stolen employee credentials. Why AI-accelerated breaches that look like normal logins are hardest to stop."
 layout: post
 title: "Credential Theft: The New Normal in Cyber Attacks"
 category: Network Security
@@ -7,7 +7,9 @@ tags: ["Credential Theft", "Cybersecurity", "AI Security"]
 author: Marc
 excerpt: "Nearly one in three cyber intrusions now use valid employee credentials, fueled by AI. Is your security ready for breaches that look like a normal Tuesday?"
 image: "/assets/img/posts/credential-theft-new-normal-cyber-attacks.webp"
-last_modified_at: 2026-04-12
+image_width: 1080
+image_height: 1350
+last_modified_at: 2026-06-19
 ---
 
 Your Next Breach Won't Look Like an Attack. It'll Look Like a Normal Tuesday.

@@ -32,6 +32,8 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 - [About](https://blog.bytesizedsecurity.show/about/): Author bio, credentials, and mission
 - [Cybersecurity Career Guide](https://blog.bytesizedsecurity.show/cybersecurity-career-guide/): Comprehensive career guide for breaking into cybersecurity — roles, certifications, networking, and job search strategy
+- [2FA: The 5-Minute Fix That Stops 99% of Account Attacks](https://blog.bytesizedsecurity.show/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/): Practical guide to two-factor authentication — which method to use, which accounts to protect first, and the Microsoft/Google research showing 99.9% attack reduction
+- [LexisNexis & Credit Freezes: Your Guide to Identity Protection](https://blog.bytesizedsecurity.show/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/): Step-by-step guide to requesting your free LexisNexis Consumer Disclosure Report and freezing your credit at all three bureaus — including how to freeze your children's credit
 - [Archive](https://blog.bytesizedsecurity.show/archive/): All posts organized by category
 - [Podcast](https://bytesizedsecurity.show/): The ByteSizedSecurity podcast
 
