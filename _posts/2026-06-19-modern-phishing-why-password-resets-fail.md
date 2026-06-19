@@ -6,9 +6,9 @@ category: Threats
 tags: ["Phishing", "Identity Security", "Incident Response"]
 author: Marc
 excerpt: "Phishing exposed employee data at 86% of Fortune 100 firms in the last year, and most playbooks still stop at a password reset. The attackers already have your session cookies and refresh tokens, and they don't care about your new password."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/e8cdd0f0-ae4e-4192-8f14-44c8d93de1aa.jpeg"
-image_width: 2048
-image_height: 2048
+image: "/assets/img/posts/modern-phishing-why-password-resets-fail.webp"
+image_width: 1200
+image_height: 1200
 last_modified_at: 2026-06-19
 faq:
   - question: "Does changing your password stop a phishing attack?"

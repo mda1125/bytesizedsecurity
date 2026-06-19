@@ -5,7 +5,9 @@ category: Network Security
 tags: ["Data Breach", "Social Engineering", "Healthcare Security"]
 author: Marc
 excerpt: "iRhythm Holdings disclosed a data breach affecting millions of patients. Attackers used social engineering against third-party apps to exfiltrate protected health information (PHI). This incident highlights critical vulnerabilities in healthcare data security."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/9492c098-20d1-41a6-a125-49bcdf9f2b44.jpeg"
+image: "/assets/img/posts/irhythm-data-breach-12-million-patient-records-exposed.webp"
+image_width: 1080
+image_height: 1350
 ---
 
 # iRhythm Healthcare Data Breach: 12 Million Patient Dataset Hit via Social Engineering of Third-Party Apps
