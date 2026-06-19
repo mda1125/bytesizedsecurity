@@ -10,6 +10,8 @@ image: "/assets/img/posts/future-proof-it-career-skills-2026.webp"
 image_width: 1024
 image_height: 1024
 last_modified_at: 2026-06-19
+noindex: true
+sitemap: false
 ---
 
 🚀 The IT job market in 2026 isn’t shrinking — it’s evolving.

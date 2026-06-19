@@ -41,6 +41,14 @@
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
   <meta name="description" content="{{ seo_description }}">
   <meta name="author" content="{{ site.author.name }}">
+  {%- comment -%}
+    Per-page `noindex: true` front matter signals Google to drop the page from
+    the index (use for thin/duplicate/legacy URLs). `follow` lets link equity
+    still flow through any internal links on the page.
+  {%- endcomment -%}
+  {% if page.noindex %}
+  <meta name="robots" content="noindex,follow">
+  {% endif %}
 
   <meta property="og:title" content="{{ seo_title }}">
   <meta property="og:description" content="{{ seo_description }}">

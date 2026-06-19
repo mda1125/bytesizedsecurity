@@ -98,9 +98,6 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 - 2026-01-20: [Fake Chrome Extensions Hijack HR Platforms: Is Your Org at Risk?](https://blog.bytesizedsecurity.show/2026/01/20/fake-chrome-extensions-hijack-hr-platforms-is-your-org-at-risk/)
   A new campaign used fake productivity tools to steal login tokens from major HR platforms.
 
-- 2026-01-07: [Future-Proof Your IT Career: Skills for 2026 & Beyond](https://blog.bytesizedsecurity.show/2026/01/07/future-proof-it-career-skills-2026/)
-  Essential skills and strategies to stand out in IT/security in 2026, including embracing AI and strategic niche specialization.
-
 - 2026-01-03: [America's Cybersecurity Crisis: 40% Defender Shortage](https://blog.bytesizedsecurity.show/2026/01/03/americas-cybersecurity-crisis-40-percent-defender-shortage/)
   A staggering 40% of America's cyber defenders are missing, impacting threat intelligence, incident response, and supply chain security.
 

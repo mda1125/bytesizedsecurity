@@ -12,7 +12,7 @@ image_height: 1200
 last_modified_at: 2026-06-19
 ---
 
-# The Cybersecurity Job Market Is Broken... Here's What Works
+## The Cybersecurity Job Market Is Broken... Here's What Works
 
 **TL;DR:** A Reddit thread from r/cybersecurity went viral... veterans with decades of experience aren't getting interviews, companies are posting fake jobs, and recruiters admit they prefer employed candidates. But the people who found jobs all had one thing in common: they got hired through their network, not through applications.
 

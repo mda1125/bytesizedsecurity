@@ -12,7 +12,7 @@ image_height: 1350
 last_modified_at: 2026-06-19
 ---
 
-# 1 Billion Identity Records Exposed: Inside the IDMerit Data Leak
+## 1 Billion Identity Records Exposed: Inside the IDMerit Data Leak
 
 **TL;DR:** Cybernews researchers discovered an unprotected MongoDB database belonging to IDMerit, a KYC identity verification provider, exposing roughly 1 billion personal records from 26 countries. The data included names, national ID numbers, dates of birth, and addresses. The root cause was a misconfigured database with no authentication. Here's what happened, why it matters, and what you should do.
 

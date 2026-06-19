@@ -12,7 +12,7 @@ image_height: 670
 last_modified_at: 2026-06-19
 ---
 
-# Stop Collecting Certifications. Start Building Proof.
+## Stop Collecting Certifications. Start Building Proof.
 
 **TL;DR:** A cybersecurity hiring manager broke down the five tiers of applicants he sees for every role. 90% of candidates are indistinguishable. The top 5% stand out because they can demonstrate real, hands-on skill. This post walks you through building a detection lab, investigating a realistic incident, and turning it into portfolio evidence you can reference in interviews — all in a single weekend.
 

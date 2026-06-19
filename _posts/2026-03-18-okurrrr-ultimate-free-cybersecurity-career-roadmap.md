@@ -12,7 +12,7 @@ image_height: 560
 last_modified_at: 2026-06-19
 ---
 
-# Okurrrr ... The Free Cybersecurity Career Roadmap Everyone Needs to Know About
+## Okurrrr ... The Free Cybersecurity Career Roadmap Everyone Needs to Know About
 
 **TL;DR:** Okurrrr is a free, all-in-one cybersecurity career roadmap with 627 certifications, 759 free resources, a Career Pathfinder, the full DEF CON Media archive, and a 10,000+ term NIST Glossary. Built by Moe B., Cybersecurity Lead Engineer. Bookmark it and share it.
 

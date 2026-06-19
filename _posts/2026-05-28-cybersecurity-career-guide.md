@@ -104,7 +104,7 @@ Focus on segmentation, firewall best practices, and detection. You already under
 
 ### If you are switching careers from outside tech
 
-Computer science gives you a more versatile foundation than a narrow security degree, and starting in an IT role before pivoting is the path most successful security pros took. Learn how the systems work first. Learn to secure them second. The order matters more than the speed. For skills that matter most right now, see our breakdown of [future-proofing your IT career for 2026 and beyond](/2026/01/07/future-proof-it-career-skills-2026/).
+Computer science gives you a more versatile foundation than a narrow security degree, and starting in an IT role before pivoting is the path most successful security pros took. Learn how the systems work first. Learn to secure them second. The order matters more than the speed.
 
 ## Which cybersecurity certifications are actually worth getting?
 
