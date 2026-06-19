@@ -9,6 +9,39 @@
 @source "../../*.html";
 @source "../../*.md";
 
+/*
+  Font-metric-override fallbacks (CLS prevention).
+
+  Inter and Merriweather are loaded from Google Fonts with display=swap.
+  During the swap, the browser briefly renders text in the generic
+  fallback (sans-serif / serif), then re-renders once the web font
+  arrives. Without metric overrides those two renders take different
+  amounts of space, which causes Cumulative Layout Shift.
+
+  These `@font-face` rules declare local-system fallbacks (Arial for
+  Inter, Times New Roman for Merriweather) with metric overrides that
+  make the fallback occupy almost exactly the same space as the
+  intended web font. Reference: web.dev "How to avoid layout shifts
+  caused by web fonts" — https://web.dev/articles/font-fallbacks
+*/
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial");
+  size-adjust: 107.4%;
+  ascent-override: 90%;
+  descent-override: 22.43%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Merriweather Fallback";
+  src: local("Times New Roman");
+  size-adjust: 96.2%;
+  ascent-override: 102.4%;
+  descent-override: 28.4%;
+  line-gap-override: 0%;
+}
+
 @theme {
   --color-primary: #b91c1c;
   --color-primary-dark: #991b1b;
@@ -18,8 +51,8 @@
   --color-text-muted: #4b5563;
   --color-link: #1d4ed8;
 
-  --font-serif: "Merriweather", serif;
-  --font-sans: "Inter", sans-serif;
+  --font-serif: "Merriweather", "Merriweather Fallback", Georgia, serif;
+  --font-sans: "Inter", "Inter Fallback", system-ui, -apple-system, sans-serif;
 
   --shadow-classic: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
@@ -30,7 +63,7 @@
     line-height: 1.6;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", "Merriweather Fallback", Georgia, serif;
   }
 }
 
