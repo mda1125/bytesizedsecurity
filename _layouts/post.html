@@ -61,14 +61,7 @@ layout: default
     {% assign hero_w = page.image_width | default: 1200 %}
     {% assign hero_h = page.image_height | default: 630 %}
     <div class="w-full mb-8 border border-gray-200 p-1 bg-white shadow-sm">
-      {% include responsive-image.html
-        src=page.image
-        alt=page.title
-        class="w-full h-auto object-cover max-h-[400px]"
-        width=hero_w
-        height=hero_h
-        eager="true"
-        sizes="(min-width: 1024px) 720px, 100vw" %}
+      {% include responsive-image.html src=page.image alt=page.title class="w-full h-auto object-cover max-h-[400px]" width=hero_w height=hero_h eager="true" sizes="(min-width: 1024px) 720px, 100vw" %}
     </div>
     {% endif %}
 

@@ -36,14 +36,7 @@ layout: default
       {% assign featured_w = featured.image_width | default: 1200 %}
       {% assign featured_h = featured.image_height | default: 630 %}
       <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
-        {% include responsive-image.html
-          src=featured.image
-          alt=featured.title
-          class="w-full h-auto object-cover max-h-[400px]"
-          width=featured_w
-          height=featured_h
-          eager="true"
-          sizes="(min-width: 1024px) 800px, 100vw" %}
+        {% include responsive-image.html src=featured.image alt=featured.title class="w-full h-auto object-cover max-h-[400px]" width=featured_w height=featured_h eager="true" sizes="(min-width: 1024px) 800px, 100vw" %}
       </div>
       {% else %}
       <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
@@ -86,13 +79,7 @@ layout: default
         <div class="w-full md:w-1/3 shrink-0">
           <div class="border border-gray-200 p-1 bg-white shadow-sm">
             {% if post.image %}
-            {% include responsive-image.html
-              src=post.image
-              alt=post.title
-              class="aspect-video w-full object-cover"
-              width=400
-              height=225
-              sizes="(min-width: 1024px) 240px, (min-width: 768px) 33vw, 100vw" %}
+            {% include responsive-image.html src=post.image alt=post.title class="aspect-video w-full object-cover" width=400 height=225 sizes="(min-width: 1024px) 240px, (min-width: 768px) 33vw, 100vw" %}
             {% else %}
             <div class="aspect-video bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
               <span class="text-4xl text-primary opacity-40">{% include icon.html name="article" %}</span>
