@@ -1,22 +1,48 @@
 ---
 layout: default
 title: Blog Archive
+hide_sidebar_search: true
 ---
 
 <div class="flex flex-col lg:flex-row gap-12">
   <div class="flex-1">
     <div class="bg-white border border-gray-200 p-6 md:p-10">
-      <header class="mb-8 border-b border-gray-200 pb-6">
+      <header class="mb-6 border-b border-gray-200 pb-6">
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-2">Blog Archive</h1>
         <p class="text-gray-600 font-sans">All posts organized by category.</p>
       </header>
 
+      <!-- Search -->
+      <form id="archive-search-form" class="mb-8 flex items-center gap-3 bg-surface border border-gray-300 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary px-4 h-12 transition-colors" role="search" action="" method="get" onsubmit="return false;">
+        <span class="text-gray-400 text-2xl shrink-0">{% include icon.html name="search" %}</span>
+        <label for="archive-search" class="sr-only">Search articles</label>
+        <input
+          type="search"
+          id="archive-search"
+          name="q"
+          placeholder="Search titles, categories, and tags…"
+          autocomplete="off"
+          class="flex-1 bg-transparent text-base placeholder-gray-400 focus:outline-none min-w-0"
+          aria-controls="archive-list">
+        <span id="archive-search-count" class="text-xs font-sans uppercase tracking-wide text-gray-500 whitespace-nowrap" aria-live="polite">{{ site.posts.size }} posts</span>
+      </form>
+
+      <!-- No results message -->
+      <div id="archive-no-results" class="hidden text-center py-16 border border-dashed border-gray-300">
+        <span class="text-5xl text-gray-300 block mb-3">{% include icon.html name="folder_open" %}</span>
+        <p class="font-sans text-gray-600">No posts match <strong id="archive-no-results-q" class="text-gray-900"></strong>.</p>
+        <button type="button" id="archive-clear-search" class="mt-4 inline-block min-h-[44px] px-4 py-2 text-link font-sans text-sm font-bold uppercase tracking-wide hover:underline cursor-pointer">Clear search »</button>
+      </div>
+
+      <div id="archive-list">
       {% for category in site.categories %}
-      <div class="mb-10" id="{{ category[0] | slugify }}">
+      <div class="mb-10 archive-category" id="{{ category[0] | slugify }}" data-archive-category="{{ category[0] | downcase }}">
         <h2 class="text-2xl font-bold text-gray-800 mb-4 font-sans border-b-2 border-primary pb-2 inline-block">{{ category[0] }}</h2>
         <ul class="space-y-4">
           {% for post in category[1] %}
-          <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 p-4 bg-surface border border-gray-200 hover:border-primary transition-colors">
+          {%- assign tag_text = post.tags | join: " " | downcase -%}
+          {%- assign post_haystack = post.title | downcase | append: " " | append: category[0] | downcase | append: " " | append: tag_text -%}
+          <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 p-4 bg-surface border border-gray-200 hover:border-primary transition-colors archive-item" data-archive-item data-search="{{ post_haystack | escape }}">
             <span class="text-sm font-sans text-gray-500 md:w-32 shrink-0">{{ post.date | date: "%b %-d, %Y" }}</span>
             <div class="flex-1">
               <a href="{{ post.url | relative_url }}" class="text-lg font-bold text-link hover:underline">{{ post.title }}</a>
@@ -26,6 +52,7 @@ title: Blog Archive
         </ul>
       </div>
       {% endfor %}
+      </div>
 
       {% if site.posts.size == 0 %}
       <div class="text-center py-12">
@@ -36,6 +63,83 @@ title: Blog Archive
       {% endif %}
     </div>
   </div>
-  
+
   {% include sidebar.html %}
 </div>
+
+<script>
+(function() {
+  var input = document.getElementById('archive-search');
+  if (!input) return;
+  var countEl = document.getElementById('archive-search-count');
+  var noResultsEl = document.getElementById('archive-no-results');
+  var noResultsQ = document.getElementById('archive-no-results-q');
+  var clearBtn = document.getElementById('archive-clear-search');
+  var categories = document.querySelectorAll('[data-archive-category]');
+  var items = document.querySelectorAll('[data-archive-item]');
+  var totalCount = items.length;
+  var defaultCountLabel = totalCount + ' posts';
+
+  function filter(rawQuery) {
+    var query = (rawQuery || '').trim().toLowerCase();
+    var terms = query.split(/\s+/).filter(Boolean);
+    var visible = 0;
+
+    items.forEach(function(item) {
+      var hay = item.getAttribute('data-search') || '';
+      var match = terms.length === 0 || terms.every(function(t) { return hay.indexOf(t) !== -1; });
+      item.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+
+    categories.forEach(function(cat) {
+      var hasVisible = cat.querySelector('[data-archive-item]:not(.hidden)') !== null;
+      cat.classList.toggle('hidden', !hasVisible);
+    });
+
+    countEl.textContent = terms.length === 0
+      ? defaultCountLabel
+      : visible + ' of ' + totalCount;
+
+    if (terms.length > 0 && visible === 0) {
+      noResultsQ.textContent = '"' + query + '"';
+      noResultsEl.classList.remove('hidden');
+    } else {
+      noResultsEl.classList.add('hidden');
+    }
+
+    if (window.history && window.history.replaceState) {
+      try {
+        var url = new URL(window.location.href);
+        if (query) {
+          url.searchParams.set('q', query);
+        } else {
+          url.searchParams.delete('q');
+        }
+        window.history.replaceState(null, '', url.toString());
+      } catch (e) { /* older browsers — fail silently */ }
+    }
+  }
+
+  var params = new URLSearchParams(window.location.search);
+  var initial = params.get('q');
+  if (initial) {
+    input.value = initial;
+    filter(initial);
+  }
+
+  input.addEventListener('input', function(e) {
+    filter(e.target.value);
+  });
+
+  clearBtn.addEventListener('click', function() {
+    input.value = '';
+    filter('');
+    input.focus();
+  });
+
+  if (!initial && window.innerWidth >= 768) {
+    input.focus({ preventScroll: true });
+  }
+})();
+</script>

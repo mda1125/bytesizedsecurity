@@ -1,0 +1,30 @@
+{%- comment -%}
+Responsive image with srcset for Blotato CDN sources (Supabase render endpoint).
+External non-Blotato URLs and local files are emitted as a plain <img>.
+
+Params (via {% include responsive-image.html ... %}):
+  src     — image URL (full URL or workspace-relative path) — required
+  alt     — alt text — required
+  class   — class string applied to <img> — optional
+  width   — natural width in px (for aspect-ratio reservation) — recommended
+  height  — natural height in px (for aspect-ratio reservation) — recommended
+  eager   — "true" to render fetchpriority=high + loading=eager (above-the-fold).
+            Default behavior is loading=lazy.
+  sizes   — sizes attribute value (e.g. "(min-width: 1024px) 800px, 100vw").
+            Default: "100vw". Only used for Blotato sources.
+{%- endcomment -%}
+{%- assign img_class = include.class | default: "" -%}
+{%- assign img_sizes = include.sizes | default: "100vw" -%}
+{%- assign blotato_marker = "database.blotato.io/storage/v1/object/public/" -%}
+{%- if include.src contains blotato_marker -%}
+  {%- assign clean_src = include.src | split: "?" | first -%}
+  {%- assign blotato_base = clean_src | replace: "/storage/v1/object/public/", "/storage/v1/render/image/public/" -%}
+<picture>
+  <source type="image/webp" sizes="{{ img_sizes }}" srcset="{{ blotato_base }}?width=480&format=webp&quality=80 480w, {{ blotato_base }}?width=768&format=webp&quality=80 768w, {{ blotato_base }}?width=1200&format=webp&quality=80 1200w, {{ blotato_base }}?width=1600&format=webp&quality=80 1600w">
+  <img alt="{{ include.alt | escape }}"{% if img_class != "" %} class="{{ img_class }}"{% endif %} src="{{ blotato_base }}?width=1200&quality=80" sizes="{{ img_sizes }}" srcset="{{ blotato_base }}?width=480&quality=80 480w, {{ blotato_base }}?width=768&quality=80 768w, {{ blotato_base }}?width=1200&quality=80 1200w, {{ blotato_base }}?width=1600&quality=80 1600w"{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %}{% if include.eager == "true" %} fetchpriority="high" loading="eager"{% else %} loading="lazy"{% endif %}>
+</picture>
+{%- elsif include.src contains "://" -%}
+<img alt="{{ include.alt | escape }}"{% if img_class != "" %} class="{{ img_class }}"{% endif %} src="{{ include.src }}"{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %}{% if include.eager == "true" %} fetchpriority="high" loading="eager"{% else %} loading="lazy"{% endif %}>
+{%- else -%}
+<img alt="{{ include.alt | escape }}"{% if img_class != "" %} class="{{ img_class }}"{% endif %} src="{{ include.src | relative_url }}"{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %}{% if include.eager == "true" %} fetchpriority="high" loading="eager"{% else %} loading="lazy"{% endif %}>
+{%- endif -%}

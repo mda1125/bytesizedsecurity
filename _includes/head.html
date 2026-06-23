@@ -139,19 +139,10 @@
 
   {% if page.image %}
   <!-- Preload LCP hero image (post pages) -->
-  {% if page.image contains '://' %}
-  <link rel="preload" as="image" href="{{ page.image }}" fetchpriority="high">
-  {% else %}
-  <link rel="preload" as="image" href="{{ page.image | relative_url }}" fetchpriority="high">
-  {% endif %}
+  {% include preload-image.html src=page.image sizes="(min-width: 1024px) 720px, 100vw" %}
   {% elsif page.url == "/" and site.posts.first.image %}
   <!-- Preload LCP hero image (homepage featured post) -->
-  {% assign home_lcp = site.posts.first.image %}
-  {% if home_lcp contains '://' %}
-  <link rel="preload" as="image" href="{{ home_lcp }}" fetchpriority="high">
-  {% else %}
-  <link rel="preload" as="image" href="{{ home_lcp | relative_url }}" fetchpriority="high">
-  {% endif %}
+  {% include preload-image.html src=site.posts.first.image sizes="(min-width: 1024px) 800px, 100vw" %}
   {% endif %}
 
   {% feed_meta %}

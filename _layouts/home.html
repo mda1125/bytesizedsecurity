@@ -15,12 +15,17 @@ layout: default
     
     <!-- Featured Post (First Post) -->
     {% assign featured = posts.first %}
+    {% assign featured_words = featured.content | strip_html | number_of_words %}
+    {% assign featured_minutes = featured_words | times: 1.0 | divided_by: 220.0 | ceil %}
+    {% if featured_minutes < 1 %}{% assign featured_minutes = 1 %}{% endif %}
     <article class="mb-12 border-b border-gray-300 pb-12">
       <header class="mb-4">
         <div class="flex items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-2">
           <span>Featured Analysis</span>
           <span class="text-gray-500">•</span>
           <span class="text-gray-500">{{ featured.date | date: "%B %-d, %Y" }}</span>
+          <span class="text-gray-500">•</span>
+          <span class="text-gray-500">{{ featured_minutes }} min read</span>
         </div>
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4 hover:text-link cursor-pointer">
           <a href="{{ featured.url | relative_url }}" class="no-underline hover:text-link">{{ featured.title | escape }}</a>
@@ -31,11 +36,14 @@ layout: default
       {% assign featured_w = featured.image_width | default: 1200 %}
       {% assign featured_h = featured.image_height | default: 630 %}
       <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
-        {% if featured.image contains '://' %}
-        <img alt="{{ featured.title | escape }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ featured.image }}" width="{{ featured_w }}" height="{{ featured_h }}" fetchpriority="high" loading="eager">
-        {% else %}
-        <img alt="{{ featured.title | escape }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ featured.image | relative_url }}" width="{{ featured_w }}" height="{{ featured_h }}" fetchpriority="high" loading="eager">
-        {% endif %}
+        {% include responsive-image.html
+          src=featured.image
+          alt=featured.title
+          class="w-full h-auto object-cover max-h-[400px]"
+          width=featured_w
+          height=featured_h
+          eager="true"
+          sizes="(min-width: 1024px) 800px, 100vw" %}
       </div>
       {% else %}
       <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
@@ -49,7 +57,7 @@ layout: default
         <p>{{ featured.excerpt | strip_html | truncatewords: 50 }}</p>
       </div>
       <a class="inline-flex items-center gap-1 min-h-[44px] py-2 text-link font-bold font-sans text-sm hover:underline uppercase tracking-wide" href="{{ featured.url | relative_url }}">
-        Continue Reading <span class="text-sm">{% include icon.html name="arrow_forward" %}</span>
+        Read the analysis <span class="text-sm">{% include icon.html name="arrow_forward" %}</span>
       </a>
     </article>
 
@@ -57,7 +65,7 @@ layout: default
     <div class="lg:hidden mb-12 bg-surface border border-gray-200 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
       <div class="flex-1">
         <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 mb-1">Security Briefing</h3>
-        <p class="text-xs text-gray-600">Get the latest exploits delivered to your inbox.</p>
+        <p class="text-xs text-gray-600">The latest exploits in your inbox. Weekly. No spam. Unsubscribe in one click.</p>
       </div>
       <form method="post" action="https://sendfox.com/form/3z6ooe/1ydnre" class="sendfox-form flex gap-2 w-full sm:w-auto" data-async="true" data-recaptcha="false">
         <input type="email" name="email" required placeholder="email@domain.com" class="h-10 bg-white border border-gray-300 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary flex-1 sm:w-48">
@@ -78,11 +86,13 @@ layout: default
         <div class="w-full md:w-1/3 shrink-0">
           <div class="border border-gray-200 p-1 bg-white shadow-sm">
             {% if post.image %}
-            {% if post.image contains '://' %}
-            <img alt="{{ post.title | escape }}" src="{{ post.image }}" class="aspect-video w-full object-cover" loading="lazy" width="400" height="225">
-            {% else %}
-            <img alt="{{ post.title | escape }}" src="{{ post.image | relative_url }}" class="aspect-video w-full object-cover" loading="lazy" width="400" height="225">
-            {% endif %}
+            {% include responsive-image.html
+              src=post.image
+              alt=post.title
+              class="aspect-video w-full object-cover"
+              width=400
+              height=225
+              sizes="(min-width: 1024px) 240px, (min-width: 768px) 33vw, 100vw" %}
             {% else %}
             <div class="aspect-video bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
               <span class="text-4xl text-primary opacity-40">{% include icon.html name="article" %}</span>
@@ -97,13 +107,20 @@ layout: default
           <h3 class="text-2xl font-bold text-gray-900 mb-2 leading-tight hover:text-link cursor-pointer">
             <a href="{{ post.url | relative_url }}" class="no-underline hover:text-link">{{ post.title | escape }}</a>
           </h3>
+          {% assign card_author = post.author | default: site.author.name %}
+          {% if card_author == "Marc" %}{% assign card_author = site.author.name %}{% endif %}
+          {% assign card_words = post.content | strip_html | number_of_words %}
+          {% assign card_minutes = card_words | times: 1.0 | divided_by: 220.0 | ceil %}
+          {% if card_minutes < 1 %}{% assign card_minutes = 1 %}{% endif %}
           <div class="text-sm font-sans text-gray-500 mb-3">
-            Posted on {{ post.date | date: "%B %-d, %Y" }} by <span class="text-gray-700 font-semibold">{{ post.author | default: site.author.name }}</span>
+            Posted on {{ post.date | date: "%B %-d, %Y" }} by <a href="{{ '/about' | relative_url }}" class="text-gray-700 font-semibold no-underline hover:text-link">{{ card_author }}</a>{% if card_author == site.author.name and site.author.credentials %}, <span class="text-gray-500">{{ site.author.credentials }}</span>{% endif %} · <span class="text-gray-500">{{ card_minutes }} min read</span>
           </div>
           <p class="text-gray-700 mb-3 line-clamp-3">
             {{ post.excerpt | strip_html | truncatewords: 30 }}
           </p>
-          <a class="inline-flex items-center min-h-[44px] py-2 text-link font-bold font-sans text-xs hover:underline uppercase" href="{{ post.url | relative_url }}">Read More »</a>
+          <a class="inline-flex items-center gap-1 min-h-[44px] py-2 text-link font-bold font-sans text-xs hover:underline uppercase" href="{{ post.url | relative_url }}">
+            Read the analysis <span class="text-xs">{% include icon.html name="arrow_forward" %}</span>
+          </a>
         </div>
       </article>
       {% endfor %}

@@ -5,6 +5,9 @@ url: "https://blog.bytesizedsecurity.show"
 # Author
 author:
   name: "Marc David"
+  credentials: "CISSP"
+  title: "Senior Security Engineer"
+  avatar: "/assets/img/marc-david-avatar.webp"
   twitter: "marc_david"
   url: "https://blog.bytesizedsecurity.show/about/"
 

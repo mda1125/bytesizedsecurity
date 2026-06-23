@@ -1,22 +1,38 @@
 <aside class="w-full lg:w-[300px] shrink-0 flex flex-col gap-10">
+  {% unless page.hide_sidebar_search %}
+  <!-- Search -->
+  <form action="{{ '/archive' | relative_url }}" method="get" class="bg-white border border-gray-200 flex items-center gap-2 px-3 h-11 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-colors" role="search">
+    <label for="sidebar-search" class="sr-only">Search articles</label>
+    <span class="text-gray-400 text-lg shrink-0">{% include icon.html name="search" %}</span>
+    <input
+      type="search"
+      id="sidebar-search"
+      name="q"
+      placeholder="Find an article…"
+      autocomplete="off"
+      class="flex-1 bg-transparent text-sm placeholder-gray-400 focus:outline-none min-w-0"
+      aria-label="Search articles">
+  </form>
+  {% endunless %}
+
   <!-- About Section -->
   <div class="bg-white p-5 border border-gray-200">
     <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-primary pb-2 mb-4">About</h3>
     <p class="text-sm text-gray-600 mb-4">
       <strong class="text-gray-900">{{ site.title }}</strong> is an independent blog dedicated to investigating cybercrime and security trends.
     </p>
-    <a class="text-xs font-bold text-link uppercase hover:underline" href="{{ '/about' | relative_url }}">More About Us »</a>
+    <a class="text-xs font-bold text-link uppercase hover:underline" href="{{ '/about' | relative_url }}">Read about Marc »</a>
   </div>
 
   <!-- Newsletter Section -->
   <div class="bg-surface p-5 border border-gray-200">
     <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-primary pb-2 mb-4">Security Briefing</h3>
-    <p class="text-xs text-gray-600 mb-3">Get the latest exploits delivered to your inbox.</p>
+    <p class="text-xs text-gray-600 mb-3">The latest exploits in your inbox. Weekly. No spam. Unsubscribe in one click.</p>
     <form method="post" action="https://sendfox.com/form/3z6ooe/1ydnre" class="sendfox-form flex flex-col gap-3" id="1ydnre" data-async="true" data-recaptcha="false">
       <input type="email" id="sendfox_form_email" name="email" required placeholder="email@domain.com" class="h-11 bg-white border border-gray-300 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full">
       <label class="flex items-start gap-2 text-xs text-gray-600 cursor-pointer">
         <input type="checkbox" name="gdpr" value="1" required class="mt-0.5 accent-primary">
-        <span>I agree to receive email updates and promotions.</span>
+        <span>Send me the weekly Security Briefing.</span>
       </label>
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off"></div>
       <button type="submit" class="h-11 bg-text-main text-white text-sm font-bold uppercase tracking-wide hover:bg-primary transition-colors cursor-pointer">Subscribe</button>

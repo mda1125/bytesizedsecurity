@@ -8,13 +8,18 @@ layout: default
 
 <div class="flex flex-col lg:flex-row gap-12">
   <article class="flex-1 bg-white border border-gray-200 p-6 md:p-10">
+    {% assign page_words = page.content | strip_html | number_of_words %}
+    {% assign page_minutes = page_words | times: 1.0 | divided_by: 220.0 | ceil %}
+    {% if page_minutes < 1 %}{% assign page_minutes = 1 %}{% endif %}
     <header class="mb-8 border-b border-gray-200 pb-8">
-      <div class="flex items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-3">
+      <div class="flex flex-wrap items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-3">
         <span>{{ page.category | default: page.tags | first | default: "Security" }}</span>
         <span class="text-gray-500">•</span>
         <time class="text-gray-500" datetime="{{ page.date | date_to_xmlschema }}">
           {{ page.date | date: "%B %-d, %Y" }}
         </time>
+        <span class="text-gray-500">•</span>
+        <span class="text-gray-500">{{ page_minutes }} min read</span>
         {% if page.last_modified_at and page.last_modified_at != page.date %}
         <span class="text-gray-500">•</span>
         <span class="text-gray-500">Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></span>
@@ -25,12 +30,20 @@ layout: default
         {{ page.title | escape }}
       </h1>
       
+      {% assign post_author = page.author | default: site.author.name %}
+      {% if post_author == "Marc" %}{% assign post_author = site.author.name %}{% endif %}
+      {% assign is_site_author = false %}
+      {% if post_author == site.author.name %}{% assign is_site_author = true %}{% endif %}
       <div class="flex flex-wrap items-center gap-4 text-sm font-sans text-gray-500">
         <div class="flex items-center gap-3">
-          <img src="{{ '/assets/img/marc-david-avatar.webp' | relative_url }}" alt="Marc David" width="60" height="60" class="rounded-full" loading="eager">
+          {% if is_site_author and site.author.avatar %}
+          <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" width="60" height="60" class="rounded-full" loading="eager">
+          {% endif %}
           <div class="flex flex-col">
-            <a href="{{ '/about' | relative_url }}" class="text-gray-900 font-semibold no-underline hover:text-link">{{ page.author | default: site.author.name }}</a>
-            <span class="text-sm text-gray-500">Senior Security Engineer · CISSP</span>
+            <a href="{{ '/about' | relative_url }}" class="text-gray-900 font-semibold no-underline hover:text-link">{{ post_author }}</a>
+            {% if is_site_author %}
+            <span class="text-sm text-gray-500">{% if site.author.title %}{{ site.author.title }}{% endif %}{% if site.author.title and site.author.credentials %} · {% endif %}{% if site.author.credentials %}{{ site.author.credentials }}{% endif %}</span>
+            {% endif %}
           </div>
         </div>
         {% if page.tags.size > 0 %}
@@ -48,11 +61,14 @@ layout: default
     {% assign hero_w = page.image_width | default: 1200 %}
     {% assign hero_h = page.image_height | default: 630 %}
     <div class="w-full mb-8 border border-gray-200 p-1 bg-white shadow-sm">
-      {% if page.image contains '://' %}
-      <img alt="{{ page.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ page.image }}" width="{{ hero_w }}" height="{{ hero_h }}" fetchpriority="high" loading="eager">
-      {% else %}
-      <img alt="{{ page.title }}" class="w-full h-auto object-cover max-h-[400px]" src="{{ page.image | relative_url }}" width="{{ hero_w }}" height="{{ hero_h }}" fetchpriority="high" loading="eager">
-      {% endif %}
+      {% include responsive-image.html
+        src=page.image
+        alt=page.title
+        class="w-full h-auto object-cover max-h-[400px]"
+        width=hero_w
+        height=hero_h
+        eager="true"
+        sizes="(min-width: 1024px) 720px, 100vw" %}
     </div>
     {% endif %}
 
