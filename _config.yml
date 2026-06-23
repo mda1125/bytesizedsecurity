@@ -7,6 +7,9 @@ author:
   name: "Marc David"
   credentials: "CISSP"
   title: "Senior Security Engineer"
+  # Optional one-liner shown next to the title in the homepage author proof strip.
+  # Leave empty to show only `title`. Keep it short (≤60 chars) and verifiable.
+  tagline: ""
   avatar: "/assets/img/marc-david-avatar.webp"
   twitter: "marc_david"
   url: "https://blog.bytesizedsecurity.show/about/"
