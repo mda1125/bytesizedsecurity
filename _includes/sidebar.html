@@ -73,10 +73,66 @@
   <!-- Categories Section -->
   <div>
     <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Categories</h3>
+
+    {%- comment -%}
+    Sort categories by post count (descending). site.categories iterates as
+    [name, posts] tuples; Liquid can't sort by tuple[1].size directly, so we
+    build a zero-padded "count|name" string per category and sort lexically
+    (numeric thanks to the zero-padding), then reverse for desc order.
+    Top 5 render inline; the rest collapse behind a native <details>.
+    Collapse only kicks in above 6 total — hiding just one item isn't worth
+    the disclosure.
+    {%- endcomment -%}
+    {%- assign cat_index = "" -%}
+    {%- for cat in site.categories -%}
+      {%- assign padded = cat[1].size | prepend: "00000" | slice: -5, 5 -%}
+      {%- if forloop.first -%}
+        {%- assign cat_index = padded | append: "|" | append: cat[0] -%}
+      {%- else -%}
+        {%- assign cat_index = cat_index | append: ";" | append: padded | append: "|" | append: cat[0] -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign cat_pairs = cat_index | split: ";" | sort | reverse -%}
+    {%- assign cat_top_n = 5 -%}
+    {%- assign cat_collapse_threshold = 6 -%}
+    {%- assign cat_total = site.categories | size -%}
+
     <ul class="flex flex-col text-sm divide-y divide-gray-200 border-t border-b border-gray-200">
-      {% for category in site.categories %}
-      <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="{{ '/archive' | relative_url }}#{{ category[0] | slugify }}">{{ category[0] }} <span class="text-gray-500 text-xs ml-1">({{ category[1].size }})</span></a></li>
-      {% endfor %}
+      {%- if cat_total > cat_collapse_threshold -%}
+        {%- assign visible_limit = cat_top_n -%}
+      {%- else -%}
+        {%- assign visible_limit = cat_total -%}
+      {%- endif -%}
+
+      {%- for entry in cat_pairs limit: visible_limit -%}
+        {%- assign parts = entry | split: "|" -%}
+        {%- assign cat_size = parts[0] | plus: 0 -%}
+        {%- assign cat_name = parts[1] -%}
+      <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="{{ '/archive' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 text-xs ml-1">({{ cat_size }})</span></a></li>
+      {%- endfor -%}
+
+      {%- if cat_total > cat_collapse_threshold -%}
+        {%- assign hidden_count = cat_total | minus: cat_top_n -%}
+      <li>
+        <details class="group">
+          <summary class="cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden flex items-center justify-between py-2 px-1 text-xs font-bold uppercase tracking-wider text-gray-500 hover:text-primary hover:bg-gray-50 transition-colors">
+            <span>
+              <span class="group-open:hidden">Show {{ hidden_count }} more</span>
+              <span class="hidden group-open:inline">Show fewer</span>
+            </span>
+            <span class="text-base leading-none transition-transform duration-200 group-open:rotate-180" aria-hidden="true">▾</span>
+          </summary>
+          <ul class="flex flex-col text-sm divide-y divide-gray-200 border-t border-gray-200">
+            {%- for entry in cat_pairs offset: cat_top_n -%}
+              {%- assign parts = entry | split: "|" -%}
+              {%- assign cat_size = parts[0] | plus: 0 -%}
+              {%- assign cat_name = parts[1] -%}
+            <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="{{ '/archive' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 text-xs ml-1">({{ cat_size }})</span></a></li>
+            {%- endfor -%}
+          </ul>
+        </details>
+      </li>
+      {%- endif -%}
     </ul>
   </div>
 
