@@ -129,10 +129,16 @@
   </script>
   {% endif %}
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+  <!-- Self-hosted webfonts. @font-face declarations live in
+       assets/css/input.css (compiled into tailwind.min.css). Preload
+       only the highest-impact above-the-fold weights so they start
+       fetching before CSS finishes parsing; other weights load on
+       demand. crossorigin is required even for same-origin font
+       preloads — the preload fetch is treated as CORS by spec. -->
+  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/inter/inter-400.woff2' | relative_url }}" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/inter/inter-700.woff2' | relative_url }}" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/merriweather/merriweather-400.woff2' | relative_url }}" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/merriweather/merriweather-700.woff2' | relative_url }}" crossorigin>
   
   <!-- Tailwind CSS (compiled). Cache-bust on the file's mtime so style
        updates invalidate browsers immediately instead of waiting for the
