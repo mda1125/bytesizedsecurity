@@ -251,13 +251,16 @@ Note the escaped quotes: `\"` not `"`.
 
 ### 6.2 Dimensions
 
-- **Hero image target: 1200×1200 (square) or 1200×630 (16:9)**. Both work for OG/Twitter cards.
-- Pillar hero: 1024×576 also acceptable
+- **Canonical aspect ratio: 1.91:1 (1200×630)** — the Open Graph / Twitter card standard. This ratio minimizes crop on every context the hero is rendered in (post hero, featured hero, "Latest Intel" card thumb, social link unfurl) so use it unless you have a specific reason not to.
+- **Acceptable alternatives** — only when content is verifiably inside the safe zone (see §6.5):
+  - **1200×1200 (square)** — IG / square-OG friendly, but loses ~22% top + ~22% bottom on 16:9 cards. Use only if the visual narrative survives that crop.
+  - **1080×1350 (4:5 portrait)** — IG portrait friendly, but loses ~33% top + ~33% bottom on 16:9 cards. Same warning.
+- **Pillar / wider hero**: 1920×1005 (2× of 960×503, still 1.91:1) for higher pixel density.
 - **MUST set actual `image_width:` and `image_height:` in front matter** matching the actual file dimensions. Mismatched dimensions cause CLS AND Google suppresses rich-result thumbnails site-wide if the schema reports wrong dimensions. [M4]
 
 ### 6.3 Path convention
 
-- Hero image at `/assets/img/posts/[post-slug].webp` (or `.png`)
+- Hero image at `/assets/img/posts/[post-slug].webp` (or `.png`). **Always self-host** — third-party CDN URLs (e.g., Blotato/Supabase storage) work but skip the LCP preload's own-origin optimization and tie the hero's availability to a third party's uptime. The social-media-manager pipeline can keep using the original CDN URL for its own platform uploads; the post's `image:` field is the web hero only.
 - Inline body images at `/assets/img/posts/[descriptive-name].webp`
 
 ### 6.4 What happens automatically (do not duplicate)
@@ -265,6 +268,67 @@ Note the escaped quotes: `\"` not `"`.
 - `head.html` auto-emits `<link rel="preload" as="image">` for the hero image of every post with `image:` set [M5]
 - `schema-blogposting.html` auto-emits `image.url`, `image.width`, `image.height` in BlogPosting JSON-LD using the front matter dimensions
 - Default fallback image (`/assets/img/default-og.png`, 1536×1024) is auto-used if no `image:` is set
+
+### 6.5 Composition: keep critical content inside the safe zone
+
+A hero image is rendered in four contexts at four different aspect ratios. `object-cover` center-crops the source to fit each one, so any content within ~10% of the source frame can be cut off without warning:
+
+| Context | Effective ratio | Crop on 1.91:1 source | Crop on 1:1 (square) source |
+|---|---|---|---|
+| Post hero (desktop, `max-h-[400px]`) | ~1.8:1 | ~3% off each side | ~22% off top + bottom |
+| Featured hero on homepage | ~1.8:1 | ~3% off each side | ~22% off top + bottom |
+| "Latest Intel" card thumb | 16:9 (1.78:1) | ~3.6% off each side | ~22% off top + bottom |
+| OG / Twitter / LinkedIn unfurl | 1.91:1 | **0% — perfect fit** | ~24% off top + bottom |
+
+The **safe zone** is the centered region of the source where you can guarantee critical content survives every crop:
+
+- **Width**: keep all critical content within the middle **90%** of the frame (5% margin each side)
+- **Height**: keep all critical content within the middle **80%** of the frame (10% margin top and bottom)
+
+"Critical content" = the subject's face, the focal subject, any text overlay, any visual element that carries the punchline of the narrative. If your composition's narrative *depends* on a corner element (e.g., bottom-left hand + top-right reticle telling a story diagonally), that's the highest-risk case — either reframe to 1.91:1 natively or use the padding recipe below.
+
+#### What to do if your generation tool only outputs square
+
+The image-generation tools used by `ai-social-media-manager` default to 1024×1024 or 2048×2048. Two options:
+
+1. **Regenerate at 1.91:1** if the tool supports custom aspect ratios (Midjourney `--ar 1200:630`, DALL-E `--size 1792x1024`, Banana/Gemini `aspect_ratio="16:9"`, etc.). Preferred.
+2. **Pad the square to 1.91:1** with a Spotify-style blurred extension of the source itself. The current Pokemon Go featured hero (`assets/img/posts/pokemon-go-military-drones-consent-laundering.webp`) is the reference implementation. Recipe below.
+
+#### Reference padding recipe (square → 1.91:1)
+
+```python
+from PIL import Image, ImageFilter, ImageEnhance
+
+src = Image.open("source-2048x2048.jpg").convert("RGB")
+OUT_W, OUT_H = 1200, 630
+
+# Foreground: scale source to fit height, preserve aspect
+sw, sh = src.size
+fg_h = OUT_H
+fg_w = round(fg_h * sw / sh)
+fg = src.resize((fg_w, fg_h), Image.LANCZOS)
+
+# Background: stretch source to canvas width, crop to OUT_H, blur heavily,
+# then darken so it doesn't compete with the foreground.
+bg = src.resize((OUT_W, round(OUT_W * sh / sw)), Image.LANCZOS)
+top = (bg.height - OUT_H) // 2
+bg = bg.crop((0, top, OUT_W, top + OUT_H))
+bg = bg.filter(ImageFilter.GaussianBlur(radius=45))
+bg = ImageEnhance.Brightness(bg).enhance(0.55)
+
+# Composite
+canvas = bg.copy()
+canvas.paste(fg, ((OUT_W - fg_w) // 2, 0))
+canvas.save("assets/img/posts/[slug].webp", "WEBP", quality=88, method=6)
+```
+
+This produces a 1200×630 hero with the source preserved at full height in the center and a color-matched, blurred extension on the sides. The blur radius (45) and brightness (0.55) are tuned to make the seam between foreground and background visually invisible for dark/cinematic source images. For lighter / high-contrast sources, drop brightness to ~0.4 to keep the foreground dominant.
+
+#### What to NEVER do
+
+- Place a subject's face within 5% of any edge — it WILL get cropped on at least one context.
+- Place key text overlay within 10% of top or bottom — it WILL be cut by the 16:9 card crop.
+- Ship a hero whose narrative depends on content at the corners of a square source without padding to 1.91:1 first.
 
 ---
 
@@ -340,6 +404,8 @@ Each of these was a finding in the 2026-06-19 audit. Don't ship a post that does
 | In-body `# Heading` (H1) | Double-h1 confuses Google | Use `## Heading` (H2) [H6] |
 | `howto:` front matter | Schema deprecated by Google | Plain prose with ordered list [M2] |
 | Image without `image_width:` and `image_height:` | Causes CLS + breaks rich-result thumbnails | Always include actual dims [M4, M6] |
+| Hero image with critical content within 5% of any edge | `object-cover` will crop it on at least one rendering context (card thumb, social card, post hero) | Re-frame to 1.91:1 with the safe-zone inset or pad with the blurred-extension recipe [§6.5] |
+| Hero image hosted on third-party CDN (e.g., Blotato/Supabase) | Defeats own-origin LCP preload optimization and ties uptime to a third party | Download, optimize, and commit to `/assets/img/posts/` [§6.3] |
 | Linking to a `noindex: true` post | Wastes link equity | Check target's front matter first |
 | YMYL stat without primary-source hyperlink | Fails E-E-A-T trust signal | Always link the source [H4] |
 | Thin post (<1,000 words) without `noindex: true` | Cannibalizes pillar; damages site quality score | Either expand or noindex [C1] |
@@ -357,7 +423,9 @@ Mechanical pass/fail checks. The social-media-manager's quality framework can im
 - [ ] `title:` is set, ≤60 chars (soft warn if over)
 - [ ] `excerpt:` is set, longer than description
 - [ ] `image:` is set and the file exists at that path
+- [ ] `image:` path starts with `/assets/img/posts/` (self-hosted, not a third-party CDN URL) [§6.3]
 - [ ] `image_width:` and `image_height:` are set and match actual file dimensions
+- [ ] Hero is 1.91:1 (1200×630) — OR a different aspect with verified safe-zone inset (≥5% horizontal, ≥10% vertical margin around critical content) [§6.5]
 - [ ] `last_modified_at:` matches today's date
 - [ ] `layout: post` is set
 - [ ] `category:` is one of the existing set
@@ -412,4 +480,5 @@ When in doubt, open the bucket-matching reference post and mirror its structure.
 
 ## Change log
 
+- **2026-06-23**: Tightened §6.2 to make 1.91:1 (1200×630) the canonical hero aspect (matches OG/Twitter card standard, minimizes crop across post hero / featured hero / card thumb / social unfurl). Added §6.5 "Composition: keep critical content inside the safe zone" with the per-context crop table, safe-zone math, and a Spotify-style blurred-extension padding recipe for square sources. Added forbidden patterns to §11 for edge-touching content and third-party CDN heroes, plus matching validators in §12. Sources: 2026-06-23 Raven audit Tier 2 "featured-hero image guideline" finding; reference re-export at `assets/img/posts/pokemon-go-military-drones-consent-laundering.webp`.
 - **2026-06-19**: Initial version. Codifies the standards established in PRs 1–7a of the 2026-06-19 SEO audit remediation. Sources: `_includes/head.html`, `_includes/schema-*.html`, `_layouts/post.html`, `.github/workflows/deploy.yml`, and the three reference posts cited in §13.

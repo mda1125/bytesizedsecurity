@@ -6,9 +6,9 @@ category: "Privacy"
 tags: ["Privacy", "Data Ethics", "AI", "Consent"]
 author: Marc
 excerpt: "Pokemon Go's 30 billion player scans now power a 3D map a U.S. defense contractor is integrating into drone navigation for GPS-denied combat zones. The pipeline is technically disclosed and meaningfully unconsented. Here's why security and privacy teams should treat it as the template for the next decade of opt-in telemetry abuse."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/9f36553f-9468-4e2f-a20d-b4878f2cad3e.jpg"
-image_width: 2048
-image_height: 2048
+image: "/assets/img/posts/pokemon-go-military-drones-consent-laundering.webp"
+image_width: 1200
+image_height: 630
 last_modified_at: 2026-06-21
 faq:
   - question: "Did Niantic actually sell Pokemon Go scans to a defense contractor?"
