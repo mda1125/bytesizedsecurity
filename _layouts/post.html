@@ -11,6 +11,8 @@ layout: default
     {% assign page_words = page.content | strip_html | number_of_words %}
     {% assign page_minutes = page_words | times: 1.0 | divided_by: 220.0 | ceil %}
     {% if page_minutes < 1 %}{% assign page_minutes = 1 %}{% endif %}
+    {% assign page_date_day = page.date | date: '%Y-%m-%d' %}
+    {% assign page_modified_day = page.last_modified_at | date: '%Y-%m-%d' %}
     <header class="mb-8 border-b border-gray-200 pb-8">
       <div class="flex flex-wrap items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-3">
         <span>{{ page.category | default: page.tags | first | default: "Security" }}</span>
@@ -20,7 +22,7 @@ layout: default
         </time>
         <span class="text-gray-500">•</span>
         <span class="text-gray-500">{{ page_minutes }} min read</span>
-        {% if page.last_modified_at and page.last_modified_at != page.date %}
+        {% if page.last_modified_at and page_modified_day != page_date_day %}
         <span class="text-gray-500">•</span>
         <span class="text-gray-500">Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></span>
         {% endif %}

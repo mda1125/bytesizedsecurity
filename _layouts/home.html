@@ -32,14 +32,28 @@ layout: default
     {% assign featured_words = featured.content | strip_html | number_of_words %}
     {% assign featured_minutes = featured_words | times: 1.0 | divided_by: 220.0 | ceil %}
     {% if featured_minutes < 1 %}{% assign featured_minutes = 1 %}{% endif %}
+    {% assign now_seconds = 'now' | date: '%s' | plus: 0 %}
+    {% assign featured_seconds = featured.date | date: '%s' | plus: 0 %}
+    {% assign featured_age_days = now_seconds | minus: featured_seconds | divided_by: 86400 %}
+    {% assign featured_date_day = featured.date | date: '%Y-%m-%d' %}
+    {% assign featured_modified_day = featured.last_modified_at | date: '%Y-%m-%d' %}
     <article class="mb-12 border-b border-gray-300 pb-12">
       <header class="mb-4">
-        <div class="flex items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-2">
+        <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-2">
+          {% if featured_age_days <= 7 %}
+          <span class="inline-flex items-center gap-1.5 bg-green-50 text-green-700 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider border border-green-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Fresh
+          </span>
+          {% endif %}
           <span>Featured Analysis</span>
           <span class="text-gray-500">•</span>
           <span class="text-gray-500">{{ featured.date | date: "%B %-d, %Y" }}</span>
           <span class="text-gray-500">•</span>
           <span class="text-gray-500">{{ featured_minutes }} min read</span>
+          {% if featured.last_modified_at and featured_modified_day != featured_date_day %}
+          <span class="text-gray-500">•</span>
+          <span class="text-gray-500">Updated <time datetime="{{ featured.last_modified_at | date_to_xmlschema }}">{{ featured.last_modified_at | date: "%b %-d, %Y" }}</time></span>
+          {% endif %}
         </div>
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4 hover:text-link cursor-pointer">
           <a href="{{ featured.url | relative_url }}" class="no-underline hover:text-link">{{ featured.title | escape }}</a>
@@ -113,8 +127,10 @@ layout: default
           {% assign card_words = post.content | strip_html | number_of_words %}
           {% assign card_minutes = card_words | times: 1.0 | divided_by: 220.0 | ceil %}
           {% if card_minutes < 1 %}{% assign card_minutes = 1 %}{% endif %}
+          {% assign card_date_day = post.date | date: '%Y-%m-%d' %}
+          {% assign card_modified_day = post.last_modified_at | date: '%Y-%m-%d' %}
           <div class="text-sm font-sans text-gray-500 mb-3">
-            Posted on {{ post.date | date: "%B %-d, %Y" }} by <a href="{{ '/about' | relative_url }}" class="text-gray-700 font-semibold no-underline hover:text-link">{{ card_author }}</a>{% if card_author == site.author.name and site.author.credentials %}, <span class="text-gray-500">{{ site.author.credentials }}</span>{% endif %} · <span class="text-gray-500">{{ card_minutes }} min read</span>
+            Posted on {{ post.date | date: "%B %-d, %Y" }} by <a href="{{ '/about' | relative_url }}" class="text-gray-700 font-semibold no-underline hover:text-link">{{ card_author }}</a>{% if card_author == site.author.name and site.author.credentials %}, <span class="text-gray-500">{{ site.author.credentials }}</span>{% endif %} · <span class="text-gray-500">{{ card_minutes }} min read</span>{% if post.last_modified_at and card_modified_day != card_date_day %} · <span class="text-gray-500">Updated <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time></span>{% endif %}
           </div>
           <p class="text-gray-700 mb-3 line-clamp-3">
             {{ post.excerpt | strip_html | truncatewords: 30 }}
