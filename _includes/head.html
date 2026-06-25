@@ -1,4 +1,22 @@
 <head>
+  <!-- No-FOUC dark-mode bootstrap. MUST run synchronously before the stylesheet
+       loads so the `.dark` class is on <html> before first paint — otherwise the
+       page renders light then snaps to dark, which looks broken. Reads any
+       stored choice from localStorage ('light' | 'dark' | absent) and falls
+       through to the OS prefers-color-scheme when no choice is stored. Wrapped
+       in try/catch because Safari/private-mode can throw on localStorage. -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (stored === 'dark' || (stored !== 'light' && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFZKE874XE"></script>
   <script>

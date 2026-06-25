@@ -10,6 +10,18 @@
 @source "../../*.md";
 
 /*
+  Class-based dark mode variant.
+
+  Tailwind v4's default `dark:` variant uses @media (prefers-color-scheme: dark),
+  which can't be overridden manually. This @custom-variant rewires `dark:` to
+  trigger when `<html class="dark">` is present (set by the no-FOUC script in
+  head.html based on localStorage + OS pref). That single source of truth lets
+  the 3-state Auto / Light / Dark toggle work — Auto adds/removes the class
+  reactively, Light/Dark commit a fixed choice.
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
   Self-hosted web fonts.
 
   Subsetted Latin-only WOFF2 files sourced from Google Fonts via the
@@ -141,11 +153,15 @@
 @theme {
   --color-primary: #b91c1c;
   --color-primary-dark: #991b1b;
-  --color-background: #ffffff;
-  --color-surface: #f3f4f6;
+  --color-background: #f9f9f9;
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-border: #e5e7eb;
   --color-text-main: #111827;
   --color-text-muted: #4b5563;
   --color-link: #1d4ed8;
+  --color-code-bg: #1e293b;
+  --color-code-fg: #e2e8f0;
 
   --font-serif: "Merriweather", "Merriweather Fallback", Georgia, serif;
   --font-sans: "Inter", "Inter Fallback", system-ui, -apple-system, sans-serif;
@@ -153,7 +169,39 @@
   --shadow-classic: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
+/*
+  Dark mode token overrides.
+
+  Re-declares the @theme tokens under the `.dark` selector so anything that
+  resolves them (body bg, prose links, etc.) flips automatically when the no-FOUC
+  script adds `class="dark"` to <html>. Templates also opt into surface flips via
+  Tailwind `dark:` variants for the high-frequency classes (bg-white,
+  text-gray-*, border-gray-*).
+
+  Palette tuned for WCAG AA:
+    gray-100 (#f3f4f6) on gray-900 bg ≈ 16:1
+    gray-300 (#d1d5db) on gray-800 ≈ 11:1
+    blue-400 (#60a5fa) link on gray-900 ≈ 7:1
+    red-400 (#f87171) primary on gray-900 ≈ 5.4:1
+*/
+.dark {
+  --color-primary: #f87171;
+  --color-primary-dark: #ef4444;
+  --color-background: #0b1220;
+  --color-surface: #111827;
+  --color-card: #1f2937;
+  --color-border: #374151;
+  --color-text-main: #f3f4f6;
+  --color-text-muted: #9ca3af;
+  --color-link: #60a5fa;
+}
+
 @layer base {
+  /* Tell the UA which color schemes we support so native form controls,
+     scrollbars, and the address-bar tint match the active mode. */
+  :root { color-scheme: light; }
+  .dark { color-scheme: dark; }
+
   body {
     font-size: 16px;
     line-height: 1.6;
@@ -214,6 +262,46 @@
   .prose p { margin-bottom: 1rem; }
   .prose ul, .prose ol { margin-bottom: 1rem; padding-left: 1.5rem; }
   .prose li { margin-bottom: 0.25rem; }
-  .prose a { color: #1d4ed8; }
+  /* Resolves the --color-link token so the link color flips with .dark mode. */
+  .prose a { color: var(--color-link); }
   .prose a:hover { text-decoration: underline; }
 }
+
+/*
+  highlight.js dark-mode syntax overrides.
+
+  /js/highlightjs/styles/github.css stays loaded for the light theme (it sets
+  syntax colors that read well on a white background). Our <pre> block is
+  already dark in both modes (--color-code-bg / --color-code-fg), but in light
+  mode the github theme's dark text-on-light-bg syntax colors would be invisible
+  on our dark code block. github.css scopes most of its rules under `.hljs`
+  (i.e., code-block contents) where the bg has been overridden to slate-800, so
+  light-on-slate-800 actually works fine.
+
+  In dark mode the github light-syntax palette is too low-contrast on slate-800.
+  These overrides re-tone the most common token types using one-dark-style
+  values that hit WCAG AA on the slate-800 background.
+*/
+.dark .hljs { color: #e2e8f0; background: transparent; }
+.dark .hljs-comment,
+.dark .hljs-quote { color: #94a3b8; font-style: italic; }
+.dark .hljs-keyword,
+.dark .hljs-selector-tag,
+.dark .hljs-literal,
+.dark .hljs-section,
+.dark .hljs-link { color: #c4b5fd; }
+.dark .hljs-string,
+.dark .hljs-attr,
+.dark .hljs-symbol,
+.dark .hljs-bullet { color: #86efac; }
+.dark .hljs-number,
+.dark .hljs-meta { color: #fdba74; }
+.dark .hljs-title,
+.dark .hljs-name,
+.dark .hljs-built_in,
+.dark .hljs-type { color: #93c5fd; }
+.dark .hljs-variable,
+.dark .hljs-template-variable,
+.dark .hljs-tag { color: #fda4af; }
+.dark .hljs-deletion { color: #fca5a5; }
+.dark .hljs-addition { color: #86efac; }

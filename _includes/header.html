@@ -1,39 +1,45 @@
-<header class="bg-white border-b-4 border-primary pt-6 pb-6 px-4 lg:px-8 shadow-sm">
+<header class="bg-white dark:bg-gray-900 border-b-4 border-primary pt-6 pb-6 px-4 lg:px-8 shadow-sm">
   <div class="max-w-6xl mx-auto flex items-center justify-between gap-4">
     <a href="{{ '/' | relative_url }}" class="flex items-center gap-3 no-underline">
       <div class="flex items-center justify-center text-primary text-4xl">
         {% include icon.html name="shield_lock" %}
       </div>
       <div class="flex flex-col">
-        <span class="text-2xl md:text-3xl font-black tracking-tight text-gray-900 font-sans uppercase">{{ site.title }}</span>
-        <span class="text-xs md:text-sm text-gray-500 font-sans tracking-widest uppercase">Cybersecurity Insights &amp; Analysis</span>
+        <span class="text-2xl md:text-3xl font-black tracking-tight text-gray-900 dark:text-gray-100 font-sans uppercase">{{ site.title }}</span>
+        <span class="text-xs md:text-sm text-gray-500 dark:text-gray-400 font-sans tracking-widest uppercase">Cybersecurity Insights &amp; Analysis</span>
       </div>
     </a>
 
-    <!-- Mobile hamburger button -->
-    <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-12 h-12 text-gray-700 hover:text-primary transition-colors text-3xl" aria-label="Toggle menu">
-      <span id="menu-icon-open">{% include icon.html name="menu" %}</span>
-      <span id="menu-icon-close" class="hidden">{% include icon.html name="close" %}</span>
-    </button>
+    <!-- Right-hand cluster: theme toggle (always visible), then either
+         hamburger (mobile) or full nav (desktop). -->
+    <div class="flex items-center gap-2 md:gap-4">
+      {% include theme-toggle.html %}
 
-    <!-- Desktop nav -->
-    <nav class="hidden md:flex items-center gap-6 font-sans text-sm font-bold uppercase tracking-wide text-gray-600">
-      <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/' | relative_url }}">Home</a>
-      <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/about' | relative_url }}">About</a>
-      <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/archive' | relative_url }}">Archives</a>
-      <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/contact' | relative_url }}">Contact</a>
-      <a class="py-2 flex items-center gap-1 hover:text-primary hover:underline transition-colors" href="https://bytesizedsecurity.show/" target="_blank" rel="noopener">
-        <span class="text-[18px]">{% include icon.html name="podcasts" %}</span> Podcast
-      </a>
-      <a class="py-2 flex items-center gap-1 text-primary" href="{{ '/feed.xml' | relative_url }}">
-        <span class="text-[18px]">{% include icon.html name="rss_feed" %}</span> RSS
-      </a>
-    </nav>
+      <!-- Mobile hamburger button -->
+      <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-12 h-12 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-3xl" aria-label="Toggle menu">
+        <span id="menu-icon-open">{% include icon.html name="menu" %}</span>
+        <span id="menu-icon-close" class="hidden">{% include icon.html name="close" %}</span>
+      </button>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 font-sans text-sm font-bold uppercase tracking-wide text-gray-600 dark:text-gray-400">
+        <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/' | relative_url }}">Home</a>
+        <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/about' | relative_url }}">About</a>
+        <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/archive' | relative_url }}">Archives</a>
+        <a class="py-2 hover:text-primary hover:underline transition-colors" href="{{ '/contact' | relative_url }}">Contact</a>
+        <a class="py-2 flex items-center gap-1 hover:text-primary hover:underline transition-colors" href="https://bytesizedsecurity.show/" target="_blank" rel="noopener">
+          <span class="text-[18px]">{% include icon.html name="podcasts" %}</span> Podcast
+        </a>
+        <a class="py-2 flex items-center gap-1 text-primary" href="{{ '/feed.xml' | relative_url }}">
+          <span class="text-[18px]">{% include icon.html name="rss_feed" %}</span> RSS
+        </a>
+      </nav>
+    </div>
   </div>
 
   <!-- Mobile nav dropdown -->
-  <nav id="mobile-menu" class="hidden md:hidden max-w-6xl mx-auto mt-4 pt-4 border-t border-gray-200">
-    <div class="flex flex-col font-sans text-sm font-bold uppercase tracking-wide text-gray-600">
+  <nav id="mobile-menu" class="hidden md:hidden max-w-6xl mx-auto mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+    <div class="flex flex-col font-sans text-sm font-bold uppercase tracking-wide text-gray-600 dark:text-gray-400">
       <a class="py-3 hover:text-primary hover:underline transition-colors" href="{{ '/' | relative_url }}">Home</a>
       <a class="py-3 hover:text-primary hover:underline transition-colors" href="{{ '/about' | relative_url }}">About</a>
       <a class="py-3 hover:text-primary hover:underline transition-colors" href="{{ '/archive' | relative_url }}">Archives</a>

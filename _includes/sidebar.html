@@ -1,41 +1,41 @@
 <aside class="w-full lg:w-[300px] shrink-0 flex flex-col gap-10">
   {% unless page.hide_sidebar_search %}
   <!-- Search -->
-  <form action="{{ '/archive' | relative_url }}" method="get" class="bg-white border border-gray-200 flex items-center gap-2 px-3 h-11 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-colors" role="search">
+  <form action="{{ '/archive' | relative_url }}" method="get" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center gap-2 px-3 h-11 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-colors" role="search">
     <label for="sidebar-search" class="sr-only">Search articles</label>
-    <span class="text-gray-400 text-lg shrink-0">{% include icon.html name="search" %}</span>
+    <span class="text-gray-400 dark:text-gray-500 text-lg shrink-0">{% include icon.html name="search" %}</span>
     <input
       type="search"
       id="sidebar-search"
       name="q"
       placeholder="Find an article…"
       autocomplete="off"
-      class="flex-1 bg-transparent text-sm placeholder-gray-400 focus:outline-none min-w-0"
+      class="flex-1 bg-transparent text-sm text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none min-w-0"
       aria-label="Search articles">
   </form>
   {% endunless %}
 
   <!-- About Section -->
-  <div class="bg-white p-5 border border-gray-200">
-    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-primary pb-2 mb-4">About</h3>
-    <p class="text-sm text-gray-600 mb-4">
-      <strong class="text-gray-900">{{ site.title }}</strong> is an independent blog dedicated to investigating cybercrime and security trends.
+  <div class="bg-white dark:bg-gray-900 p-5 border border-gray-200 dark:border-gray-700">
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 border-b-2 border-primary pb-2 mb-4">About</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+      <strong class="text-gray-900 dark:text-gray-100">{{ site.title }}</strong> is an independent blog dedicated to investigating cybercrime and security trends.
     </p>
     <a class="text-xs font-bold text-link uppercase hover:underline" href="{{ '/about' | relative_url }}">Read about Marc »</a>
   </div>
 
   <!-- Newsletter Section -->
-  <div class="bg-surface p-5 border border-gray-200">
-    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-primary pb-2 mb-4">Security Briefing</h3>
-    <p class="text-xs text-gray-600 mb-3">The latest exploits in your inbox. Weekly. No spam. Unsubscribe in one click.</p>
+  <div class="bg-surface p-5 border border-gray-200 dark:border-gray-700">
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 border-b-2 border-primary pb-2 mb-4">Security Briefing</h3>
+    <p class="text-xs text-gray-600 dark:text-gray-400 mb-3">The latest exploits in your inbox. Weekly. No spam. Unsubscribe in one click.</p>
     <form method="post" action="https://sendfox.com/form/3z6ooe/1ydnre" class="sendfox-form flex flex-col gap-3" id="1ydnre" data-async="true" data-recaptcha="false">
-      <input type="email" id="sendfox_form_email" name="email" required placeholder="email@domain.com" class="h-11 bg-white border border-gray-300 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full">
-      <label class="flex items-start gap-2 text-xs text-gray-600 cursor-pointer">
+      <input type="email" id="sendfox_form_email" name="email" required placeholder="email@domain.com" class="h-11 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full">
+      <label class="flex items-start gap-2 text-xs text-gray-600 dark:text-gray-400 cursor-pointer">
         <input type="checkbox" name="gdpr" value="1" required class="mt-0.5 accent-primary">
         <span>Send me the weekly Security Briefing.</span>
       </label>
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off"></div>
-      <button type="submit" class="h-11 bg-text-main text-white text-sm font-bold uppercase tracking-wide hover:bg-primary transition-colors cursor-pointer">Subscribe</button>
+      <button type="submit" class="h-11 bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 text-sm font-bold uppercase tracking-wide hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors cursor-pointer">Subscribe</button>
     </form>
     <script defer src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
     <script>
@@ -72,7 +72,7 @@
 
   <!-- Categories Section -->
   <div>
-    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Categories</h3>
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 border-b-2 border-gray-300 dark:border-gray-700 pb-2 mb-4">Categories</h3>
 
     {%- comment -%}
     Sort categories by post count (descending). site.categories iterates as
@@ -97,7 +97,7 @@
     {%- assign cat_collapse_threshold = 6 -%}
     {%- assign cat_total = site.categories | size -%}
 
-    <ul class="flex flex-col text-sm divide-y divide-gray-200 border-t border-b border-gray-200">
+    <ul class="flex flex-col text-sm divide-y divide-gray-200 dark:divide-gray-700 border-t border-b border-gray-200 dark:border-gray-700">
       {%- if cat_total > cat_collapse_threshold -%}
         {%- assign visible_limit = cat_top_n -%}
       {%- else -%}
@@ -108,26 +108,26 @@
         {%- assign parts = entry | split: "|" -%}
         {%- assign cat_size = parts[0] | plus: 0 -%}
         {%- assign cat_name = parts[1] -%}
-      <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="{{ '/archive' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 text-xs ml-1">({{ cat_size }})</span></a></li>
+      <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 dark:hover:bg-gray-800 px-1" href="{{ '/archive' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 dark:text-gray-400 text-xs ml-1">({{ cat_size }})</span></a></li>
       {%- endfor -%}
 
       {%- if cat_total > cat_collapse_threshold -%}
         {%- assign hidden_count = cat_total | minus: cat_top_n -%}
       <li>
         <details class="group">
-          <summary class="cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden flex items-center justify-between py-2 px-1 text-xs font-bold uppercase tracking-wider text-gray-500 hover:text-primary hover:bg-gray-50 transition-colors">
+          <summary class="cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden flex items-center justify-between py-2 px-1 text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 hover:text-primary hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
             <span>
               <span class="group-open:hidden">Show {{ hidden_count }} more</span>
               <span class="hidden group-open:inline">Show fewer</span>
             </span>
             <span class="text-base leading-none transition-transform duration-200 group-open:rotate-180" aria-hidden="true">▾</span>
           </summary>
-          <ul class="flex flex-col text-sm divide-y divide-gray-200 border-t border-gray-200">
+          <ul class="flex flex-col text-sm divide-y divide-gray-200 dark:divide-gray-700 border-t border-gray-200 dark:border-gray-700">
             {%- for entry in cat_pairs offset: cat_top_n -%}
               {%- assign parts = entry | split: "|" -%}
               {%- assign cat_size = parts[0] | plus: 0 -%}
               {%- assign cat_name = parts[1] -%}
-            <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 px-1" href="{{ '/archive' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 text-xs ml-1">({{ cat_size }})</span></a></li>
+            <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 dark:hover:bg-gray-800 px-1" href="{{ '/archive' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 dark:text-gray-400 text-xs ml-1">({{ cat_size }})</span></a></li>
             {%- endfor -%}
           </ul>
         </details>
@@ -138,13 +138,13 @@
 
   <!-- Trending Posts Section -->
   <div>
-    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Trending Posts</h3>
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 border-b-2 border-gray-300 dark:border-gray-700 pb-2 mb-4">Trending Posts</h3>
     <ul class="flex flex-col gap-4">
       {% assign recent_posts = site.posts | slice: 0, 3 %}
       {% for post in recent_posts %}
       <li class="flex flex-col gap-1">
         <a class="text-base font-bold text-link hover:underline leading-tight" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span class="text-xs text-gray-500 font-sans">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="text-xs text-gray-500 dark:text-gray-400 font-sans">{{ post.date | date: "%b %-d, %Y" }}</span>
       </li>
       {% endfor %}
     </ul>
@@ -152,7 +152,7 @@
 
   <!-- Meta Section -->
   <div>
-    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 border-b-2 border-gray-300 pb-2 mb-4">Meta</h3>
+    <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 border-b-2 border-gray-300 dark:border-gray-700 pb-2 mb-4">Meta</h3>
     <ul class="text-sm list-disc pl-4 text-link space-y-1">
       <li><a class="hover:underline" href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></li>
       <li><a class="hover:underline" href="{{ '/archive' | relative_url }}">Archives</a></li>

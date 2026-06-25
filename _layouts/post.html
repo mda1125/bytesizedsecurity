@@ -7,28 +7,28 @@ layout: default
 {% include schema-faq.html %}
 
 <div class="flex flex-col lg:flex-row gap-12">
-  <article class="flex-1 bg-white border border-gray-200 p-6 md:p-10">
+  <article class="flex-1 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 p-6 md:p-10">
     {% assign page_words = page.content | strip_html | number_of_words %}
     {% assign page_minutes = page_words | times: 1.0 | divided_by: 220.0 | ceil %}
     {% if page_minutes < 1 %}{% assign page_minutes = 1 %}{% endif %}
     {% assign page_date_day = page.date | date: '%Y-%m-%d' %}
     {% assign page_modified_day = page.last_modified_at | date: '%Y-%m-%d' %}
-    <header class="mb-8 border-b border-gray-200 pb-8">
+    <header class="mb-8 border-b border-gray-200 dark:border-gray-700 pb-8">
       <div class="flex flex-wrap items-center gap-3 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-3">
         <span>{{ page.category | default: page.tags | first | default: "Security" }}</span>
-        <span class="text-gray-500">•</span>
-        <time class="text-gray-500" datetime="{{ page.date | date_to_xmlschema }}">
+        <span class="text-gray-500 dark:text-gray-400">•</span>
+        <time class="text-gray-500 dark:text-gray-400" datetime="{{ page.date | date_to_xmlschema }}">
           {{ page.date | date: "%B %-d, %Y" }}
         </time>
-        <span class="text-gray-500">•</span>
-        <span class="text-gray-500">{{ page_minutes }} min read</span>
+        <span class="text-gray-500 dark:text-gray-400">•</span>
+        <span class="text-gray-500 dark:text-gray-400">{{ page_minutes }} min read</span>
         {% if page.last_modified_at and page_modified_day != page_date_day %}
-        <span class="text-gray-500">•</span>
-        <span class="text-gray-500">Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></span>
+        <span class="text-gray-500 dark:text-gray-400">•</span>
+        <span class="text-gray-500 dark:text-gray-400">Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></span>
         {% endif %}
       </div>
       
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 leading-tight mb-4">
         {{ page.title | escape }}
       </h1>
       
@@ -36,15 +36,15 @@ layout: default
       {% if post_author == "Marc" %}{% assign post_author = site.author.name %}{% endif %}
       {% assign is_site_author = false %}
       {% if post_author == site.author.name %}{% assign is_site_author = true %}{% endif %}
-      <div class="flex flex-wrap items-center gap-4 text-sm font-sans text-gray-500">
+      <div class="flex flex-wrap items-center gap-4 text-sm font-sans text-gray-500 dark:text-gray-400">
         <div class="flex items-center gap-3">
           {% if is_site_author and site.author.avatar %}
           <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" width="60" height="60" class="rounded-full" loading="eager">
           {% endif %}
           <div class="flex flex-col">
-            <a href="{{ '/about' | relative_url }}" class="text-gray-900 font-semibold no-underline hover:text-link">{{ post_author }}</a>
+            <a href="{{ '/about' | relative_url }}" class="text-gray-900 dark:text-gray-100 font-semibold no-underline hover:text-link">{{ post_author }}</a>
             {% if is_site_author %}
-            <span class="text-sm text-gray-500">{% if site.author.title %}{{ site.author.title }}{% endif %}{% if site.author.title and site.author.credentials %} · {% endif %}{% if site.author.credentials %}{{ site.author.credentials }}{% endif %}</span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">{% if site.author.title %}{{ site.author.title }}{% endif %}{% if site.author.title and site.author.credentials %} · {% endif %}{% if site.author.credentials %}{{ site.author.credentials }}{% endif %}</span>
             {% endif %}
           </div>
         </div>
@@ -52,7 +52,7 @@ layout: default
         <div class="flex flex-wrap items-center gap-2 md:ml-auto">
           <span class="text-lg">{% include icon.html name="sell" %}</span>
           {% for tag in page.tags %}
-          <span class="bg-gray-100 px-2 py-0.5 rounded text-xs">{{ tag }}</span>
+          <span class="bg-gray-100 dark:bg-gray-800 dark:text-gray-300 px-2 py-0.5 rounded text-xs">{{ tag }}</span>
           {% endfor %}
         </div>
         {% endif %}
@@ -62,37 +62,56 @@ layout: default
     {% if page.image %}
     {% assign hero_w = page.image_width | default: 1200 %}
     {% assign hero_h = page.image_height | default: 630 %}
-    <div class="w-full mb-8 border border-gray-200 p-1 bg-white shadow-sm">
+    <div class="w-full mb-8 border border-gray-200 dark:border-gray-700 p-1 bg-white dark:bg-gray-900 shadow-sm">
       {% include responsive-image.html src=page.image alt=page.title class="w-full h-auto object-cover max-h-[400px]" width=hero_w height=hero_h eager="true" sizes="(min-width: 1024px) 720px, 100vw" %}
     </div>
     {% endif %}
 
-    <div class="prose prose-lg text-gray-700 max-w-none font-serif">
+    <div class="prose prose-lg text-gray-700 dark:text-gray-300 max-w-none font-serif">
       {{ content }}
     </div>
 
     <!-- Share Links -->
-    <div class="mt-10 pt-8 border-t border-gray-200">
-      <h4 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 mb-4">Share This Article</h4>
+    <div class="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700">
+      <h4 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Share This Article</h4>
       {% include sharelinks.html %}
     </div>
 
     <!-- Post Navigation -->
-    <div class="mt-10 pt-8 border-t border-gray-200">
+    <div class="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700">
       {% include navlinks.html %}
     </div>
 
     <!-- Comments -->
-    <div class="mt-10 pt-8 border-t border-gray-200">
-      <h4 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 mb-4">Comments</h4>
+    <div class="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700">
+      <h4 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Comments</h4>
       <div style="min-height: 300px">
-        <script src="https://utteranc.es/client.js"
-                repo="mda1125/bytesizedsecurity"
-                issue-term="pathname"
-                label="comment"
-                theme="github-light"
-                crossorigin="anonymous"
-                defer>
+        <!-- Utterances loads as a child iframe whose theme is baked at load
+             time. We pick the right initial theme from the .dark class (set by
+             the no-FOUC script in head.html) and reload via postMessage when
+             the user toggles. The 'themechange' CustomEvent is dispatched by
+             _includes/theme-toggle.html. -->
+        <script>
+          (function () {
+            var s = document.createElement('script');
+            s.src = 'https://utteranc.es/client.js';
+            s.setAttribute('repo', 'mda1125/bytesizedsecurity');
+            s.setAttribute('issue-term', 'pathname');
+            s.setAttribute('label', 'comment');
+            s.setAttribute('theme', document.documentElement.classList.contains('dark') ? 'github-dark' : 'github-light');
+            s.crossOrigin = 'anonymous';
+            s.defer = true;
+            document.currentScript.parentNode.insertBefore(s, document.currentScript);
+
+            document.addEventListener('themechange', function (e) {
+              var iframe = document.querySelector('.utterances-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage(
+                { type: 'set-theme', theme: e.detail.dark ? 'github-dark' : 'github-light' },
+                'https://utteranc.es'
+              );
+            });
+          })();
         </script>
       </div>
     </div>

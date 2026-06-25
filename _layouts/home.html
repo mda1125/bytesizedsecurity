@@ -5,19 +5,19 @@ layout: default
 <div class="flex flex-col lg:flex-row gap-12">
   <div class="flex-1 flex flex-col">
 
-    <header class="mb-10 pb-8 border-b border-gray-300">
-      <h1 class="text-2xl md:text-3xl font-bold font-sans text-gray-900 leading-tight mb-3">Cybersecurity News & Threat Intelligence</h1>
-      <p class="text-gray-600 text-lg font-serif max-w-2xl">Independent analysis of data breaches, vulnerabilities, privacy threats, and career strategy for security professionals. Written by a practitioner, not a marketing team.</p>
+    <header class="mb-10 pb-8 border-b border-gray-300 dark:border-gray-700">
+      <h1 class="text-2xl md:text-3xl font-bold font-sans text-gray-900 dark:text-gray-100 leading-tight mb-3">Cybersecurity News & Threat Intelligence</h1>
+      <p class="text-gray-600 dark:text-gray-400 text-lg font-serif max-w-2xl">Independent analysis of data breaches, vulnerabilities, privacy threats, and career strategy for security professionals. Written by a practitioner, not a marketing team.</p>
 
       <a href="{{ '/about' | relative_url }}" class="mt-5 inline-flex items-center gap-3 no-underline group" aria-label="About {{ site.author.name }}, {{ site.author.title }}{% if site.author.credentials %}, {{ site.author.credentials }}{% endif %}">
         {% if site.author.avatar %}
-        <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" width="48" height="48" class="rounded-full border border-gray-200 shrink-0" loading="eager" decoding="async">
+        <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" width="48" height="48" class="rounded-full border border-gray-200 dark:border-gray-700 shrink-0" loading="eager" decoding="async">
         {% endif %}
         <span class="flex flex-col leading-tight font-sans">
-          <span class="text-sm text-gray-900">
-            <span class="font-semibold group-hover:text-link transition-colors">{{ site.author.name }}</span>{% if site.author.credentials %}<span class="text-gray-500 font-normal">, {{ site.author.credentials }}</span>{% endif %}
+          <span class="text-sm text-gray-900 dark:text-gray-100">
+            <span class="font-semibold group-hover:text-link transition-colors">{{ site.author.name }}</span>{% if site.author.credentials %}<span class="text-gray-500 dark:text-gray-400 font-normal">, {{ site.author.credentials }}</span>{% endif %}
           </span>
-          <span class="text-xs text-gray-500 mt-0.5">
+          <span class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
             {% if site.author.title %}{{ site.author.title }}{% endif %}{% if site.author.tagline and site.author.tagline != "" %}{% if site.author.title %} · {% endif %}{{ site.author.tagline }}{% endif %}
           </span>
         </span>
@@ -37,25 +37,25 @@ layout: default
     {% assign featured_age_days = now_seconds | minus: featured_seconds | divided_by: 86400 %}
     {% assign featured_date_day = featured.date | date: '%Y-%m-%d' %}
     {% assign featured_modified_day = featured.last_modified_at | date: '%Y-%m-%d' %}
-    <article class="mb-12 border-b border-gray-300 pb-12">
+    <article class="mb-12 border-b border-gray-300 dark:border-gray-700 pb-12">
       <header class="mb-4">
         <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-sans font-bold uppercase tracking-wider text-primary mb-2">
           {% if featured_age_days <= 7 %}
-          <span class="inline-flex items-center gap-1.5 bg-green-50 text-green-700 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider border border-green-200">
+          <span class="inline-flex items-center gap-1.5 bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-300 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider border border-green-200 dark:border-green-700">
             <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Fresh
           </span>
           {% endif %}
           <span>Featured Analysis</span>
-          <span class="text-gray-500">•</span>
-          <span class="text-gray-500">{{ featured.date | date: "%B %-d, %Y" }}</span>
-          <span class="text-gray-500">•</span>
-          <span class="text-gray-500">{{ featured_minutes }} min read</span>
+          <span class="text-gray-500 dark:text-gray-400">•</span>
+          <span class="text-gray-500 dark:text-gray-400">{{ featured.date | date: "%B %-d, %Y" }}</span>
+          <span class="text-gray-500 dark:text-gray-400">•</span>
+          <span class="text-gray-500 dark:text-gray-400">{{ featured_minutes }} min read</span>
           {% if featured.last_modified_at and featured_modified_day != featured_date_day %}
-          <span class="text-gray-500">•</span>
-          <span class="text-gray-500">Updated <time datetime="{{ featured.last_modified_at | date_to_xmlschema }}">{{ featured.last_modified_at | date: "%b %-d, %Y" }}</time></span>
+          <span class="text-gray-500 dark:text-gray-400">•</span>
+          <span class="text-gray-500 dark:text-gray-400">Updated <time datetime="{{ featured.last_modified_at | date_to_xmlschema }}">{{ featured.last_modified_at | date: "%b %-d, %Y" }}</time></span>
           {% endif %}
         </div>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4 hover:text-link cursor-pointer">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 leading-tight mb-4 hover:text-link cursor-pointer">
           <a href="{{ featured.url | relative_url }}" class="no-underline hover:text-link">{{ featured.title | escape }}</a>
         </h2>
       </header>
@@ -63,18 +63,18 @@ layout: default
       {% if featured.image %}
       {% assign featured_w = featured.image_width | default: 1200 %}
       {% assign featured_h = featured.image_height | default: 630 %}
-      <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
+      <div class="w-full mb-6 border border-gray-200 dark:border-gray-700 p-1 bg-white dark:bg-gray-900 shadow-sm">
         {% include responsive-image.html src=featured.image alt=featured.title class="w-full h-auto object-cover max-h-[400px]" width=featured_w height=featured_h eager="true" sizes="(min-width: 1024px) 800px, 100vw" %}
       </div>
       {% else %}
-      <div class="w-full mb-6 border border-gray-200 p-1 bg-white shadow-sm">
+      <div class="w-full mb-6 border border-gray-200 dark:border-gray-700 p-1 bg-white dark:bg-gray-900 shadow-sm">
         <div class="w-full h-[250px] bg-gradient-to-r from-slate-800 via-slate-700 to-slate-900 flex items-center justify-center">
           <span class="text-6xl text-primary opacity-50">{% include icon.html name="security" %}</span>
         </div>
       </div>
       {% endif %}
       
-      <div class="prose prose-lg text-gray-700 max-w-none mb-4 font-serif">
+      <div class="prose prose-lg text-gray-700 dark:text-gray-300 max-w-none mb-4 font-serif">
         <p>{{ featured.excerpt | strip_html | truncatewords: 50 }}</p>
       </div>
       <a class="inline-flex items-center gap-1 min-h-[44px] py-2 text-link font-bold font-sans text-sm hover:underline uppercase tracking-wide" href="{{ featured.url | relative_url }}">
@@ -83,29 +83,29 @@ layout: default
     </article>
 
     <!-- Mobile-only newsletter CTA (sidebar is below the fold on mobile) -->
-    <div class="lg:hidden mb-12 bg-surface border border-gray-200 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+    <div class="lg:hidden mb-12 bg-surface border border-gray-200 dark:border-gray-700 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
       <div class="flex-1">
-        <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 mb-1">Security Briefing</h3>
-        <p class="text-xs text-gray-600">The latest exploits in your inbox. Weekly. No spam. Unsubscribe in one click.</p>
+        <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-1">Security Briefing</h3>
+        <p class="text-xs text-gray-600 dark:text-gray-400">The latest exploits in your inbox. Weekly. No spam. Unsubscribe in one click.</p>
       </div>
       <form method="post" action="https://sendfox.com/form/3z6ooe/1ydnre" class="sendfox-form flex gap-2 w-full sm:w-auto" data-async="true" data-recaptcha="false">
-        <input type="email" name="email" required placeholder="email@domain.com" class="h-10 bg-white border border-gray-300 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary flex-1 sm:w-48">
+        <input type="email" name="email" required placeholder="email@domain.com" class="h-10 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary flex-1 sm:w-48">
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off"></div>
-        <button type="submit" class="h-10 px-4 bg-text-main text-white text-sm font-bold uppercase tracking-wide hover:bg-primary transition-colors cursor-pointer whitespace-nowrap">Subscribe</button>
+        <button type="submit" class="h-10 px-4 bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 text-sm font-bold uppercase tracking-wide hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors cursor-pointer whitespace-nowrap">Subscribe</button>
       </form>
     </div>
     
     <!-- Latest Intel Section -->
     <div class="flex items-center gap-4 mb-8">
-      <h3 class="text-xl font-bold font-sans uppercase tracking-widest text-gray-900">Latest Intel</h3>
-      <div class="h-px bg-gray-300 flex-1"></div>
+      <h3 class="text-xl font-bold font-sans uppercase tracking-widest text-gray-900 dark:text-gray-100">Latest Intel</h3>
+      <div class="h-px bg-gray-300 dark:bg-gray-700 flex-1"></div>
     </div>
     
     <div class="flex flex-col gap-10 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-10">
       {% for post in posts offset:1 limit:4 %}
-      <article class="flex flex-col md:flex-row lg:flex-col gap-6 pb-10 lg:pb-0 border-b border-gray-200 border-dashed last:border-0 lg:border-0">
+      <article class="flex flex-col md:flex-row lg:flex-col gap-6 pb-10 lg:pb-0 border-b border-gray-200 dark:border-gray-700 border-dashed last:border-0 lg:border-0">
         <div class="w-full md:w-1/3 lg:w-full shrink-0">
-          <div class="border border-gray-200 p-1 bg-white shadow-sm">
+          <div class="border border-gray-200 dark:border-gray-700 p-1 bg-white dark:bg-gray-900 shadow-sm">
             {% if post.image %}
             {% include responsive-image.html src=post.image alt=post.title class="aspect-video w-full object-cover" width=400 height=225 sizes="(min-width: 1024px) 400px, (min-width: 768px) 33vw, 100vw" %}
             {% else %}
@@ -119,7 +119,7 @@ layout: default
           <div class="flex gap-2 mb-2 font-sans text-xs font-bold uppercase tracking-wide text-primary">
             <span>{{ post.category | default: post.tags | first | default: "Security" }}</span>
           </div>
-          <h3 class="text-2xl lg:text-xl font-bold text-gray-900 mb-2 leading-tight hover:text-link cursor-pointer">
+          <h3 class="text-2xl lg:text-xl font-bold text-gray-900 dark:text-gray-100 mb-2 leading-tight hover:text-link cursor-pointer">
             <a href="{{ post.url | relative_url }}" class="no-underline hover:text-link">{{ post.title | escape }}</a>
           </h3>
           {% assign card_author = post.author | default: site.author.name %}
@@ -129,10 +129,10 @@ layout: default
           {% if card_minutes < 1 %}{% assign card_minutes = 1 %}{% endif %}
           {% assign card_date_day = post.date | date: '%Y-%m-%d' %}
           {% assign card_modified_day = post.last_modified_at | date: '%Y-%m-%d' %}
-          <div class="text-sm font-sans text-gray-500 mb-3">
-            Posted on {{ post.date | date: "%B %-d, %Y" }} by <a href="{{ '/about' | relative_url }}" class="text-gray-700 font-semibold no-underline hover:text-link">{{ card_author }}</a>{% if card_author == site.author.name and site.author.credentials %}, <span class="text-gray-500">{{ site.author.credentials }}</span>{% endif %} · <span class="text-gray-500">{{ card_minutes }} min read</span>{% if post.last_modified_at and card_modified_day != card_date_day %} · <span class="text-gray-500">Updated <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time></span>{% endif %}
+          <div class="text-sm font-sans text-gray-500 dark:text-gray-400 mb-3">
+            Posted on {{ post.date | date: "%B %-d, %Y" }} by <a href="{{ '/about' | relative_url }}" class="text-gray-700 dark:text-gray-300 font-semibold no-underline hover:text-link">{{ card_author }}</a>{% if card_author == site.author.name and site.author.credentials %}, <span class="text-gray-500 dark:text-gray-400">{{ site.author.credentials }}</span>{% endif %} · <span class="text-gray-500 dark:text-gray-400">{{ card_minutes }} min read</span>{% if post.last_modified_at and card_modified_day != card_date_day %} · <span class="text-gray-500 dark:text-gray-400">Updated <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time></span>{% endif %}
           </div>
-          <p class="text-gray-700 mb-3 line-clamp-3">
+          <p class="text-gray-700 dark:text-gray-300 mb-3 line-clamp-3">
             {{ post.excerpt | strip_html | truncatewords: 30 }}
           </p>
           <a class="inline-flex items-center gap-1 min-h-[44px] py-2 text-link font-bold font-sans text-xs hover:underline uppercase lg:mt-auto" href="{{ post.url | relative_url }}">
@@ -145,18 +145,18 @@ layout: default
     
     <!-- Pagination -->
     {% if posts.size > 5 %}
-    <div class="flex items-center gap-2 mt-12 pt-6 border-t border-gray-300">
-      <span class="text-sm font-sans text-gray-500 mr-2">{{ posts.size }} posts total</span>
-      <a href="{{ '/archive' | relative_url }}" class="px-3 py-1 bg-white hover:bg-gray-100 text-link font-sans text-sm font-bold border border-gray-300 rounded-sm">View All »</a>
+    <div class="flex items-center gap-2 mt-12 pt-6 border-t border-gray-300 dark:border-gray-700">
+      <span class="text-sm font-sans text-gray-500 dark:text-gray-400 mr-2">{{ posts.size }} posts total</span>
+      <a href="{{ '/archive' | relative_url }}" class="px-3 py-1 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-link font-sans text-sm font-bold border border-gray-300 dark:border-gray-700 rounded-sm">View All »</a>
     </div>
     {% endif %}
     
     {% else %}
     <!-- No posts yet -->
     <div class="text-center py-12">
-      <span class="text-6xl text-gray-300 mb-4">{% include icon.html name="edit_note" %}</span>
-      <h2 class="text-2xl font-bold text-gray-600 mb-2">No Posts Yet</h2>
-      <p class="text-gray-500">Check back soon for security insights and analysis.</p>
+      <span class="text-6xl text-gray-300 dark:text-gray-700 mb-4">{% include icon.html name="edit_note" %}</span>
+      <h2 class="text-2xl font-bold text-gray-600 dark:text-gray-300 mb-2">No Posts Yet</h2>
+      <p class="text-gray-500 dark:text-gray-400">Check back soon for security insights and analysis.</p>
     </div>
     {% endif %}
     

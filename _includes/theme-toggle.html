@@ -1,0 +1,107 @@
+{%- comment -%}
+3-state Auto / Light / Dark theme toggle.
+
+Renders a single button that cycles Auto -> Light -> Dark -> Auto. Persists the
+explicit choice (Light or Dark) in localStorage under the key 'theme'; Auto is
+represented by the absence of a stored value. The no-FOUC bootstrap in
+head.html applies the resulting .dark class before first paint, so this
+include's JS is only responsible for the click handler, the live OS-pref
+listener, and keeping the visible icon / aria-label in sync.
+
+Three icon spans live inside the button; only the one matching the current
+state is visible (others get the `hidden` attribute). Uses `data-theme-toggle`
+attribute selectors so additional instances of the button (e.g., a duplicate
+in the mobile menu) Just Work.
+{%- endcomment -%}
+<button type="button"
+  data-theme-toggle
+  class="flex items-center justify-center w-11 h-11 text-2xl text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors"
+  aria-label="Theme">
+  <span data-theme-icon="auto">{% include icon.html name="contrast" %}</span>
+  <span data-theme-icon="light" hidden>{% include icon.html name="light_mode" %}</span>
+  <span data-theme-icon="dark" hidden>{% include icon.html name="dark_mode" %}</span>
+</button>
+
+<script>
+  (function () {
+    var order = ['auto', 'light', 'dark'];
+    var labels = {
+      auto:  'Theme: Auto (follows system). Click to switch to Light.',
+      light: 'Theme: Light. Click to switch to Dark.',
+      dark:  'Theme: Dark. Click to switch to Auto (follow system).'
+    };
+    var root = document.documentElement;
+    var mm = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function currentState() {
+      try {
+        var stored = localStorage.getItem('theme');
+        return stored === 'dark' || stored === 'light' ? stored : 'auto';
+      } catch (e) { return 'auto'; }
+    }
+
+    function applyClass(state) {
+      var isDark = state === 'dark' || (state === 'auto' && mm.matches);
+      var wasDark = root.classList.contains('dark');
+      root.classList.toggle('dark', isDark);
+      // Fire a CustomEvent so third-party widgets that bake their theme at
+      // load time (Utterances, etc.) can refresh themselves via postMessage.
+      if (isDark !== wasDark) {
+        document.dispatchEvent(new CustomEvent('themechange', {
+          detail: { dark: isDark, state: state }
+        }));
+      }
+    }
+
+    function persist(state) {
+      try {
+        if (state === 'auto') localStorage.removeItem('theme');
+        else localStorage.setItem('theme', state);
+      } catch (e) {}
+    }
+
+    function renderButtons(state) {
+      var buttons = document.querySelectorAll('[data-theme-toggle]');
+      for (var i = 0; i < buttons.length; i++) {
+        var btn = buttons[i];
+        btn.setAttribute('aria-label', labels[state]);
+        // aria-pressed is intentionally only true for the two explicit choices;
+        // Auto is the unstated default, so it reads as "not pressed".
+        btn.setAttribute('aria-pressed', state === 'dark' ? 'true' : 'false');
+        btn.dataset.themeState = state;
+        var icons = btn.querySelectorAll('[data-theme-icon]');
+        for (var j = 0; j < icons.length; j++) {
+          icons[j].hidden = icons[j].dataset.themeIcon !== state;
+        }
+      }
+    }
+
+    function setState(state) {
+      persist(state);
+      applyClass(state);
+      renderButtons(state);
+    }
+
+    function init() {
+      var state = currentState();
+      renderButtons(state);
+      var buttons = document.querySelectorAll('[data-theme-toggle]');
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+          var next = order[(order.indexOf(currentState()) + 1) % order.length];
+          setState(next);
+        });
+      }
+      // While in Auto, react live to OS theme changes (e.g., macOS sunset).
+      mm.addEventListener('change', function () {
+        if (currentState() === 'auto') applyClass('auto');
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
