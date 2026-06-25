@@ -13,6 +13,12 @@ author:
   avatar: "/assets/img/marc-david-avatar.webp"
   twitter: "marc_david"
   url: "https://blog.bytesizedsecurity.show/about/"
+  # Third-party verification of the CISSP credential — surfaced in the
+  # post-footer About the Author block as a verifiable authority signal.
+  credly: "https://www.credly.com/users/marcdavid"
+  # 2–3 line bio shown in the post-footer About the Author block. Keep the
+  # voice distinct from the top byline (story, not credential checklist).
+  bio: "Marc has spent 8+ years in threat detection, incident response, and security automation. ByteSizedSecurity is his independent take — practitioner-written, no vendor sponsorships, no rewritten press releases."
 
 logo: "/assets/img/bytesizedsecurity-logo-600x60.png"
 

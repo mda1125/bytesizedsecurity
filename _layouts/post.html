@@ -71,6 +71,10 @@ layout: default
       {{ content }}
     </div>
 
+    {% if is_site_author %}
+    {% include author-bio.html %}
+    {% endif %}
+
     <!-- Share Links -->
     <div class="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700">
       <h4 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-4">Share This Article</h4>
