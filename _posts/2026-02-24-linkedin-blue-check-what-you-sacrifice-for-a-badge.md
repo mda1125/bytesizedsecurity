@@ -9,6 +9,7 @@ excerpt: "Verifying identity on LinkedIn means handing over sensitive data like 
 image: "/assets/img/posts/linkedin-blue-check-what-you-sacrifice-for-a-badge.webp"
 image_width: 1080
 image_height: 1350
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 Title: LinkedIn Verification: What You're Handing Over for a Blue Checkmark

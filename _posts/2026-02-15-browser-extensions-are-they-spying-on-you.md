@@ -9,6 +9,7 @@ excerpt: "Think your browser extensions are safe? Many secretly harvest your dat
 image: "/assets/img/posts/browser-extensions-are-they-spying-on-you.webp"
 image_width: 1024
 image_height: 1024
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 ## Your browser extensions are watching you

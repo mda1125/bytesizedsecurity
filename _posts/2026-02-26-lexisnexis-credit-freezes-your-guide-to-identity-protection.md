@@ -20,6 +20,7 @@ faq:
     answer: "No. A credit freeze does not affect your credit score and does not prevent you from using your existing credit cards or accounts. It only blocks new credit inquiries. Freezing your credit is completely free, mandated by federal law since 2018."
   - question: "Should I freeze my children's credit?"
     answer: "Yes. Children are attractive targets for identity thieves because they have clean Social Security numbers and nobody monitors their credit. Fraud often goes undetected until they turn 18 and apply for their first credit card or student loan. Each credit bureau has a free process for freezing a minor's credit."
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 Title: Why You Should Request Your LexisNexis Consumer Disclosure Report and Freeze Your Credit Today

@@ -20,6 +20,7 @@ faq:
     answer: "Start with email — it is the master key to everything else since password resets go through it. Then prioritize banking and financial accounts, social media, cloud storage (Google Drive, Dropbox, iCloud), and work accounts."
   - question: "Is two-factor authentication inconvenient?"
     answer: "Most authenticator apps auto-fill or require a single tap. Many services only ask for the second factor on new devices or after a set period. The 10 seconds it adds is nothing compared to the hours or days spent recovering a compromised account."
+last_modified_at: 2026-06-19T10:12:16-07:00
 ---
 
 ## Why Two-Factor Authentication Is the Easiest Security Win You Are Not Using

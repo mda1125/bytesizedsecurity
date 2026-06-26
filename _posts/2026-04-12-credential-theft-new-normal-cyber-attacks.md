@@ -9,6 +9,7 @@ excerpt: "Nearly one in three cyber intrusions now use valid employee credential
 image: "/assets/img/posts/credential-theft-new-normal-cyber-attacks.webp"
 image_width: 1080
 image_height: 1350
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 Your Next Breach Won't Look Like an Attack. It'll Look Like a Normal Tuesday.

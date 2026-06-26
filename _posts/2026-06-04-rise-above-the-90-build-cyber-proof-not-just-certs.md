@@ -9,6 +9,7 @@ excerpt: "Stop collecting cybersecurity certifications and start building undeni
 image: "/assets/img/posts/rise-above-the-90-build-cyber-proof-not-just-certs.webp"
 image_width: 1200
 image_height: 670
+last_modified_at: 2026-06-19T10:04:02-07:00
 ---
 
 ## Stop Collecting Certifications. Start Building Proof.

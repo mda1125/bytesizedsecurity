@@ -9,6 +9,7 @@ excerpt: "Amazon Ring ends a surveillance partnership after public outcry over a
 image: "/assets/img/posts/ring-backtracks-super-bowl-ad-sparks-privacy-pushback.webp"
 image_width: 1080
 image_height: 1350
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 Title: Amazon Ring Ends Surveillance Partnership After Super Bowl Ad Backlash ... Here's What It Means for Your Privacy

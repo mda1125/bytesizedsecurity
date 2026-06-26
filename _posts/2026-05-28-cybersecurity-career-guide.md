@@ -23,6 +23,7 @@ faq:
     answer: "Start in any IT role that puts you near real systems (help desk, sysadmin, developer, cloud support). Become the security person in your current job by patching, hardening, and reading logs. Build a home lab with Active Directory and a SIEM, document it on GitHub, pick one specialty (cloud, appsec, or IR), and network with one person already doing your target role."
   - question: "What is the best cybersecurity career path?"
     answer: "There is no single best path, but the most effective sequence is: (1) get into IT anywhere, (2) own security tasks in your current role, (3) build visible proof through a home lab and public write-ups, and (4) specialize in one area with unmet demand — cloud security, application security, or incident response — rather than staying a generalist."
+last_modified_at: 2026-06-19T10:20:54-07:00
 ---
 
 Everyone wants into cybersecurity right now, and the field keeps telling them to come in while quietly bolting the door behind it.

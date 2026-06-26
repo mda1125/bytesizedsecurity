@@ -9,6 +9,7 @@ excerpt: "A staggering 40% of America's cyber defenders are missing, leaving fed
 image: "/assets/img/posts/americas-cybersecurity-crisis-40-percent-defender-shortage.webp"
 image_width: 1024
 image_height: 1024
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 40% of America's cyber defenders are missing.

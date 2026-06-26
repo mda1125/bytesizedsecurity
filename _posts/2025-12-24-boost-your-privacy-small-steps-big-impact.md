@@ -9,6 +9,7 @@ excerpt: "Cybersecurity doesn't have to be overwhelming. Learn how small, daily 
 image: "/assets/img/posts/boost-your-privacy-small-steps-big-impact.webp"
 image_width: 1024
 image_height: 1024
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 You don’t need to be a tech expert to protect your privacy.

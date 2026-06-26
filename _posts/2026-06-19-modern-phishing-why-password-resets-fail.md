@@ -20,6 +20,7 @@ faq:
     answer: "Too long. According to <a href=\"https://spycloud.com/resource/report/phishing-pulse-report-2026/\">SpyCloud's 2026 Phishing Pulse Report</a>, 68% of organizations need four hours or more to identify and remediate confirmed phishing-related exposures, and only 38% are very confident they can detect and respond to credential theft within 24 hours."
   - question: "What is phishing-resistant MFA, and why does it stop AiTM?"
     answer: "Phishing-resistant MFA uses FIDO2 hardware keys or passkeys that are cryptographically bound to the legitimate origin domain. When an AiTM proxy presents an attacker-controlled domain, the authenticator's signature won't validate, so no session cookie is ever issued. Push-based and SMS MFA do not have this property."
+last_modified_at: 2026-06-19T15:21:03-07:00
 ---
 
 Your phishing response playbook is fighting last decade's attack.

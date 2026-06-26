@@ -9,6 +9,7 @@ excerpt: "A deep dive into the soft skills that define cybersecurity careers —
 image: "/assets/img/posts/cybersecurity-success-not-about-hacking.webp"
 image_width: 1200
 image_height: 670
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 What Makes Someone Good at Cybersecurity Has Nothing to Do With Hacking

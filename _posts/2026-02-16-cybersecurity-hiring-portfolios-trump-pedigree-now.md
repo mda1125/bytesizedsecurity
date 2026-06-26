@@ -6,6 +6,7 @@ category: DevSecOps
 tags: ["cybersecurity careers", "hiring trends", "tech careers"]
 author: Marc
 excerpt: "New data reveals side projects, GitHub, and internships are key for cybersecurity jobs. Stop stacking credentials, start building proof."
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 ## Portfolios Over Pedigree: What Actually Gets You Hired in Cybersecurity Now

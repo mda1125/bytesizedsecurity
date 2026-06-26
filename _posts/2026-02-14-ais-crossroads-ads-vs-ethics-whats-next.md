@@ -9,6 +9,7 @@ excerpt: "The AI industry faces its 'ads vs. subscriptions' moment. Will commerc
 image: "/assets/img/posts/ais-crossroads-ads-vs-ethics-whats-next.webp"
 image_width: 1024
 image_height: 1024
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 The AI industry is having its "ads vs. subscriptions" moment, and it's revealing something important about where we're headed.

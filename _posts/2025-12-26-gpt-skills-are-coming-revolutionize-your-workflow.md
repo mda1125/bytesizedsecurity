@@ -9,6 +9,7 @@ excerpt: "Custom GPTs are getting a major upgrade with 'Skills,' enabling reusab
 image: "/assets/img/posts/gpt-skills-are-coming-revolutionize-your-workflow.webp"
 image_width: 1024
 image_height: 1024
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 Custom GPTs are about to get a whole lot smarter.

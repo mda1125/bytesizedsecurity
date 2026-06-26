@@ -9,6 +9,7 @@ excerpt: "Think your Chrome extensions are safe? A new campaign used fake produc
 image: "/assets/img/posts/fake-chrome-extensions-hijack-hr-platforms-is-your-org-at-risk.webp"
 image_width: 1024
 image_height: 1024
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 ## Think your Chrome extensions are safe?

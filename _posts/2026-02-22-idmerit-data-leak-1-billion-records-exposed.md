@@ -9,6 +9,7 @@ excerpt: "A misconfigured MongoDB database exposed a billion identity records fr
 image: "/assets/img/posts/idmerit-data-leak-1-billion-records-exposed.webp"
 image_width: 1080
 image_height: 1350
+last_modified_at: 2026-06-19T10:04:02-07:00
 ---
 
 ## 1 Billion Identity Records Exposed: Inside the IDMerit Data Leak

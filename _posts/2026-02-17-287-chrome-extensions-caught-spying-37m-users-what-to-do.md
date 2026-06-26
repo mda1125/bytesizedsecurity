@@ -9,6 +9,7 @@ excerpt: "A recent investigation uncovered 287 Chrome extensions secretly collec
 image: "/assets/img/posts/287-chrome-extensions-caught-spying-37m-users-what-to-do.webp"
 image_width: 1080
 image_height: 1350
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 287 Chrome Extensions Caught Harvesting Data from 37M Users... Here's What You Need to Know

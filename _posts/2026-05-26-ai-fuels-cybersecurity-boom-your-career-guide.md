@@ -9,6 +9,7 @@ excerpt: "AI isn't cutting cybersecurity jobs; it's creating more. Discover how 
 image: "/assets/img/posts/ai-fuels-cybersecurity-boom-your-career-guide.webp"
 image_width: 1200
 image_height: 1200
+last_modified_at: 2026-06-19T10:12:16-07:00
 ---
 
 AI Is Creating More Cybersecurity Jobs, Not Fewer. Here's What It Means for You.

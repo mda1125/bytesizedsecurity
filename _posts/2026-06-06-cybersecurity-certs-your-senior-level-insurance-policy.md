@@ -9,6 +9,7 @@ excerpt: "Do certifications still matter for senior cybersecurity pros? They mig
 image: "/assets/img/posts/cybersecurity-certs-your-senior-level-insurance-policy.webp"
 image_width: 1200
 image_height: 670
+last_modified_at: 2026-06-19T09:58:00-07:00
 ---
 
 TL;DR: Certs won't prove your ability to do the job at a senior level. But they will get you past the people who decide whether you get to prove it. The higher you climb, the less they matter for the work and the more they matter for the process. Here's how to think about it strategically.
