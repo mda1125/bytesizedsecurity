@@ -4,7 +4,7 @@ layout: post
 title: "Reverse Engineering Basics"
 category: Reverse Engineering
 tags: [Ghidra, IDA Pro, Malware Analysis]
-author: Admin
+author: Marc
 last_modified_at: 2026-06-19
 ---
 

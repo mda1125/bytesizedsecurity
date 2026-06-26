@@ -4,7 +4,7 @@ layout: post
 title: "Shocked by Your Digital Footprint? Take It Back Now"
 category: Network Security
 tags: ["privacy", "digital-footprint", "online-security"]
-author: Admin
+author: Marc
 excerpt: "Search your name online and see what strangers find. This October, reclaim your privacy with simple steps that protect your digital life."
 last_modified_at: 2026-06-19
 ---

@@ -4,7 +4,7 @@ layout: post
 title: "Understanding Zero Trust Architecture: A Deep Dive"
 category: Network Security
 tags: [Zero Trust, Architecture, Enterprise Security]
-author: Admin
+author: Marc
 last_modified_at: 2026-06-19
 ---
 
