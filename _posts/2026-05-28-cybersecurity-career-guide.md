@@ -1,11 +1,11 @@
 ---
-description: "A 4-step playbook to break into cybersecurity from any background. Which certs actually matter, how to pass ATS filters, and a 90-day action plan."
+description: "How to start a career in cybersecurity: a 4-step playbook for any background. Honest pay data, real cert advice, and a 90-day action plan."
 layout: post
-title: "Cybersecurity Career Guide 2026: Break In When the Ladder Is Missing Rungs"
+title: "How to Start a Career in Cybersecurity (2026 Guide)"
 category: DevSecOps
 tags: ["cybersecurity careers", "career guide", "job market", "hiring"]
 author: Marc
-excerpt: "Everyone says break into security. Almost nobody tells you the truth about how the path works now, or how to walk it anyway. This is the honest guide — from someone who spent 19 years being told he lacked cyber experience."
+excerpt: "Everyone says break into security. Almost nobody tells you the truth about how the path works now, or how to walk it anyway. This is the honest guide on how to start a career in cybersecurity — from someone who spent 19 years being told he lacked cyber experience."
 image: "/assets/img/posts/cybersecurity-career-guide.png"
 image_width: 1024
 image_height: 576
@@ -19,23 +19,23 @@ faq:
     answer: "No. Companies hire people who solve problems, not degrees. A self-taught applicant who patched a vulnerability and documented how they did it will beat a graduating senior who cannot explain what DNS does. A degree may help pass keyword filters, but demonstrable skills and a portfolio of real work land offers."
   - question: "What certifications should I get for cybersecurity?"
     answer: "Use a data-driven method: pull 50 real job descriptions for your target role and note which certifications appear repeatedly, then check LinkedIn profiles of people in that role to see what they actually hold. Buy only the certifications the data points to. Treat certs as a foot in the door, not proof you can do the job."
-  - question: "How do I break into cybersecurity with no experience?"
+  - question: "How do I start a career in cybersecurity with no experience?"
     answer: "Start in any IT role that puts you near real systems (help desk, sysadmin, developer, cloud support). Become the security person in your current job by patching, hardening, and reading logs. Build a home lab with Active Directory and a SIEM, document it on GitHub, pick one specialty (cloud, appsec, or IR), and network with one person already doing your target role."
   - question: "What is the best cybersecurity career path?"
     answer: "There is no single best path, but the most effective sequence is: (1) get into IT anywhere, (2) own security tasks in your current role, (3) build visible proof through a home lab and public write-ups, and (4) specialize in one area with unmet demand — cloud security, application security, or incident response — rather than staying a generalist."
-last_modified_at: 2026-06-19T10:20:54-07:00
+last_modified_at: 2026-06-26
 ---
 
-Everyone wants into cybersecurity right now, and the field keeps telling them to come in while quietly bolting the door behind it.
+Everyone wants to know how to start a career in cybersecurity right now, and the field keeps telling them to come in while quietly bolting the door behind it.
 
-**TL;DR:** The cybersecurity career path most people are sold is broken. This guide covers why the "talent shortage" is really a hiring and mentorship failure, why portfolios beat degrees, a 4-step playbook for breaking in from any background, how to choose certifications with data, how to get past automated hiring filters, and a concrete 90-day checklist you can start today.
+**TL;DR:** The cybersecurity career path most people are sold is broken. This guide on how to start a career in cybersecurity covers why the "talent shortage" is really a hiring and mentorship failure, why portfolios beat degrees, a 4-step playbook for breaking in from any background, how to choose certifications with data, how to get past automated hiring filters, and a concrete 90-day checklist you can start today.
 
 **Jump to a section:**
 
 - [Is there really a talent shortage?](#talent-shortage)
 - [How much do cybersecurity professionals make in 2026?](#salaries)
 - [Do you need a degree?](#degree-required)
-- [How do you break in when the ladder is missing rungs?](#how-to-break-in)
+- [How to start a career in cybersecurity when the ladder is missing rungs](#how-to-break-in)
 - [How the path changes based on your starting point](#match-your-path)
 - [Which certifications are actually worth getting?](#certifications)
 - [How do you get past automated hiring filters?](#ats-filters)
@@ -100,11 +100,11 @@ This reframes everything about how you spend your time. Stop collecting credenti
 
 A graduating senior who cannot explain what DNS does will lose to a self-taught applicant who patched a vulnerability and wrote about how they did it. Hiring managers have seen too many polished resumes attached to people who freeze the moment a real system breaks. Be the second kind of candidate, and make it impossible to miss.
 
-## How do you break into cybersecurity when the ladder is missing rungs? {#how-to-break-in}
+## How to start a career in cybersecurity when the ladder is missing rungs {#how-to-break-in}
 
 > **Direct answer:** Get into any IT or developer job, own security tasks inside it, build a public home lab on GitHub, then niche into cloud, appsec, or incident response before you apply for the security role you actually want.
 
-Cybersecurity is not a first job for most people, and pretending otherwise sets you up to fail. It sits as a skill set on top of IT, networking, and development, not as a separate door you knock on with no background. So the strategy is not "apply harder." The strategy is "build a foundation, then layer security onto it where you already are." Here is the sequence I recommend to anyone asking me how to get in today.
+If you want to know how to start a career in cybersecurity in 2026, accept the most important truth first: cybersecurity is not a first job for most people, and pretending otherwise sets you up to fail. It sits as a skill set on top of IT, networking, and development, not as a separate door you knock on with no background. So the strategy is not "apply harder." The strategy is "build a foundation, then layer security onto it where you already are." Here is the sequence I recommend to anyone asking me how to get in today.
 
 ### Step 1: Get into IT anywhere you can land it
 
@@ -237,7 +237,7 @@ Do all seven and you separate yourself from the 99 percent who hold a degree and
 
 ## One last thing, from someone who got stuck at the gate {#closing}
 
-The system I described only works when someone decides to break the rules. A hiring manager broke them for me after 19 years of being told I was somehow too junior. I cannot promise you a manager like that. I can promise you the candidate who shows up with a documented lab, a clear specialty, and proof of real problems solved gives that manager every reason to say yes.
+The honest answer to how to start a career in cybersecurity is this: the system I described only works when someone decides to break the rules. A hiring manager broke them for me after 19 years of being told I was somehow too junior. I cannot promise you a manager like that. I can promise you the candidate who shows up with a documented lab, a clear specialty, and proof of real problems solved gives that manager every reason to say yes.
 
 The field needs you. Not a fully formed expert who materialized from nowhere, but a person who started where they stood, took ownership before anyone granted the title, and built the muscle before the badge arrived. The door feels locked because the old path collapsed. You do not need the old path. You need a strategy, the patience to work it, and the refusal to let a broken hiring process convince you the problem is you.
 
