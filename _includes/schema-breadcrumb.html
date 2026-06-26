@@ -1,8 +1,15 @@
 {%- comment -%}
   Use `jsonify` (not `escape`) so titles like "Don't" or "AI & Privacy" emit clean
   JSON strings instead of leaking HTML entities (&#39;, &amp;) into BreadcrumbList.
+
+  Liquid filter precedence note: `page.category | default: page.tags | first` is
+  WRONG because `first` would then run on whatever `default:` returned (often a
+  truthy string), collapsing every post's name to the final 'Security' fallback
+  and producing "Unnamed item"-style entries in Google Search Console. Use
+  `page.tags.first` (dot accessor) so `first` only resolves the tags array when
+  `page.category` is absent.
 {%- endcomment -%}
-{% assign bc_category = page.category | default: page.tags | first | default: 'Security' %}
+{% assign bc_category = page.category | default: page.tags.first | default: 'Security' %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
