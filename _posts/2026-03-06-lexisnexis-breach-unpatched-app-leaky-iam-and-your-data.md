@@ -9,7 +9,6 @@ excerpt: "LexisNexis confirms a data breach involving 2GB of sensitive data due 
 image: "/assets/img/posts/lexisnexis-breach-unpatched-app-leaky-iam-and-your-data.webp"
 image_width: 1080
 image_height: 1350
-last_modified_at: 2026-06-19
 ---
 
 Title: LexisNexis Confirms Data Breach: What Happened, How It Happened, and What You Should Do Right Now

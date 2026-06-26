@@ -9,7 +9,6 @@ excerpt: "Discover Okurrrr, a free, all-in-one cybersecurity career roadmap by M
 image: "/assets/img/posts/okurrrr-ultimate-free-cybersecurity-career-roadmap.webp"
 image_width: 1024
 image_height: 560
-last_modified_at: 2026-06-19
 ---
 
 ## Okurrrr ... The Free Cybersecurity Career Roadmap Everyone Needs to Know About

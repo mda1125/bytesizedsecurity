@@ -6,7 +6,6 @@ category: Pentesting
 tags: ["Pentesting", "AI", "Cybersecurity"]
 author: Marc
 excerpt: "Discover NeuroSploit v2, the AI-driven penetration testing framework revolutionizing cybersecurity. With modular agents powered by leading LLMs, it offers unparalleled customization for threat detection and exploitation."
-last_modified_at: 2026-06-19
 ---
 
 ## NeuroSploit v2: The Future of AI-Powered Penetration Testing Has Arrived

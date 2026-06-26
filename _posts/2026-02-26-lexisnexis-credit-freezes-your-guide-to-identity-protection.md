@@ -9,7 +9,6 @@ excerpt: "Discover how LexisNexis data affects you and why freezing your credit 
 image: "/assets/img/posts/lexisnexis-credit-freezes-your-guide-to-identity-protection.webp"
 image_width: 1000
 image_height: 1250
-last_modified_at: 2026-06-19
 faq:
   - question: "What is a LexisNexis Consumer Disclosure Report?"
     answer: "LexisNexis maintains a consumer file separate from your credit report containing real estate transactions, property ownership records, liens, judgments, bankruptcy filings, professional license information, and historical addresses. Insurance companies, employers, landlords, and financial institutions use this data to make decisions about you."

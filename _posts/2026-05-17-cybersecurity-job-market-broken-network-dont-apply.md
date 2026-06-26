@@ -9,7 +9,6 @@ excerpt: "A viral Reddit thread reveals experienced cyber pros can't get hired t
 image: "/assets/img/posts/cybersecurity-job-market-broken-network-dont-apply.webp"
 image_width: 1200
 image_height: 1200
-last_modified_at: 2026-06-19
 ---
 
 ## The Cybersecurity Job Market Is Broken... Here's What Works

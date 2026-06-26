@@ -9,7 +9,6 @@ excerpt: "CISA's acting director uploaded sensitive documents to ChatGPT, exposi
 image: "/assets/img/posts/cisa-chatgpt-incident-shadow-ai-problem.webp"
 image_width: 1080
 image_height: 1350
-last_modified_at: 2026-06-19
 ---
 
 ## The CISA ChatGPT Incident: What Shadow AI Means for Every Organization

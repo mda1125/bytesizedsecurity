@@ -9,7 +9,6 @@ excerpt: "Google just patched its first Chrome zero-day of 2026, CVE-2026-2441. 
 image: "/assets/img/posts/chrome-first-2026-zero-day-update-now.webp"
 image_width: 1080
 image_height: 1350
-last_modified_at: 2026-06-19
 ---
 
 Google Patches Chrome's First Zero-Day of 2026 ... Here's What You Need to Know

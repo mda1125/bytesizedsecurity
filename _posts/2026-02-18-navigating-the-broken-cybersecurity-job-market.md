@@ -9,7 +9,6 @@ excerpt: "The cybersecurity job market is tougher than ever, especially for entr
 image: "/assets/img/posts/navigating-the-broken-cybersecurity-job-market.webp"
 image_width: 1080
 image_height: 1350
-last_modified_at: 2026-06-19
 ---
 
 Title: The Cybersecurity Job Market Is Broken ... Here's What's Really Happening and How to Navigate It

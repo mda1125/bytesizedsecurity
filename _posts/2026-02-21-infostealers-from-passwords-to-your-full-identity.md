@@ -9,7 +9,6 @@ excerpt: "Modern infostealers do more than steal passwords. They collect a trove
 image: "/assets/img/posts/infostealers-from-passwords-to-your-full-identity.webp"
 image_width: 1080
 image_height: 1350
-last_modified_at: 2026-06-19
 ---
 
 Title: How Infostealers Turn Stolen Credentials Into Real Identities

@@ -9,7 +9,6 @@ excerpt: "Canada's Bill C-22 mandates encryption backdoors, user data retention,
 image: "/assets/img/posts/encryption-backdoors-canada-bill-c22-threatens-global-security.webp"
 image_width: 1200
 image_height: 1200
-last_modified_at: 2026-06-19
 ---
 
 ## Canada's Bill C-22: Why Encryption Backdoors Are a Threat to Everyone

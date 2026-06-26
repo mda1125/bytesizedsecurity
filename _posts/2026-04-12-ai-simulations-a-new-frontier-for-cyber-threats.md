@@ -9,7 +9,6 @@ excerpt: "Multi-agent AI simulations can predict human behavior with striking ac
 image: "/assets/img/posts/ai-simulations-a-new-frontier-for-cyber-threats.webp"
 image_width: 1080
 image_height: 1350
-last_modified_at: 2026-06-19
 ---
 
 AI Can Now Simulate Entire Populations. Security Teams Should Pay Attention.

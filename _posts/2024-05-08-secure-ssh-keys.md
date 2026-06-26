@@ -5,7 +5,6 @@ title: "How to Secure Your SSH Keys"
 category: Cryptography
 tags: [SSH, Authentication, Best Practices]
 author: Marc
-last_modified_at: 2026-06-19
 ---
 
 Best practices for generating, storing, and managing SSH keys for secure server access. Stop using passwords and start using public key authentication.

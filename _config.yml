@@ -45,6 +45,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-last-modified-at
 
 exclude:
   - SECURITY.md

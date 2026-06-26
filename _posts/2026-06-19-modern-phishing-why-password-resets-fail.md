@@ -9,7 +9,6 @@ excerpt: "Phishing exposed employee data at 86% of Fortune 100 firms in the last
 image: "/assets/img/posts/modern-phishing-why-password-resets-fail.webp"
 image_width: 1200
 image_height: 1200
-last_modified_at: 2026-06-19
 faq:
   - question: "Does changing your password stop a phishing attack?"
     answer: "Not anymore. Modern adversary-in-the-middle phishing kits steal the session cookie that's issued <em>after</em> you log in and complete MFA. That cookie remains valid until the session expires or is explicitly revoked, so a password reset alone leaves the attacker authenticated. You also need to revoke active sessions and refresh tokens."

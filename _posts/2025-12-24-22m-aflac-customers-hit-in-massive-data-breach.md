@@ -6,7 +6,6 @@ category: Network Security
 tags: ["data breach", "healthcare security", "identity theft"]
 author: Marc
 excerpt: "Aflac data breach exposes SSNs and health records of 22 million customers. Free identity protection offered—enroll before April 2026."
-last_modified_at: 2026-06-19
 ---
 
 🚨 Over 22 million Aflac customers just found out their personal info was stolen in a massive data breach.  

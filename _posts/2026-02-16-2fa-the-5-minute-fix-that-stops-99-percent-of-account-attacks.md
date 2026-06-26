@@ -9,7 +9,6 @@ excerpt: "Discover how two-factor authentication (2FA) can protect your accounts
 image: "/assets/img/posts/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks.webp"
 image_width: 1080
 image_height: 1350
-last_modified_at: 2026-06-19
 faq:
   - question: "What is two-factor authentication (2FA)?"
     answer: "Two-factor authentication adds a second verification step when you log in. Instead of just a password (something you know), you also prove your identity with something you have — like your phone or a hardware security key. Even if an attacker gets your password, they cannot access your account without the second factor."

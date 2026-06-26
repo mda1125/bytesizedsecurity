@@ -9,7 +9,6 @@ excerpt: "The new HIPAA Security Rule demands drastic changes in just 180 days, 
 image: "/assets/img/posts/hipaa-security-rule-hospitals-face-impossible-deadlines.webp"
 image_width: 1024
 image_height: 1024
-last_modified_at: 2026-06-19
 ---
 
 Most healthcare systems aren’t ready for this.

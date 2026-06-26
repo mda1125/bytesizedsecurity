@@ -10,7 +10,6 @@ image: "/assets/img/posts/cybersecurity-career-guide.png"
 image_width: 1024
 image_height: 576
 permalink: /cybersecurity-career-guide/
-last_modified_at: 2026-06-19
 faq:
   - question: "Is there really a cybersecurity talent shortage?"
     answer: "Not exactly. The industry has a trust problem, a pipeline problem, and a mentorship problem — not a talent shortage. Entry-level postings demand years of experience while companies stopped growing junior talent. Thousands of qualified graduates cannot land interviews while organizations insist nobody good is available."
