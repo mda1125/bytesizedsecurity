@@ -21,7 +21,7 @@ faq:
     answer: "No. A credit freeze does not affect your credit score and does not prevent you from using your existing credit cards or accounts. It only blocks new credit inquiries. Freezing your credit is completely free, mandated by federal law since 2018."
   - question: "Should I freeze my children's credit?"
     answer: "Yes. Children are attractive targets for identity thieves because they have clean Social Security numbers and nobody monitors their credit. Fraud often goes undetected until they turn 18 and apply for their first credit card or student loan. Each credit bureau has a free process for freezing a minor's credit."
-last_modified_at: 2026-06-26
+last_modified_at: 2026-06-27
 ---
 
 A credit freeze is the single most effective identity-theft defense you can deploy in 15 minutes — and the federal government made it free back in 2018.
@@ -93,6 +93,8 @@ What changes is that new applications for credit get denied at the inquiry stage
 
 This also means a credit freeze is reversible. If you ever decide you don't want one, you can remove the freeze permanently in the same place you placed it. It's not a one-way door.
 
+A freeze is also stronger than a credit monitoring service alone. Products like LifeLock, Aura, IDShield, and Experian IdentityWorks alert you *after* a thief uses your information. A freeze prevents the misuse in the first place. Use monitoring as a tripwire on top of the freeze, not as a substitute for it — and pull your three free annual credit reports at [AnnualCreditReport.com](https://www.annualcreditreport.com), the only federally authorized source under the FCRA.
+
 ## What does a LexisNexis report show, and how do I get mine? {#lexisnexis-report}
 
 > **Direct answer:** Your LexisNexis Consumer Disclosure Report is a separate dossier insurers, landlords, and employers buy on you — address history, property records, liens, judgments, licenses, and bankruptcies. Request it free at consumer.risk.lexisnexis.com or 1-866-897-8126.
@@ -143,9 +145,15 @@ The bureaus process the minor freeze within a few business days. When the child 
 
 ## What did I learn from freezing (and thawing) my own credit? {#what-i-learned}
 
-> **Direct answer:** I froze my credit at all three bureaus in February 2022 and have thawed it three times since for legitimate pulls. Equifax thawed instantly online. Experian's PIN flow was painful. TransUnion was the most reliable. Cost across four years: $0.
+> **Direct answer:** I froze my credit at all three bureaus in February 2022 after Kohl's called me about an application I never made. I have thawed it three times since for legitimate pulls. Equifax thawed instantly. Experian's PIN flow was painful. TransUnion was the most reliable. Cost: $0.
 
-I work in security for a living, but I still avoided freezing my credit for years because I assumed it would be a hassle every time I wanted to apply for something. After my data was exposed in the [2017 Equifax breach](https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement) that affected 147 million Americans, I finally placed freezes at all three bureaus in February 2022. Total elapsed time, start to finish: 22 minutes with a coffee.
+### The Kohl's phone call that pushed me over the edge
+
+I work in security for a living, but I still avoided freezing my credit for years because I assumed it would be a hassle every time I wanted to apply for something. That changed the afternoon **Kohl's Department Store** called me to say they could not approve "my" application for a store credit card. I had never applied. Someone had enough of my information — name, date of birth, Social Security number, address — to get to the final approval step at a national retailer. They were one merchant decision away from walking out with merchandise on a card opened in my name.
+
+I hung up, opened my laptop, and ran through the exact steps in this guide. I froze my credit at Equifax, Experian, and TransUnion, pulled my LexisNexis report, and enrolled in the IRS's [Identity Protection PIN (IP PIN) program](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin) so a thief couldn't file a fraudulent tax return under my Social Security number. Total time from the Kohl's call to "everything is locked": about 35 minutes. I have not had a single fraud incident since, and the entire stack cost me nothing.
+
+The 2017 [Equifax breach](https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement) that exposed 147 million Americans' data was almost certainly the source of whatever the Kohl's applicant was using. That's the lesson: by the time you get the courtesy call, the data is already in the wild. The freeze is what makes the data useless.
 
 A few things I did not expect:
 
@@ -166,10 +174,12 @@ If you take one action after reading this, lock my credit at all three bureaus r
 Then layer the rest:
 
 - Pull your LexisNexis Consumer Disclosure Report and dispute anything wrong with it
+- Pull all three credit reports for free at [AnnualCreditReport.com](https://www.annualcreditreport.com) and review them line by line
 - Freeze your spouse's credit (and request their LexisNexis report)
 - Freeze your kids' credit — it's the step almost nobody takes, and it's the highest-leverage move for a child's future financial life
-- Save every PIN and login in a password manager so you can thaw quickly when needed
-- Set a calendar reminder to re-check your LexisNexis report once a year
+- Save every PIN and login in a password manager (1Password, Bitwarden, Dashlane, or your platform's built-in vault) so you can thaw quickly when needed
+- Enroll in the [IRS Identity Protection PIN (IP PIN)](https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin) so nobody can file a fraudulent return under your SSN
+- Set a calendar reminder to re-check your LexisNexis report once a year, and follow [NIST SP 800-63A identity-proofing guidance](https://pages.nist.gov/800-63-3/sp800-63a.html) when verifying new accounts
 
 Don't wait for a breach notification to do this. The thieves already have your data — multiple times over, between Equifax 2017, T-Mobile 2021, National Public Data 2024, and LexisNexis 2026. The only question is whether you've put up the lock.
 
