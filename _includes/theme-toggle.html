@@ -15,8 +15,9 @@ in the mobile menu) Just Work.
 {%- endcomment -%}
 <button type="button"
   data-theme-toggle
-  class="flex items-center justify-center w-11 h-11 text-2xl text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors"
-  aria-label="Theme">
+  class="flex items-center justify-center w-11 h-11 text-2xl text-gray-800 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors"
+  aria-label="Theme: Auto (follows system). Click to switch."
+  title="Theme: Auto (follows system). Click to switch.">
   <span data-theme-icon="auto">{% include icon.html name="contrast" %}</span>
   <span data-theme-icon="light" hidden>{% include icon.html name="light_mode" %}</span>
   <span data-theme-icon="dark" hidden>{% include icon.html name="dark_mode" %}</span>
@@ -65,6 +66,7 @@ in the mobile menu) Just Work.
       for (var i = 0; i < buttons.length; i++) {
         var btn = buttons[i];
         btn.setAttribute('aria-label', labels[state]);
+        btn.setAttribute('title', labels[state]);
         // aria-pressed is intentionally only true for the two explicit choices;
         // Auto is the unstated default, so it reads as "not pressed".
         btn.setAttribute('aria-pressed', state === 'dark' ? 'true' : 'false');
