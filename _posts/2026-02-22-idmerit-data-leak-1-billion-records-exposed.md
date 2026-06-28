@@ -8,8 +8,8 @@ tags: ["Data Breach", "KYC", "Identity Verification"]
 author: Marc
 excerpt: "A misconfigured MongoDB database at IDMerit exposed roughly 1 billion identity records from 26 countries, including 203 million from the United States. This massive data leak reveals deep failures in the KYC supply chain and the lifelong impact for anyone who has ever uploaded an ID to verify themselves."
 image: "/assets/img/posts/idmerit-data-leak-1-billion-records-exposed.webp"
-image_width: 1080
-image_height: 1350
+image_width: 1200
+image_height: 630
 last_modified_at: 2026-06-28
 faq:
   - question: "What is the IDMerit data leak?"
