@@ -1,0 +1,71 @@
+{%- comment -%}
+Related Briefings — 3-card grid at post-bottom for next-click compounding.
+
+Placement (in _layouts/post.html): immediately AFTER the About-the-Author
+block and BEFORE Share This Article. The author bio establishes E-E-A-T;
+Related Briefings is the choice surface that converts that trust into a
+second pageview.
+
+Selection algorithm (pure Liquid, no plugin):
+  1. Posts in the same `category` as the current post, newest first.
+  2. If fewer than 3, fill from most-recent posts overall (excluding the
+     current post and anything already selected in step 1).
+  3. Cap at 3 cards.
+
+Card markup mirrors the homepage Latest Intel card so readers re-use the
+same scan pattern, with a leaner byline (date + read time only — author is
+implied by the About-the-Author block directly above). Whole card is a
+single <a> for one large Fitts's-Law-friendly click target.
+
+The section disappears entirely when no related posts exist (e.g., a
+single-post archive), so we never render an empty heading.
+{%- endcomment -%}
+
+{%- assign same_cat_pool = site.posts
+    | where: "category", page.category
+    | where_exp: "p", "p.url != page.url" -%}
+
+{%- assign other_pool = site.posts
+    | where_exp: "p", "p.category != page.category"
+    | where_exp: "p", "p.url != page.url" -%}
+
+{%- assign related = same_cat_pool | concat: other_pool | slice: 0, 3 -%}
+
+{%- if related.size > 0 -%}
+<aside class="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700 not-prose">
+  <h4 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-6">Related Briefings</h4>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {%- for post in related -%}
+    {%- assign r_words = post.content | strip_html | number_of_words -%}
+    {%- assign r_minutes = r_words | times: 1.0 | divided_by: 220.0 | ceil -%}
+    {%- if r_minutes < 1 -%}{%- assign r_minutes = 1 -%}{%- endif -%}
+    <a href="{{ post.url | relative_url }}" class="group flex flex-col no-underline">
+      <div class="border border-gray-200 dark:border-gray-700 p-1 bg-white dark:bg-gray-900 shadow-sm mb-3">
+        {%- if post.image -%}
+        {% include responsive-image.html src=post.image alt=post.title class="aspect-video w-full object-cover group-hover:opacity-90 transition-opacity" width=300 height=169 sizes="(min-width: 768px) 33vw, 100vw" %}
+        {%- else -%}
+        <div class="aspect-video bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center">
+          <span class="text-4xl text-primary opacity-40">{% include icon.html name="article" %}</span>
+        </div>
+        {%- endif -%}
+      </div>
+
+      <span class="font-sans text-xs font-bold uppercase tracking-wide text-primary mb-2">
+        {{ post.category | default: post.tags.first | default: "Security" }}
+      </span>
+
+      <h5 class="text-base font-bold font-sans text-gray-900 dark:text-gray-100 leading-snug mb-2 group-hover:text-link transition-colors">
+        {{ post.title | escape }}
+      </h5>
+
+      <span class="text-xs font-sans text-gray-500 dark:text-gray-400 mt-auto">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <span aria-hidden="true">·</span>
+        {{ r_minutes }} min read
+      </span>
+    </a>
+    {%- endfor -%}
+  </div>
+</aside>
+{%- endif -%}
