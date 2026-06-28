@@ -21,15 +21,25 @@ The section disappears entirely when no related posts exist (e.g., a
 single-post archive), so we never render an empty heading.
 {%- endcomment -%}
 
-{%- assign same_cat_pool = site.posts
-    | where: "category", page.category
-    | where_exp: "p", "p.url != page.url" -%}
+{%- assign same_cat_pool = site.posts | where: "category", page.category | where_exp: "p", "p.url != page.url" -%}
+{%- assign same_cat_count = same_cat_pool | size -%}
 
-{%- assign other_pool = site.posts
-    | where_exp: "p", "p.category != page.category"
-    | where_exp: "p", "p.url != page.url" -%}
-
-{%- assign related = same_cat_pool | concat: other_pool | slice: 0, 3 -%}
+{%- comment -%}
+Branch explicitly on the empty case. Liquid's `concat` filter can return
+nil (not [] | other) when its left operand is an empty array produced by
+chained `where_exp`, which silently breaks the slice + size check below
+and the section disappears. Single-post categories (Career, Privacy,
+Threats, Cryptography, Reverse Engineering) hit this path.
+{%- endcomment -%}
+{%- if same_cat_count >= 3 -%}
+  {%- assign related = same_cat_pool | slice: 0, 3 -%}
+{%- elsif same_cat_count == 0 -%}
+  {%- assign related = site.posts | where_exp: "p", "p.url != page.url" | slice: 0, 3 -%}
+{%- else -%}
+  {%- assign needed = 3 | minus: same_cat_count -%}
+  {%- assign other_pool = site.posts | where_exp: "p", "p.category != page.category" | where_exp: "p", "p.url != page.url" | slice: 0, needed -%}
+  {%- assign related = same_cat_pool | concat: other_pool -%}
+{%- endif -%}
 
 {%- if related.size > 0 -%}
 <aside class="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700 not-prose">
