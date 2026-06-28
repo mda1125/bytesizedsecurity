@@ -24,9 +24,9 @@ faq:
     answer: "There was no zero-day exploit. The MongoDB database was deployed on the public internet with no password and no access controls. Anyone who scanned for open MongoDB ports got full read access to every identity record. Misconfiguration, not advanced attacks, remains the leading cause of large-scale identity verification breaches."
 ---
 
-A misconfigured MongoDB database turned the KYC supply chain inside out, and your name is likely in it.
+The IDMerit data leak is the November 2026 exposure of roughly 1 billion KYC identity records from 26 countries, caused by a misconfigured MongoDB database left open on the public internet with no password.
 
-**TL;DR:** The IDMerit data leak exposed roughly 1 billion identity verification records from 26 countries after researchers found an unprotected MongoDB database belonging to IDMerit, an AI-powered KYC provider. The data included full names, addresses, dates of birth, national ID numbers, phone numbers, and telecom metadata. There was no zero-day exploit. The database had no password. Here is what happened, what data is at risk, and the exact steps to lock down your identity now.
+**TL;DR:** The breach revealed full names, addresses, dates of birth, national ID numbers, phone numbers, and telecom metadata belonging to roughly 1 billion individuals processed by IDMerit, an AI-powered identity verification provider. There was no zero-day exploit. Here is what happened, what data is at risk, and the exact steps to lock down your identity right now.
 
 ---
 
