@@ -33,14 +33,14 @@ Okurrrr is the free cybersecurity career roadmap most people Googling "how do I 
 **Jump to a section:**
 
 - [What is Okurrrr and who is it for?](#what-is-okurrrr)
-- [Why is breaking into cybersecurity so hard right now?](#breaking-into-cybersecurity)
+- [Why is launching a career in cybersecurity so hard right now?](#breaking-into-cybersecurity)
 - [What is inside the free cybersecurity career roadmap?](#whats-inside)
-- [How does the Career Pathfinder work?](#career-pathfinder)
-- [Which certifications and NICE work roles should you target?](#work-roles)
+- [How does the Career Pathfinder map your cybersecurity career pathway?](#career-pathfinder)
+- [Which certifications and work roles power your cybersecurity career?](#work-roles)
 - [What learning resources and skills does Okurrrr cover?](#learn-skills)
 - [How does Okurrrr compare to other cybersecurity career resources?](#vs-other-roadmaps)
 - [Who is Moe Baker, the engineer behind Okurrrr?](#about-moe-baker)
-- [How to use Okurrrr in your first 30 days](#first-30-days)
+- [How to use this cybersecurity roadmap in your first 30 days](#first-30-days)
 
 ## What is Okurrrr and who is it for? {#what-is-okurrrr}
 
@@ -50,11 +50,11 @@ Okurrrr is the free cybersecurity career roadmap most people Googling "how do I 
 
 Okurrrr groups its content by who needs it. People still asking "what is cybersecurity, actually?" get glossary entries, beginner certifications, and free training resources. CISOs planning team development get NICE Work Role mappings, DoD 8140 alignment data, and the full CISSP CBK domain coverage. The same database serves both audiences without dumbing anything down for either one.
 
-## Why is breaking into cybersecurity so hard right now? {#breaking-into-cybersecurity}
+## Why is launching a career in cybersecurity so hard right now? {#breaking-into-cybersecurity}
 
-> **Direct answer:** Breaking into cybersecurity is hard because the field has 700+ certifications, no canonical degree path, and applicant-tracking systems that filter on exact keyword matches. Okurrrr fixes the discovery problem by indexing every cert, role, and framework in one place.
+> **Direct answer:** Launching a career in cybersecurity is hard because the field has 700+ certifications, no canonical degree path, and ATS systems filtering on exact keyword matches. Okurrrr fixes the discovery problem by indexing every cert, role, and framework in one place.
 
-The "cybersecurity talent gap" headline has run for a decade, but the lived reality for someone trying to break in is messier. There is no single entry-level title — candidates apply to roles called SOC Analyst, Security Engineer I, GRC Analyst, Threat Intel Researcher, or Cyber Workforce Specialist, and each one expects a different stack of tools, frameworks, and certs. Without a roadmap, candidates over-index on whichever cert their LinkedIn feed sells the hardest, then wonder why the job description still reads like a foreign language.
+The "cybersecurity talent gap" headline has run for a decade, but the lived reality for someone starting a career in cybersecurity is messier. There is no single entry-level title — candidates apply to roles called SOC Analyst, Security Engineer I, GRC Analyst, Threat Intel Researcher, or Cyber Workforce Specialist, and each one expects a different stack of tools, frameworks, and certs. Without a roadmap, candidates over-index on whichever cert their LinkedIn feed sells the hardest, then wonder why the job description still reads like a foreign language.
 
 Okurrrr's bet is that the bottleneck is information architecture, not effort. By cross-referencing every cyber career path against the [NIST NICE Framework](https://niccs.cisa.gov/workforce-development/nice-framework)'s 52 Work Roles and 7 Categories, the site lets a beginner answer two questions in one session: "what job do I actually want?" and "what is the cheapest, fastest path to qualify for it?" That alone collapses weeks of Reddit research into one afternoon.
 
@@ -76,15 +76,15 @@ Here is the full content inventory you get without paying or registering:
 
 Every dataset is wired into the same filter UI, so a question like "show me free, beginner-level certs aligned to the NICE Work Role of Cyber Defense Analyst" returns an actionable answer in two clicks.
 
-## How does the Career Pathfinder work? {#career-pathfinder}
+## How does the Career Pathfinder map your cybersecurity career pathway? {#career-pathfinder}
 
-> **Direct answer:** The Career Pathfinder asks you to pick a NICE Work Role, CISSP Domain, or job title, then assembles a personalized roadmap of recommended certifications, training, tools, and milestones — saved locally so you can track progress without an account.
+> **Direct answer:** The Career Pathfinder asks you to pick a NICE Work Role, CISSP Domain, or job title, then assembles a cybersecurity career pathway of recommended certifications, training, tools, and milestones — saved locally so you can track progress without an account.
 
 Four modes are available: a guided path for first-timers, a build-your-own path for people who already know their destination, a "discover" mode that surfaces a random role to explore, and a credential-hunter mode for people focused on resume signal. The output is not a generic recommendation list — it specifies a primary skill (e.g., "Cyber Defense Analyst"), an optional secondary specialization, and a branching alternative if the primary turns out to be a poor fit.
 
 Progress tracking lives entirely in browser local storage. Nothing is uploaded, no analytics fire on your selections, and there is no account to delete. For a free cybersecurity career roadmap operating without venture funding, that privacy posture is a deliberate design choice worth calling out.
 
-## Which certifications and NICE work roles should you target? {#work-roles}
+## Which certifications and work roles power your cybersecurity career? {#work-roles}
 
 > **Direct answer:** For beginners, target CompTIA Security+, ISC2 Certified in Cybersecurity, and the NICE Work Role of Cyber Defense Analyst. For mid-career pivots, the CISSP plus a NICE specialty (cloud, IR, GRC) is the highest-leverage combination.
 
@@ -106,7 +106,7 @@ For people who learn best by doing, Okurrrr's "Free resources available" filter 
 
 Most career sites in this space have one job. roadmap.sh maps technologies. The official [NICE Cyber Career Pathways Tool](https://niccs.cisa.gov/workforce-development/cyber-career-pathways-tool) shows work roles. Vendor sites push their own learning paths. None of them combine certifications, threat intelligence, hands-on labs, weakness catalogs, attack pattern catalogs, and community organizations into a single navigable database.
 
-That integration is the difference between "another link to bookmark" and "the page I open every time someone asks me how to break into cybersecurity." It is also what makes Okurrrr genuinely useful for working professionals — opening the [CISA Known Exploited Vulnerabilities catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), [MITRE ATT&CK Enterprise](https://attack.mitre.org/) reference, and the Resume Optimizer in the same UI you already use for cert planning saves real time during quarterly CPE cycles.
+That integration is the difference between "another link to bookmark" and "the page I open every time someone asks me how to break into cybersecurity." Treat Okurrrr as the cybersecurity roadmap layer that sits on top of every other reference: opening the [CISA Known Exploited Vulnerabilities catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), [MITRE ATT&CK Enterprise](https://attack.mitre.org/) reference, and the Resume Optimizer in the same UI you already use for cert planning saves real time during quarterly CPE cycles.
 
 ## Who is Moe Baker, the engineer behind Okurrrr? {#about-moe-baker}
 
@@ -114,9 +114,9 @@ That integration is the difference between "another link to bookmark" and "the p
 
 What is unusual about Okurrrr is not just the content depth — it is that one practitioner shipped it as a free public good. There is no paywall, no upsell to a paid Discord, no LinkedIn-Learning affiliate link. If you find the site useful, the right way to repay it is to share the link with one person trying to break into cybersecurity, and to credit Moe by name when you do.
 
-## How to use Okurrrr in your first 30 days {#first-30-days}
+## How to use this cybersecurity roadmap in your first 30 days {#first-30-days}
 
-> **Direct answer:** In your first 30 days: open the Career Pathfinder, pick one NICE Work Role, identify three certifications and three free learning resources, then book the cheapest cert exam for day 90 to create a forcing function.
+> **Direct answer:** In your first 30 days with this cybersecurity roadmap: open the Career Pathfinder, pick one NICE Work Role, identify three certifications and three free learning resources, then book the cheapest cert exam for day 90 to create a forcing function.
 
 A 30-day starter plan that actually moves the needle:
 
