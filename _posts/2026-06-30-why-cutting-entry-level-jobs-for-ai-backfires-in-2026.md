@@ -1,7 +1,7 @@
 ---
-description: "Replacing entry-level workers with AI saves money this quarter, but it destroys the talent pipeline your team will need by 2028. Here's the data."
+description: "Are cybersecurity jobs affected by AI? Yes: entry-level postings down 35% in 18 months, tier-1 SOC work absorbed. What managers and juniors do next."
 layout: post
-title: "Why Cutting Entry-Level Jobs for AI Backfires in 2026"
+title: "Are Cybersecurity Jobs Affected by AI in 2026? Yes and No"
 slug: why-cutting-entry-level-jobs-for-ai-backfires-in-2026
 category: "Career"
 tags: ["AI Hiring", "Entry-Level Jobs", "Cybersecurity Careers", "Talent Pipeline"]
@@ -24,9 +24,9 @@ faq:
     answer: "No. <a href=\"https://hbr.org/2026/03/ai-and-the-entry-level-job\">IBM's HR chief argues in HBR</a> that cutting junior cohorts wrecks succession planning and knowledge transfer. The smarter play is redesigning entry roles around AI oversight, judgment-heavy decisions, and complex case routing, while still bringing in cohorts who grow into senior leaders."
 ---
 
-The math looks great this quarter. The math looks terrible by 2028.
+Are cybersecurity jobs affected by AI? Yes: overall security hiring is up about 11% year over year, but tier-1 openings are down sharply, and the shape of the first job has changed for good.
 
-**TL;DR:** U.S. entry-level job postings have dropped 35% in 18 months, and Harvard Business School research warns AI could make roughly 18 million entry-level roles obsolete (about 12% of the U.S. workforce). Companies that replace junior cohorts with AI win short-term margin and lose the talent pipeline that staffs every senior role above them. Cybersecurity is feeling the same squeeze even though overall security hiring is up. Here is what hiring managers and anyone trying to break in should do about it.
+**TL;DR:** Are cybersecurity jobs affected by AI? Yes. U.S. entry-level postings across every sector are down 35% in 18 months (Revelio Labs), Harvard Business School research warns AI could make ~18 million entry-level roles obsolete, and tier-1 SOC work is being absorbed by AI even as senior security demand grows. Companies that replace junior cohorts with AI win short-term margin and lose the talent pipeline that staffs every senior role above them. Here is what hiring managers and anyone trying to break in should do.
 
 ---
 
@@ -52,7 +52,7 @@ The mechanism is straightforward. Entry-level work is where people learn how the
 
 [Joseph Fuller of Harvard Business School](https://www.library.hbs.edu/working-knowledge/talent-shift-ai-could-spark-interview-with-joseph-fuller) and Burning Glass Institute co-authors put the number at roughly 18 million U.S. workers in roles where AI threatens to break the traditional career ladder. That is 12% of the labor force, concentrated in higher-paying, college-degree-required occupations (legal associates, marketing specialists, project managers, and yes, plenty of cyber-adjacent roles).
 
-## Is cybersecurity hiring affected by the same squeeze? {#cybersecurity-effect}
+## Are cybersecurity jobs affected by AI, or spared from the squeeze? {#cybersecurity-effect}
 
 > **Direct answer:** Yes and no. Cybersecurity hiring overall is up about 11% year over year, but pure entry-level openings remain scarce. AI now absorbs tier-1 SOC work, alert triage, and basic IR documentation that used to staff the bottom of the pyramid.
 
@@ -74,7 +74,7 @@ Three concrete moves a security leader should make this year:
 2. **Build a structured 90-day on-ramp.** Hand new analysts a curated subset of real cases with senior shadow review, instead of throwing them at the alert queue and hoping they figure it out.
 3. **Treat your junior cohort as future leadership.** If you would not bet on someone you hired this year being a manager in five, you hired wrong or you are growing wrong.
 
-## How do you break into cybersecurity when entry-level postings are shrinking? {#how-to-break-in}
+## How do you break into cybersecurity jobs when AI is cutting entry-level roles? {#how-to-break-in}
 
 > **Direct answer:** Prove capability AI cannot fake. Build a documented home lab. Run an end-to-end investigation on a public dataset. Publish your write-up. Walk into the interview with evidence, not a list of certs.
 
@@ -87,7 +87,7 @@ Two more habits worth building right now:
 - **Get fluent with the AI tools the hiring manager uses.** If you are interviewing for SOC roles, know how to drive an LLM-based assistant against a SIEM dataset and explain when its output is wrong. Discernment is the new skill floor.
 - **Talk to humans.** Cold applications into ATS portals are losing the race against AI-screened resumes on both sides. A 15-minute conversation with someone on the team you want to join still bypasses 90% of the noise.
 
-## Which entry-level cyber roles are most exposed to AI? {#exposed-roles}
+## AI impact on cybersecurity: which entry-level roles are most exposed? {#exposed-roles}
 
 > **Direct answer:** Roles built around repetitive, well-scoped tasks. Tier-1 SOC analyst, junior vuln scanner operator, compliance evidence collector, and basic phishing-triage roles are the most exposed. Roles requiring real-world judgment, customer interaction, or physical access are the least exposed.
 
@@ -105,12 +105,34 @@ That role still produces measurable output. It produces judgment, mentorship hoo
 
 If your org chart does not have a role like that, build one. The companies that wake up in 2028 with no internal succession bench will be the ones that cut their junior cohort instead.
 
+## How is AI's impact on cybersecurity jobs changing the threats professionals face? {#ai-threats-professionals}
+
+> **Direct answer:** Deepfakes, LLM-generated phishing, and agentic attack scripts raise the volume and quality of threats. AI's impact on cybersecurity jobs shows up as more work and higher stakes, not less. Professionals who pair defensive AI with real judgment stay in demand.
+
+The threat side has more compute behind it than at any point in cybersecurity history. That reshapes the work every practitioner does, from tier-1 analyst to CISO, and it changes what a hiring manager should look for in the person filling the seat.
+
+### Adversary use of AI is scaling faster than defensive use
+
+Attackers do not have compliance reviews. They ship prompt-tuned phishing kits, agentic command-and-control frameworks, and voice-clone tooling as fast as the underlying models improve. Phishing that used to require a specialist copywriter now runs on a low-cost subscription. Business email compromise cases have grown noticeably harder to spot in the last year because the LLM output no longer trips the "written by a non-native speaker" heuristic that used to catch them.
+
+Deepfake voice fraud has moved from novelty to routine. [Krebs on Security](https://krebsonsecurity.com/) and other tracked feeds have logged confirmed multi-million-dollar losses from voice-clone social engineering in the last twelve months, most often targeting the finance team with a "CFO called from an airport, needs an urgent wire" pretext.
+
+### What that means for cybersecurity professionals
+
+Three shifts to prepare for right now:
+
+1. **Retire detection rules that assume attackers make grammar mistakes.** Any signature built on prose quality is a liability. Rewrite it against behavior, sending pattern, and metadata.
+2. **Treat identity verification as the new perimeter.** If a voice-clone gets past your wire-approval process, the process is the bug. Add a callback protocol to a known-good number for anything above a dollar threshold.
+3. **Ship AI-assisted, not AI-only.** The teams shipping the fewest false negatives right now are the ones running LLM-assisted triage in front of a human who owns the escalation call. Full-auto SOC playbooks still miss the ambiguous cases, and ambiguous cases are the ones adversaries design.
+
+The upshot: AI's impact on cybersecurity is not a story of replacement, it is a story of raised stakes. Defenders are asked to cover more surface, at higher speed, against smarter attacks. The professionals who invest in defensive-AI fluency this year will own the next hiring cycle. The hiring managers who plan around that reality (instead of chasing the seat-count savings) will end up with the teams that can actually respond when the ambiguous case shows up on a Friday night.
+
 ## The bottom line for 2026 and beyond {#bottom-line}
 
 If you run a security team, the short-term math on cutting entry-level hires is real and the long-term cost is real too. Pick which one you optimize for.
 
 If you are trying to break in, the field is harder than it was three years ago and the path is clearer than it has ever been. Skill up, build proof, talk to humans, and pick a specialty where your judgment outranks the model.
 
-The companies that figure this out early will own the talent pipeline for the next decade. The ones that do not will be paying retention bonuses to keep burned-out seniors who have no one to hand the baton to.
+Are cybersecurity jobs affected by AI? Yes, in every layer of the practice. The companies that figure this out early will own the talent pipeline for the next decade. The ones that do not will be paying retention bonuses to keep burned-out seniors who have no one to hand the baton to.
 
 Choose carefully. The decision compounds.
