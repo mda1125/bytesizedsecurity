@@ -21,18 +21,20 @@ faq:
     answer: "No. A credit freeze does not affect your credit score and does not prevent you from using your existing credit cards or accounts. It only blocks new credit inquiries. Freezing your credit is completely free, mandated by federal law since 2018."
   - question: "Should I freeze my children's credit?"
     answer: "Yes. Children are attractive targets for identity thieves because they have clean Social Security numbers and nobody monitors their credit. Fraud often goes undetected until they turn 18 and apply for their first credit card or student loan. Each credit bureau has a free process for freezing a minor's credit."
-last_modified_at: 2026-06-27
+last_modified_at: 2026-07-01
 ---
 
-A credit freeze is the single most effective identity-theft defense you can deploy in 15 minutes — and the federal government made it free back in 2018.
+_Last updated: 2026-07-01._
+
+A credit freeze is the single most effective identity-theft defense you can deploy in 15 minutes — and federal law makes it free at every major bureau, for every U.S. consumer.
 
 **TL;DR:** A credit freeze locks your credit report so no lender can pull it without your PIN. That alone stops the most common form of identity theft: new-account fraud. Freeze your credit at Equifax, Experian, and TransUnion (each takes about five minutes), then request your free LexisNexis Consumer Disclosure Report — a separate file that insurers, landlords, and employers pull on you. If you have kids, freeze their credit too. Total time: ~15 minutes. Total cost: $0.
 
 ---
 
-Most people know about the three credit bureaus — Equifax, Experian, and TransUnion. Very few know they can flip a switch that essentially turns off new-account fraud for free. Fewer still know that LexisNexis maintains a separate consumer file on nearly every U.S. adult, and that insurance companies, landlords, and employers use it to make decisions about you long before you ever sign a lease or get a quote.
+The urgency has climbed sharply in 2026. [Javelin Strategy & Research's 2026 Identity Fraud Study](https://javelinstrategy.com/whitepapers/2026-identity-fraud-study-illusion-progress), released in April 2026, found that **new-account fraud — the exact attack a credit freeze stops — surged 31% in 2025 to 5.4 million victims and $7 billion in losses**, the only fraud category that grew year over year while others fell. Most people know about the three credit bureaus — Equifax, Experian, and TransUnion. Very few know they can flip a switch that essentially turns off new-account fraud for free. Fewer still know that LexisNexis maintains a separate consumer file on nearly every U.S. adult, and that insurance companies, landlords, and employers use it to make decisions about you long before you ever sign a lease or get a quote.
 
-This guide walks through every step of freezing your credit at all three bureaus, requesting your LexisNexis report, freezing your kids' credit, and what I personally learned after freezing (and thawing) my own credit three times since 2022.
+This guide walks through every step of freezing your credit at all three bureaus, requesting your LexisNexis report, freezing your kids' credit, and what I personally learned after freezing (and thawing) my own credit multiple times over the past several years.
 
 **Jump to a section:**
 
@@ -50,9 +52,9 @@ This guide walks through every step of freezing your credit at all three bureaus
 
 A credit freeze (sometimes called a "security freeze") is a request to each of the three major credit bureaus to restrict access to your credit file. When a lender, credit card issuer, or apartment complex tries to pull your credit, the request is blocked until you temporarily lift the freeze with a PIN or password.
 
-[The Consumer Financial Protection Bureau defines a security freeze](https://www.consumerfinance.gov/ask-cfpb/what-is-a-security-freeze-en-1353/) as a way to "restrict access to your credit report, which in turn makes it more difficult for identity thieves to open new accounts in your name." Per [the Federal Trade Commission's IdentityTheft.gov guidance](https://www.identitytheft.gov/CreditBureauContacts), every U.S. consumer has the right to place, lift, and remove a credit freeze for free under the [Economic Growth, Regulatory Relief, and Consumer Protection Act of 2018](https://www.congress.gov/bill/115th-congress/senate-bill/2155), which amended the Fair Credit Reporting Act in September 2018.
+The [Federal Trade Commission's guidance on credit freezes and fraud alerts](https://consumer.ftc.gov/articles/what-know-about-credit-freezes-and-fraud-alerts) describes a freeze as a way to restrict access to your credit report so identity thieves can't open new accounts in your name. Per [the FTC's IdentityTheft.gov contacts page](https://www.identitytheft.gov/CreditBureauContacts), every U.S. consumer has the right to place, lift, and remove a credit freeze for free under the [Economic Growth, Regulatory Relief, and Consumer Protection Act (Public Law 115-174)](https://www.congress.gov/115/plaws/publ174/PLAW-115publ174.pdf), which amended the Fair Credit Reporting Act to require free nationwide credit freezes.
 
-A credit freeze stops the most common identity-theft attack pattern in the United States: new-account fraud. According to the [FTC's Consumer Sentinel Network 2023 Data Book](https://www.ftc.gov/system/files/ftc_gov/pdf/CSN-Annual-Data-Book-2023.pdf), credit-card fraud was the #1 type of identity theft reported, with hundreds of thousands of reports involving accounts opened in the victim's name. A freeze closes that door before the thief can even knock.
+A credit freeze stops the most common identity-theft attack pattern in the United States: new-account fraud. According to the [FTC's 2024 Consumer Sentinel Network Data Book](https://www.ftc.gov/reports/consumer-sentinel-network-data-book-2024), credit-card fraud was again the #1 type of identity theft reported — 449,032 complaints in 2024, up 7.8% year over year, and nearly 9 in 10 of those involved someone using a victim's stolen information to open a brand-new credit card. A freeze closes that door before the thief can even knock.
 
 ## How do I freeze my credit at Equifax, Experian, and TransUnion? {#freeze-three-bureaus}
 
@@ -134,14 +136,14 @@ If you spot records clearly belonging to someone else but tied to your name or S
 
 Children are the highest-value targets for identity thieves. Their Social Security numbers are clean, they have no existing accounts that would raise a flag, and nobody pulls their credit until they turn 18. By the time a college freshman applies for a student loan and discovers $40,000 in fraudulent debt, the trail can be almost a decade cold.
 
-[Equifax](https://www.equifax.com/personal/credit-report-services/free-child-credit-freeze/), [Experian](https://www.experian.com/freeze/center.html), and [TransUnion](https://www.transunion.com/credit-freeze-for-children) each have a parent-or-guardian credit freeze process for minors. The bureaus typically require:
+[Equifax](https://www.equifax.com/personal/education/credit/report/articles/-/learn/how-to-freeze-your-childs-credit/), [Experian](https://www.experian.com/freeze/center.html), and [TransUnion](https://www.transunion.com/credit-freeze-for-children) each have a parent-or-guardian credit freeze process for minors. The bureaus typically require:
 
 - A copy of the child's birth certificate
 - A copy of the child's Social Security card
 - A copy of your government-issued ID
 - A copy of a document proving guardianship if you're not the parent listed on the birth certificate
 
-The bureaus process the minor freeze within a few business days. When the child turns 18, they can lift the freeze themselves using the credentials you set up — or you can hand off the PINs and credentials as part of "the adulting starter pack." The [FTC's child identity theft guidance](https://consumer.ftc.gov/articles/child-identity-theft) is the best official resource on this topic and is worth bookmarking.
+The bureaus process the minor freeze within a few business days. When the child turns 18, they can lift the freeze themselves using the credentials you set up — or you can hand off the PINs and credentials as part of "the adulting starter pack." The [FTC's guide to protecting your child from identity theft](https://consumer.ftc.gov/articles/how-protect-your-child-identity-theft) is the best official resource on this topic and is worth bookmarking.
 
 ## What did I learn from freezing (and thawing) my own credit? {#what-i-learned}
 
