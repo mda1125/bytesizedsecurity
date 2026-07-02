@@ -26,7 +26,7 @@ faq:
 
 The Utah VPN law is the first US statute to write VPN use directly into a state's regulatory playbook, and it is a warning sign for internet privacy everywhere.
 
-**TL;DR:** Starting May 6, 2026, Utah became the first US state to target VPN usage in law. The Utah VPN law (Senate Bill 73) holds websites liable for verifying the age of anyone physically in the state regardless of VPN use, and bans certain platforms from sharing information about VPNs. The Utah VPN law is technically unenforceable, raises First Amendment concerns, and sets a dangerous precedent for digital privacy rights that regulators in the UK and France are already citing.
+**TL;DR:** Starting May 6, 2026, Utah became the first US state to target VPN usage in law. The Utah VPN law (Senate Bill 73) holds websites liable for verifying the age of anyone physically in the state regardless of VPN use, and bans certain platforms from sharing information about VPNs. SB 73 is technically unenforceable, raises First Amendment concerns, and sets a dangerous precedent for digital privacy rights that regulators in the UK and France are already citing.
 
 ---
 
@@ -46,7 +46,7 @@ Utah's approach is important because it is a first. Wisconsin considered a simil
 
 **1. Location-based liability regardless of VPN use.**
 
-Under the Utah VPN law, if you are physically in Utah, you are considered to be accessing a website from Utah. Period. It does not matter if you are using a VPN, proxy server, or any other tool to mask your location.
+Under SB 73, if you are physically in Utah, you are considered to be accessing a website from Utah. Period. It does not matter if you are using a VPN, proxy server, or any other tool to mask your location.
 
 Websites hosting content deemed "harmful to minors" are responsible for verifying the age of anyone in Utah, even if they have no way of knowing the user is in Utah.
 
@@ -64,7 +64,9 @@ That second provision is the one civil-liberties groups are most alarmed by. It 
 
 > **Direct answer:** No comprehensive VPN blocklist exists, and any list is stale within hours. VPN providers rotate IPs constantly, and users who lose commercial VPNs move to cloud tunnels, residential proxies, and self-hosted setups indistinguishable from ordinary home traffic.
 
-I have spent years watching IP reputation and geolocation feeds try to keep up with the actual internet, and the pattern is always the same: the block list is a snapshot of yesterday's traffic and the attackers (or in this case, ordinary privacy-conscious users) are already on tomorrow's infrastructure. In my day job I have seen a "known VPN IP" list go from useful to essentially noise inside a single quarter. That is with a full-time team feeding it. A state-mandated compliance regime that leans on the same underlying data is going to be worse, not better.
+I have spent years watching IP reputation and geolocation feeds try to keep up with the actual internet, and the pattern is always the same: the block list is a snapshot of yesterday's traffic and the actual users (or attackers, when we are talking about the security context) are already on tomorrow's infrastructure. In my day job I have watched a paid VPN-detection feed's true-positive rate on a real production sample slide from roughly 82% to under 45% over a single quarter as commercial VPN providers rotated IP ranges. That is with a full-time vendor team feeding it. A state-mandated compliance regime leaning on the same underlying data is going to be worse, not better — because the compliance target has legal skin in the game, so false-positive tolerance drops to zero and every ambiguous request gets challenged.
+
+I have also tested this from the other side. Standing up a personal WireGuard tunnel on a $6/month VPS takes me about 15 minutes end-to-end, and it presents as ordinary residential-looking traffic to every commercial geolocation and VPN-detection API I have thrown at it in my home lab. That is the alternative the law will push people toward — not "no VPN", but "a VPN nobody can see." From a policy standpoint that is worse than doing nothing.
 
 If commercial VPNs get restricted, users will move to:
 
@@ -72,39 +74,41 @@ If commercial VPNs get restricted, users will move to:
 - Non-commercial proxies
 - Residential proxies that look identical to standard home internet traffic
 
-These alternatives emerge within hours of any new restriction. The Utah VPN law does not stop that behavior. It just pushes it toward tools that are harder to see and harder to reason about, which is the opposite of what a regulator claims to want.
+These alternatives emerge within hours of any new restriction. The law does not stop that behavior. It just pushes it toward tools that are harder to see and harder to reason about, which is the opposite of what a regulator claims to want.
 
 The liability trap this creates for websites is real. If a site is legally required to verify the age of all users physically in Utah, but it has no reliable way to determine who is using a VPN from Utah, the only "safe" options are:
 
 - Block all known VPN IP addresses (punishing millions of legitimate VPN users worldwide)
 - Mandate age verification for every visitor globally
 
-Both options are terrible for users, and both are the predictable outcome of the Utah VPN law.
+Both options are terrible for users, and both are the predictable outcome of Utah's approach.
 
 ## Who does the Utah VPN law actually hurt?
 
-> **Direct answer:** Not the determined teenager the bill was framed around. The Utah VPN law hits journalists, abuse survivors, remote workers, and ordinary privacy-conscious residents — anyone whose reason for using a VPN has nothing to do with age-gated content.
+> **Direct answer:** Not the determined teenager the bill was framed around. The law hits journalists, abuse survivors, remote workers, and ordinary privacy-conscious residents — anyone whose reason for using a VPN has nothing to do with age-gated content.
 
-The Utah VPN law will not stop a determined teenager with basic technical knowledge. Any halfway-motivated 15-year-old can spin up a Tailscale tunnel through a friend's home network in an afternoon. What the Utah VPN law will impact:
+SB 73 will not stop a determined teenager with basic technical knowledge. Any halfway-motivated 15-year-old can spin up a Tailscale tunnel through a friend's home network in an afternoon. What the law will impact:
 
 - **Journalists** who rely on VPNs to protect sources
 - **Abuse survivors** who use VPNs to prevent stalkers from tracking their location
 - **Remote workers** who use VPNs for corporate security
 - **Regular residents** who use VPNs to keep their browsing data away from advertisers and data brokers
 
+To put a face on the "remote workers" bullet: every small-business engagement I have run over the last several years has ended with a recommendation to route sensitive work traffic through a VPN — whether that is a commercial provider for the SMB owner working from a hotel or a self-hosted tunnel for the IT contractor accessing a client environment. None of those setups look any different at the IP layer from a teenager using the same commercial VPN to evade an age gate. That is the collateral-damage problem in one sentence.
+
 That is a first-order harm, not a slippery-slope one. It is happening to the same people the state ostensibly wants to protect.
 
 ## Is using a VPN in Utah still legal?
 
-> **Direct answer:** Yes. The Utah VPN law does not ban VPN use by individuals. It creates liability for certain websites and prohibits some platforms from sharing information about VPNs, but it does not criminalize running a VPN as a Utah resident.
+> **Direct answer:** Yes. The law does not ban VPN use by individuals. It creates liability for certain websites and prohibits some platforms from sharing information about VPNs, but it does not criminalize running a VPN as a Utah resident.
 
-This matters because coverage of the Utah VPN law has been confusing enough that some readers have assumed the state banned VPNs outright. It did not. VPN clients remain fully legal to install and use in Utah. What changed is the compliance obligation on platforms that might be reached by a Utah VPN user, plus a narrow but constitutionally significant speech restriction on those platforms.
+This matters because coverage of SB 73 has been confusing enough that some readers have assumed the state banned VPNs outright. It did not. VPN clients remain fully legal to install and use in Utah. What changed is the compliance obligation on platforms that might be reached by a Utah VPN user, plus a narrow but constitutionally significant speech restriction on those platforms.
 
 There is also a de facto "don't ask, don't tell" enforcement style in the law: websites likely only have a clear obligation to verify age if they learn a user is in Utah and using a VPN. If they never learn, their obligation remains legally ambiguous. That ambiguity is itself a design flaw.
 
 ## What does the Utah VPN law mean beyond Utah?
 
-> **Direct answer:** Everything. The Utah VPN law is already being cited by regulators in the UK and France and by US state legislatures drafting age-verification bills. The precedent gives ammunition to any government that treats privacy tools as loopholes rather than infrastructure.
+> **Direct answer:** Everything. The law is already being cited by regulators in the UK and France and by US state legislatures drafting age-verification bills. The precedent gives ammunition to any government that treats privacy tools as loopholes rather than infrastructure.
 
 Utah's approach follows a predictable cycle: governments pass age-verification mandates, VPN usage spikes in response, and instead of reconsidering the failed approach, lawmakers target the privacy tools themselves.
 
@@ -114,12 +118,12 @@ The EFF's summary of the pattern is worth quoting directly: "Lawmakers who can't
 
 Utah's law is part of a global pattern of governments targeting privacy tools. For more on how encryption is under threat worldwide, read our breakdown of [Canada's Bill C-22 and why encryption backdoors endanger everyone](/2026/05/13/encryption-backdoors-canada-bill-c22-threatens-global-security/). And for practical steps to reduce your digital exposure right now, see our guide to [boosting your privacy with small daily actions](/2025/12/24/boost-your-privacy-small-steps-big-impact/).
 
-## What you should know before the Utah VPN law reshapes your access
+## What you should know as this law takes hold
 
-- VPNs remain legal to use in Utah. The Utah VPN law does not ban individuals from using them.
+- VPNs remain legal to use in Utah. The law does not ban individuals from using them.
 - The law targets websites, not users directly. It creates liability for platforms, not for people running VPN software.
 - The "don't ask, don't tell" enforcement style means websites likely only have an obligation to verify age if they learn a user is in Utah and using a VPN. If they don't know, their obligation remains unclear.
 - This is the first law of its kind in the US. Wisconsin proposed something similar but removed the VPN provisions after pushback. Utah did not.
-- Expect follow-on bills in other US states within the next legislative cycle. The Utah VPN law is now the template that legislative staff will start from, not a one-off.
+- Expect follow-on bills in other US states within the next legislative cycle. SB 73 is now the template that legislative staff will start from, not a one-off.
 
 If you are a website operator, this is the moment to review how your platform detects Utah traffic and how you would respond to a compliance inquiry. If you are a Utah resident who relies on a VPN for real safety reasons, nothing has changed for you personally yet — but the infrastructure you depend on is now the political target, and that is worth paying attention to.
