@@ -16,7 +16,39 @@ title: Contact
           Have a security topic you'd like us to cover? Found a bug in one of our code examples? 
           Want to collaborate on research? We'd love to hear from you.
         </p>
+        {% if site.nonprofit %}
+        <p>
+          <strong>{{ site.title }} is a registered 501(c)(3) nonprofit organization.</strong>
+          {% if site.ein %}Our EIN is <span class="font-mono">{{ site.ein }}</span>.{% endif %}
+          Contributions are tax-deductible to the fullest extent allowed by law.
+        </p>
+        {% endif %}
       </div>
+
+      {% if site.nonprofit and site.donate_url %}
+      <div id="support" class="mb-8 bg-gradient-to-br from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 border-2 border-primary p-6 md:p-8">
+        <div class="flex items-start gap-4">
+          <span class="text-4xl text-primary shrink-0">{% include icon.html name="favorite" %}</span>
+          <div class="flex-1">
+            <h2 class="font-sans font-bold text-xl md:text-2xl text-gray-900 dark:text-gray-100 mb-2">Support Our Mission</h2>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              ByteSizedSecurity runs on reader support. Your donation keeps our research independent, our analysis vendor-free, and our content freely available to the security community — from students learning their first CVE to practitioners sharpening their craft.
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+              Donations are processed by <strong>GiveLively</strong> — a nonprofit-owned platform that takes zero fees, so 100% of your contribution reaches us. You'll receive an automated tax receipt for your records.
+            </p>
+            <div class="flex flex-wrap items-center gap-3">
+              <a href="{{ site.donate_url }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 bg-primary text-white font-sans text-sm font-bold uppercase tracking-wider hover:bg-gray-900 dark:hover:bg-gray-100 dark:hover:text-gray-900 transition-colors">
+                <span class="text-base">{% include icon.html name="favorite" %}</span> Donate via GiveLively
+              </a>
+              <span class="text-xs font-sans text-gray-600 dark:text-gray-400 uppercase tracking-wider">
+                {% if site.ein %}501(c)(3) · EIN {{ site.ein }}{% else %}501(c)(3) nonprofit{% endif %} · Tax-deductible
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
 
       <div class="grid md:grid-cols-2 gap-8">
         <div class="bg-surface border border-gray-200 dark:border-gray-700 p-6">

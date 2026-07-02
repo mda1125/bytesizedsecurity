@@ -33,8 +33,18 @@ title: About
         </div>
 
         <p class="text-xl leading-relaxed mb-6">
-          <strong>ByteSizedSecurity</strong> is an independent cybersecurity blog dedicated to breaking down complex security topics into understandable, actionable insights.
+          <strong>ByteSizedSecurity</strong> is an independent cybersecurity {% if site.nonprofit %}nonprofit{% else %}blog{% endif %} dedicated to breaking down complex security topics into understandable, actionable insights.
         </p>
+
+        {% if site.nonprofit %}
+        <div class="not-prose bg-surface border-l-4 border-primary p-4 md:p-5 mb-6 flex items-start gap-3">
+          <span class="text-2xl text-primary shrink-0 mt-0.5">{% include icon.html name="verified" %}</span>
+          <p class="text-sm text-gray-700 dark:text-gray-300 m-0">
+            <strong>{{ site.title }} is a registered 501(c)(3) nonprofit organization.</strong>
+            {% if site.ein %}EIN <span class="font-mono">{{ site.ein }}</span>. {% endif %}All donations are tax-deductible to the fullest extent allowed by law.
+          </p>
+        </div>
+        {% endif %}
 
         <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-8 mb-4">Our Mission</h2>
         <p>
@@ -58,6 +68,24 @@ title: About
         <p>
           We link to original sources so readers can verify claims independently. When we reference statistics, we cite the issuing organization. If you find an error or outdated information in any article, please <a href="{{ '/contact' | relative_url }}">contact us</a> and we will correct it promptly with a visible update note.
         </p>
+
+        {% if site.nonprofit and site.donate_url %}
+        <h2 id="support" class="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-8 mb-4">Support Our Mission</h2>
+        <p>
+          {{ site.title }} is a reader-supported 501(c)(3) nonprofit. We take no vendor sponsorships and republish no press releases — that independence is only possible because readers and donors fund the work directly.
+        </p>
+        <p>
+          Contributions help cover research subscriptions, lab infrastructure, hosting, and stipends for guest researchers. Every dollar goes further because our donation platform, <strong>GiveLively</strong>, charges nonprofits nothing — 100% of your gift reaches us, and you receive an automated tax receipt.
+        </p>
+        <div class="not-prose flex flex-wrap items-center gap-4 my-6">
+          <a href="{{ site.donate_url }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 bg-primary text-white font-sans text-sm font-bold uppercase tracking-wider hover:bg-gray-900 dark:hover:bg-gray-100 dark:hover:text-gray-900 transition-colors">
+            <span class="text-base">{% include icon.html name="favorite" %}</span> Donate via GiveLively
+          </a>
+          <span class="text-xs font-sans text-gray-600 dark:text-gray-400 uppercase tracking-wider">
+            {% if site.ein %}501(c)(3) · EIN {{ site.ein }}{% else %}501(c)(3) nonprofit{% endif %} · Tax-deductible
+          </span>
+        </div>
+        {% endif %}
 
         <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mt-8 mb-4">Get In Touch</h2>
         <p>

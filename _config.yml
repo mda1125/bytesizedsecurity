@@ -22,6 +22,12 @@ author:
 
 logo: "/assets/img/bytesizedsecurity-logo-600x60.png"
 
+# Nonprofit / 501(c)(3) status
+# ein is optional — if set, it's displayed on the Contact page and in schema.
+nonprofit: true
+donate_url: "https://secure.givelively.org/donate/bytesizedsecurity"
+ein: "99-3551319"
+
 # Social media usernames
 email: "marc@bytesizedsecurity.show"
 twitter_username: "marc_david"

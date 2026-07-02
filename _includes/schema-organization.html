@@ -1,7 +1,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": {% if site.nonprofit %}["NGO", "Organization"]{% else %}"Organization"{% endif %},
   "@id": "{{ site.url }}/#organization",
   "name": "ByteSizedSecurity",
   "url": "{{ site.url }}",
@@ -11,14 +11,28 @@
     "width": 600,
     "height": 60
   },
-  "description": "{{ site.description }}",
+  "description": "{{ site.description }}"{% if site.nonprofit %},
+  "nonprofitStatus": "Nonprofit501c3"{% if site.ein %},
+  "taxID": "{{ site.ein }}",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "US-EIN",
+    "value": "{{ site.ein }}"
+  }{% endif %}{% if site.donate_url %},
+  "potentialAction": {
+    "@type": "DonateAction",
+    "name": "Donate to ByteSizedSecurity",
+    "target": "{{ site.donate_url }}",
+    "recipient": { "@id": "{{ site.url }}/#organization" }
+  }{% endif %}{% endif %},
   "sameAs": [
     "https://x.com/{{ site.twitter_username }}",
     "https://github.com/{{ site.github_username }}",
     "https://linkedin.com/in/{{ site.linkedin_username }}",
     "https://www.youtube.com/{{ site.youtube_username }}",
     "https://www.tiktok.com/{{ site.tiktok_username }}",
-    "https://bytesizedsecurity.show/"
+    "https://bytesizedsecurity.show/"{% if site.donate_url %},
+    "{{ site.donate_url }}"{% endif %}
   ]
 }
 </script>
