@@ -17,14 +17,55 @@
     })();
   </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFZKE874XE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <!-- Google Analytics (gtag.js), lazy-loaded.
+       Defer the tag until the first meaningful user signal (scroll/pointer/
+       keypress/touch/click) OR when the browser is idle, whichever fires
+       first. `async` alone doesn't help because it only defers *download*
+       blocking — once gtag.js arrives it still parses/executes on the main
+       thread and contributes ~250ms of long tasks that spike TBT and delay
+       TTI on mobile. Loading on interaction moves it off the critical path
+       entirely while still capturing virtually every real session (we lose
+       only the sub-3s bounces, which have no analytics value anyway).
 
-    gtag('config', 'G-BFZKE874XE');
+       Options considered:
+         (1) load-on-interaction with idle fallback — chosen (best ROI/effort)
+         (2) direct gtag replacement — already using it, this IS gtag
+         (3) Partytown (worker) — heavier lift, revisit if TBT stays >150ms
+
+       Rollback: replace this block with the two-tag inline snippet from
+       https://developers.google.com/analytics/devguides/collection/gtagjs -->
+  <script>
+    (function () {
+      var GA_ID = 'G-BFZKE874XE';
+      var loaded = false;
+      var triggers = ['scroll', 'mousemove', 'keydown', 'touchstart', 'click'];
+
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        triggers.forEach(function (evt) {
+          window.removeEventListener(evt, loadGA, { passive: true });
+        });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', GA_ID);
+      }
+
+      triggers.forEach(function (evt) {
+        window.addEventListener(evt, loadGA, { passive: true, once: true });
+      });
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGA, { timeout: 5000 });
+      } else {
+        setTimeout(loadGA, 5000);
+      }
+    })();
   </script>
 
   <meta charset="utf-8">
