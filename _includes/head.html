@@ -195,11 +195,27 @@
        assets/css/input.css (compiled into tailwind.min.css). Preload
        only the highest-impact above-the-fold weights so they start
        fetching before CSS finishes parsing; other weights load on
-       demand. crossorigin is required even for same-origin font
-       preloads — the preload fetch is treated as CORS by spec. -->
+       demand via @font-face + font-display:swap. crossorigin is
+       required even for same-origin font preloads — the preload fetch
+       is treated as CORS by spec.
+
+       Trimmed 2026-07-04 from 4 preloads (~292 KiB) to 2 (~146 KiB)
+       per PSI mobile audit: the 4 preloads were competing with the
+       LCP hero image for high-priority bandwidth on throttled mobile
+       connections. Kept:
+         - inter-400: nav, byline, "About the author" — the second-most
+           visible above-fold text (small but ubiquitous).
+         - merriweather-700: renders the H1 on post pages and the
+           featured-post H2 on the homepage. This is the LARGEST
+           visible above-the-fold text on both templates and the LCP
+           text element on post pages.
+       Dropped preloads (fonts still load on demand):
+         - inter-700: only used for below-hero CTAs and "Latest Intel"
+           heading; renders acceptably with metric-override fallback.
+         - merriweather-400: subtitle + excerpt paragraphs; input.css
+           configures a size-adjust / *-override "Merriweather Fallback"
+           face so the swap is visually near-invisible. -->
   <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/inter/inter-400.woff2' | relative_url }}" crossorigin>
-  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/inter/inter-700.woff2' | relative_url }}" crossorigin>
-  <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/merriweather/merriweather-400.woff2' | relative_url }}" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="{{ '/assets/fonts/merriweather/merriweather-700.woff2' | relative_url }}" crossorigin>
   
   <!-- Tailwind CSS (compiled). Cache-bust on the file's mtime so style
