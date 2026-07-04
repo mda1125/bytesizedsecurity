@@ -9,9 +9,20 @@ layout: default
       <h1 class="text-2xl md:text-3xl font-bold font-sans text-gray-900 dark:text-gray-100 leading-tight mb-3">Cybersecurity News & Threat Intelligence</h1>
       <p class="text-gray-600 dark:text-gray-400 text-lg font-serif max-w-2xl">Independent analysis of data breaches, vulnerabilities, privacy threats, and career strategy for security professionals. Written by a practitioner, not a marketing team.</p>
 
-      <a href="{{ '/about' | relative_url }}" class="mt-5 inline-flex items-center gap-3 no-underline group" aria-label="About {{ site.author.name }}, {{ site.author.title }}{% if site.author.credentials %}, {{ site.author.credentials }}{% endif %}">
+      {%- comment -%}
+        No aria-label here. WCAG 2.5.3 (Label in Name) requires the
+        accessible name to contain the visible label text in order. The
+        visible spans below read "Marc David, CISSP" then "Senior Security
+        Engineer", so any hand-authored aria-label drifts out of sync
+        the moment site.yml changes (which is what PSI's a11y check
+        caught on 2026-07-03). Solution: let the link's natural text
+        content BE its accessible name, and mark the avatar decorative
+        (alt="") so it doesn't duplicate the name that already appears
+        in the visible text next to it.
+      {%- endcomment -%}
+      <a href="{{ '/about' | relative_url }}" class="mt-5 inline-flex items-center gap-3 no-underline group">
         {% if site.author.avatar %}
-        <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" width="48" height="48" class="rounded-full border border-gray-200 dark:border-gray-700 shrink-0" loading="eager" decoding="async">
+        <img src="{{ site.author.avatar | relative_url }}" alt="" width="48" height="48" class="rounded-full border border-gray-200 dark:border-gray-700 shrink-0" loading="eager" decoding="async">
         {% endif %}
         <span class="flex flex-col leading-tight font-sans">
           <span class="text-sm text-gray-900 dark:text-gray-100">
