@@ -7,7 +7,7 @@ category: Career
 tags: ["Google Cybersecurity Certification", "Certifications", "Career"]
 author: Marc
 excerpt: "A senior security engineer's honest review of the Google Cybersecurity Certification — what is inside the 8-module program, who it is built for, how to earn CPE credits, and the public-library hack to enroll for free."
-image: "https://database.blotato.io/storage/v1/object/public/public_media/21660a37-5bb4-4f68-89cf-4cfaeca50a09/eb14db71-c46b-4028-ace0-33b3d070f11a.webp"
+image: "/assets/img/posts/google-cybersecurity-certification-review.webp"
 image_width: 1200
 image_height: 630
 last_modified_at: 2026-06-25

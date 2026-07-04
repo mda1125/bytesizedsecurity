@@ -1,6 +1,20 @@
 {%- comment -%}
-Responsive image with srcset for Blotato CDN sources (Supabase render endpoint).
-External non-Blotato URLs and local files are emitted as a plain img.
+Responsive image with srcset.
+
+Three source cases:
+
+1. Blotato CDN URLs (Supabase render endpoint) — emit a <picture> with a
+   WebP-typed <source> and an <img> fallback, both with 480/768/1200/1600w
+   srcsets served by the render endpoint. Best case; server-side resize.
+
+2. Local /assets/img/posts/*.webp — emit a plain <img> with a srcset
+   pointing at pre-generated -400.webp and -800.webp variants alongside
+   the unsuffixed master (which acts as the 1200w entry). Variants are
+   produced by scripts/optimize-images.mjs.
+
+3. Anything else (external non-Blotato URLs, local non-post images) —
+   emit a single-source <img> at the original path. Keeps back-compat
+   with author avatars, external OG hosts, etc.
 
 Params:
   src     image URL (full URL or workspace-relative path), required
@@ -11,11 +25,12 @@ Params:
   eager   "true" to render fetchpriority=high + loading=eager (above-the-fold)
           default behavior is loading=lazy
   sizes   sizes attribute value (e.g. (min-width: 1024px) 800px, 100vw)
-          default: 100vw, only used for Blotato sources
+          default: 100vw
 {%- endcomment -%}
 {%- assign img_class = include.class | default: "" -%}
 {%- assign img_sizes = include.sizes | default: "100vw" -%}
 {%- assign blotato_marker = "database.blotato.io/storage/v1/object/public/" -%}
+{%- assign local_posts_prefix = "/assets/img/posts/" -%}
 {%- if include.src contains blotato_marker -%}
   {%- assign clean_src = include.src | split: "?" | first -%}
   {%- assign blotato_base = clean_src | replace: "/storage/v1/object/public/", "/storage/v1/render/image/public/" -%}
@@ -23,6 +38,14 @@ Params:
   <source type="image/webp" sizes="{{ img_sizes }}" srcset="{{ blotato_base }}?width=480&format=webp&quality=80 480w, {{ blotato_base }}?width=768&format=webp&quality=80 768w, {{ blotato_base }}?width=1200&format=webp&quality=80 1200w, {{ blotato_base }}?width=1600&format=webp&quality=80 1600w">
   <img alt="{{ include.alt | escape }}"{% if img_class != "" %} class="{{ img_class }}"{% endif %} src="{{ blotato_base }}?width=1200&quality=80" sizes="{{ img_sizes }}" srcset="{{ blotato_base }}?width=480&quality=80 480w, {{ blotato_base }}?width=768&quality=80 768w, {{ blotato_base }}?width=1200&quality=80 1200w, {{ blotato_base }}?width=1600&quality=80 1600w"{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %}{% if include.eager == "true" %} fetchpriority="high" loading="eager"{% else %} loading="lazy"{% endif %}>
 </picture>
+{%- elsif include.src contains local_posts_prefix and include.src contains ".webp" -%}
+  {%- comment -%}
+    Local post image. Reference the pre-generated -400/-800 variants
+    (from scripts/optimize-images.mjs); the unsuffixed path is the
+    1200w master.
+  {%- endcomment -%}
+  {%- assign base = include.src | replace: ".webp", "" -%}
+<img alt="{{ include.alt | escape }}"{% if img_class != "" %} class="{{ img_class }}"{% endif %} src="{{ include.src | relative_url }}" sizes="{{ img_sizes }}" srcset="{{ base | append: '-400.webp' | relative_url }} 400w, {{ base | append: '-800.webp' | relative_url }} 800w, {{ include.src | relative_url }} 1200w"{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %}{% if include.eager == "true" %} fetchpriority="high" loading="eager" decoding="async"{% else %} loading="lazy" decoding="async"{% endif %}>
 {%- elsif include.src contains "://" -%}
 <img alt="{{ include.alt | escape }}"{% if img_class != "" %} class="{{ img_class }}"{% endif %} src="{{ include.src }}"{% if include.width %} width="{{ include.width }}"{% endif %}{% if include.height %} height="{{ include.height }}"{% endif %}{% if include.eager == "true" %} fetchpriority="high" loading="eager"{% else %} loading="lazy"{% endif %}>
 {%- else -%}

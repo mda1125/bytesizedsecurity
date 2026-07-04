@@ -1,18 +1,31 @@
 {%- comment -%}
-LCP preload for a hero image. Emits a srcset-aware preload when the source
-is a Blotato CDN URL (matches the responsive-image.html WebP picture element);
-otherwise falls back to a simple href preload of the original.
+LCP preload for a hero image.
+
+Three source cases (mirrors _includes/responsive-image.html so the
+preload fetches the same variant the browser is going to render):
+
+1. Blotato CDN URL — imagesrcset covering 480/768/1200/1600w served by
+   the Supabase render endpoint.
+
+2. Local /assets/img/posts/*.webp — imagesrcset covering the pre-
+   generated -400/-800 variants + the unsuffixed 1200w master.
+
+3. Anything else — plain href preload of the original.
 
 Params:
   src   — image URL (full URL or workspace-relative path) — required
   sizes — sizes attribute matching the on-page picture element's sizes
 {%- endcomment -%}
 {%- assign blotato_marker = "database.blotato.io/storage/v1/object/public/" -%}
+{%- assign local_posts_prefix = "/assets/img/posts/" -%}
 {%- assign preload_sizes = include.sizes | default: "100vw" -%}
 {%- if include.src contains blotato_marker -%}
   {%- assign clean_src = include.src | split: "?" | first -%}
   {%- assign blotato_base = clean_src | replace: "/storage/v1/object/public/", "/storage/v1/render/image/public/" -%}
 <link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesizes="{{ preload_sizes }}" imagesrcset="{{ blotato_base }}?width=480&format=webp&quality=80 480w, {{ blotato_base }}?width=768&format=webp&quality=80 768w, {{ blotato_base }}?width=1200&format=webp&quality=80 1200w, {{ blotato_base }}?width=1600&format=webp&quality=80 1600w">
+{%- elsif include.src contains local_posts_prefix and include.src contains ".webp" -%}
+  {%- assign base = include.src | replace: ".webp", "" -%}
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" imagesizes="{{ preload_sizes }}" imagesrcset="{{ base | append: '-400.webp' | relative_url }} 400w, {{ base | append: '-800.webp' | relative_url }} 800w, {{ include.src | relative_url }} 1200w">
 {%- elsif include.src contains "://" -%}
 <link rel="preload" as="image" href="{{ include.src }}" fetchpriority="high">
 {%- else -%}
