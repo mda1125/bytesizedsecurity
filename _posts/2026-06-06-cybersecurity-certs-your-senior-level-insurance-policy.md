@@ -76,7 +76,7 @@ Certs are cheap insurance against career disruption.
 
 ## Which Certs Carry Weight at Senior Levels
 
-Not all certs are equal. At the senior level, entry-level certifications like CompTIA Security+ or Network+ won't move the needle for career advancement. They're foundations, not differentiators.
+Not all certs are equal. At the senior level, entry-level certifications like CompTIA Security+ or Network+ won't move the needle for career advancement. They're foundations, not differentiators. If you're earlier in your career and weighing where the foundation actually starts, see my [Google Cybersecurity Certificate: worth it in 2026?](/2026/06/25/google-cybersecurity-certification-review/) breakdown — one of the most-searched entry-level on-ramps and how it compares to Security+.
 
 The certs carrying weight for senior professionals:
 
