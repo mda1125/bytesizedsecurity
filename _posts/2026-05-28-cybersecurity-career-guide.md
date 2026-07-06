@@ -146,7 +146,7 @@ Focus on segmentation, firewall best practices, and detection. You already under
 
 ### If you are switching careers from outside tech
 
-Computer science gives you a more versatile foundation than a narrow security degree, and starting in an IT role before pivoting is the path most successful security pros took. Learn how the systems work first. Learn to secure them second. The order matters more than the speed.
+Computer science gives you a more versatile foundation than a narrow security degree, and starting in an IT role before pivoting is the path most successful security pros took. Learn how the systems work first. Learn to secure them second. The order matters more than the speed. If you want a structured, low-cost on-ramp before committing to a degree or bootcamp, see my honest [review of the Google Cybersecurity Certificate](/2026/06/25/google-cybersecurity-certification-review/) — including two paths that make it free.
 
 ## Which cybersecurity certifications are actually worth getting? {#certifications}
 
