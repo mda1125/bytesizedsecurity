@@ -58,7 +58,7 @@ If you're trying to break into cybersecurity:
 
 This is validating news. The jobs are there. But notice the pattern in the article. Brian Gaudenti, a security engineer with 10+ years of experience, struggled to find work for months. What changed? He started using AI tools himself. He built projects with AI. He added them to his portfolio. He demonstrated adaptability.
 
-Entry-level candidates need to show the same thing. Technical fundamentals still matter. Linux, networking, cloud, detection engineering. But you also need to show you work alongside AI, not talk about it. We've covered this shift in detail: [portfolios now outrank degrees](/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/) as the #1 hiring signal.
+Entry-level candidates need to show the same thing. Technical fundamentals still matter. Linux, networking, cloud, detection engineering. But you also need to show you work alongside AI, not talk about it. We've covered this shift in detail: [portfolios now outrank degrees](/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/) as the #1 hiring signal. For entry-level candidates weighing where to start, my [Google Cybersecurity Certificate review](/2026/06/25/google-cybersecurity-certification-review/) breaks down the cheapest structured on-ramp — including two free routes and how it stacks up against Security+.
 
 If you're mid-career:
 
