@@ -90,7 +90,7 @@ Progress tracking lives entirely in browser local storage. Nothing is uploaded, 
 
 Okurrrr indexes 667 certs because, genuinely, that many active credentials circulate in the cybersecurity workforce ecosystem. Most of them are noise. The site's filter collapses the list by NICE Category — filter for "Protect and Defend" and you get the roughly 40 certs that actually map to SOC, incident response, and defensive operations work. Filter for "Securely Provision" and you get the roughly 50 certs relevant to architecture, secure software, and risk management roles.
 
-A practical recipe for someone breaking into cybersecurity: pick one NICE Work Role you genuinely want to do, look at the certs Okurrrr flags as "Beginner" inside that role, pick the cheapest one with free training available, and ship your first cert in 60 to 90 days. That beats the alternative of buying a $1,500 SANS course because a recruiter on LinkedIn told you to.
+A practical recipe for someone breaking into cybersecurity: pick one NICE Work Role you genuinely want to do, look at the certs Okurrrr flags as "Beginner" inside that role, pick the cheapest one with free training available, and ship your first cert in 60 to 90 days. That beats the alternative of buying a $1,500 SANS course because a recruiter on LinkedIn told you to. If Okurrrr's Beginner + Free-Training filter surfaces the Google Cybersecurity Certificate for your target Work Role, my walk-through of [how to get the Google Cybersecurity Certificate for free](/2026/06/25/google-cybersecurity-certification-review/) covers both paths — Coursera financial aid and the public-library hack — that make the site's zero-cost recommendation actionable.
 
 ## What learning resources and skills does Okurrrr cover? {#learn-skills}
 
