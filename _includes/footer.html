@@ -13,7 +13,7 @@
         {{ site.title }} is a registered <strong class="text-white">501(c)(3)</strong> nonprofit. Donations are tax-deductible to the fullest extent allowed by law.
       </p>
       {% if site.donate_url %}
-      <a href="{{ site.donate_url }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white font-sans text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-primary transition-colors self-start">
+      <a href="{{ site.donate_url }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white dark:text-gray-900 font-sans text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-primary dark:hover:text-gray-900 transition-colors self-start">
         <span class="text-base">{% include icon.html name="favorite" %}</span> Donate
       </a>
       {% endif %}
