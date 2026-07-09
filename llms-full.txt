@@ -32,6 +32,48 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-07-09: [9 Best WeTransfer Alternatives in 2026 (Ranked by Privacy)](https://blog.bytesizedsecurity.show/2026/07/09/wetransfer-alternatives-2026-privacy-first/)
+  WeTransfer was acquired, laid off 75% of staff, and briefly tried to license user files for AI. Nine privacy-first WeTransfer alternatives for 2026.
+
+- 2026-07-09: [Amazon Fake Products in 2026: How to Spot and Avoid Them](https://blog.bytesizedsecurity.show/2026/07/09/amazon-fake-products-2026-spot-avoid/)
+  Amazon seized 15 million counterfeits in 2025 and fakes keep flooding search. Spot knockoffs, avoid dangerous categories, and filter them out fast.
+
+- 2026-07-06: [Do Colleges Offer AI Degrees? Your 2026 Guide](https://blog.bytesizedsecurity.show/2026/07/06/do-colleges-offer-ai-degrees-2026-guide/)
+  Do colleges offer AI degrees? Yes. Over 20 U.S. universities run AI bachelor's programs in 2026. Full list, requirements, and job outlook.
+
+- 2026-06-30: [Are Cybersecurity Jobs Affected by AI in 2026? Yes and No](https://blog.bytesizedsecurity.show/2026/06/30/why-cutting-entry-level-jobs-for-ai-backfires-in-2026/)
+  Are cybersecurity jobs affected by AI? Yes: entry-level postings down 35% in 18 months, tier-1 SOC work absorbed. What managers and juniors do next.
+
+- 2026-06-28: [How to Detect North Korean IT Workers (2026 Playbook)](https://blog.bytesizedsecurity.show/2026/06/28/how-to-detect-north-korean-it-workers/)
+  How to detect North Korean IT workers in remote hiring: laptop farm signals, interview red flags, and the post-hire controls that actually catch them.
+
+- 2026-06-25: [Is the Google Cybersecurity Certificate Worth It? (2026 Review)](https://blog.bytesizedsecurity.show/2026/06/25/google-cybersecurity-certification-review/)
+  CISSP's honest 2026 review of the Google Cybersecurity Certificate: real cost, two free paths, Security+ comparison, and whether it's worth it.
+
+- 2026-06-21: [Pokemon Go Trained Military Drone Tech: A Consent Failure](https://blog.bytesizedsecurity.show/2026/06/21/pokemon-go-military-drones-consent-laundering/)
+  Niantic spun off 30 billion Pokemon Go scans into a 3D map now feeding U.S. military drone navigation. A privacy-policy line is not consent.
+
+- 2026-06-19: [Modern Phishing: Why Password Resets Fail in 2026](https://blog.bytesizedsecurity.show/2026/06/19/modern-phishing-why-password-resets-fail/)
+  AI and Phishing-as-a-Service exposed employee data at 86% of Fortune 100 firms. Why password resets alone won't close a modern phishing breach.
+
+- 2026-06-16: [iRhythm Data Breach: 12 Million Patient Records Exposed](https://blog.bytesizedsecurity.show/2026/06/16/irhythm-data-breach-12-million-patient-records-exposed/)
+  iRhythm disclosed a breach affecting 12+ million cardiac patients. Attackers used social engineering against third-party business apps to exfiltrate PHI.
+
+- 2026-06-06: [Cybersecurity Certs: Your Senior-Level Insurance Policy?](https://blog.bytesizedsecurity.show/2026/06/06/cybersecurity-certs-your-senior-level-insurance-policy/)
+  Senior cybersecurity pros debate whether certs still matter. They won't prove your skills, but they get you past HR filters and insure your career.
+
+- 2026-06-04: [Rise Above the 90%: Build Cyber Proof, Not Just Certs](https://blog.bytesizedsecurity.show/2026/06/04/rise-above-the-90-build-cyber-proof-not-just-certs/)
+  90% of cybersecurity applicants are indistinguishable. Build a detection lab, investigate a real incident, and create proof that puts you in the top 5%.
+
+- 2026-06-01: [Cybersecurity Success: It is Not About Hacking](https://blog.bytesizedsecurity.show/2026/06/01/cybersecurity-success-not-about-hacking/)
+  After 8+ years hiring and building security teams: what actually separates top performers is communication, empathy, and resilience against burnout.
+
+- 2026-05-29: [AI Exploits: Your Scanners Are Blind](https://blog.bytesizedsecurity.show/2026/05/29/ai-exploits-scanners-blind/)
+  AI-accelerated exploit development now takes under 12 hours, leaving traditional vulnerability scanners blind. What it means for your posture.
+
+- 2026-05-28: [How to Start a Career in Cybersecurity (2026 Guide)](https://blog.bytesizedsecurity.show/cybersecurity-career-guide/)
+  How to start a career in cybersecurity: a 4-step playbook for any background. Honest pay data, real cert advice, and a 90-day action plan.
+
 - 2026-05-26: [AI Fuels Cybersecurity Boom: Your Career Guide](https://blog.bytesizedsecurity.show/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/)
   AI isn't cutting cybersecurity jobs; it's creating more. How AI generates new threats and opportunities, and what this means for your career.
 
