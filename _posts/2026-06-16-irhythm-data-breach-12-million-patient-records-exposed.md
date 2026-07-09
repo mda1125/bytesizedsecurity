@@ -8,11 +8,12 @@ excerpt: "iRhythm Holdings disclosed a data breach affecting millions of patient
 image: "/assets/img/posts/irhythm-data-breach-12-million-patient-records-exposed.webp"
 image_width: 1080
 image_height: 1350
+slug: irhythm-data-breach-12-million-patient-records-exposed
+last_modified_at: 2026-06-16
+description: "iRhythm disclosed a data breach via SEC 8-K filing. Attackers used social engineering on third-party business apps to exfiltrate patient PHI."
 ---
 
-# iRhythm Healthcare Data Breach: 12 Million Patient Dataset Hit via Social Engineering of Third-Party Apps
-
-*Meta description: iRhythm Holdings disclosed a data breach in an SEC 8-K filing this week. Attackers used social engineering against third-party business apps to exfiltrate patient PHI.*
+## iRhythm Healthcare Data Breach: 12 Million Patient Dataset Hit via Social Engineering of Third-Party Apps
 
 ---
 
