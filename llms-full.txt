@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-07-10: [Why Employee Cybersecurity Training Fails: The 2026 Fix](https://blog.bytesizedsecurity.show/employee-cybersecurity-training-2026-fix/)
+  CISSP-authored pillar for security leaders — replace the annual video with microtraining on a spaced-repetition cadence and an internal learning community with security champions. Includes program metrics, tool categories, and a concrete 90-day rollout plan for teams of 200 to 2,000 employees.
+
 - 2026-07-09: [Remove Personal Information From the Internet: 2026 Guide](https://blog.bytesizedsecurity.show/remove-personal-information-from-internet/)
   CISSP-authored evergreen guide to removing personal data — data broker opt-outs, Google's Results About You tool, honest paid-service comparisons (DeleteMe/Incogni/EasyOptOuts/Privacy Bee/Kanary), CCPA rights, and prevention tactics.
 
