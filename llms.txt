@@ -32,6 +32,7 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 - [About](https://blog.bytesizedsecurity.show/about/): Author bio, credentials, and mission
 - [Cybersecurity Career Guide](https://blog.bytesizedsecurity.show/cybersecurity-career-guide/): Comprehensive career guide for breaking into cybersecurity — roles, certifications, networking, and job search strategy
+- [Why Employee Cybersecurity Training Fails: The 2026 Fix](https://blog.bytesizedsecurity.show/employee-cybersecurity-training-2026-fix/): CISSP-authored pillar for security leaders — why annual training does not change behavior, how to design a microtraining program on a spaced-repetition cadence, how to build an internal learning community with security champions, program metrics that actually move, and a concrete 90-day rollout plan for teams of 200 to 2,000 employees
 - [2FA: The 5-Minute Fix That Stops 99% of Account Attacks](https://blog.bytesizedsecurity.show/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/): Practical guide to two-factor authentication — which method to use, which accounts to protect first, and the Microsoft/Google research showing 99.9% attack reduction
 - [LexisNexis & Credit Freezes: Your Guide to Identity Protection](https://blog.bytesizedsecurity.show/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/): Step-by-step guide to requesting your free LexisNexis Consumer Disclosure Report and freezing your credit at all three bureaus — including how to freeze your children's credit
 - [Remove Personal Information From the Internet: 2026 Guide](https://blog.bytesizedsecurity.show/remove-personal-information-from-internet/): CISSP-authored evergreen guide to removing personal data from the internet — data broker opt-outs with a top-ten table, Google's Results About You tool, honest paid-service comparisons (DeleteMe, Incogni, EasyOptOuts, Privacy Bee, Kanary), CCPA and state privacy laws, and how to prevent your data from spreading again
@@ -40,6 +41,7 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ## Recent Articles
 
+- 2026-07-10: [Why Employee Cybersecurity Training Fails: The 2026 Fix](https://blog.bytesizedsecurity.show/employee-cybersecurity-training-2026-fix/)
 - 2026-05-26: [AI Fuels Cybersecurity Boom: Your Career Guide](https://blog.bytesizedsecurity.show/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/)
 - 2026-05-17: [Cybersecurity Job Market Broken? Network, Don't Apply](https://blog.bytesizedsecurity.show/2026/05/17/cybersecurity-job-market-broken-network-dont-apply/)
 - 2026-05-13: [Encryption Backdoors: Canada's Bill C-22 Threatens Global Security](https://blog.bytesizedsecurity.show/2026/05/13/encryption-backdoors-canada-bill-c22-threatens-global-security/)
