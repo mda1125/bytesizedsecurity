@@ -33,7 +33,7 @@ The honest version — from someone who has actually done it.
 
 ---
 
-If you've ever Googled your own name and felt sick, you already know why this guide exists. Somewhere between your last job change, a house purchase, a court filing, or a leaked marketing list, you ended up with a public dossier you never agreed to.
+If you've ever Googled your own name and felt sick, you already know why this guide exists. Somewhere between your last job change, a house purchase, a court filing, or a leaked marketing list, you ended up with a [public dossier](/2025/12/24/shocked-by-your-digital-footprint-take-it-back-now/) you never agreed to.
 
 The good news: most of that dossier is legally required to come down if you ask correctly. The bad news: nobody is coming to ask on your behalf, and the industry that sells "personal data removal" is pockmarked with affiliate-driven listicles that steer you toward whoever paid the most. This is the walkthrough I'd give a friend — no affiliate links, no sponsors, just what actually works in 2026.
 
@@ -59,7 +59,7 @@ The first thing to understand is that "the internet" is not one place. Your pers
 - **Data broker databases** — Spokeo, BeenVerified, Whitepages, Radaris, MyLife, Intelius, and hundreds of smaller players. These are the loudest ones because they surface first in Google.
 - **Wholesale data resellers** — Acxiom, Epsilon, LexisNexis, Experian marketing services. These are less visible to consumers but sell to nearly every marketer.
 - **Public records** — court records, property records, marriage/divorce, voter rolls. Legally public in the US. You cannot delete these, only bury them.
-- **Social media and forums** — everything you or anyone else has ever posted about you.
+- **Social media and forums** — everything you or anyone else has ever posted about you. Newer "verified identity" programs (like [LinkedIn's blue check](/2026/02/24/linkedin-blue-check-what-you-sacrifice-for-a-badge/)) also demand PII you may not have wanted to hand over — think through the tradeoff before opting in.
 - **Breach dumps** — email/password/address combos leaked over the past decade. These do not "delete" once they are out.
 - **Google Search** — the index of everything above. Removals from Google do not remove the source page.
 - **Everything an AI has already trained on** — a new frontier with no consumer-facing delete button in 2026.
@@ -149,6 +149,8 @@ Same process for a car license plate, a face, or a business's signage that revea
 
 For **Apple Maps**, the process is at [Apple's "How to blur your house" page](https://www.apple.com/legal/privacy/en-ww/) via the "Report a Concern" flow. For Bing Maps' Streetside, the [Bing Maps Terms](https://www.bing.com/maps/) point to a form-based takedown request.
 
+Blurring your own house on Google is one lever. Smart-home cameras that your neighbors point at your driveway are a different problem — [Ring's Super Bowl ad and the pushback that followed](/2026/02/17/ring-backtracks-super-bowl-ad-sparks-privacy-pushback/) is worth reading on that surface.
+
 ## Should you pay for a data removal service in 2026? {#paid-services}
 
 > **Direct answer:** Pay if your time is worth more than $12–15 an hour and you want a re-check cadence you will stick to. Skip if you enjoy manual work. Never pay a service that also runs the brokers it "removes" you from.
@@ -185,8 +187,10 @@ You do not need to live in a state with a strong privacy law to benefit — many
 
 - **California** — [CCPA](https://oag.ca.gov/privacy/ccpa) + CPRA + the [Delete Act (SB 362)](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB362). Strongest US regime.
 - **Virginia** — [Virginia Consumer Data Protection Act (VCDPA)](https://law.lis.virginia.gov/vacodefull/title59.1/chapter53/) — right to access, delete, correct, and opt out.
-- **Colorado, Connecticut, Utah, Texas, Oregon, Montana, Delaware, Iowa, Indiana, Tennessee, Kentucky** — all have comprehensive state privacy laws in force by 2026. Deletion rights are near-universal.
+- **Colorado, Connecticut, Utah, Texas, Oregon, Montana, Delaware, Iowa, Indiana, Tennessee, Kentucky** — all have comprehensive state privacy laws in force by 2026. Deletion rights are near-universal. (Utah is a cautionary tale in the other direction — its [2026 VPN restriction law](/2026/05/05/utahs-vpn-law-a-threat-to-internet-privacy/) shows how quickly the same legislature can move against privacy on a different front.)
 - **European Union / UK** — [GDPR](https://gdpr.eu/) Article 17 "right to be forgotten" and Article 15 access rights. Still the strongest consumer regime globally.
+
+Not every legislative trend runs in the same direction. [Canada's Bill C-22 proposes mandatory encryption backdoors](/2026/05/13/encryption-backdoors-canada-bill-c22-threatens-global-security/) that would quietly weaken every deletion right above — a right to delete means less if a third party can compel access to the copies you thought were private.
 
 Template you can copy verbatim (paste it into the email or web form of any US business that has your data):
 
@@ -198,13 +202,13 @@ The [Electronic Frontier Foundation's privacy hub](https://www.eff.org/issues/pr
 
 > **Direct answer:** Never give real personal info to a service that does not strictly need it. Use masked emails, VOIP phone numbers, and virtual cards by default. Freeze your credit. Then redo the top ten broker opt-outs quarterly.
 
-Cleanup is expensive. Prevention is nearly free. If you are going to do the hard work of removing your data, spend an afternoon setting up these five habits so you never have to do most of it again.
+Cleanup is expensive. Prevention is nearly free. If you are going to do the hard work of removing your data, spend an afternoon setting up these five habits so you never have to do most of it again — or start smaller with our [small-steps privacy playbook](/2025/12/24/boost-your-privacy-small-steps-big-impact/), which is the shorter companion piece to this section.
 
 - **Masked email addresses.** [Firefox Relay](https://relay.firefox.com/), [Apple Hide My Email](https://support.apple.com/en-us/HT210425), and [DuckDuckGo Email Protection](https://duckduckgo.com/email/) all give you unique aliases that forward to your real inbox. Use one alias per signup. If a company sells the alias to spammers, you cut it off — and you now know who sold you out.
 - **Burner phone numbers.** Google Voice, Twilio, and MySudo let you receive verification texts on numbers that are not your real cell. Never give a real cell number to a warranty registration, a loyalty program, or a "free WiFi" signup.
 - **Virtual credit cards.** [Privacy.com](https://privacy.com/) and most major bank apps now issue single-vendor virtual card numbers. If a merchant is breached, you rotate one card — you do not have to replace your real one and update every autopay.
 - **Freeze your credit at all three bureaus.** This is the single most effective identity-theft defense in the US and it is free. Details in our [LexisNexis credit freeze guide](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/).
-- **Harden your browser.** A privacy-respecting browser (Firefox with the [Arkenfox user.js](https://github.com/arkenfox/user.js/) config, Brave, or LibreWolf) blocks the tracking cookies that populate marketing databases. If you have to use Chrome, install [uBlock Origin](https://ublockorigin.com/) and Privacy Badger.
+- **Harden your browser.** A privacy-respecting browser (Firefox with the [Arkenfox user.js](https://github.com/arkenfox/user.js/) config, Brave, or LibreWolf) blocks the tracking cookies that populate marketing databases. If you have to use Chrome, install [uBlock Origin](https://ublockorigin.com/) and Privacy Badger. And prune your extension list — even in a hardened browser, [extensions themselves can be silent surveillance tools](/2026/02/15/browser-extensions-are-they-spying-on-you/).
 
 ## Why is removing your personal data so hard? {#why-so-hard}
 

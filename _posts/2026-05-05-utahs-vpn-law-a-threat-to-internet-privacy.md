@@ -3,7 +3,7 @@ description: "The Utah VPN law (SB 73) is the first US law regulating VPN use. W
 layout: post
 title: "Utah VPN Law (SB 73): The 2026 Threat to Internet Privacy"
 slug: utahs-vpn-law-a-threat-to-internet-privacy
-category: "Network Security"
+category: "Privacy"
 tags: ["Utah VPN Law", "Internet Privacy", "VPN", "Censorship"]
 author: Marc
 excerpt: "The Utah VPN law (Senate Bill 73) took effect May 6, 2026, making Utah the first US state to regulate VPN use at the platform level. Here is what SB 73 actually does, why blocking VPN traffic is technically impossible, and how this precedent threatens internet privacy far beyond Utah's borders."

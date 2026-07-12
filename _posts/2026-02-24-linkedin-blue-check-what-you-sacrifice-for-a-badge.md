@@ -2,7 +2,7 @@
 description: "LinkedIn verification ships your passport and biometrics to 17 subprocessors — including AI training firms. What you sacrifice for the blue check."
 layout: post
 title: "LinkedIn Blue Check: What You Sacrifice for a Badge"
-category: Network Security
+category: "Privacy"
 tags: ["data privacy", "linkedin", "surveillance"]
 author: Marc
 excerpt: "Verifying identity on LinkedIn means handing over sensitive data like passports and biometrics to a US company. This data is shared with 17 subprocessors, including AI firms, and used for training their AI. Your data is accessible to US law enforcement under the CLOUD Act, with limited liability for breaches."

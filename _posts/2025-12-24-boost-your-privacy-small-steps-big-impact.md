@@ -2,7 +2,7 @@
 description: "Improve your digital privacy today. Delete old accounts, disable location tracking, and shrink your data footprint — no technical skills needed."
 layout: post
 title: "Boost Your Privacy: Small Steps, Big Impact"
-category: Network Security
+category: "Privacy"
 tags: ["Privacy", "Digital Hygiene", " Cybersecurity"]
 author: Marc
 excerpt: "Cybersecurity doesn't have to be overwhelming. Learn how small, daily actions like deleting old accounts and disabling location tracking can significantly improve your digital privacy and reduce your risk."
