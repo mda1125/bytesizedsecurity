@@ -4,3 +4,4 @@ node_modules
 .jekyll-metadata
 Gemfile.lock
 .audit-screens/
+.playwright-browsers/
