@@ -16,9 +16,9 @@
   a flat list of every post.
 
   Fix: append `#<category-slug>` so each breadcrumb URL resolves to the matching
-  `<h2 id="…">` section on /archive/ (rendered by that page's
-  `{% for category in site.categories %}` loop, with `id="{{ category[0] | slugify }}"`).
-  Users clicking a breadcrumb now land scrolled to their category section.
+  `<h2 id="…">` section on /archive/ (rendered by that page's category loop, which
+  emits `id=<slugified category name>` on each section header). Users clicking a
+  breadcrumb now land scrolled to their category section.
 
   This is a bridge, not the destination. The real long-term fix is a pillar page
   per major category (Privacy pillar already exists at
