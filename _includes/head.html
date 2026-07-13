@@ -93,7 +93,12 @@
   {% else %}
     {% assign seo_description = site.description %}
   {% endif %}
-  {% assign seo_title = page.title | default: site.title %}
+  {%- comment -%}
+    Prefer an explicit `og_title:` when a page's raw `title:` is too short or
+    generic for social/SERP context (e.g. "About", "Contact"). Falls back to
+    page.title (existing behavior for every post/page) and finally site.title.
+  {%- endcomment -%}
+  {% assign seo_title = page.og_title | default: page.title | default: site.title %}
   {% assign seo_image = page.image | default: "/assets/img/default-og.png" %}
   {% if seo_image contains "://" %}{% assign seo_image_url = seo_image %}{% else %}{% assign seo_image_url = seo_image | prepend: site.url %}{% endif %}
 
