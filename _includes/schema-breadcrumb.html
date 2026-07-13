@@ -8,8 +8,27 @@
   and producing "Unnamed item"-style entries in Google Search Console. Use
   `page.tags.first` (dot accessor) so `first` only resolves the tags array when
   `page.category` is absent.
+
+  Position-2 URL strategy (2026-07-12): the middle breadcrumb step used to point
+  every post at bare `/archive/`, so every post site-wide advertised a different
+  `name` ("Privacy", "DevSecOps", …) but the same `item` URL. That's a semantic
+  mismatch Google can flag — the name promises a category page, the URL delivers
+  a flat list of every post.
+
+  Fix: append `#<category-slug>` so each breadcrumb URL resolves to the matching
+  `<h2 id="…">` section on /archive/ (rendered by that page's
+  `{% for category in site.categories %}` loop, with `id="{{ category[0] | slugify }}"`).
+  Users clicking a breadcrumb now land scrolled to their category section.
+
+  This is a bridge, not the destination. The real long-term fix is a pillar page
+  per major category (Privacy pillar already exists at
+  /remove-personal-information-from-internet/), at which point this breadcrumb
+  URL should switch again to point at the relevant pillar per category. Skipping
+  building thin /category/<slug>/ pages because ~4 categories have ≤3 posts and
+  those pages would be flagged as thin content by Google.
 {%- endcomment -%}
 {% assign bc_category = page.category | default: page.tags.first | default: 'Security' %}
+{% assign bc_category_slug = bc_category | slugify %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -25,7 +44,7 @@
       "@type": "ListItem",
       "position": 2,
       "name": {{ bc_category | jsonify }},
-      "item": "{{ site.url }}/archive/"
+      "item": "{{ site.url }}/archive/#{{ bc_category_slug }}"
     },
     {
       "@type": "ListItem",
