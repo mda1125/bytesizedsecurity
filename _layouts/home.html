@@ -20,19 +20,43 @@ layout: default
         (alt="") so it doesn't duplicate the name that already appears
         in the visible text next to it.
       {%- endcomment -%}
-      <a href="{{ '/about' | relative_url }}" class="mt-5 inline-flex items-center gap-3 no-underline group">
-        {% if site.author.avatar %}
-        <img src="{{ site.author.avatar | relative_url }}" alt="" width="48" height="48" class="rounded-full border border-gray-200 dark:border-gray-700 shrink-0" loading="eager" decoding="async">
+      <div class="mt-5">
+        <a href="{{ '/about' | relative_url }}" class="inline-flex items-center gap-3 no-underline group">
+          {% if site.author.avatar %}
+          <img src="{{ site.author.avatar | relative_url }}" alt="" width="48" height="48" class="rounded-full border border-gray-200 dark:border-gray-700 shrink-0" loading="eager" decoding="async">
+          {% endif %}
+          <span class="flex flex-col leading-tight font-sans">
+            <span class="text-sm text-gray-900 dark:text-gray-100">
+              <span class="font-semibold group-hover:text-link transition-colors">{{ site.author.name }}</span>{% if site.author.credentials %}<span class="text-gray-500 dark:text-gray-400 font-normal">, {{ site.author.credentials }}</span>{% endif %}
+            </span>
+            <span class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
+              {% if site.author.title %}{{ site.author.title }}{% endif %}{% if site.author.tagline and site.author.tagline != "" %}{% if site.author.title %} · {% endif %}{{ site.author.tagline }}{% endif %}
+            </span>
+          </span>
+        </a>
+        {%- comment -%}
+          External verification strip (SXO/EEAT). The card link above scopes to
+          /about; nesting external <a> inside would break HTML. Rendered as a
+          sibling row so Credly (CISSP verification) and LinkedIn are visible
+          in the scan zone without leaving the /about affordance intact.
+        {%- endcomment -%}
+        {% if site.author.credly or site.linkedin_username %}
+        <div class="flex flex-wrap items-center gap-x-2 mt-1.5 text-xs font-sans">
+          {% if site.author.credly %}
+          <a href="{{ site.author.credly }}" target="_blank" rel="noopener" class="text-link hover:underline inline-flex items-center gap-1">
+            <span class="text-sm" aria-hidden="true">{% include icon.html name="verified" %}</span>
+            Verify {{ site.author.credentials | default: "credentials" }}
+          </a>
+          {% endif %}
+          {% if site.author.credly and site.linkedin_username %}
+          <span class="text-gray-300 dark:text-gray-700" aria-hidden="true">·</span>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" class="text-link hover:underline">LinkedIn</a>
+          {% endif %}
+        </div>
         {% endif %}
-        <span class="flex flex-col leading-tight font-sans">
-          <span class="text-sm text-gray-900 dark:text-gray-100">
-            <span class="font-semibold group-hover:text-link transition-colors">{{ site.author.name }}</span>{% if site.author.credentials %}<span class="text-gray-500 dark:text-gray-400 font-normal">, {{ site.author.credentials }}</span>{% endif %}
-          </span>
-          <span class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-            {% if site.author.title %}{{ site.author.title }}{% endif %}{% if site.author.tagline and site.author.tagline != "" %}{% if site.author.title %} · {% endif %}{{ site.author.tagline }}{% endif %}
-          </span>
-        </span>
-      </a>
+      </div>
     </header>
 
     {% assign posts = site.posts %}

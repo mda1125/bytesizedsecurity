@@ -45,6 +45,29 @@ layout: default
             <a href="{{ '/about' | relative_url }}" class="text-gray-900 dark:text-gray-100 font-semibold no-underline hover:text-link">{{ post_author }}</a>
             {% if is_site_author %}
             <span class="text-sm text-gray-500 dark:text-gray-400">{% if site.author.title %}{{ site.author.title }}{% endif %}{% if site.author.title and site.author.credentials %} · {% endif %}{% if site.author.credentials %}{{ site.author.credentials }}{% endif %}</span>
+            {%- comment -%}
+              Third-party verification links in the top byline (SXO/EEAT).
+              The end-of-post author-bio.html carries the full social row;
+              this compact strip surfaces the two highest-authority links
+              (Credly credential verification + LinkedIn) in the scan zone
+              so trust signals are visible without scrolling.
+            {%- endcomment -%}
+            {% if site.author.credly or site.linkedin_username %}
+            <div class="flex flex-wrap items-center gap-x-2 text-xs mt-1 font-sans">
+              {% if site.author.credly %}
+              <a href="{{ site.author.credly }}" target="_blank" rel="noopener" class="text-link hover:underline inline-flex items-center gap-1">
+                <span class="text-sm" aria-hidden="true">{% include icon.html name="verified" %}</span>
+                Verify {{ site.author.credentials | default: "credentials" }}
+              </a>
+              {% endif %}
+              {% if site.author.credly and site.linkedin_username %}
+              <span class="text-gray-300 dark:text-gray-700" aria-hidden="true">·</span>
+              {% endif %}
+              {% if site.linkedin_username %}
+              <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" class="text-link hover:underline">LinkedIn</a>
+              {% endif %}
+            </div>
+            {% endif %}
             {% endif %}
           </div>
         </div>
