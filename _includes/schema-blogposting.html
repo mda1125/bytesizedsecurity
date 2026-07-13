@@ -13,14 +13,34 @@
   {% assign bp_image_width = 1536 %}
   {% assign bp_image_height = 1024 %}
 {% endif %}
+{%- comment -%}
+  Entity-graph identifiers and article metrics.
+
+  `@id` gives the BlogPosting a canonical URI distinct from the WebPage's @id
+  (which lives on mainEntityOfPage below), so Google's entity linker can
+  address the article itself. Using the `#article` fragment keeps both URIs
+  addressable from the same page URL without collision.
+
+  `wordCount` feeds AI-search substance heuristics (Perplexity, ChatGPT web,
+  Copilot) and Google's article rich results. `strip_html | number_of_words`
+  matches the reading-time calc used elsewhere in the layouts.
+
+  Skipping `articleBody`: intentionally omitted to keep page weight down.
+  The body is already fully readable in the article HTML — AI crawlers can
+  and do parse it from there; the JSON-LD version would ~double the article's
+  text weight on-page (+2–4 KB gzipped) with unclear incremental lift.
+{%- endcomment -%}
+{% assign bp_wordcount = page.content | strip_html | number_of_words %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
+  "@id": "{{ site.url }}{{ page.url }}#article",
   "headline": {{ page.title | jsonify }},
   "description": {{ bp_description | jsonify }},
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "wordCount": {{ bp_wordcount }},
   "author": {
     "@type": "Person",
     "@id": "{{ site.url }}/#person",
