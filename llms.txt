@@ -11,7 +11,7 @@ permalink: /llms.txt
 Marc David — Senior Security Engineer, ISC2 CISSP
 Credentials: https://www.credly.com/users/marcdavid
 Site: https://blog.bytesizedsecurity.show
-LinkedIn: https://linkedin.com/in/marccdavid
+LinkedIn: https://www.linkedin.com/in/marccdavid
 
 ## About
 
