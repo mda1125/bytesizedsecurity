@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-07-19: [Why Employee Cybersecurity Awareness Training Matters](https://blog.bytesizedsecurity.show/why-employee-cybersecurity-awareness-training-matters/)
+  CISSP-authored explainer on why the human layer is the most-targeted part of a business — ties the Verizon DBIR human element (~two-thirds of breaches) and IBM's $4.88M average breach cost to the case for continuous awareness training, shows KnowBe4's phish-prone drop from ~34% to under 5% within a year, and covers avoiding cybersecurity employee burnout. Top-of-funnel companion to the 2026 microtraining fix pillar.
+
 - 2026-07-10: [Why Employee Cybersecurity Training Fails: The 2026 Fix](https://blog.bytesizedsecurity.show/employee-cybersecurity-training-2026-fix/)
   CISSP-authored pillar for security leaders — replace the annual video with microtraining on a spaced-repetition cadence and an internal learning community with security champions. Includes program metrics, tool categories, and a concrete 90-day rollout plan for teams of 200 to 2,000 employees.
 
