@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-07-20: [Cybercrime Losses in 2026: The Index With No Grand Total](https://blog.bytesizedsecurity.show/2026/07/20/cybercrime-losses-2026-hacker-in-a-hoodie-index/)
+  CISSP-authored data-story on Richard Bird's Hacker in a Hoodie Index, a public breach ledger built from SEC 8-K filings and news reports and evidence-graded Verified/Attested/Inferred, which refuses to sum the losses. Explains why reported cybercrime losses grew ~5.3x faster than the S&P 500 over the decade while per-breach cost stayed roughly flat, and why the $10.5T global cybercrime figure is a forecast rather than a measurement.
+
 - 2026-07-19: [Why Employee Cybersecurity Awareness Training Matters](https://blog.bytesizedsecurity.show/why-employee-cybersecurity-awareness-training-matters/)
   CISSP-authored explainer on why the human layer is the most-targeted part of a business — ties the Verizon DBIR human element (~two-thirds of breaches) and IBM's $4.88M average breach cost to the case for continuous awareness training, shows KnowBe4's phish-prone drop from ~34% to under 5% within a year, and covers avoiding cybersecurity employee burnout. Top-of-funnel companion to the 2026 microtraining fix pillar.
 
