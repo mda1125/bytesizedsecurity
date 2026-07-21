@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-07-21: [California DROP Tool: Opt Out of 614 Data Brokers in 2026](https://blog.bytesizedsecurity.show/2026/07/21/california-drop-tool-data-broker-opt-out/)
+  CISSP-authored explainer on California's DROP tool (Delete Request and Opt-out Platform), the free CPPA service that sends one deletion request to all 614 registered data brokers at once. Covers how it works, eligibility and residency verification, what it deletes versus public records it cannot touch, the August 1 2026 enforcement deadline and 45-day compliance cycle, and its limits (California-only, does not reach Google or Meta, brokers keep recollecting).
+
 - 2026-07-20: [Cybercrime Losses in 2026: The Index With No Grand Total](https://blog.bytesizedsecurity.show/2026/07/20/cybercrime-losses-2026-hacker-in-a-hoodie-index/)
   CISSP-authored data-story on Richard Bird's Hacker in a Hoodie Index, a public breach ledger built from SEC 8-K filings and news reports and evidence-graded Verified/Attested/Inferred, which refuses to sum the losses. Explains why reported cybercrime losses grew ~5.3x faster than the S&P 500 over the decade while per-breach cost stayed roughly flat, and why the $10.5T global cybercrime figure is a forecast rather than a measurement.
 
