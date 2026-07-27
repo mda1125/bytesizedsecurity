@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-07-26: [Fired for Failing a Phishing Test: Binance's 2026 Policy](https://blog.bytesizedsecurity.show/2026/07/26/fired-for-failing-phishing-test-binance/)
+  CISSP-authored opinion piece on Binance's monthly red-team phishing tests, where repeat failures can hit performance reviews and lead to dismissal. Weighs the "human is the weakest link" debate against the "never punish employees" consensus, explains how corporate phishing simulations work, cites Hoxhunt failure-rate benchmarks, and argues for accountability without a blame culture: train on the click, reward fast reporting, and reserve consequences for repeated, high-risk, unreported failures.
+
 - 2026-07-21: [California DROP Tool: Opt Out of 614 Data Brokers in 2026](https://blog.bytesizedsecurity.show/2026/07/21/california-drop-tool-data-broker-opt-out/)
   CISSP-authored explainer on California's DROP tool (Delete Request and Opt-out Platform), the free CPPA service that sends one deletion request to all 614 registered data brokers at once. Covers how it works, eligibility and residency verification, what it deletes versus public records it cannot touch, the August 1 2026 enforcement deadline and 45-day compliance cycle, and its limits (California-only, does not reach Google or Meta, brokers keep recollecting).
 
