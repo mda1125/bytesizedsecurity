@@ -37,6 +37,17 @@ jobs:
       - name: Build Tailwind CSS
         run: npm run build:css
 
+      # Safety net: regenerate responsive -400/-800 WebP variants for every
+      # post hero. The intended flow is that the author runs this locally
+      # before committing (see scripts/optimize-images.mjs), but the script
+      # is idempotent — for images whose variants are already checked in
+      # and current, this is a no-op. If someone commits a new hero master
+      # without variants (or points a post at a Blotato URL with no local
+      # image at all), CI silently produces the missing files so the
+      # homepage srcset stops 404ing.
+      - name: Optimize post images
+        run: node scripts/optimize-images.mjs
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
