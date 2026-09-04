@@ -152,21 +152,25 @@ For posts that target informational queries: phrase H2s as the question the read
 
 **Aim for ≥75% of H2s to be questions on informational posts.**
 
-### 4.4 "Direct answer:" callouts after question H2s
+### 4.4 Answer callouts after question H2s
 
 Every question-format H2 should be followed immediately by a blockquote callout that answers the question in **≤40 words**. Pattern:
 
 ```markdown
 ## How do you get past automated cybersecurity hiring systems? {#ats-filters}
 
-> **Direct answer:** Stop sending one generic resume everywhere. Mirror the exact skill terms from each posting in your resume, put a GitHub link to a real home lab near the top, and route around the filter with a referral whenever you can.
+> Stop sending one generic resume everywhere. Mirror the exact skill terms from each posting in your resume, put a GitHub link to a real home lab near the top, and route around the filter with a referral whenever you can.
 
 You will send applications into what feels like a void...
 ```
 
 Rules:
 - **Hard limit: 40 words.** Count them before publishing.
-- **Format exactly** as `> **Direct answer:** [answer]` — the format is the snippet-eligibility signal
+- **Format** as a blockquote directly under the H2: `> [answer]`. The
+  snippet-eligibility signal is a question H2 followed immediately by a
+  self-contained, ≤40-word answer — not any label text. Do not prefix the
+  answer with "Direct answer:" or similar; it rides along into extracted
+  snippets.
 - The detailed answer immediately follows in the body
 
 ### 4.5 Stable H2 anchor IDs (required for pillars, recommended for long posts)
@@ -440,7 +444,7 @@ Mechanical pass/fail checks. The social-media-manager's quality framework can im
 - [ ] **No `^# ` lines** (no body H1)
 - [ ] Body opens with subtitle line + `**TL;DR:**` paragraph + `---` horizontal rule + lead paragraph
 - [ ] **≥75% of H2s are questions** (informational posts only)
-- [ ] **Every question-format H2 is followed by `> **Direct answer:**` callout ≤40 words**
+- [ ] **Every question-format H2 is followed by a `> [answer]` blockquote callout ≤40 words, with no "Direct answer:" prefix**
 - [ ] If post ≥1,500 words → every H2 has explicit `{#slug}` ID
 - [ ] If post ≥2,000 words → jump-link TOC present after TL;DR
 - [ ] If post has comparative data across 3+ options × 3+ dimensions → table is used
@@ -471,7 +475,7 @@ Reference these three posts as templates depending on which bucket you're author
 | Bucket | Reference post | Why it's the model |
 |---|---|---|
 | **Regular post** | `_posts/2026-05-26-ai-fuels-cybersecurity-boom-your-career-guide.md` | Tight description, NYT primary-source hyperlink on article title, clean front matter, no double-h1 |
-| **Pillar / evergreen** | `_posts/2026-05-28-cybersecurity-career-guide.md` | Custom permalink, TOC, 6-row salary table with inline citations, 6-row cert comparison table, 8 "Direct answer:" callouts, FAQPage with 6 entries, jump-link IDs on every H2 |
+| **Pillar / evergreen** | `_posts/2026-05-28-cybersecurity-career-guide.md` | Custom permalink, TOC, 6-row salary table with inline citations, 6-row cert comparison table, 8 answer callouts, FAQPage with 6 entries, jump-link IDs on every H2 |
 | **YMYL with FAQ + HTML link in answer** | `_posts/2026-02-16-2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks.md` | FAQ answer with escaped `<a href>` to Microsoft research, body citations to Microsoft + Google research, clean structure |
 
 When in doubt, open the bucket-matching reference post and mirror its structure.
