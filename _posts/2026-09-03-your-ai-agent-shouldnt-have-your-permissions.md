@@ -1,11 +1,11 @@
 ---
-description: "Agents inherit your access, not your judgment. Why AI agent authorization needs scoped identities and transaction controls, not human approval alone."
+description: "AI agent authorization needs scoped identities and transaction limits, not just a human approval prompt after the agent already inherited full access."
 layout: post
 title: "Your AI Agent Shouldn't Have Your Permissions (2026)"
 category: DevSecOps
 tags: ["AI Agents", "Identity and Access Management", "AI Governance"]
 author: Marc
-excerpt: "A new tool called OpenLeash pauses risky AI agent actions and asks a human before they happen. This is useful, but it treats approval as the safety net instead of the missing piece: agents with no built-in ceiling on their permissions to begin with. Here's the framework security teams need before they hand an agent the keys."
+excerpt: "AI agent authorization is the missing layer behind tools like OpenLeash, which pauses risky agent actions and asks a human before they happen. That approval prompt is a useful backstop, but not an access-control strategy: most agents still inherit the full permissions of whoever launched them. Here's the framework security teams need before they hand an agent the keys."
 image: "/assets/img/posts/your-ai-agent-shouldnt-have-your-permissions.webp"
 image_width: 1200
 image_height: 630
