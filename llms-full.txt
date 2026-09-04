@@ -32,6 +32,21 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-09-03: [Your AI Agent Shouldn't Have Your Permissions (2026)](https://blog.bytesizedsecurity.show/2026/09/03/your-ai-agent-shouldnt-have-your-permissions/)
+  CISSP-authored analysis of OpenLeash, a runtime authorization layer that pauses risky AI agent actions and escalates ambiguous ones to a human. Argues human approval is a backstop, not an access-control strategy, and that the real fix is scoped agent identities and transaction-level thresholds — mapped to SOC 2, NIST CSF 2.0, ISO/IEC 27001:2022, and NIST AI RMF controls security teams already track.
+
+- 2026-08-23: [Harvard's $699 AI Professor Bootcamp: The Real Math](https://blog.bytesizedsecurity.show/2026/08/23/harvard-699-ai-professor-bootcamp/)
+  CISSP-authored breakdown of Harvard Business School's eight-week bootcamp where founders pitch to AI clones of real HBS professors, built by video-avatar startup HeyGen. Examines the economics: record the clone once, then run it for every student at close to zero added cost while the $699 price tag stays fixed.
+
+- 2026-08-21: [Flock Safety License Plate Readers Used to Stalk a Woman](https://blog.bytesizedsecurity.show/2026/08/21/cop-license-plate-reader-stalking/)
+  CISSP-authored piece on a Florida police officer who used Flock Safety's license plate reader network, built to catch car thieves, to hunt down a woman he had a crush on. Covers what happens when surveillance tech built for public safety has almost no oversight over who is allowed to look, and what accountability should look like.
+
+- 2026-08-12: [The Data Breach Notification 184,914 People Can't Use](https://blog.bytesizedsecurity.show/2026/08/12/data-breach-notification-184914-homeless/)
+  CISSP-authored investigative piece on Boston Health Care for the Homeless mailing breach letters to 184,914 patients whose defining circumstance is not having a mailing address, then giving them 90 days and an internet connection to enroll in credit monitoring. Covers what the notification got wrong and the questions every breach-response owner should ask before it happens to them.
+
+- 2026-08-10: [How to Get Into Cybersecurity With No Experience (2026)](https://blog.bytesizedsecurity.show/2026/08/10/how-to-get-into-cybersecurity-no-experience/)
+  CISSP-authored guide for breaking into cybersecurity with no degree and no IT background, addressing the gap between "the field is booming" and every posting wanting three years of experience. Covers a realistic 2026 path from a first free certification to building a home lab worth discussing in an interview.
+
 - 2026-07-26: [Fired for Failing a Phishing Test: Binance's 2026 Policy](https://blog.bytesizedsecurity.show/2026/07/26/fired-for-failing-phishing-test-binance/)
   CISSP-authored opinion piece on Binance's monthly red-team phishing tests, where repeat failures can hit performance reviews and lead to dismissal. Weighs the "human is the weakest link" debate against the "never punish employees" consensus, explains how corporate phishing simulations work, cites Hoxhunt failure-rate benchmarks, and argues for accountability without a blame culture: train on the click, reward fast reporting, and reserve consequences for repeated, high-risk, unreported failures.
 
