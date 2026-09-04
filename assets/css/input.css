@@ -257,8 +257,47 @@
     font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
   }
 
-  .prose h2 { margin-top: 2rem; margin-bottom: 1rem; }
-  .prose h3 { margin-top: 1.5rem; margin-bottom: 0.75rem; }
+  /*
+    Body-heading typography.
+
+    Headings authored in a template carry explicit utility classes, but
+    kramdown-generated headings inside a post body only ever match these
+    `.prose` rules. Tailwind's preflight resets h1–h6 to
+    `font-size: inherit; font-weight: inherit`, so margins alone left every
+    in-article H2/H3 rendering at body size and weight — visually
+    indistinguishable from a paragraph.
+
+    We're not running @tailwindcss/typography (nothing defines `prose-lg`
+    either), so size, weight and color are set here explicitly. Scale:
+    16px body → 20px H3 → 26px H2 → 30/36px post title (`.text-3xl
+    md:text-4xl` on the <h1> in _layouts/post.html), keeping each step
+    clearly distinct and the title above both.
+
+    Color resolves --color-text-main (#111827 light / #f3f4f6 dark), matching
+    the <h1>'s `text-gray-900 dark:text-gray-100`: identical in dark mode, and
+    within 1/255 per channel in light mode, since Tailwind v4 emits gray-900 as
+    oklch while the token carries the equivalent hex. Using the token (as
+    `.prose a` already does for --color-link) inherits the build's existing
+    dark-mode strategy, so no `.dark` override is needed here.
+    Without it, headings would inherit the article wrapper's muted
+    `text-gray-700 dark:text-gray-300` body color and read washed out.
+  */
+  .prose h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text-main);
+  }
+  .prose h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-text-main);
+  }
   .prose p { margin-bottom: 1rem; }
   .prose ul, .prose ol { margin-bottom: 1rem; padding-left: 1.5rem; }
   .prose li { margin-bottom: 0.25rem; }
