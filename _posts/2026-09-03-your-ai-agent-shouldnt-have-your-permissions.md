@@ -36,7 +36,7 @@ This is a good pattern. On its own, it is not enough.
 
 ## Why do AI agents get so much access in the first place? {#agent-permissions}
 
-> **Direct answer:** Most agents run under the same login, API key, or service account as whoever launched them, so they inherit every permission tied to it, whether the task needs it or not.
+> Most agents run under the same login, API key, or service account as whoever launched them, so they inherit every permission tied to it, whether the task needs it or not.
 
 As Brin put it to SecurityWeek, "agents tend to inherit the permissions of their user, but they do not inherit any human situational awareness." A person knows, without being told, deleting a production database is different from deleting a test file. An agent only knows what it was authorized to touch, and if the authorization is "everything the launching account reaches," a single bad prompt, a malicious tool call, or a compromised model has the same reach a person would.
 
@@ -44,7 +44,7 @@ This is not a new failure mode. It is the same overly permissive access pattern 
 
 ## Is a human-approval prompt the same thing as an authorization system? {#human-in-the-loop}
 
-> **Direct answer:** No. A prompt asking "should I allow this?" is a fallback for when scoping already failed. It does not shrink what the agent might attempt. It adds a person who has to catch every risky request in real time.
+> No. A prompt asking "should I allow this?" is a fallback for when scoping already failed. It does not shrink what the agent might attempt. It adds a person who has to catch every risky request in real time.
 
 Human-in-the-loop review sounds like control because a person is finally in the decision. But the approver is only as good as the context given in the moment, and approval fatigue is a documented failure pattern in every field relying on it, from change management to insider threat review. An approver staring at a stream of "allow this action?" prompts with no separation of duties, no risk score, and no idea what normal looks like for this agent will start clicking yes. At this point, the human check is not a control. It is a rubber stamp with a paper trail.
 
@@ -52,7 +52,7 @@ This is also why "several hundred personal users and at least four organizations
 
 ## What should replace "ask a human" as the default control? {#scoped-identity}
 
-> **Direct answer:** Give every agent its own identity and permission set, separate from the human who launched it, and enforce limits at the transaction level, not only the login level.
+> Give every agent its own identity and permission set, separate from the human who launched it, and enforce limits at the transaction level, not only the login level.
 
 This is not a theoretical fix. OpenLeash's own configuration already points at it: the tool lets a user cap payments below a set threshold to proceed automatically while anything above it needs sign-off, and it lets acceptable API endpoints and destinations be defined explicitly. This is transaction-level authorization. The gap: it is currently framed as a tuning option inside a human-approval tool, instead of the default architecture every agent gets before it runs.
 
@@ -62,7 +62,7 @@ Shadow AI makes this harder to skip. CISA's own [ChatGPT incident showed how lit
 
 ## How does this map to frameworks security teams already use? {#framework-mapping}
 
-> **Direct answer:** It lines up directly with existing access-control and AI-governance controls: SOC 2, NIST CSF 2.0, ISO/IEC 27001:2022, and NIST AI RMF.
+> It lines up directly with existing access-control and AI-governance controls: SOC 2, NIST CSF 2.0, ISO/IEC 27001:2022, and NIST AI RMF.
 
 None of this requires inventing new compliance language. Agent authorization is a variation on controls most security and compliance teams already track for human and service accounts.
 
@@ -77,7 +77,7 @@ An auditor asking "who approved this access, and why does this account have it" 
 
 ## What should security teams do this week? {#practitioner-checklist}
 
-> **Direct answer:** Inventory every agent able to change data, move money, expose credentials, or call a third-party system, then give the risky ones a scoped identity and explicit approval thresholds instead of the same access as their human owner.
+> Inventory every agent able to change data, move money, expose credentials, or call a third-party system, then give the risky ones a scoped identity and explicit approval thresholds instead of the same access as their human owner.
 
 A short, concrete starting list:
 
@@ -89,7 +89,7 @@ A short, concrete starting list:
 
 ## Is OpenLeash, or any single tool, the fix? {#not-a-silver-bullet}
 
-> **Direct answer:** No. A runtime checkpoint catching a bad action is valuable, but it works best behind agents already scoped to narrow, well-defined permissions, not in front of agents still holding everything.
+> No. A runtime checkpoint catching a bad action is valuable, but it works best behind agents already scoped to narrow, well-defined permissions, not in front of agents still holding everything.
 
 OpenLeash is still under active development, and Brin is upfront: more configuration and control options are still coming. This works for a tool built for what its creator calls the new class of "vibe coders," people with an idea and no security background, using tools like Claude Code or Cursor to build their own agents. For this audience, a guardrail stopping an agent from deleting a database or leaking credentials is a genuine improvement over nothing.
 
