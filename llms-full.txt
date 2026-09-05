@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-09-05: [Third-Party Risk Management in 2026: The AI Bug Report Flood](https://blog.bytesizedsecurity.show/2026/09/05/third-party-risk-management-ai-bug-report-flood/)
+  CISSP-authored analysis of how AI-assisted vulnerability research has moved the security bottleneck from discovery to vendor triage and remediation capacity. Argues third-party risk management measures the wrong half of the problem by verifying that controls exist rather than that a vendor can clear its queue, cites curl's maintainer load and CISA's 45-day disclosure clock, maps the gap to NIST CSF 2.0, SOC 2, ISO 27001:2022 and the NIST SSDF, and gives six throughput questions to add to critical-vendor reviews.
+
 - 2026-09-03: [Your AI Agent Shouldn't Have Your Permissions (2026)](https://blog.bytesizedsecurity.show/2026/09/03/your-ai-agent-shouldnt-have-your-permissions/)
   CISSP-authored analysis of OpenLeash, a runtime authorization layer that pauses risky AI agent actions and escalates ambiguous ones to a human. Argues human approval is a backstop, not an access-control strategy, and that the real fix is scoped agent identities and transaction-level thresholds — mapped to SOC 2, NIST CSF 2.0, ISO/IEC 27001:2022, and NIST AI RMF controls security teams already track.
 
