@@ -304,6 +304,41 @@
   /* Resolves the --color-link token so the link color flips with .dark mode. */
   .prose a { color: var(--color-link); }
   .prose a:hover { text-decoration: underline; }
+
+  /*
+    Body-table styling. Same gap as the heading fix above: kramdown emits
+    semantic <table>/<thead>/<tbody> markup for pipe tables, but nothing in
+    this build targets table, th, or td, so the header row rendered with no
+    distinction from the data rows below it.
+
+    --color-gray-50/--color-gray-800 come from Tailwind v4's default palette
+    (emitted automatically by `@import "tailwindcss"`, not redeclared here);
+    --color-border already flips via .dark (line 193), same token `.prose h2`
+    relies on above.
+  */
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  .prose thead th {
+    text-align: left;
+    font-weight: 700;
+    padding: 0.6rem 0.9rem;
+    background: var(--color-gray-50);
+    border-bottom: 2px solid var(--color-border);
+  }
+  .prose tbody td {
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+  .prose tbody tr:last-child td {
+    border-bottom: none;
+  }
+  .dark .prose thead th {
+    background: var(--color-gray-800);
+  }
 }
 
 /*
