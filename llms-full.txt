@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-09-09: [98.5% of CVEs Are Never Exploited: How to Prioritize in 2026](https://blog.bytesizedsecurity.show/2026/09/09/vulnerability-prioritization-cves-never-exploited/)
+  Breaks down a Down the Rabbit Hole podcast conversation with Jeremiah Grossman and Robert Hansen of Root Evidence on why roughly 98.5% of known CVEs are never exploited, the shift from CVSS-score thinking to exploitation-evidence thinking, how to use CISA's free KEV catalog to prioritize a patch queue, and what separates a junior-sounding vulnerability management answer from a senior one in a security interview.
+
 - 2026-09-05: [Third-Party Risk Management in 2026: The AI Bug Report Flood](https://blog.bytesizedsecurity.show/2026/09/05/third-party-risk-management-ai-bug-report-flood/)
   CISSP-authored analysis of how AI-assisted vulnerability research has moved the security bottleneck from discovery to vendor triage and remediation capacity. Argues third-party risk management measures the wrong half of the problem by verifying that controls exist rather than that a vendor can clear its queue, cites curl's maintainer load and CISA's 45-day disclosure clock, maps the gap to NIST CSF 2.0, SOC 2, ISO 27001:2022 and the NIST SSDF, and gives six throughput questions to add to critical-vendor reviews.
 
