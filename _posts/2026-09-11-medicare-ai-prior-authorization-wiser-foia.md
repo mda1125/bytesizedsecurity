@@ -1,7 +1,7 @@
 ---
 description: "FOIA records show Medicare's WISeR AI prior authorization model produced 83-day waits, 20,000+ denials, and vendor software shipped untested."
 layout: post
-title: "Medicare AI Prior Authorization: 83-Day Waits in 2026"
+title: "Medicare AI Prior Authorization: 83-Day Waits, 20K Denials"
 category: "Privacy"
 tags: ["Medicare", "AI Prior Authorization", "Algorithmic Accountability", "Healthcare"]
 author: Marc
