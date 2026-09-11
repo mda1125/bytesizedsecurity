@@ -32,7 +32,7 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
-- 2026-09-11: [Medicare AI Prior Authorization: 83-Day Waits in 2026](https://blog.bytesizedsecurity.show/2026/09/11/medicare-ai-prior-authorization-wiser-foia/)
+- 2026-09-11: [Medicare AI Prior Authorization: 83-Day Waits, 20K Denials](https://blog.bytesizedsecurity.show/2026/09/11/medicare-ai-prior-authorization-wiser-foia/)
   CISSP-authored analysis of roughly 1,000 pages of CMS records EFF obtained by FOIA lawsuit about WISeR, the AI-assisted Medicare prior authorization model running in six states since January 2026. Documents show vendors missing the 72-hour response target at scale with one request unanswered for 83 days, more than 20,000 denials from two vendors in a quarter, a payment design that pays vendors a share of averted spending against a 5-10% quality penalty, and a vendor that told CMS pre-launch its software was untested. Maps the four failure patterns to automation bias, incentive misalignment, and absent external audit, and closes with an eight-step appeal checklist for patients and caregivers.
 
 - 2026-09-09: [98.5% of CVEs Are Never Exploited: How to Prioritize in 2026](https://blog.bytesizedsecurity.show/2026/09/09/vulnerability-prioritization-cves-never-exploited/)
