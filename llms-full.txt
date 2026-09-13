@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-09-13: [Why AI Risks Are Different From the Printing Press](https://blog.bytesizedsecurity.show/2026/09/13/why-ai-risks-are-different-from-the-printing-press/)
+  Opinion piece arguing AI risk differs from the printing press, internet, and nuclear-weapons comparisons because it collapses the cost and expertise barrier to dangerous capability rather than just spreading information. Cites Anthropic's September 2026 threat intelligence report (state-linked espionage, credential-harvesting, AI-assisted zero-day research) as live evidence, reframes the "$200 expert" claim into a narrower and more defensible one, and lays out four concrete guardrail categories: pre-release testing, enforceable government standards, international coordination, and risk-scaled access controls.
+
 - 2026-09-11: [Medicare AI Prior Authorization: 83-Day Waits, 20K Denials](https://blog.bytesizedsecurity.show/2026/09/11/medicare-ai-prior-authorization-wiser-foia/)
   CISSP-authored analysis of roughly 1,000 pages of CMS records EFF obtained by FOIA lawsuit about WISeR, the AI-assisted Medicare prior authorization model running in six states since January 2026. Documents show vendors missing the 72-hour response target at scale with one request unanswered for 83 days, more than 20,000 denials from two vendors in a quarter, a payment design that pays vendors a share of averted spending against a 5-10% quality penalty, and a vendor that told CMS pre-launch its software was untested. Maps the four failure patterns to automation bias, incentive misalignment, and absent external audit, and closes with an eight-step appeal checklist for patients and caregivers.
 
