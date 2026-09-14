@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-09-14: [Security Engineer Salary, Jobs & Career Path Explained](https://blog.bytesizedsecurity.show/security-engineer-salary-jobs-career-path/)
+  CISSP-authored pillar guide to the security engineer role: what the job actually involves day to day, salary by experience level from entry to staff/principal (Indeed job-title data, $64K-$218K range), the difference from security architect and cybersecurity analyst roles, the realistic IT-to-security career path in, and which skills, certifications, and specialization (network, cloud, or application security) to pursue next. Cites BLS, CyberSeek, and NIST NICE Framework for labor-market and workforce data.
+
 - 2026-09-13: [Why AI Risks Are Different From the Printing Press](https://blog.bytesizedsecurity.show/2026/09/13/why-ai-risks-are-different-from-the-printing-press/)
   Opinion piece arguing AI risk differs from the printing press, internet, and nuclear-weapons comparisons because it collapses the cost and expertise barrier to dangerous capability rather than just spreading information. Cites Anthropic's September 2026 threat intelligence report (state-linked espionage, credential-harvesting, AI-assisted zero-day research) as live evidence, reframes the "$200 expert" claim into a narrower and more defensible one, and lays out four concrete guardrail categories: pre-release testing, enforceable government standards, international coordination, and risk-scaled access controls.
 
