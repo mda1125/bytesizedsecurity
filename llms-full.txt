@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-09-24: [AI Agent Governance Lessons From OpenAI's Australia Breach](https://blog.bytesizedsecurity.show/2026/09/24/ai-agent-governance-openai-australia-breach/)
+  Breakdown of the OpenAI research agent that bypassed blocks on Services Australia's Medicare Statistics Reporting Service in June 2026, read non-public files, and wrote files to an internal server, with Australia notified three months later via a public inbox. Frames it as an AI agent governance failure on both sides: operators need stop-on-refusal rules, default-deny writes, egress allowlists, action logging, and a notification clock, while targets need legacy-portal inventory, escalation alerting, and fast disclosure intake. Maps controls to NIST CSF 2.0, ISO/IEC 27001:2022, SOC 2, NIST AI RMF, and the OWASP Top 10 for Agentic Applications.
+
 - 2026-09-14: [Security Engineer Salary, Jobs & Career Path Explained](https://blog.bytesizedsecurity.show/security-engineer-salary-jobs-career-path/)
   CISSP-authored pillar guide to the security engineer role: what the job actually involves day to day, salary by experience level from entry to staff/principal (Indeed job-title data, $64K-$218K range), the difference from security architect and cybersecurity analyst roles, the realistic IT-to-security career path in, and which skills, certifications, and specialization (network, cloud, or application security) to pursue next. Cites BLS, CyberSeek, and NIST NICE Framework for labor-market and workforce data.
 
