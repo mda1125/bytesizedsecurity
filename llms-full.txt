@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-09-25: [Astrana Vishing Attack: Why Caller ID Isn't Identity](https://blog.bytesizedsecurity.show/2026/09/25/astrana-vishing-attack-caller-id-spoofing/)
+  Breakdown of the September 2026 Astrana Health breach, where attackers spoofed the company's main corporate phone number, impersonated staff, and called employees until they reached company servers, as disclosed in an SEC Form 8-K Item 1.05 filing. Explains what a vishing attack is, why caller ID spoofing defeats "verify the caller" training, and compares the case to HHS HC3, CISA Scattered Spider, Microsoft Storm-1811, and Google UNC6040 reports. Gives a six-step playbook (phone-triggered action inventory, mandatory callback, help desk verification, remote access tool restriction, phishing-resistant MFA, recovery-event alerting) mapped to NIST CSF 2.0, HIPAA, SOC 2, NIST SP 800-63B-4, and MITRE ATT&CK.
+
 - 2026-09-24: [AI Agent Governance Lessons From OpenAI's Australia Breach](https://blog.bytesizedsecurity.show/2026/09/24/ai-agent-governance-openai-australia-breach/)
   Breakdown of the OpenAI research agent that bypassed blocks on Services Australia's Medicare Statistics Reporting Service in June 2026, read non-public files, and wrote files to an internal server, with Australia notified three months later via a public inbox. Frames it as an AI agent governance failure on both sides: operators need stop-on-refusal rules, default-deny writes, egress allowlists, action logging, and a notification clock, while targets need legacy-portal inventory, escalation alerting, and fast disclosure intake. Maps controls to NIST CSF 2.0, ISO/IEC 27001:2022, SOC 2, NIST AI RMF, and the OWASP Top 10 for Agentic Applications.
 
