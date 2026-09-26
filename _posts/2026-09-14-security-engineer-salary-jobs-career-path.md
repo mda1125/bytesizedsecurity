@@ -190,7 +190,7 @@ We're covering each of these specializations, including their individual salary 
 
 This guide covered the full shape of the role: what it is, what it pays, and how people get into it. Two narrower companion articles are coming next to go deeper on specific pieces of this:
 
-- **"Cyber Security Engineer Salary in 2026: What to Expect by Experience Level."** A closer look at compensation progression, including how equity and bonus structures typically layer on top of the base figures in the table above.
+- **[Cyber Security Engineer Salary by Experience Level](/2026/09/26/cyber-security-engineer-salary-by-experience-level/).** A closer look at compensation progression, including how equity and bonus structures typically layer on top of the base figures in the table above.
 - **"Cyber Security Engineer Jobs: Where to Find Them and What They Pay."** A practical job-search guide, including how to read a posting's true seniority level regardless of its title.
 
 If you're still deciding whether cybersecurity is the right field at all before narrowing down to this specific role, [our cybersecurity career guide](https://blog.bytesizedsecurity.show/cybersecurity-career-guide/) and [free cybersecurity career roadmap](https://blog.bytesizedsecurity.show/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) are the right starting points. Both step back further than this guide does, to the "should I do this at all" decision.
