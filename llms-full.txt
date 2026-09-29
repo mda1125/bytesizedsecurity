@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-09-29: [Cyber Security Engineer Jobs: Where They Are, What They Pay](https://blog.bytesizedsecurity.show/2026/09/29/cyber-security-engineer-jobs-where-to-find-them/)
+  Practical job-search companion to the security engineer pillar guide. Covers where cyber security engineer jobs are posted (LinkedIn, Indeed, Dice, career pages, USAJOBS, clearance boards) with live September 2026 counts, which industries hire per BLS, how to read a job description and judge a posting's true seniority from its verbs and scope, base pay by level from Indeed, state pay transparency laws (New York, Virginia, Maine, Delaware), remote and cleared roles, FTC and FBI guidance on fake postings and fraudulent candidates, and a six-step search plan.
+
 - 2026-09-26: [Cyber Security Engineer Salary by Experience Level](https://blog.bytesizedsecurity.show/2026/09/26/cyber-security-engineer-salary-by-experience-level/)
   Companion to the security engineer pillar guide, focused on pay alone. Compares cyber security engineer base pay by level (entry, mid, senior, staff) from Indeed and BLS data against Google total compensation by level from levels.fyi, explains why Indeed, BLS, and levels.fyi report different averages, and breaks down how stock and bonus grow as a share of pay. Covers the security clearance premium (ClearanceJobs 2026), top-paying industries and cities, ISC2 2025 raise data, and a five-step plan for moving up pay bands faster.
 
