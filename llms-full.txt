@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-10-08: [Government Data Breach: What the Pentagon Leak Exposes](https://blog.bytesizedsecurity.show/2026/10/08/government-data-breach-dmdc-fbi-personnel-records/)
+  Explains the Defense Manpower Data Center breach (2.8 million living individuals, access beginning October 2025) and the reported ShinyHunters theft of FBI employee records, per Ars Technica, Reuters, and Krebs on Security. Covers which stolen fields matter and why occupational specialty is an intelligence asset, how the incidents compare to the 2015 OPM breach, what the Pentagon has not disclosed, and a six-step response plan (credit freeze, phishing vigilance, IdentityTheft.gov) with lessons for security teams.
+
 - 2026-09-29: [Cyber Security Engineer Jobs: Where They Are, What They Pay](https://blog.bytesizedsecurity.show/2026/09/29/cyber-security-engineer-jobs-where-to-find-them/)
   Practical job-search companion to the security engineer pillar guide. Covers where cyber security engineer jobs are posted (LinkedIn, Indeed, Dice, career pages, USAJOBS, clearance boards) with live September 2026 counts, which industries hire per BLS, how to read a job description and judge a posting's true seniority from its verbs and scope, base pay by level from Indeed, state pay transparency laws (New York, Virginia, Maine, Delaware), remote and cleared roles, FTC and FBI guidance on fake postings and fraudulent candidates, and a six-step search plan.
 
