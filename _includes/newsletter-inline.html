@@ -1,0 +1,62 @@
+{%- comment -%}
+  Mobile-only end-of-post signup. The sidebar form (sidebar.html) lands below
+  comments on phones, where almost nobody scrolls. This one sits right after
+  the article body and is hidden at lg+ where the sidebar is visible beside
+  the post. IDs are suffixed so they don't collide with the sidebar form.
+  sendfox form.js is already loaded by the sidebar; the submit handler below
+  posts via fetch itself, like the sidebar one.
+{%- endcomment -%}
+<aside class="lg:hidden mt-10 bg-surface p-5 border border-gray-200 dark:border-gray-700" aria-labelledby="inline-briefing-heading">
+  <h3 id="inline-briefing-heading" class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 border-b-2 border-primary pb-2 mb-4">Security Briefing</h3>
+  <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Enjoyed this? Get one breach breakdown a week. No spam. Unsubscribe in one click.</p>
+  <form method="post" action="https://sendfox.com/form/3z6ooe/1ydnre" class="flex flex-col gap-3" id="inline-briefing-form" data-async="true" data-recaptcha="false">
+    <input type="email" id="inline_briefing_email" name="email" required autocomplete="email" placeholder="email@domain.com" aria-label="Email address" class="h-11 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-base px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full">
+    <label class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400 cursor-pointer">
+      <input type="checkbox" name="gdpr" value="1" required class="mt-1 accent-primary">
+      <span>Send me the weekly Security Briefing.</span>
+    </label>
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off"></div>
+    <button type="submit" class="h-11 bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 text-sm font-bold uppercase tracking-wide hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors cursor-pointer">Subscribe</button>
+  </form>
+  <script>
+  document.getElementById('inline-briefing-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    var form = this;
+    var btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Subscribing...';
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'X-Requested-With': 'XMLHttpRequest' },
+      body: new FormData(form)
+    }).then(function(res) {
+      if (res.ok) {
+        var done = false;
+        var go = function () {
+          if (done) return;
+          done = true;
+          window.location.href = '{{ "/subscribed" | relative_url }}?src=post-end';
+        };
+        if (window.gtag) {
+          window.gtag('event', 'newsletter_signup', { placement: 'post_end', event_callback: go });
+          setTimeout(go, 500);
+        } else {
+          go();
+        }
+      } else {
+        return res.json().then(function(data) {
+          if (data.errors) alert(data.errors[0]);
+          else alert('Something went wrong. Please try again.');
+          btn.disabled = false;
+          btn.textContent = 'Subscribe';
+        });
+      }
+    }).catch(function() {
+      alert('Network error. Please try again.');
+      btn.disabled = false;
+      btn.textContent = 'Subscribe';
+    });
+  }, true);
+  </script>
+</aside>
