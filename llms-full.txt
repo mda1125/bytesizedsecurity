@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-10-22: [Check Your PHP Version: The 2024 Bug Behind PHP2Shell](https://blog.bytesizedsecurity.show/2026/10/22/php2shell-check-php-version-two-year-delay/)
+  Explains PHP2Shell (CVE-2026-109618 and CVE-2026-109619, CVSS v4.0 9.2), two unauthenticated remote code execution flaws fixed in PHP 8.2.35, 8.3.36, 8.4.27, and 8.5.12, per php.net and the PHP Foundation. Covers how first signs found in 2024 stalled until AI-assisted research in August 2026, the disclosure leak, early exploitation attempts, why it is a funding problem for open source, and how to check your PHP version, update, and move off unsupported branches.
+
 - 2026-10-15: [ChatGPT Ads in 2026: How Your Prompts Shape What You See](https://blog.bytesizedsecurity.show/2026/10/15/chatgpt-ads-targeting-prompts-email-phone/)
   Explains how ChatGPT ads target Free and Go users using current-chat context, advertiser context hints, and custom audiences built from emails, phone numbers, or Google Advertising IDs, per 404 Media testing and OpenAI Help. Covers why turning off ads personalization does not remove ads, what Ads-Free mode and Temporary Chat change, and five practical steps.
 
