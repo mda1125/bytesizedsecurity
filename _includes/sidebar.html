@@ -31,7 +31,7 @@
     <form method="post" action="https://sendfox.com/form/3z6ooe/1ydnre" class="sendfox-form flex flex-col gap-3" id="1ydnre" data-async="true" data-recaptcha="false">
       <input type="email" id="sendfox_form_email" name="email" required placeholder="email@domain.com" class="h-11 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full">
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off"></div>
-      <button type="submit" class="h-11 bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 text-sm font-bold uppercase tracking-wide hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors cursor-pointer">Subscribe</button>
+      <button type="submit" class="h-11 bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 text-sm font-bold uppercase tracking-wide hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors cursor-pointer">Get it free</button>
     </form>
     <script defer src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
     <script>
@@ -54,13 +54,13 @@
             if (data.errors) alert(data.errors[0]);
             else alert('Something went wrong. Please try again.');
             btn.disabled = false;
-            btn.textContent = 'Subscribe';
+            btn.textContent = 'Get it free';
           });
         }
       }).catch(function() {
         alert('Network error. Please try again.');
         btn.disabled = false;
-        btn.textContent = 'Subscribe';
+        btn.textContent = 'Get it free';
       });
     }, true);
     </script>
