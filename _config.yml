@@ -6,7 +6,7 @@ url: "https://blog.bytesizedsecurity.show"
 author:
   name: "Marc David"
   credentials: "CISSP"
-  title: "Senior Security Engineer"
+  title: "Staff Security Engineer"
   # Optional one-liner shown next to the title in the homepage author proof strip.
   # Leave empty to show only `title`. Keep it short (≤60 chars) and verifiable.
   tagline: ""
@@ -18,7 +18,7 @@ author:
   credly: "https://www.credly.com/users/marcdavid"
   # 2–3 line bio shown in the post-footer About the Author block. Keep the
   # voice distinct from the top byline (story, not credential checklist).
-  bio: "Marc has spent 8+ years in threat detection, incident response, and security automation. ByteSizedSecurity is his independent take — practitioner-written, no vendor sponsorships, no rewritten press releases."
+  bio: "Marc has spent 8+ years in threat detection, incident response, and security automation. ByteSizedSecurity is his independent take: practitioner-written, no vendor sponsorships, no rewritten press releases."
 
 logo: "/assets/img/bytesizedsecurity-logo-600x60.png"
 
