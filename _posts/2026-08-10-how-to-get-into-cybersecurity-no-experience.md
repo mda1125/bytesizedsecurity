@@ -48,7 +48,7 @@ There is a gap between the hype and the doorway. The demand for skilled defender
 
 Here is the part that trips people up. "No experience in cybersecurity" and "no experience with computers at all" are different starting lines, and the field rewards the first far more than the second.
 
-If you already work in IT, help desk, or anything technical, you are closer than you think. Your job now is to point that experience at security. If you are starting from truly zero, the path is longer but still open. What it is not is instant. Anyone selling a five-week bootcamp that ends in a six-figure security job is selling the dream, not the map. The map runs through foundations, one credential, real hands-on practice, and a first job that touches security without being a senior security role.
+If you already work in IT, help desk, or anything technical, you are closer than you think. Your job now is to point that experience at security. The [security engineer career path](/security-engineer-salary-jobs-career-path/) lays out how people make that move. If you are starting from truly zero, the path is longer but still open. What it is not is instant. Anyone selling a five-week bootcamp that ends in a six-figure security job is selling the dream, not the map. The map runs through foundations, one credential, real hands-on practice, and a first job that touches security without being a senior security role.
 
 ## Why is 2026 a strange time to break in? {#why-2026}
 
@@ -113,7 +113,7 @@ Chasing a "Security Engineer" title with zero background is how good candidates 
 - **Junior systems or network administrator.** Deeper technical grounding and direct exposure to the infrastructure security teams protect.
 - **SOC analyst, tier 1.** The most direct entry into security operations. It is alert triage and monitoring, and it hires people who show fundamentals plus a home lab.
 
-Get one of these, do it well for a year or two, and you become an internal candidate for the security team, the strongest position a beginner can hold. If you want the map of where these roles lead and what they pay, the [cybersecurity career guide](/cybersecurity-career-guide/) lays out the full ladder.
+Get one of these, do it well for a year or two, and you become an internal candidate for the security team, the strongest position a beginner can hold. If you want the map of where these roles lead and what they pay, the [cybersecurity career guide](/cybersecurity-career-guide/) lays out the full ladder, and [what a security engineer earns by experience level](/2026/09/26/cyber-security-engineer-salary-by-experience-level/) covers pay for that title.
 
 ## What should your first 90 days look like? {#90-day-plan}
 
