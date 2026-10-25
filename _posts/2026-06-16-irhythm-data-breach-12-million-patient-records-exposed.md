@@ -11,6 +11,11 @@ image_height: 1350
 slug: irhythm-data-breach-12-million-patient-records-exposed
 last_modified_at: 2026-06-16
 description: "iRhythm disclosed a data breach via SEC 8-K filing. Attackers used social engineering on third-party business apps to exfiltrate patient PHI."
+# Hand-picked Related Briefings cards (see _includes/related-briefings.html).
+related:
+  - "/remove-personal-information-from-internet/"
+  - "/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/"
+  - "/2025/12/26/hipaa-security-rule-hospitals-face-impossible-deadlines/"
 ---
 
 ## iRhythm Healthcare Data Breach: 12 Million Patient Dataset Hit via Social Engineering of Third-Party Apps

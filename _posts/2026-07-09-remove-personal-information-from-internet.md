@@ -25,6 +25,11 @@ faq:
     answer: "Yes — most major brokers legally must honor them, especially under CCPA. But they only work if you find every broker (there are hundreds), submit each one manually, and repeat the process every 30–90 days when they repopulate. Free is not the same as easy."
   - question: "Does the CCPA give you the right to delete your personal data?"
     answer: "Yes, if you are a California resident. <a href=\"https://oag.ca.gov/privacy/ccpa\">The California Consumer Privacy Act</a> grants the right to know, delete, correct, and opt out of the sale of personal information. Businesses have 45 days to respond. Many companies honor these requests for non-California residents too as a matter of policy."
+# Hand-picked Related Briefings cards (see _includes/related-briefings.html).
+related:
+  - "/2026/07/21/california-drop-tool-data-broker-opt-out/"
+  - "/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/"
+  - "/2025/12/24/shocked-by-your-digital-footprint-take-it-back-now/"
 ---
 
 The honest version — from someone who has actually done it.

@@ -30,6 +30,11 @@ faq:
   - question: "What is the best cybersecurity career path?"
     answer: "There is no single best path, but the most effective sequence is: (1) get into IT anywhere, (2) own security tasks in your current role, (3) build visible proof through a home lab and public write-ups, and (4) specialize in one area with unmet demand — cloud security, application security, or incident response — rather than staying a generalist."
 last_modified_at: 2026-10-25
+# Hand-picked Related Briefings cards (see _includes/related-briefings.html).
+related:
+  - "/2026/08/10/how-to-get-into-cybersecurity-no-experience/"
+  - "/security-engineer-salary-jobs-career-path/"
+  - "/2026/06/25/google-cybersecurity-certification-review/"
 ---
 
 Everyone wants to know how to start a career in cybersecurity right now, and the field keeps telling them to come in while quietly bolting the door behind it.
