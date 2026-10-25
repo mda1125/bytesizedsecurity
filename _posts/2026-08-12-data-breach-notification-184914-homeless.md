@@ -81,7 +81,7 @@ The honest reading is that OCR posts in batches and this will likely appear. But
 
 Here is the first page of Google results for this breach, checked August 12: classaction.org, a personal-injury firm, a claims aggregator, the program's own privacy page, Levi & Korsinsky, an automated scraper, and Class Action U. Five are law firms or claims mills recruiting plaintiffs. One is a bot. None is journalism.
 
-And because nobody is checking, the numbers are wrong. Some pages say 184,914, matching the state record. One first-page result says **169** — off by a factor of a thousand. I only know which is right because I downloaded a 134-page state PDF and read the row. Nobody affected by this breach is going to do that. They'll read whatever ranks — which is exactly why knowing how to [remove your personal information from the internet](/2026/07/09/remove-personal-information-from-internet/) and lock down your own exposure matters more than any single letter.
+And because nobody is checking, the numbers are wrong. Some pages say 184,914, matching the state record. One first-page result says **169** — off by a factor of a thousand. I only know which is right because I downloaded a 134-page state PDF and read the row. Nobody affected by this breach is going to do that. They'll read whatever ranks — which is exactly why knowing how to [remove your personal information from the internet](/remove-personal-information-from-internet/) and lock down your own exposure matters more than any single letter.
 
 ## What should breach-response teams learn from this? {#practitioner-takeaway}
 
