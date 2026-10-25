@@ -59,6 +59,21 @@ layout: default
       </div>
     </header>
 
+    {%- comment -%}
+      Start here: permanent homepage links to the evergreen guides, which
+      otherwise scroll off the homepage as new breach posts land. Text links,
+      not cards, so it stays short on mobile. One link per line at every
+      width; py-3 gives each a 48px tap target on mobile.
+    {%- endcomment -%}
+    <nav aria-labelledby="start-here-label" class="mb-10 font-sans">
+      <h2 id="start-here-label" class="font-sans text-xs font-bold uppercase tracking-wider text-primary mb-1">Start here</h2>
+      <ul class="flex flex-col items-start text-base">
+        <li><a href="{{ '/cybersecurity-career-guide/' | relative_url }}" class="inline-block py-3 md:py-1 text-link font-semibold hover:underline">Cybersecurity career guide</a></li>
+        <li><a href="{{ '/2026/08/10/how-to-get-into-cybersecurity-no-experience/' | relative_url }}" class="inline-block py-3 md:py-1 text-link font-semibold hover:underline">Get into cybersecurity with no experience</a></li>
+        <li><a href="{{ '/remove-personal-information-from-internet/' | relative_url }}" class="inline-block py-3 md:py-1 text-link font-semibold hover:underline">Remove your personal info from the internet</a></li>
+      </ul>
+    </nav>
+
     {% assign posts = site.posts %}
     {% if posts.size > 0 %}
     
