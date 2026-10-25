@@ -90,7 +90,7 @@ Each freeze is free, done online, and takes about five minutes. A freeze blocks 
 
 4. If you have children, freeze their credit too. Children are prime targets because no one monitors their credit. The fraud often goes undetected until they turn 18.
 
-This is the company's second breach in two years. The previous one in 2025 compromised data for 364,000 customers. The pattern should tell you everything you need to know about taking your data protection into your own hands.
+This is the company's second breach in two years. The previous one in 2025 compromised data for 364,000 customers. The pattern should tell you everything you need to know about [taking your data protection into your own hands](/remove-personal-information-from-internet/).
 
 Don't wait for breach number three.
 

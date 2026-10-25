@@ -111,7 +111,7 @@ Temporary Chats show no ads and don't use or update memory. Use them for anythin
 
 ### Step 5: Shrink the lists you're on
 
-Customer-list targeting runs on emails and phone numbers advertisers already hold. Use a separate email for shopping and sign-ups, and if you're in California, the [DROP tool for data broker opt-outs](/2026/07/21/california-drop-tool-data-broker-opt-out/) cuts down how far your contact details travel. On Android, [Google's advertising ID help page](https://support.google.com/googleplay/android-developer/answer/6048248) shows how to delete the ID under Settings, Privacy, Ads. Apps then read a string of zeros instead of your ID going forward.
+Customer-list targeting runs on emails and phone numbers advertisers already hold. Use a separate email for shopping and sign-ups, and if you're in California, the [DROP tool for data broker opt-outs](/2026/07/21/california-drop-tool-data-broker-opt-out/) cuts down how far your contact details travel. Everywhere else, our guide to [removing your personal information from the internet](/remove-personal-information-from-internet/) covers the manual opt-outs. On Android, [Google's advertising ID help page](https://support.google.com/googleplay/android-developer/answer/6048248) shows how to delete the ID under Settings, Privacy, Ads. Apps then read a string of zeros instead of your ID going forward.
 
 ## Do ChatGPT ads matter for teams at work? {#teams}
 

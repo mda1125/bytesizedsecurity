@@ -121,7 +121,7 @@ If you received a letter or think your records may be in the DMDC data set:
 5. **Report misuse** at [IdentityTheft.gov](https://www.identitytheft.gov/) to get a personal recovery plan.
 6. **Read your letter closely** for any offered monitoring or enrollment steps, and use only the instructions in the mailed notice.
 
-For service members and families, add one more rule: assume your specialty and location are known to adversaries, and apply normal operational security to what you share online.
+For service members and families, add one more rule: assume your specialty and location are known to adversaries, and apply normal operational security to what you share online. Our guide to [removing your personal information from the internet](/remove-personal-information-from-internet/) helps cut down what is already public.
 
 ## What can security teams learn from this government data breach? {#lessons}
 

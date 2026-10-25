@@ -120,7 +120,7 @@ The five steps below are the same ones I walk family members through whenever a 
 4. **Assume targeted phishing is coming.** Attackers with your real name, address, date of birth, and phone number write extremely convincing emails. Never act on an inbound request for information. Hang up. Call the institution at a number from its official website.
 5. **File an identity-theft plan if anything looks off.** The Federal Trade Commission's [IdentityTheft.gov](https://www.identitytheft.gov/) walks you through a customized recovery plan and produces a one-stop affidavit you take to banks, lenders, and the police.
 
-Two-factor authentication remains the single highest-leverage step. If you have not done it yet, the [five-minute 2FA fix](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/) is the cheapest defense you will buy.
+Two-factor authentication remains the single highest-leverage step. If you have not done it yet, the [five-minute 2FA fix](/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/) is the cheapest defense you will buy. Once the urgent steps are done, our guide on [how to remove your personal information from the internet](/remove-personal-information-from-internet/) covers shrinking the rest of your exposure, from data brokers to people-search sites.
 
 ## How do KYC providers fail at identity verification security? {#kyc-supply-chain}
 
