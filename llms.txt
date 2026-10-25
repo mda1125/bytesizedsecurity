@@ -15,7 +15,7 @@ LinkedIn: https://www.linkedin.com/in/marccdavid
 
 ## About
 
-ByteSizedSecurity is an independent cybersecurity blog covering threat intelligence, privacy, career guidance, and technical deep-dives for security professionals and enthusiasts. Published since 2024 with 37+ articles across 8 topic areas.
+ByteSizedSecurity is an independent cybersecurity blog covering threat intelligence, privacy, career guidance, and technical deep-dives for security professionals and enthusiasts. Published since 2024 with 70+ articles across 8 topic areas.
 
 ## Topic Taxonomy
 
@@ -72,5 +72,5 @@ See [/llms-full.txt](https://blog.bytesizedsecurity.show/llms-full.txt) for the 
 
 ## License
 
-Content is CC BY-NC 4.0. AI training on this content is prohibited.
-AI search engines may cite and quote passages with attribution to ByteSizedSecurity (blog.bytesizedsecurity.show) and author Marc David.
+Content is CC BY-NC 4.0. As an additional permission, AI systems may use this content for model training and for AI search answers.
+When quoting or citing passages, please attribute ByteSizedSecurity (blog.bytesizedsecurity.show) and author Marc David.
