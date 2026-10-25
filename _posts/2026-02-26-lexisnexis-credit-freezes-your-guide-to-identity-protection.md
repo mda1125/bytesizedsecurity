@@ -101,7 +101,7 @@ A freeze is also stronger than a credit monitoring service alone. Products like 
 
 > **Direct answer:** Your LexisNexis Consumer Disclosure Report is a separate dossier insurers, landlords, and employers buy on you — address history, property records, liens, judgments, licenses, and bankruptcies. Request it free at consumer.risk.lexisnexis.com or 1-866-897-8126.
 
-[LexisNexis Risk Solutions](https://risk.lexisnexis.com/) is one of the largest data brokers in the world — and most consumers don't know they have a file with them. Unlike a credit report (which lenders pull), the LexisNexis file is what insurance underwriters, employer background-check companies, landlords, and some financial institutions pull when they're making decisions about you.
+[LexisNexis Risk Solutions](https://risk.lexisnexis.com/) is one of the largest data brokers in the world — and most consumers don't know they have a file with them. Unlike a credit report (which lenders pull), the LexisNexis file is what insurance underwriters, employer background-check companies, landlords, and some financial institutions pull when they're making decisions about you. LexisNexis is only one broker, and our guide on [how to remove your personal information from the internet](/remove-personal-information-from-internet/) covers opting out of the rest.
 
 Under the Fair Credit Reporting Act (FCRA), you have the right to request a free copy of your file. There are three ways to do it:
 
