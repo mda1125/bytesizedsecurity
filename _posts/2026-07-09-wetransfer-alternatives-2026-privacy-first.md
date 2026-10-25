@@ -178,7 +178,7 @@ Send the encrypted file over anything — WeTransfer, email, a USB drive, whatev
 
 Combining this pattern with [Giraffile](https://giraffile.pages.dev/) or SendAnywhere direct mode is the strongest practical setup for occasional privacy-critical transfers. Combining it with a US-based service like Dropbox Transfer is the pragmatic setup for everyone else.
 
-For readers who want to reduce their broader digital exposure the same way, our post on [why password resets alone don't stop phishing](/2026/06/19/phishing-response-2026-password-resets-arent-enough/) covers adjacent hardening. And for a look at how governments are targeting the same privacy tools you'd use to protect these transfers, see our breakdown of [the Utah VPN law and why it matters beyond Utah](/2026/05/05/utahs-vpn-law-a-threat-to-internet-privacy/).
+For readers who want to reduce their broader digital exposure the same way, our post on [why password resets alone don't stop phishing](/2026/06/19/modern-phishing-why-password-resets-fail/) covers adjacent hardening. And for a look at how governments are targeting the same privacy tools you'd use to protect these transfers, see our breakdown of [the Utah VPN law and why it matters beyond Utah](/2026/05/05/utahs-vpn-law-a-threat-to-internet-privacy/).
 
 ## Is WeTransfer still safe to use? {#still-safe}
 
