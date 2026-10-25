@@ -15,6 +15,12 @@ faq:
     answer: "Not exactly. The industry has a trust problem, a pipeline problem, and a mentorship problem — not a talent shortage. Entry-level postings demand years of experience while companies stopped growing junior talent. Thousands of qualified graduates cannot land interviews while organizations insist nobody good is available."
   - question: "How much do cybersecurity professionals make in 2026?"
     answer: "US cybersecurity salaries in 2026 range from roughly $75K for entry-level SOC analysts to $250K+ base for CISOs, with top CISO total-comp packages reaching $7–8M at major tech employers. Cloud security and application security engineers at the mid-senior level earn the steepest comp growth ($145K–$210K), per Robert Half's 2026 Tech Salary Guide and Levels.fyi data."
+  - question: "Can you make $200K a year in cybersecurity?"
+    answer: "Yes. $200K is a realistic goal for senior and staff security engineers, especially at larger companies. Indeed's staff-level security engineer average is $207,286 in base pay, and at large tech employers total compensation passes $200K earlier because stock and bonus stack on top of base. Expect it after roughly 8 to 10 years, sooner in a high-demand specialty like cloud or application security at a big tech company in a market like the Bay Area."
+  - question: "Is 30, 40, or 50 too old to start a career in cybersecurity?"
+    answer: "No. Career changers in their 30s, 40s, and 50s break into cybersecurity every year, and prior experience in IT, operations, compliance, or management often transfers directly. It is harder than starting at 22, mostly because entry-level hiring is tight and you may take a pay cut at first, but it is not a barrier. The author moved from a SharePoint career into security after 40."
+  - question: "Will AI replace cybersecurity jobs?"
+    answer: "No, but it is changing who gets hired. AI is creating more security work overall, and cybersecurity job postings were up about 11% year over year in early 2026. At the same time, AI is absorbing routine tier-1 tasks like alert triage, which shrinks the number of junior openings. The net effect: more jobs, but a harder first job to land."
   - question: "Do I need a degree to work in cybersecurity?"
     answer: "No. Companies hire people who solve problems, not degrees. A self-taught applicant who patched a vulnerability and documented how they did it will beat a graduating senior who cannot explain what DNS does. A degree may help pass keyword filters, but demonstrable skills and a portfolio of real work land offers."
   - question: "What certifications should I get for cybersecurity?"
@@ -23,7 +29,7 @@ faq:
     answer: "Start in any IT role that puts you near real systems (help desk, sysadmin, developer, cloud support). Become the security person in your current job by patching, hardening, and reading logs. Build a home lab with Active Directory and a SIEM, document it on GitHub, pick one specialty (cloud, appsec, or IR), and network with one person already doing your target role."
   - question: "What is the best cybersecurity career path?"
     answer: "There is no single best path, but the most effective sequence is: (1) get into IT anywhere, (2) own security tasks in your current role, (3) build visible proof through a home lab and public write-ups, and (4) specialize in one area with unmet demand — cloud security, application security, or incident response — rather than staying a generalist."
-last_modified_at: 2026-06-26
+last_modified_at: 2026-10-25
 ---
 
 Everyone wants to know how to start a career in cybersecurity right now, and the field keeps telling them to come in while quietly bolting the door behind it.
@@ -34,12 +40,15 @@ Everyone wants to know how to start a career in cybersecurity right now, and the
 
 - [Is there really a talent shortage?](#talent-shortage)
 - [How much do cybersecurity professionals make in 2026?](#salaries)
+- [Can you make $200K a year in cybersecurity?](#200k)
 - [Do you need a degree?](#degree-required)
 - [How to start a career in cybersecurity when the ladder is missing rungs](#how-to-break-in)
 - [How the path changes based on your starting point](#match-your-path)
+- [Is 30, 40, or 50 too old to start?](#too-old)
 - [Which certifications are actually worth getting?](#certifications)
 - [How do you get past automated hiring filters?](#ats-filters)
 - [The honest reality of the work](#reality-of-work)
+- [Will AI replace cybersecurity jobs?](#ai-replace)
 - [When are you actually ready to apply?](#when-ready)
 - [Your first 90 days: a plan you can start today](#ninety-day-plan)
 
@@ -87,6 +96,22 @@ Pay varies wildly by role, level, region, and industry, so any single "average" 
 A few honest caveats on those numbers. CyberSeek and BLS lump many roles together under one occupation code, so the entry-level range understates what you can earn at a major tech company and overstates what you might be offered at a regional bank. Robert Half's guide is widely cited but skews toward roles their recruiters actually place — meaning Fortune 1000 and mid-market employers. Levels.fyi covers total comp (base + equity + bonus) at primarily tech-sector employers, which is why those numbers run higher. Use the table as a reality check on offers and counters, not as a single source of truth.
 
 What this table tells you about strategy: the steepest comp curve sits in cloud security and application security at the mid-senior level, which is exactly the [niching advice in the breaking-in playbook](#how-to-break-in). The generalist SOC analyst path tops out earlier than the specialist paths do, and the gap widens every year.
+
+## Can you make $200K a year in cybersecurity? {#200k}
+
+> **Direct answer:** Yes. $200K is a realistic goal for senior and staff security engineers, especially at larger companies. Indeed's staff-level average is $207,286 in base pay alone, and at big tech employers stock and bonus push total compensation past $200K even earlier.
+
+The table above already hints at it, so here it is plainly: $200K is not a unicorn number in this field. It is where a lot of senior and staff engineers land.
+
+What gets you there is level and employer more than years alone. Per [Indeed's security engineer data](https://www.indeed.com/career/security-engineer/salaries), base pay averages $156,813 at senior level and $207,286 at staff level, the highest individual-contributor tier. At large tech companies the numbers climb faster, because equity and bonus stack on top of base. A staff or senior engineer at a larger company in a high-cost market like the Bay Area is the classic example of $200K and up.
+
+The realistic path looks like this:
+
+1. **Break in and get to mid-level.** That first jump, from learning the job to owning a domain, is where most of your early raises come from.
+2. **Specialize where demand outruns supply.** Cloud security and application security have the steepest comp curves in the table above.
+3. **Move up to senior, then staff.** Expect roughly 8 to 10 years of total experience for staff, faster if you change employers deliberately instead of waiting for annual raises.
+
+For the full level-by-level breakdown, including how stock and bonus change the math, see [cyber security engineer salary by experience level](/2026/09/26/cyber-security-engineer-salary-by-experience-level/) and the [security engineer salary and career path guide](/security-engineer-salary-jobs-career-path/).
 
 ## Do you need a degree to work in cybersecurity? {#degree-required}
 
@@ -148,6 +173,22 @@ Focus on segmentation, firewall best practices, and detection. You already under
 
 Computer science gives you a more versatile foundation than a narrow security degree, and starting in an IT role before pivoting is the path most successful security pros took. Learn how the systems work first. Learn to secure them second. The order matters more than the speed. If you want a structured, low-cost on-ramp before committing to a degree or bootcamp, see my honest [review of the Google Cybersecurity Certificate](/2026/06/25/google-cybersecurity-certification-review/) — including two paths that make it free.
 
+## Is 30, 40, or 50 too old to start a career in cybersecurity? {#too-old}
+
+> **Direct answer:** No. People move into cybersecurity in their 30s, 40s, and 50s every year, and the experience they bring often transfers directly. It is harder than starting at 22, but it is not a barrier. I made the move from a SharePoint career after 40.
+
+I can answer this one from experience. I spent years as a Windows and SharePoint professional before I moved into security, and I made the switch after 40. It was difficult. It was not impossible. If it were, I would not be writing this guide.
+
+Starting later is harder for practical reasons, not because of your age. The entry rung is crowded, you may compete with people half your age for the same junior seat, and you may take a pay cut before you climb back up. Plan for that honestly instead of hoping it will not happen.
+
+What you have that a new graduate does not:
+
+- **Systems knowledge.** If you have run servers, managed a platform, or supported users, you already know how real environments behave and break. That is the foundation security is built on.
+- **Business judgment.** You know how decisions get made, how to explain risk to people who do not care about technology, and how to work with a team under pressure.
+- **A track record.** Years of showing up and delivering are evidence a hiring manager can check. Point that record at security instead of starting your resume from zero.
+
+The [path that matches your starting point](#match-your-path) still applies. If you are already in IT, become the security person in your current role. If you are coming from outside tech, start in an IT role first. Your age changes how you tell the story, not whether the story works.
+
 ## Which cybersecurity certifications are actually worth getting? {#certifications}
 
 > **Direct answer:** Pull 50 real job descriptions for your target role, note the certs that appear repeatedly, then verify on LinkedIn that practitioners hold them. Buy only those. Treat certs as a foot in the door, never as proof of skill.
@@ -204,6 +245,18 @@ Burnout is real, and the healthiest professionals set boundaries early. You do n
 Tools and rules age badly too, so keep your judgment current. Forcing password changes every three months is a tired practice the field moved past. The point is not the specific example. The point is that staying employable means questioning received wisdom and following where the evidence leads, the same way you chose your certifications with data instead of folklore.
 
 > Do not confuse reality with rejection. The field is hard. You are not being pushed out. You are being prepared for the real game.
+
+## Will AI replace cybersecurity jobs? {#ai-replace}
+
+> **Direct answer:** No. AI is creating more security work than it removes, but it is taking away junior entry points. Cybersecurity job postings were up about 11% year over year in early 2026, while AI absorbs the routine tier-1 tasks that used to staff the bottom of the ladder.
+
+Both halves of that answer are true at the same time, and you need to plan for both.
+
+The growth half: every company deploying AI now has new attack surface to defend, from AI agents with too many permissions to new kinds of data leaks. That is why [cybersecurity hiring is up 11% in 2026](/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/), with mid-level engineers negotiating better pay and security leaders in high demand.
+
+The squeeze half: the work that used to train beginners, alert triage, first-pass investigations, basic documentation, is exactly the work AI handles well. So the number of junior seats is shrinking even as the field grows. We dug into that in [are cybersecurity jobs affected by AI](/2026/06/30/why-cutting-entry-level-jobs-for-ai-backfires-in-2026/), including which entry-level roles are most exposed.
+
+What that means for you: the routine version of the entry-level job is going away, and the judgment version is not. Show that you can review what automation produces, decide what matters, and explain it to people, and you are applying for the jobs AI creates instead of the ones it replaces.
 
 ## When are you actually ready to apply for cybersecurity jobs? {#when-ready}
 
