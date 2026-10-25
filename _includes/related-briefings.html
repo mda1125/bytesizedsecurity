@@ -6,11 +6,9 @@ block and BEFORE Share This Article. The author bio establishes E-E-A-T;
 Related Briefings is the choice surface that converts that trust into a
 second pageview.
 
-Selection algorithm (pure Liquid, no plugin):
-  1. Posts in the same `category` as the current post, newest first.
-  2. If fewer than 3, fill from most-recent posts overall (excluding the
-     current post and anything already selected in step 1).
-  3. Cap at 3 cards.
+Selection algorithm (pure Liquid, no plugin): hand-picked `related:`
+URLs first, then posts ranked by shared tags and category. See the
+comment above the selection code for details. Capped at 3 cards.
 
 Card markup mirrors the homepage Latest Intel card so readers re-use the
 same scan pattern, with a leaner byline (date + read time only — author is
@@ -22,30 +20,60 @@ single-post archive), so we never render an empty heading.
 {%- endcomment -%}
 
 {%- comment -%}
-Count same-category siblings (excluding self) via an explicit loop with
-integer arithmetic. Going through `where_exp ... | size` was unreliable
-because chained `where_exp` that filters to zero elements appears to
-return nil (not []), and `nil | size` is nil (not 0), so the size==0
-branch silently fell through and the section disappeared. Counting in
-an explicit for-loop guarantees same_cat_count is always an integer.
+Selection:
+  1. Posts listed in the page's optional `related:` front matter (URLs),
+     in the order given. For hand-picking links on high-traffic pages.
+  2. Remaining slots go to the highest-scoring other posts. Each shared
+     tag scores 2 (case-insensitive; "cybersecurity" is ignored because
+     nearly every post has it), and the same category scores 1. Ties go
+     to the newer post. With no overlap at all, this falls back to the
+     newest posts, as the old category-only version did. Posts marked
+     `noindex: true` are never recommended.
+
+Each candidate gets a sortable key "SS-TTTTTTTTTT|url" (zero-padded
+score, publish time in epoch seconds), so a plain string sort followed by
+reverse ranks by score and then recency.
 {%- endcomment -%}
-{%- assign same_cat_count = 0 -%}
-{%- for p in site.posts -%}
-  {%- if p.category == page.category and p.url != page.url -%}
-    {%- assign same_cat_count = same_cat_count | plus: 1 -%}
+{%- assign page_tags = "|" -%}
+{%- for t in page.tags -%}
+  {%- assign tl = t | downcase | strip -%}
+  {%- unless tl == "cybersecurity" -%}{%- assign page_tags = page_tags | append: tl | append: "|" -%}{%- endunless -%}
+{%- endfor -%}
+
+{%- assign related = "" | split: "" -%}
+{%- assign picked_urls = "|" | append: page.url | append: "|" -%}
+{%- for url in page.related -%}
+  {%- assign hit = site.posts | where: "url", url | first -%}
+  {%- if hit and related.size < 3 -%}
+    {%- assign related = related | push: hit -%}
+    {%- assign picked_urls = picked_urls | append: hit.url | append: "|" -%}
   {%- endif -%}
 {%- endfor -%}
 
-{%- if same_cat_count == 0 -%}
-  {%- comment -%} Single-post category. Fill from most-recent overall. {%- endcomment -%}
-  {%- assign related = site.posts | where_exp: "p", "p.url != page.url" | slice: 0, 3 -%}
-{%- elsif same_cat_count >= 3 -%}
-  {%- assign related = site.posts | where: "category", page.category | where_exp: "p", "p.url != page.url" | slice: 0, 3 -%}
-{%- else -%}
-  {%- assign same_cat_pool = site.posts | where: "category", page.category | where_exp: "p", "p.url != page.url" -%}
-  {%- assign needed = 3 | minus: same_cat_count -%}
-  {%- assign other_pool = site.posts | where_exp: "p", "p.category != page.category" | where_exp: "p", "p.url != page.url" | slice: 0, needed -%}
-  {%- assign related = same_cat_pool | concat: other_pool -%}
+{%- if related.size < 3 -%}
+  {%- assign keys = "" | split: "" -%}
+  {%- for p in site.posts -%}
+    {%- assign url_marker = "|" | append: p.url | append: "|" -%}
+    {%- if picked_urls contains url_marker or p.noindex -%}{%- continue -%}{%- endif -%}
+    {%- assign score = 0 -%}
+    {%- for t in p.tags -%}
+      {%- assign tl = t | downcase | strip -%}
+      {%- assign tag_marker = "|" | append: tl | append: "|" -%}
+      {%- if page_tags contains tag_marker -%}{%- assign score = score | plus: 2 -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if p.category == page.category -%}{%- assign score = score | plus: 1 -%}{%- endif -%}
+    {%- assign padded = score | prepend: "00" | slice: -2, 2 -%}
+    {%- assign epoch = p.date | date: "%s" -%}
+    {%- assign key = padded | append: "-" | append: epoch | append: "|" | append: p.url -%}
+    {%- assign keys = keys | push: key -%}
+  {%- endfor -%}
+  {%- assign keys = keys | sort | reverse -%}
+  {%- assign needed = 3 | minus: related.size -%}
+  {%- for key in keys limit: needed -%}
+    {%- assign url = key | split: "|" | last -%}
+    {%- assign hit = site.posts | where: "url", url | first -%}
+    {%- assign related = related | push: hit -%}
+  {%- endfor -%}
 {%- endif -%}
 
 {%- if related.size > 0 -%}

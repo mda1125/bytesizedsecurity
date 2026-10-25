@@ -22,6 +22,11 @@ faq:
     answer: "Two routes. First, apply for Coursera financial aid, which waives 100% of the cost for approved applicants. Second, get a public library card from a system that subscribes to Coursera for Public Libraries. Sign in through the library portal and enroll for free. Many U.S. library systems offer this, but availability varies by city."
   - question: "Google Cybersecurity Certification vs CompTIA Security+ — which is better?"
     answer: "Security+ is the more widely recognized credential, especially for U.S. government and DoD contractor roles. The Google Cybersecurity Certification is friendlier for complete beginners with no prior IT background. Most career switchers benefit from doing Google first to build foundations, then sitting Security+ to get the industry-standard credential employers ask for by name."
+# Hand-picked Related Briefings cards (see _includes/related-briefings.html).
+related:
+  - "/cybersecurity-career-guide/"
+  - "/2026/08/10/how-to-get-into-cybersecurity-no-experience/"
+  - "/2026/06/06/cybersecurity-certs-your-senior-level-insurance-policy/"
 ---
 
 A senior security engineer's honest review of the Google Cybersecurity Certification — what it is, who it is built for, and the free path most people miss.
