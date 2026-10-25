@@ -91,7 +91,12 @@ layout: default
     {% endif %}
 
     <div class="prose prose-lg text-gray-700 dark:text-gray-300 max-w-none font-serif">
-      {{ content }}
+      {%- comment -%}
+        Wrap every body table in a horizontal scroll container so wide
+        kramdown tables scroll inside the article instead of overflowing the
+        viewport on mobile. tabindex lets keyboard users scroll it.
+      {%- endcomment -%}
+      {{ content | replace: '<table', '<div class="table-scroll" tabindex="0"><table' | replace: '</table>', '</table></div>' }}
     </div>
 
     {% include newsletter-inline.html %}

@@ -331,10 +331,18 @@
     --color-border already flips via .dark (line 193), same token `.prose h2`
     relies on above.
   */
+  /*
+    _layouts/post.html wraps each body <table> in .table-scroll, so a table
+    wider than the viewport scrolls horizontally inside the article instead
+    of pushing the whole page sideways on mobile.
+  */
+  .prose .table-scroll {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+  }
   .prose table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 1.5rem;
   }
   .prose thead th {
     text-align: left;
