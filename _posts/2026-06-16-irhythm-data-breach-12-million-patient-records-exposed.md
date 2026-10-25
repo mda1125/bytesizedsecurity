@@ -46,7 +46,7 @@ iRhythm operates the **Zio**, a wearable continuous-ECG monitoring patch. Cardio
 
 The dataset is among the largest curated heart-rhythm corpuses in healthcare. While the exact count of affected individuals has not been published, the breach's potential reach is meaningful both for affected patients (HIPAA notifications under the Breach Notification Rule will follow) and for iRhythm's clinical research pipeline if proprietary data was exfiltrated.
 
-The bigger story is the **initial access vector**. Per iRhythm's own filing, attackers used social engineering to reach third-party-hosted business apps holding patient data. Not a zero-day. Not an unpatched VPN. People tricked into approving access or surrendering credentials.
+The bigger story is the **initial access vector**. Per iRhythm's own filing, attackers used social engineering to reach third-party-hosted business apps holding patient data. Not a zero-day. Not an unpatched VPN. People tricked into approving access or surrendering credentials. That is the same reason [modern phishing beats password resets](/2026/06/19/modern-phishing-why-password-resets-fail/): the lure targets the person, not the system.
 
 This matches the dominant healthcare-breach pattern of 2026:
 
@@ -59,11 +59,11 @@ Defense against social engineering is mostly process and architecture, not antiv
 
 ## What healthcare security teams should do this week
 
-1. **Inventory every third-party SaaS app with PHI access.** Not the EHR. The long tail: billing portals, prior-authorization tools, patient-engagement platforms, clinical-trial vendors, analytics tools, marketing automation with patient lists. Apply [HIPAA's Breach Notification Rule scope rigorously](https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html). Every Business Associate counts.
+1. **Inventory every third-party SaaS app with PHI access.** Not the EHR. The long tail: billing portals, prior-authorization tools, patient-engagement platforms, clinical-trial vendors, analytics tools, marketing automation with patient lists. Apply [HIPAA's Breach Notification Rule scope rigorously](https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html). Every Business Associate counts. Our guide to [third-party risk management](/2026/09/05/third-party-risk-management-ai-bug-report-flood/) covers how to keep that vendor list current.
 
 2. **Phishing-resistant MFA on everything touching patient data.** SMS and TOTP push are not enough. Move to FIDO2 / WebAuthn (or platform passkeys) per [NIST SP 800-63B AAL2/AAL3 guidance](https://pages.nist.gov/800-63-3/sp800-63b.html). Apply it to your SSO front door **and** to the back-end admin consoles of every SaaS app with regulated data access.
 
-3. **Help-desk caller-verification procedures.** Social-engineering reset attacks defeat the strongest MFA because they bypass it entirely. Require out-of-band verification (manager callback, badge-on-camera, second-channel video) before resetting credentials or registering new MFA devices.
+3. **Help-desk caller-verification procedures.** Social-engineering reset attacks defeat the strongest MFA because they bypass it entirely. Require out-of-band verification (manager callback, badge-on-camera, second-channel video) before resetting credentials or registering new MFA devices. The [Astrana vishing attack](/2026/09/25/astrana-vishing-attack-caller-id-spoofing/) shows how a spoofed caller ID gets past a help desk that skips this step.
 
 4. **SaaS PHI exposure logging.** Centralize audit logs from every PHI-bearing SaaS app into one SIEM or log lake. Detecting anomalous downloads from a third-party app requires ingesting its logs in the first place.
 
@@ -75,7 +75,7 @@ Healthcare data is a uniquely valuable target. Unlike a stolen credit card (canc
 
 The HHS Office for Civil Rights publishes ongoing reports on healthcare breaches affecting 500+ individuals on its [Breach Notification Portal](https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf) (informally known as the "Wall of Shame"). Expect iRhythm to appear there within the [60-day HIPAA notification window](https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html) once the affected individual count is finalized.
 
-For patients with a Zio device or recent ambulatory rhythm monitoring: there is no immediate action to take. iRhythm has not yet identified which individuals were affected. Watch for direct notification from iRhythm or your cardiology practice over the coming weeks.
+For patients with a Zio device or recent ambulatory rhythm monitoring: there is no immediate action to take. iRhythm has not yet identified which individuals were affected. Watch for direct notification from iRhythm or your cardiology practice over the coming weeks. If you want to get ahead of it, two steps help whether or not your records turn out to be in the stolen data: [freeze your credit at all three bureaus](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/), and [remove your personal information from the internet](/remove-personal-information-from-internet/) so attackers have less to pair with stolen health records in a targeted phishing message.
 
 ## Sources & further reading
 
