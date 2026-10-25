@@ -367,7 +367,7 @@
 /*
   highlight.js dark-mode syntax overrides.
 
-  /js/highlightjs/styles/github.css stays loaded for the light theme (it sets
+  _includes/highlightjs-github.css (inlined on code posts) stays loaded for the light theme (it sets
   syntax colors that read well on a white background). Our <pre> block is
   already dark in both modes (--color-code-bg / --color-code-fg), but in light
   mode the github theme's dark text-on-light-bg syntax colors would be invisible

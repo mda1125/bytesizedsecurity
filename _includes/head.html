@@ -261,9 +261,15 @@
 
     Scripts are `defer`red so this does NOT affect LCP; the win is bandwidth,
     request count, and TBT/CPU on code-free posts.
+
+    The ~1 KB github theme is inlined rather than linked: as a <link> it was
+    a second render-blocking stylesheet on every code post, delaying first
+    paint by ~40-110 ms on throttled mobile. CSP style-src already allows
+    'unsafe-inline'. It stays after the tailwind link so the `.dark .hljs-*`
+    overrides in input.css keep winning on specificity.
   {%- endcomment -%}
   {% if page.layout == 'post' and page.content contains '<pre' %}
-  <link rel="stylesheet" href="{{ '/js/highlightjs/styles/github.css' | relative_url }}">
+  <style>{% include highlightjs-github.css %}</style>
   <script defer src="{{ '/js/highlightjs/highlight.min.js' | relative_url }}"></script>
   <script defer src="{{ '/js/highlightjs/languages/plaintext.min.js' | relative_url }}"></script>
   <script defer src="{{ '/js/highlightjs/languages/powershell.min.js' | relative_url }}"></script>
