@@ -9,7 +9,7 @@ excerpt: "No degree, no IT background, no idea where to start. Everyone says the
 image: "/assets/img/posts/how-to-get-into-cybersecurity-no-experience.webp"
 image_width: 1200
 image_height: 630
-last_modified_at: 2026-08-10
+last_modified_at: 2026-10-25
 slug: how-to-get-into-cybersecurity-no-experience
 faq:
   - question: "Can you get into cybersecurity with no experience?"
@@ -20,6 +20,8 @@ faq:
     answer: "No. A degree helps with some HR filters, but plenty of working professionals entered through certifications, home labs, and IT experience instead. Employers increasingly weight demonstrated skill over pedigree. If a degree fits your budget and timeline, it is one valid path. It is not the only one, and it is not required."
   - question: "What entry-level cybersecurity jobs require no experience?"
     answer: "The realistic first jobs are usually adjacent to security, not deep in it: IT help desk, desktop support, junior sysadmin, and SOC analyst tier 1. These roles teach you how real systems break and get you the hands-on time that dedicated security roles assume you already have. Treat the first job as the on-ramp, not the destination."
+  - question: "Am I too old to get into cybersecurity with no experience?"
+    answer: "No. People switch into cybersecurity in their 30s, 40s, and 50s, and experience from other careers, especially IT, operations, or management, often counts in your favor. It is harder than starting young because the entry rung is crowded, but it is not a barrier."
   - question: "Is it hard to get a cybersecurity job with no experience?"
     answer: "It is harder than the headlines suggest. Entry-level hiring tightened in 2026 even as demand for skilled defenders stays high. The people who break through are the ones who show proof, a home lab, a write-up, a public project, and who network into referrals instead of firing resumes into the void."
 ---
@@ -41,6 +43,7 @@ There is a gap between the hype and the doorway. The demand for skilled defender
 - [How do you get experience when every job wants experience?](#get-experience)
 - [What entry-level roles should you target first?](#entry-roles)
 - [What should your first 90 days look like?](#90-day-plan)
+- [Am I too old to start?](#too-old)
 
 ## Can you get into cybersecurity with no experience? {#no-experience}
 
@@ -126,6 +129,14 @@ You do not need the whole plan solved to start. You need the next 90 days.
 3. **Weeks 8 to 12: proof and people.** Publish two more write-ups. Update your resume and profile to point every bit of experience at security. Then start talking to people, message five professionals with a specific, respectful question each week.
 
 That last step is the one beginners skip and the one that works. Referrals route around the resume void. The plan is not glamorous, and that is the point. Small, consistent, visible effort compounds into a hireable profile.
+
+## Am I too old to get into cybersecurity? {#too-old}
+
+> **Direct answer:** No. People switch into cybersecurity in their 30s, 40s, and 50s, and experience from another career often counts in your favor. It is harder than starting young because the entry rung is crowded, but it is not a barrier.
+
+I moved into security from a SharePoint career after 40, so I am not guessing on this one. It was hard, and it worked. The full answer, including what transfers from your current career, is in our guide on [whether 30, 40, or 50 is too old to start](/cybersecurity-career-guide/#too-old).
+
+Two related questions come up with this one. If you are wondering whether the pay is worth the restart, [$200K is a realistic goal at senior and staff level](/cybersecurity-career-guide/#200k). And if you are worried AI will close the door before you get through it, here is why [AI is adding security jobs while squeezing junior ones](/cybersecurity-career-guide/#ai-replace).
 
 ## The honest takeaway {#takeaway}
 
