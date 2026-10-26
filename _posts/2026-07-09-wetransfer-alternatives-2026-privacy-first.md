@@ -1,7 +1,7 @@
 ---
-description: "WeTransfer was acquired, laid off 75% of staff, and briefly tried to license user files for AI. Nine privacy-first WeTransfer alternatives for 2026."
+description: "Nine privacy-first WeTransfer alternatives for 2026, ranked. Includes Giraffile, the browser-only tool where your file never touches a server."
 layout: post
-title: "9 Best WeTransfer Alternatives in 2026 (Ranked by Privacy)"
+title: "9 Best WeTransfer Alternatives in 2026, Including Giraffile"
 slug: wetransfer-alternatives-2026-privacy-first
 category: "Privacy"
 tags: ["WeTransfer Alternative", "File Sharing Privacy", "Bending Spoons", "Data Protection"]
