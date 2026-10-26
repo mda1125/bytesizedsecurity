@@ -6,7 +6,7 @@ slug: google-cybersecurity-certification-review
 category: Career
 tags: ["Google Cybersecurity Certification", "Certifications", "Career"]
 author: Marc
-excerpt: "A senior security engineer's honest review of the Google Cybersecurity Certificate — whether it is worth it in 2026, what is inside the 8-module program, how to earn CPE credits, and the public-library hack to enroll for free."
+excerpt: "A staff security engineer's honest review of the Google Cybersecurity Certificate — whether it is worth it in 2026, what is inside the 8-module program, how to earn CPE credits, and the public-library hack to enroll for free."
 image: "/assets/img/posts/google-cybersecurity-certification-review.webp"
 image_width: 1200
 image_height: 630
@@ -29,13 +29,13 @@ related:
   - "/2026/06/06/cybersecurity-certs-your-senior-level-insurance-policy/"
 ---
 
-A senior security engineer's honest review of the Google Cybersecurity Certification — what it is, who it is built for, and the free path most people miss.
+A staff security engineer's honest review of the Google Cybersecurity Certification — what it is, who it is built for, and the free path most people miss.
 
 **TL;DR:** Yes, the Google Cybersecurity Certificate is worth it in 2026 — if you are switching into cybersecurity from outside the field. It is an 8-course, ~6-month program on Coursera built to take a complete beginner to job-ready for entry-level SOC and IT security roles. It costs $49 per month, but two free paths exist: Coursera financial aid and the public-library hack. CISSP and Security+ holders earn CPE credits for completing it. Insufficient on its own to land a senior role.
 
 ---
 
-I work as a Senior Security Engineer with a CISSP and eight years in the field, and the question I get most often from IT folks trying to break into cybersecurity is whether the Google Cybersecurity Certification is worth their time. My short answer is yes, with caveats. My longer answer involves a library card. Here is the full breakdown.
+I work as a Staff Security Engineer with a CISSP and eight years in the field, and the question I get most often from IT folks trying to break into cybersecurity is whether the Google Cybersecurity Certification is worth their time. My short answer is yes, with caveats. My longer answer involves a library card. Here is the full breakdown.
 
 ## What is the Google Cybersecurity Certification?
 
