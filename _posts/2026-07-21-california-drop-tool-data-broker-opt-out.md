@@ -1,7 +1,7 @@
 ---
-description: "California's DROP tool deletes your personal info from 614 data brokers with one free request. Here's how it works and why August 1 matters."
+description: "California residents can delete their data from all 614 registered data brokers with one free request. How DROP works, plus the path for other states."
 layout: post
-title: "California DROP Tool: Opt Out of 614 Data Brokers in 2026"
+title: "Opt Out of Data Brokers in 2026: California's DROP Tool"
 category: "Privacy"
 tags: ["California DROP Tool", "Data Broker Opt Out", "Privacy", "California Delete Act"]
 author: Marc

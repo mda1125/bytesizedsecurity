@@ -26,6 +26,8 @@ They gave people who don't have a mailing address ninety days, an internet conne
 
 **TL;DR:** Boston Health Care for the Homeless Program suffered a network intrusion that exposed Social Security numbers, medical records, and driver's license data for **184,914 people**. It took **280 days** to disclose. The remedy — credit monitoring — requires internet, email, and a 90-day deadline; the notification itself was a mailed letter to a population defined by not having a stable address. Five days after the letters went out, the breach still wasn't on the federal HIPAA registry, and the only people writing about it were law firms whose victim counts disagree by a factor of a thousand.
 
+> **Looking for the iRhythm letter?** This post is about a different breach, at Boston Health Care for the Homeless Program. If you got a breach letter about iRhythm, the Zio heart monitor company, see [what the iRhythm breach letter means and what to do](/2026/06/16/irhythm-data-breach-12-million-patient-records-exposed/#letter).
+
 ---
 
 This is not a story about a clever hacker. It is a story about what the standard breach-response playbook produces when nobody asks who the notification is actually going to. The forensics, the credit-monitoring offer, the letter — every step was by the book. The book just never accounted for the patients this program serves.

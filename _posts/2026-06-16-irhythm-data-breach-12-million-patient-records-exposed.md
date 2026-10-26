@@ -1,16 +1,25 @@
 ---
 layout: post
-title: "iRhythm Data Breach: 12 Million Patient Records Exposed"
+title: "iRhythm Data Breach Letter (Cyberscout): What It Means"
 category: Network Security
 tags: ["Data Breach", "Social Engineering", "Healthcare Security"]
 author: Marc
-excerpt: "iRhythm Holdings disclosed a data breach affecting millions of patients. Attackers used social engineering against third-party apps to exfiltrate protected health information (PHI). This incident highlights critical vulnerabilities in healthcare data security."
+excerpt: "iRhythm began mailing breach letters on October 2, 2026. Here is what the letter means, what data was exposed, who to call, and the two steps worth taking now. Plus how attackers got in through social engineering of third-party apps."
 image: "/assets/img/posts/irhythm-data-breach-12-million-patient-records-exposed.webp"
 image_width: 1080
 image_height: 1350
 slug: irhythm-data-breach-12-million-patient-records-exposed
-last_modified_at: 2026-06-16
-description: "iRhythm disclosed a data breach via SEC 8-K filing. Attackers used social engineering on third-party business apps to exfiltrate patient PHI."
+last_modified_at: 2026-10-25
+description: "Got an iRhythm breach letter, or one people call the Cyberscout letter? It's real. What was exposed, the call center number, and what to do next."
+faq:
+  - question: "Is the iRhythm data breach letter real?"
+    answer: "Yes. iRhythm began mailing breach notification letters on October 2, 2026, about a June 2026 incident in which data was downloaded from third-party-hosted business applications. The letter is from iRhythm, the maker of the Zio heart monitor patch. To confirm yours, call iRhythm's response line at 1-844-770-7175, Monday through Friday, 8 a.m. to 8 p.m. Eastern."
+  - question: "What is the iRhythm Cyberscout letter?"
+    answer: "It is the iRhythm data breach notification many recipients search for as the Cyberscout letter. Cyberscout is an identity and breach-response company that companies hire to handle notifications. The letter explains that some of your data was accessed between June 3 and June 8, 2026, and recommends a fraud alert and a credit freeze."
+  - question: "What information was exposed in the iRhythm breach?"
+    answer: "Per iRhythm's notice, the data may include your name, address, email address, phone number, iRhythm account number, iRhythm device serial number, patient insurance number, date of service, and date of birth. iRhythm says it does not store payment card or financial account information, and Social Security numbers are not listed."
+  - question: "What should I do if I got an iRhythm breach letter?"
+    answer: "Freeze your credit at Equifax, Experian, and TransUnion, which is free and blocks new accounts in your name. Review your health insurance explanation of benefits statements for services you did not receive. And treat any call, text, or email that mentions the breach as suspicious until you verify it through iRhythm's published number."
 # Hand-picked Related Briefings cards (see _includes/related-briefings.html).
 related:
   - "/remove-personal-information-from-internet/"
@@ -18,11 +27,39 @@ related:
   - "/2025/12/26/hipaa-security-rule-hospitals-face-impossible-deadlines/"
 ---
 
-## iRhythm Healthcare Data Breach: 12 Million Patient Dataset Hit via Social Engineering of Third-Party Apps
+## Got an iRhythm breach letter? Start here {#letter}
+
+> **Direct answer:** Yes, the letter is real. iRhythm, the maker of the Zio heart monitor patch, began mailing breach notices on October 2, 2026. Some patient data was downloaded between June 3 and June 8, 2026. No Social Security numbers or payment data are listed. Freeze your credit and watch your insurance statements.
+
+If a letter about iRhythm showed up in your mailbox, or one you have seen described as the "Cyberscout letter," here is what it means. Cyberscout is a breach-response company that organizations hire to handle notifications and call centers, which is why the two names travel together in searches. The letter itself comes from iRhythm.
+
+**What was exposed.** According to [iRhythm's October 2 notice](https://investors.irhythmtech.com/news/news-details/2026/iRhythm-Provides-Update-on-Cybersecurity-Incident-Previously-Disclosed-in-June-2026/default.aspx), the data may include your:
+
+- Name, address, email address, and phone number
+- iRhythm account number and device serial number
+- Patient insurance number
+- Date of service and date of birth
+
+iRhythm says it does not store payment card or financial account information. Social Security numbers are not on the list. The letter does not offer credit monitoring.
+
+**Who to call.** iRhythm's dedicated response line is **1-844-770-7175**, Monday through Friday, 8 a.m. to 8 p.m. Eastern. Use that number, not one from an unexpected email or text. Breach notices are a favorite lure for follow-up scams.
+
+**What to do now.** Two steps matter most:
+
+1. **Freeze your credit** at Equifax, Experian, and TransUnion. It is free, takes about 15 minutes, and blocks new accounts in your name. Our [credit freeze guide](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/) walks through all three.
+2. **Check your health insurance statements.** An insurance number and date of birth are what medical identity theft runs on. Read each explanation of benefits for services you did not receive, and call your insurer about anything you don't recognize.
+
+Then expect targeted phishing. Someone who knows you wore a Zio monitor, and when, can write a very convincing message. If you want to shrink what else is out there about you, our guide to [removing your personal information from the internet](/remove-personal-information-from-internet/) covers the data brokers and people-search sites.
+
+Reporting on the scale has grown since the first filings. [SecurityWeek counted at least 360,000 people](https://www.securityweek.com/irhythm-data-breach-impacts-over-360000-people/) from state filings in Texas and South Carolina alone, and the full count is likely much higher.
+
+The rest of this post is the original June analysis of how the breach happened.
 
 ---
 
-## TL;DR
+## How attackers got in: social engineering of third-party apps {#how-it-happened}
+
+### TL;DR
 
 - **Who**: iRhythm Holdings (NASDAQ: IRTC), the digital healthcare company behind the Zio cardiac monitoring patch.
 - **What**: Patient protected health information (PHI) and proprietary data exfiltrated from third-party-hosted business applications.
@@ -31,7 +68,7 @@ related:
 - **Scale context**: iRhythm's platform has analyzed over 2 billion hours of curated heartbeat data from more than 12 million patients. The exact count of affected individuals has not been disclosed.
 - **What's safe**: No payment or financial account data (not stored). No reported impact on clinical or medical device systems, patient safety, manufacturing, or financial reporting.
 
-## What we know
+### What we know
 
 iRhythm Holdings disclosed the breach in a Form 8-K filing with the U.S. Securities and Exchange Commission on Monday, June 15, 2026. The disclosure became public [via BleepingComputer's reporting on the filing](https://www.bleepingcomputer.com/news/security/irhythm-discloses-data-breach-says-hackers-stole-patient-info/).
 
@@ -45,7 +82,7 @@ Per the filing summary:
 - No payment card or financial account information was exposed (iRhythm does not store this data).
 - No impact has been reported on iRhythm's clinical or medical device systems, patient safety, manufacturing and distribution operations, or financial reporting systems.
 
-## Why this matters
+### Why this matters
 
 iRhythm operates the **Zio**, a wearable continuous-ECG monitoring patch. Cardiologists rely on it for ambulatory rhythm monitoring (catching things like atrial fibrillation, heart blocks, and other arrhythmias). The company reports its platform has processed more than **2 billion hours** of heartbeat data from over **12 million patients** since inception.
 
@@ -80,7 +117,9 @@ Healthcare data is a uniquely valuable target. Unlike a stolen credit card (canc
 
 The HHS Office for Civil Rights publishes ongoing reports on healthcare breaches affecting 500+ individuals on its [Breach Notification Portal](https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf) (informally known as the "Wall of Shame"). Expect iRhythm to appear there within the [60-day HIPAA notification window](https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html) once the affected individual count is finalized.
 
-For patients with a Zio device or recent ambulatory rhythm monitoring: there is no immediate action to take. iRhythm has not yet identified which individuals were affected. Watch for direct notification from iRhythm or your cardiology practice over the coming weeks. If you want to get ahead of it, two steps help whether or not your records turn out to be in the stolen data: [freeze your credit at all three bureaus](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/), and [remove your personal information from the internet](/remove-personal-information-from-internet/) so attackers have less to pair with stolen health records in a targeted phishing message.
+*Update, October 2026:* iRhythm has now identified affected patients and began mailing letters on October 2. If you got one, the [steps at the top of this post](#letter) are what to do.
+
+When this was first written in June, iRhythm had not yet identified which individuals were affected, and the advice was to watch for direct notification.
 
 ## Sources & further reading
 
