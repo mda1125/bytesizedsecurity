@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-10-26: [AGENTS.md in Downloads: Keep AI Coding Agents Safe (2026)](https://blog.bytesizedsecurity.show/2026/10/26/agents-md-downloads-hijack-ai-coding-agents/)
+  Explains what Forever Security reported on October 22, 2026: a planted AGENTS.md file in a customer's Downloads folder told an AI coding agent to install the malicious npm package function-color, and in its own tests similar files hijacked OpenAI Codex and Claude Code. Covers what AGENTS.md is, how a web page can drop the file with no click, where the sources disagree, what is still unverified, and how to stay safe by never starting an agent in Downloads or any folder you do not control.
+
 - 2026-10-22: [Check Your PHP Version: The 2024 Bug Behind PHP2Shell](https://blog.bytesizedsecurity.show/2026/10/22/php2shell-check-php-version-two-year-delay/)
   Explains PHP2Shell (CVE-2026-109618 and CVE-2026-109619, CVSS v4.0 9.2), two unauthenticated remote code execution flaws fixed in PHP 8.2.35, 8.3.36, 8.4.27, and 8.5.12, per php.net and the PHP Foundation. Covers how first signs found in 2024 stalled until AI-assisted research in August 2026, the disclosure leak, early exploitation attempts, why it is a funding problem for open source, and how to check your PHP version, update, and move off unsupported branches.
 
