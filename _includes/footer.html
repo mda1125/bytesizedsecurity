@@ -48,5 +48,6 @@
   </div>
   <div class="max-w-6xl mx-auto px-4 lg:px-8 mt-12 pt-8 border-t border-gray-700 text-xs text-center md:text-left font-sans text-gray-300">
     © {{ 'now' | date: "%Y" }} {{ site.title }}. Open source under MIT License.{% if site.nonprofit %} A registered 501(c)(3) nonprofit organization{% if site.ein %} · EIN {{ site.ein }}{% endif %}.{% endif %}
+    <p class="mt-2">Report an issue with this site: <a class="hover:text-white hover:underline" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
   </div>
 </footer>
