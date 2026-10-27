@@ -62,6 +62,13 @@ exclude:
   - assets/css/input.css
   - scripts
 
+# Jekyll skips names that start with a dot. Setting `include` replaces
+# the default list (".htaccess"), so keep that entry and add .well-known
+# so /.well-known/security.txt is published.
+include:
+  - .htaccess
+  - .well-known
+
 titles_from_headings:
   strip_title: true
   collections: true

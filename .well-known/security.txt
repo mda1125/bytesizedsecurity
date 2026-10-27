@@ -1,0 +1,4 @@
+Contact: mailto:marc@bytesizedsecurity.show
+Expires: 2027-09-27T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://blog.bytesizedsecurity.show/.well-known/security.txt
