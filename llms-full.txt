@@ -246,7 +246,7 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 - 2024-05-14: [Understanding Zero Trust Architecture: A Deep Dive](https://blog.bytesizedsecurity.show/2024/05/14/understanding-zero-trust-architecture/)
   Core principles and implementation of zero-trust security models.
 
-- 2024-05-12: [Top 5 Pentesting Tools for 2024](https://blog.bytesizedsecurity.show/2024/05/12/top-5-pentesting-tools-2024/)
+- 2024-05-12: [Top 5 Pentesting Tools: A Pen Tester's Picks](https://blog.bytesizedsecurity.show/2024/05/12/top-5-pentesting-tools-2024/)
   Essential tools every ethical hacker needs — from network scanners to exploitation frameworks.
 
 - 2024-05-10: [Analyzing the Log4j Vulnerability](https://blog.bytesizedsecurity.show/2024/05/10/analyzing-log4j-vulnerability/)
