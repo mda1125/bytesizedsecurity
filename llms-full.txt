@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-10-30: [Third Party Scripts: Lessons From the Polymarket Hack (2026)](https://blog.bytesizedsecurity.show/2026/10/30/third-party-scripts-polymarket-hack/)
+  Explains the October 29, 2026 Polymarket incident, where a performance-monitoring script loaded from vendor DebugBear was replaced with code that used logged-in traders' active sessions to sell or transfer positions and move funds out, per Polymarket's status page, Hudson Rock, and Ohey. Covers why every third party script runs with your users' full power, where the loss figures differ, what DebugBear has and has not said, and five defenses for everyday site owners (inventory, Content Security Policy, Subresource Integrity, self-hosting, change monitoring) with their limits.
+
 - 2026-10-26: [AGENTS.md in Downloads: Keep AI Coding Agents Safe (2026)](https://blog.bytesizedsecurity.show/2026/10/26/agents-md-downloads-hijack-ai-coding-agents/)
   Explains what Forever Security reported on October 22, 2026: a planted AGENTS.md file in a customer's Downloads folder told an AI coding agent to install the malicious npm package function-color, and in its own tests similar files hijacked OpenAI Codex and Claude Code. Covers what AGENTS.md is, how a web page can drop the file with no click, where the sources disagree, what is still unverified, and how to stay safe by never starting an agent in Downloads or any folder you do not control.
 
