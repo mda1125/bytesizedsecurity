@@ -1,15 +1,15 @@
 ---
-description: "How to get into cybersecurity with no experience or degree in 2026: the free first cert, a home lab, and the on-ramp roles that hire beginners."
+description: "How to get into cybersecurity with no experience or degree in 2026: the right first cert, a home lab, and the on-ramp roles that hire beginners."
 layout: post
 title: "How to Get Into Cybersecurity With No Experience (2026)"
 category: "Career"
 tags: ["Cybersecurity Careers", "Entry Level", "Career Change", "Home Lab"]
 author: Marc
-excerpt: "No degree, no IT background, no idea where to start. Everyone says the field is booming, yet every posting wants three years of experience. Here is the realistic 2026 path to break in, from your first free cert to a home lab you can talk about in an interview."
+excerpt: "No degree, no IT background, no idea where to start. Everyone says the field is booming, yet every posting wants three years of experience. Here is the realistic 2026 path to break in, from your first cert to a home lab you can talk about in an interview."
 image: "/assets/img/posts/how-to-get-into-cybersecurity-no-experience.webp"
 image_width: 1200
 image_height: 630
-last_modified_at: 2026-10-25
+last_modified_at: 2026-11-03
 slug: how-to-get-into-cybersecurity-no-experience
 faq:
   - question: "Can you get into cybersecurity with no experience?"
@@ -28,7 +28,7 @@ faq:
 
 Everyone tells you cybersecurity is booming. No one tells you how to get the first job when every posting wants three years of experience you do not have.
 
-**TL;DR:** You can break into cybersecurity with no experience or degree, but not by waiting for a job posting to reward you. Start with free foundations in networking and Linux, earn one entry cert (ISC2's Certified in Cybersecurity is free right now), build a home lab you can talk about, and target an on-ramp role like help desk or a SOC tier-1 seat. The people who get hired show proof of skill, not a longer list of certs. Here is the realistic path for 2026.
+**TL;DR:** You can break into cybersecurity with no experience or degree, but not by waiting for a job posting to reward you. Start with free foundations in networking and Linux, earn one entry cert (ISC2's Certified in Cybersecurity is the cheapest credible start at $199), build a home lab you can talk about, and target an on-ramp role like help desk or a SOC tier-1 seat. The people who get hired show proof of skill, not a longer list of certs. Here is the realistic path for 2026.
 
 ---
 
@@ -59,7 +59,7 @@ If you already work in IT, help desk, or anything technical, you are closer than
 
 Both of these are true at the same time, and holding both is the key to a sane job search.
 
-On one hand, the long-term outlook is strong. The [Bureau of Labor Statistics projects information security analyst jobs to grow 33% through 2033](https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm), far faster than the average occupation. On the other hand, the entry rung got crowded. Bootcamps flood the market with juniors, hiring freezes hit the roles beginners target first, and routine tier-1 analyst work is getting automated. The result is a field that genuinely needs people while the front door feels jammed.
+On one hand, the long-term outlook is strong. The [Bureau of Labor Statistics projects information security analyst jobs to grow 21% from 2025 to 2035](https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm), much faster than the average occupation, with a median pay of $129,180 as of May 2025. On the other hand, the entry rung got crowded. Bootcamps flood the market with juniors, hiring freezes hit the roles beginners target first, and routine tier-1 analyst work is getting automated. The result is a field that genuinely needs people while the front door feels jammed.
 
 This is not a reason to quit. It is a reason to stop competing the way everyone else does. The candidates who get hired in this market are the ones who show up with evidence and a warm introduction, not the ones who fire 200 identical resumes into applicant tracking systems. We wrote about why [networking beats blind applications](/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/) because it is the single biggest lever a beginner has.
 
@@ -80,17 +80,17 @@ Free resources cover all of it. Professor Messer's videos, TryHackMe's beginner 
 
 ## Which first certification should you get? {#first-cert}
 
-> **Direct answer:** Get one, not five. For a true beginner, ISC2's Certified in Cybersecurity is free and vendor-neutral. If your target jobs list a cert by name, it is almost always CompTIA Security+. Pick based on the postings you want.
+> **Direct answer:** Get one, not five. For a true beginner, ISC2's Certified in Cybersecurity is the lowest-cost, vendor-neutral start. If your target jobs list a cert by name, it is almost always CompTIA Security+. Pick based on the postings you want.
 
 A cert will not get you hired on its own. What it does is get you past keyword filters and prove you finished something hard. One is enough to start. Here is how the beginner options compare.
 
 | Certification | Level | Cost (2026) | Best for |
 |---|---|---|---|
-| [ISC2 Certified in Cybersecurity (CC)](https://www.isc2.org/certifications/cc) | Entry | Free exam + training via ISC2's One Million Certified in Cybersecurity program | Absolute beginners who want a credible first credential at no cost |
+| [ISC2 Certified in Cybersecurity (CC)](https://www.isc2.org/certifications/cc) | Entry | $199 exam + $50/year maintenance fee | Absolute beginners who want a credible first credential at the lowest cost |
 | [CompTIA Security+](https://www.comptia.org/certifications/security) | Entry | ~$404 | The resume-keyword baseline that the most postings ask for |
 | [Google Cybersecurity Certificate](https://grow.google/certificates/cybersecurity/) | Pre-entry | ~$49/month on Coursera | Career changers who want structure and hands-on labs before a formal cert |
 
-Start with the free ISC2 CC to confirm you like the material without spending anything. If job listings in your area keep naming Security+, make that your paid target. The Google certificate is a strong on-ramp for pure beginners who want guided structure, and we broke down [whether the Google Cybersecurity Certificate is worth it](/2026/06/25/google-cybersecurity-certification-review/) in its own review. What you should not do is collect certificates as a substitute for skill. That trap is exactly why we argue you should [build real cyber proof over a stack of certs](/2026/06/04/rise-above-the-90-build-cyber-proof-not-just-certs/).
+Start with the ISC2 CC to confirm you like the material without a big outlay. One update: ISC2's One Million Certified in Cybersecurity program, which made the CC exam and training free, [closed to new enrollments on May 20, 2026](https://www.isc2.org/landing/1mcc). If you already hold a free exam code, it must be used by December 31, 2026. If job listings in your area keep naming Security+, make that your paid target. The Google certificate is a strong on-ramp for pure beginners who want guided structure, and we broke down [whether the Google Cybersecurity Certificate is worth it](/2026/06/25/google-cybersecurity-certification-review/) in its own review. What you should not do is collect certificates as a substitute for skill. That trap is exactly why we argue you should [build real cyber proof over a stack of certs](/2026/06/04/rise-above-the-90-build-cyber-proof-not-just-certs/).
 
 ## How do you get experience when every job wants experience? {#get-experience}
 
@@ -120,12 +120,12 @@ Get one of these, do it well for a year or two, and you become an internal candi
 
 ## What should your first 90 days look like? {#90-day-plan}
 
-> **Direct answer:** Foundations first, then one credential, then proof, then people. Ninety days is enough to learn the basics, start a free cert, ship your first lab write-up, and begin real conversations with people already in the field.
+> **Direct answer:** Foundations first, then one credential, then proof, then people. Ninety days is enough to learn the basics, start your first cert, ship your first lab write-up, and begin real conversations with people already in the field.
 
 You do not need the whole plan solved to start. You need the next 90 days.
 
 1. **Weeks 1 to 4: foundations.** Pick networking and Linux. Work through free material daily, even 45 minutes counts. Set up VirtualBox and a Linux VM by the end of the month.
-2. **Weeks 4 to 8: first cert and first lab.** Enroll in the free ISC2 CC path or start Security+ study. In parallel, build one small home lab and write up what you did in plain language.
+2. **Weeks 4 to 8: first cert and first lab.** Start ISC2 CC or Security+ study, whichever your target postings name. In parallel, build one small home lab and write up what you did in plain language.
 3. **Weeks 8 to 12: proof and people.** Publish two more write-ups. Update your resume and profile to point every bit of experience at security. Then start talking to people, message five professionals with a specific, respectful question each week.
 
 That last step is the one beginners skip and the one that works. Referrals route around the resume void. The plan is not glamorous, and that is the point. Small, consistent, visible effort compounds into a hireable profile.
