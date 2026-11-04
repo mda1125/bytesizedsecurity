@@ -48,7 +48,18 @@
         body: new FormData(form)
       }).then(function(res) {
         if (res.ok) {
-          window.location.href = '{{ "/subscribed" | relative_url }}';
+          var done = false;
+          var go = function () {
+            if (done) return;
+            done = true;
+            window.location.href = '{{ "/subscribed" | relative_url }}?src=sidebar';
+          };
+          if (window.gtag) {
+            window.gtag('event', 'newsletter_signup', { placement: 'sidebar', event_callback: go });
+            setTimeout(go, 500);
+          } else {
+            go();
+          }
         } else {
           return res.json().then(function(data) {
             if (data.errors) alert(data.errors[0]);
