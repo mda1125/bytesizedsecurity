@@ -86,7 +86,7 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 - 2026-08-21: [Flock Safety License Plate Readers Used to Stalk a Woman](https://blog.bytesizedsecurity.show/2026/08/21/cop-license-plate-reader-stalking/)
   CISSP-authored piece on a Florida police officer who used Flock Safety's license plate reader network, built to catch car thieves, to hunt down a woman he had a crush on. Covers what happens when surveillance tech built for public safety has almost no oversight over who is allowed to look, and what accountability should look like.
 
-- 2026-08-12: [The Data Breach Notification 184,914 People Can't Use](https://blog.bytesizedsecurity.show/2026/08/12/data-breach-notification-184914-homeless/)
+- 2026-08-12: [Boston Healthcare for the Homeless Data Breach: 184,914 Hit](https://blog.bytesizedsecurity.show/2026/08/12/data-breach-notification-184914-homeless/)
   CISSP-authored investigative piece on Boston Health Care for the Homeless mailing breach letters to 184,914 patients whose defining circumstance is not having a mailing address, then giving them 90 days and an internet connection to enroll in credit monitoring. Covers what the notification got wrong and the questions every breach-response owner should ask before it happens to them.
 
 - 2026-08-10: [How to Get Into Cybersecurity With No Experience (2026)](https://blog.bytesizedsecurity.show/2026/08/10/how-to-get-into-cybersecurity-no-experience/)
