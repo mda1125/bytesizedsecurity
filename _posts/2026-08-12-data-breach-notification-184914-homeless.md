@@ -1,7 +1,7 @@
 ---
-description: "A homeless health program's data breach notification took 280 days, arrived by mail to 184,914 people with no address, and still isn't on the HHS portal."
+description: "Boston Healthcare for the Homeless took 280 days to report a breach of 184,914 people. Letters went by mail to people with no address."
 layout: post
-title: "The Data Breach Notification 184,914 People Can't Use"
+title: "Boston Healthcare for the Homeless Data Breach: 184,914 Hit"
 category: "Privacy"
 tags: ["Data Breach Notification", "Healthcare Data Breach", "HIPAA", "Privacy"]
 author: Marc
