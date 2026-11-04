@@ -1,7 +1,7 @@
 ---
 description: "LLMjacking is the theft of paid AI access with stolen keys. How to spot cheap unlimited AI deals, and how teams protect their AI API keys."
 layout: post
-title: "LLMjacking: Why Cheap Unlimited AI Is a Red Flag (2026)"
+title: "LLMjacking: Why Cheap Unlimited AI Is a Red Flag"
 slug: llmjacking-cheap-unlimited-ai-red-flag
 category: "Threats"
 tags: ["LLMjacking", "API Key Security", "AI Subscriptions"]
