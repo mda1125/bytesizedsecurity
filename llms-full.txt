@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-11-03: [LLMjacking: Why Cheap Unlimited AI Is a Red Flag (2026)](https://blog.bytesizedsecurity.show/2026/11/03/llmjacking-cheap-unlimited-ai-red-flag/)
+  Explains LLMjacking, the theft of an organization's paid AI access with stolen cloud credentials or AI API keys, based on Google Threat Intelligence Group's November 2026 report of fraudulent charges above $100,000 in a single day and resale services such as Jet Night that Google believes run on stolen keys. Covers how to spot cheap unlimited AI deals priced far below what providers charge, and how teams protect AI API keys with spending caps, billing alerts, key rotation, and keeping keys out of code and repos.
+
 - 2026-10-30: [Third Party Scripts: Lessons From the Polymarket Hack (2026)](https://blog.bytesizedsecurity.show/2026/10/30/third-party-scripts-polymarket-hack/)
   Explains the October 29, 2026 Polymarket incident, where a performance-monitoring script loaded from vendor DebugBear was replaced with code that used logged-in traders' active sessions to sell or transfer positions and move funds out, per Polymarket's status page, Hudson Rock, and Ohey. Covers why every third party script runs with your users' full power, where the loss figures differ, what DebugBear has and has not said, and five defenses for everyday site owners (inventory, Content Security Policy, Subresource Integrity, self-hosting, change monitoring) with their limits.
 
