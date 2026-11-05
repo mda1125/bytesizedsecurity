@@ -13,14 +13,14 @@ faq:
   - question: "What is two-factor authentication (2FA)?"
     answer: "Two-factor authentication adds a second verification step when you log in. Instead of just a password (something you know), you also prove your identity with something you have — like your phone or a hardware security key. Even if an attacker gets your password, they cannot access your account without the second factor."
   - question: "Does 2FA really stop 99% of attacks?"
-    answer: "Yes. <a href=\"https://www.microsoft.com/en-us/security/blog/2019/08/20/one-simple-action-you-can-take-to-prevent-99-9-percent-of-account-attacks/\">Microsoft's research across millions of enterprise accounts found that 2FA blocks over 99.9% of automated account compromise attacks</a>. <a href=\"https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html\">Google's research with NYU and UCSD showed device-based prompts blocked 100% of automated bot attacks</a> and 99% of bulk phishing attempts."
+    answer: "Yes. <a href=\"https://arxiv.org/abs/2305.00945\">A 2023 Microsoft study of real-world Azure AD accounts found MFA reduces the risk of compromise by 99.22%</a>, and by 98.56% even when the password had already leaked. That updates <a href=\"https://www.microsoft.com/en-us/security/blog/2019/08/20/one-simple-action-you-can-take-to-prevent-99-9-percent-of-account-attacks/\">Microsoft's widely quoted 2019 figure of 99.9%</a>. <a href=\"https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html\">Google's research with NYU and UCSD showed device-based prompts blocked 100% of automated bot attacks</a> and 99% of bulk phishing attempts."
   - question: "What is the best type of 2FA?"
     answer: "Hardware security keys (like YubiKey or Google Titan) are the gold standard because they verify the website's identity and are virtually impossible to phish. Authenticator apps (Google Authenticator, Authy) are the best option for most people. SMS codes are better than nothing but vulnerable to SIM-swapping. Email-based codes are the weakest option."
   - question: "Which accounts should I enable 2FA on first?"
     answer: "Start with email — it is the master key to everything else since password resets go through it. Then prioritize banking and financial accounts, social media, cloud storage (Google Drive, Dropbox, iCloud), and work accounts."
   - question: "Is two-factor authentication inconvenient?"
     answer: "Most authenticator apps auto-fill or require a single tap. Many services only ask for the second factor on new devices or after a set period. The 10 seconds it adds is nothing compared to the hours or days spent recovering a compromised account."
-last_modified_at: 2026-05-28
+last_modified_at: 2026-11-04
 ---
 
 ## Why Two-Factor Authentication Is the Easiest Security Win You Are Not Using
@@ -50,7 +50,7 @@ Even if an attacker gets your password through a phishing email, a data breach, 
 
 ## The Numbers Don't Lie
 
-This isn't theoretical. [Microsoft's research across millions of enterprise accounts](https://www.microsoft.com/en-us/security/blog/2019/08/20/one-simple-action-you-can-take-to-prevent-99-9-percent-of-account-attacks/) found that 2FA blocks over 99.9% of automated account compromise attacks. [Google's research with NYU and UCSD](https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html) tells a similar story -- on-device prompts blocked 100% of automated bot attacks and 99% of bulk phishing attempts during their year-long study.
+This isn't theoretical. [A 2023 Microsoft study of real-world Azure AD accounts](https://arxiv.org/abs/2305.00945) found that MFA reduces the risk of account compromise by 99.22% -- and by 98.56% even when the password had already leaked. (You may have seen "99.9%" quoted elsewhere; that's [Microsoft's 2019 estimate](https://www.microsoft.com/en-us/security/blog/2019/08/20/one-simple-action-you-can-take-to-prevent-99-9-percent-of-account-attacks/), and the newer, more rigorous study is the one to cite.) The same study found dedicated authenticator apps outperformed SMS codes. [Google's research with NYU and UCSD](https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html) tells a similar story -- on-device prompts blocked 100% of automated bot attacks and 99% of bulk phishing attempts during their year-long study.
 
 For something that costs nothing and takes minutes to set up, that's an extraordinary return on investment.
 
