@@ -11,6 +11,12 @@
     
     {% include footer.html %}
   </div>
+  {%- comment -%}
+    Newsletter bot filter. Inline at the end of the body so it does not add
+    a request or block the head. Each form's onsubmit attribute cancels a
+    submit that arrives before this script has bound the real handler.
+  {%- endcomment -%}
+  <script>{% include newsletter-form.js %}</script>
 </body>
 </html>
 

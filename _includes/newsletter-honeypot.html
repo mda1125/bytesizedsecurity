@@ -1,0 +1,10 @@
+{%- comment -%}
+  Off-screen field for the newsletter bot filter. People do not see it
+  (moved off the left edge, removed from the accessibility tree, not in
+  the tab order). newsletter-form.js drops the submit when it is filled
+  and does not include this name in the SendFox request.
+{%- endcomment -%}
+<div style="position: absolute; left: -5000px;" aria-hidden="true">
+  <label for="{{ include.id }}">Company website</label>
+  <input type="text" id="{{ include.id }}" name="company_website" tabindex="-1" value="" autocomplete="off">
+</div>
