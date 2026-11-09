@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-11-09: [MCP Security Best Practices After the Mittwald Breach](https://blog.bytesizedsecurity.show/2026/11/09/mcp-security-best-practices-mittwald-breach/)
+  Explains the Mittwald incident, where an attacker exploited a flaw in the German web host's MCP server, read the session tokens of customers who used it, and compromised 56 customer projects before Mittwald spotted the activity eight days later, per Mittwald's incident report and FAQ. Covers what an MCP server is, why a stolen session token skips the password, what is still unconfirmed about Mittwald's belief the attacker used AI tools, and an MCP security checklist built on the MCP specification's security best practices: tokens issued for the server itself, least-privilege scopes, per-request authorization, action logging, and a security review before launch.
+
 - 2026-11-03: [LLMjacking: Why Cheap Unlimited AI Is a Red Flag](https://blog.bytesizedsecurity.show/2026/11/03/llmjacking-cheap-unlimited-ai-red-flag/)
   Explains LLMjacking, the theft of an organization's paid AI access with stolen cloud credentials or AI API keys, based on Google Threat Intelligence Group's November 2026 report of fraudulent charges above $100,000 in a single day and resale services such as Jet Night that Google believes run on stolen keys. Covers how to spot cheap unlimited AI deals priced far below what providers charge, and how teams protect AI API keys with spending caps, billing alerts, key rotation, and keeping keys out of code and repos.
 
