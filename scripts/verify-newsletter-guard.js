@@ -1,6 +1,7 @@
 /* Local check for the newsletter bot filter.
-   Sends nothing to SendFox: the page routes that host to an in-browser
-   stub, and the fixture action is still intercepted before the network. */
+   Sends nothing to SendFox. The route stub parses each URL and only
+   fulfills https://sendfox.com/form/3z6ooe/1ydnre. Any other request
+   whose host is exactly sendfox.com or cdn.sendfox.com is aborted. */
 const { chromium } = require('playwright');
 const fs = require('fs');
 const http = require('http');
@@ -23,6 +24,92 @@ function read(rel) {
   return fs.readFileSync(path.join(root, rel), 'utf8');
 }
 
+// Hosts are compared after URL parsing. A substring check would also
+// match sendfox.com.evil.example and https://evil.example/?q=sendfox.com.
+const SENDFOX_SIGNUP_HOST = 'sendfox.com';
+const SENDFOX_SIGNUP_PATH = '/form/3z6ooe/1ydnre';
+const SENDFOX_SCRIPT_HOST = 'cdn.sendfox.com';
+const SENDFOX_SCRIPT_PATH = '/js/form.js';
+
+function parsedUrl(raw) {
+  try {
+    return new URL(raw);
+  } catch (err) {
+    return null;
+  }
+}
+
+function isExactHttps(raw, hostname, pathname) {
+  const parsed = parsedUrl(raw);
+  return !!(parsed &&
+    parsed.protocol === 'https:' &&
+    parsed.hostname === hostname &&
+    parsed.pathname === pathname &&
+    parsed.search === '' &&
+    parsed.username === '' &&
+    parsed.password === '');
+}
+
+function isSendFoxSignupUrl(raw) {
+  return isExactHttps(raw, SENDFOX_SIGNUP_HOST, SENDFOX_SIGNUP_PATH);
+}
+
+function isSendFoxFormScript(raw) {
+  return isExactHttps(raw, SENDFOX_SCRIPT_HOST, SENDFOX_SCRIPT_PATH);
+}
+
+// signup: stub the newsletter POST. blocked: do not let any other
+// request for these hosts reach the network. other: leave it alone.
+function sendFoxGate(raw) {
+  const parsed = parsedUrl(raw);
+  if (!parsed) return 'other';
+  const knownHost = parsed.hostname === SENDFOX_SIGNUP_HOST || parsed.hostname === SENDFOX_SCRIPT_HOST;
+  if (!knownHost) return 'other';
+  if (isSendFoxSignupUrl(raw)) return 'signup';
+  return 'blocked';
+}
+
+function attributeValues(html, attrName) {
+  const marker = attrName + '="';
+  const values = [];
+  let from = 0;
+  while (from < html.length) {
+    const start = html.indexOf(marker, from);
+    if (start === -1) break;
+    const valueStart = start + marker.length;
+    const end = html.indexOf('"', valueStart);
+    if (end === -1) break;
+    values.push(html.slice(valueStart, end));
+    from = end + 1;
+  }
+  return values;
+}
+
+function assertUrlGate() {
+  check(isSendFoxSignupUrl('https://sendfox.com/form/3z6ooe/1ydnre'), 'exact signup URL is allowed');
+  check(isSendFoxFormScript('https://cdn.sendfox.com/js/form.js'), 'exact form.js URL is recognized');
+  [
+    'http://sendfox.com/form/3z6ooe/1ydnre',
+    'https://sendfox.com.evil.example/form/3z6ooe/1ydnre',
+    'https://evil.example/form/3z6ooe/1ydnre?x=sendfox.com',
+    'https://evil.example/?next=https://sendfox.com/form/3z6ooe/1ydnre',
+    'https://notsendfox.com/form/3z6ooe/1ydnre',
+    'https://user:pass@sendfox.com/form/3z6ooe/1ydnre',
+    'https://sendfox.com/form/other',
+    'https://sendfox.com/form/3z6ooe/1ydnre/extra',
+    'https://sendfox.com/form/3z6ooe/1ydnre?src=1',
+    'https://cdn.sendfox.com/js/form.js',
+    'https://sendfox.com/js/form.js'
+  ].forEach(function (raw) {
+    check(!isSendFoxSignupUrl(raw), 'signup gate rejects ' + raw);
+  });
+  check(!isSendFoxFormScript('https://cdn.sendfox.com.evil.example/js/form.js'), 'form.js gate rejects a lookalike host');
+  check(sendFoxGate('https://sendfox.com/form/3z6ooe/1ydnre') === 'signup', 'signup URL is stubbed');
+  check(sendFoxGate('https://sendfox.com/privacy') === 'blocked', 'other sendfox.com URLs are not fetched');
+  check(sendFoxGate('https://cdn.sendfox.com/js/form.js') === 'blocked', 'form.js CDN is not fetched by the stub');
+  check(sendFoxGate('https://evil.example/?q=sendfox.com') === 'other', 'unrelated hosts are not treated as SendFox');
+}
+
 function assertSource() {
   const home = read('_layouts/home.html');
   const sidebar = read('_includes/sidebar.html');
@@ -42,7 +129,7 @@ function assertSource() {
 
   check(sidebar.includes('id="sendfox_form_email" name="email" required placeholder="email@domain.com" class="h-11 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full"'), 'sidebar email field styling unchanged');
   check(sidebar.includes('data-newsletter-placement="sidebar"') && sidebar.includes('data-newsletter-src="sidebar"'), 'sidebar placement and src');
-  check(sidebar.includes('https://cdn.sendfox.com/js/form.js'), 'sidebar still loads form.js');
+  check(attributeValues(sidebar, 'src').some(isSendFoxFormScript), 'sidebar still loads form.js');
   check(!sidebar.includes('newsletter_signup'), 'sidebar no longer inlines the GA handler');
 
   check(inline.includes('data-newsletter-placement="post_end"'), 'end-of-post placement');
@@ -52,7 +139,7 @@ function assertSource() {
 
   for (const file of [home, sidebar, inline]) {
     check(file.includes('newsletter-honeypot.html'), 'form includes the shared honeypot');
-    check(file.includes('action="https://sendfox.com/form/3z6ooe/1ydnre"'), 'SendFox action kept');
+    check(attributeValues(file, 'action').some(isSendFoxSignupUrl), 'SendFox action kept');
     check(file.includes('if(!this.dataset.newsletterBound){event.preventDefault();event.stopImmediatePropagation();}'), 'early submit shield');
   }
 
@@ -182,6 +269,7 @@ function parseBody(raw) {
 
 async function main() {
   assertSource();
+  assertUrlGate();
   fs.mkdirSync(path.join(root, 'scripts/fixtures'), { recursive: true });
   fs.writeFileSync(path.join(root, 'scripts/fixtures/newsletter-guard.html'), fixtureHtml());
 
@@ -198,21 +286,26 @@ async function main() {
     await page.clock.install({ time: new Date('2026-11-09T12:00:00Z') });
     await page.route('**/*', async (route) => {
       const url = route.request().url();
-      if (url.includes('sendfox.com')) {
+      const gate = sendFoxGate(url);
+      if (gate === 'signup') {
         hits.push({
           url,
           method: route.request().method(),
           body: route.request().postData() || ''
         });
         if (fulfillDelayMs) await new Promise((resolve) => setTimeout(resolve, fulfillDelayMs));
-        route.fulfill({
+        await route.fulfill({
           status: nextStatus,
           contentType: 'application/json',
           body: nextBody
         });
         return;
       }
-      route.continue();
+      if (gate === 'blocked') {
+        await route.abort();
+        return;
+      }
+      await route.continue();
     });
     page.on('dialog', async (dialog) => {
       page._dialogs = page._dialogs || [];
@@ -372,7 +465,7 @@ async function main() {
       check(parsed.website === null, placement + ' does not post company_website');
       check(parsed.keys.indexOf('company_website') === -1, placement + ' body keys omit the honeypot (' + parsed.keys.join(',') + ')');
       check(hits[0].method === 'POST', placement + ' uses POST');
-      check(hits[0].url === 'https://sendfox.com/form/3z6ooe/1ydnre', placement + ' posts to the SendFox form URL');
+      check(isSendFoxSignupUrl(hits[0].url), placement + ' posts to the exact SendFox form URL (' + hits[0].url + ')');
       const events = await page.evaluate(() => JSON.parse(sessionStorage.getItem('gtag-events') || '[]'));
       check(events.length === 1 && events[0][0] === 'event' && events[0][1] === 'newsletter_signup', placement + ' fires newsletter_signup (' + JSON.stringify(events) + ')');
       check(events[0] && events[0][2] && events[0][2].placement === placement, placement + ' GA placement is ' + placement);
