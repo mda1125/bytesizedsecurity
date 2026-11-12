@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-11-12: [A Whiteboard, a Shared Login, and the Hotel Booking Scam](https://blog.bytesizedsecurity.show/2026/11/12/hotel-booking-scam-shared-login-whiteboard/)
+  Explains a London hotel writing its Booking.com admin username and password on a whiteboard behind the front desk, in view of anyone walking past an open door, per The Register's 12 Nov 2026 report. Covers how a hotel booking account can be used to message real guests with fake payment requests, Action Fraud's January 2025 alert (532 UK reports between June 2023 and September 2024, and £370,000 lost), why shared logins end up on walls, and the fix: one login per person, two-factor authentication, and a password manager, plus how travelers should check a payment request against their booking confirmation.
+
 - 2026-11-09: [MCP Security Best Practices After the Mittwald Breach](https://blog.bytesizedsecurity.show/2026/11/09/mcp-security-best-practices-mittwald-breach/)
   Explains the Mittwald incident, where an attacker exploited a flaw in the German web host's MCP server, read the session tokens of customers who used it, and compromised 56 customer projects before Mittwald spotted the activity eight days later, per Mittwald's incident report and FAQ. Covers what an MCP server is, why a stolen session token skips the password, what is still unconfirmed about Mittwald's belief the attacker used AI tools, and an MCP security checklist built on the MCP specification's security best practices: tokens issued for the server itself, least-privilege scopes, per-request authorization, action logging, and a security review before launch.
 
