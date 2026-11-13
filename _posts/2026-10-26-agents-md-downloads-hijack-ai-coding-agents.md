@@ -1,7 +1,7 @@
 ---
-description: "A planted AGENTS.md in Downloads told an AI coding agent to install malware. What Forever Security found, what is unverified, and how to stay safe."
+description: "A planted AGENTS.md in Downloads told a coding agent to install function-color. Forever Security stopped it. Never start Codex or Claude Code in Downloads."
 layout: post
-title: "AGENTS.md in Downloads: Keep AI Coding Agents Safe (2026)"
+title: "AGENTS.md in Downloads Told an Agent to Install Malware"
 slug: agents-md-downloads-hijack-ai-coding-agents
 category: "Threats"
 tags: ["AGENTS.md", "AI Agent Security", "Prompt Injection"]
