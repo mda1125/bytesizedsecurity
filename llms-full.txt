@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-11-13: [Don't Trust a Familiar Face in a Video Call Scam](https://blog.bytesizedsecurity.show/2026/11/13/video-call-scam-facestealer-webcam/)
+  Explains the FBI's 12 November 2026 FLASH alert on FaceStealer, a North Korean scheme in which actors hijack Telegram, LinkedIn, Slack, or Discord accounts, replay stolen webcam clips on fake Zoom or Teams calls, and push a fake fix to install malware. Covers the FBI's figures (more than $400 million stolen over 18 months, over 900 victim webcam videos seized), The Record's report of a same-week disruption of cloud infrastructure, and practical steps for everyday users, developers, and open-source maintainers: join through the official app with an invite code, keep the camera off until the conversation is live, never run a command or install an update because someone on a call asks, and confirm the meeting on a second channel.
+
 - 2026-11-12: [A Whiteboard, a Shared Login, and the Hotel Booking Scam](https://blog.bytesizedsecurity.show/2026/11/12/hotel-booking-scam-shared-login-whiteboard/)
   Explains a London hotel writing its Booking.com admin username and password on a whiteboard behind the front desk, in view of anyone walking past an open door, per The Register's 12 Nov 2026 report. Covers how a hotel booking account can be used to message real guests with fake payment requests, Action Fraud's January 2025 alert (532 UK reports between June 2023 and September 2024, and £370,000 lost), why shared logins end up on walls, and the fix: one login per person, two-factor authentication, and a password manager, plus how travelers should check a payment request against their booking confirmation.
 
