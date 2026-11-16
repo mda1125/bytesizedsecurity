@@ -32,6 +32,9 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ### 2026
 
+- 2026-11-15: [Fireworks AI Breach: Third-Party Vendor Risk Lessons](https://blog.bytesizedsecurity.show/2026/11/15/fireworks-ai-breach-third-party-vendor-risk/)
+  Explains the Fireworks AI breach, in which the inference provider found unauthorized use of its internal credentials on October 6, 2026, per its first bulletin, and Uber, Cursor, and Notion each trace their own incident to that vendor. Covers Uber's notice that an attacker used the vendor's valid credentials to read driver's license data from a cloud environment Uber built for the vendor and that alerts never fired, Cursor's report that a key it issued to Fireworks opened a bucket of coding agent traces, where unredacted credentials led to a tampered Claude Code extension, Notion's report that Notion AI chat transcripts were exposed, and practical steps: scope and network-restrict every vendor key, send the minimum data, know where secrets live, and practice cutting a vendor off fast.
+
 - 2026-11-13: [Don't Trust a Familiar Face in a Video Call Scam](https://blog.bytesizedsecurity.show/2026/11/13/video-call-scam-facestealer-webcam/)
   Explains the FBI's 12 November 2026 FLASH alert on FaceStealer, a North Korean scheme in which actors hijack Telegram, LinkedIn, Slack, or Discord accounts, replay stolen webcam clips on fake Zoom or Teams calls, and push a fake fix to install malware. Covers the FBI's figures (more than $400 million stolen over 18 months, over 900 victim webcam videos seized), The Record's report of a same-week disruption of cloud infrastructure, and practical steps for everyday users, developers, and open-source maintainers: join through the official app with an invite code, keep the camera off until the conversation is live, never run a command or install an update because someone on a call asks, and confirm the meeting on a second channel.
 
