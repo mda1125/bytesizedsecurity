@@ -1,7 +1,7 @@
 ---
 description: "CISSP's honest 2026 review of the Google Cybersecurity Certificate: real cost, two free paths, Security+ comparison, and whether it's worth it."
 layout: post
-title: "Is the Google Cybersecurity Certificate Worth It? (2026 Review)"
+title: "Is the Google Cybersecurity Certificate Worth It in 2026?"
 slug: google-cybersecurity-certification-review
 category: Career
 tags: ["Google Cybersecurity Certification", "Certifications", "Career"]

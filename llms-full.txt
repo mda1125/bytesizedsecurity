@@ -140,7 +140,7 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 - 2026-06-28: [How to Detect North Korean IT Workers (2026 Playbook)](https://blog.bytesizedsecurity.show/2026/06/28/how-to-detect-north-korean-it-workers/)
   How to detect North Korean IT workers in remote hiring: laptop farm signals, interview red flags, and the post-hire controls that actually catch them.
 
-- 2026-06-25: [Is the Google Cybersecurity Certificate Worth It? (2026 Review)](https://blog.bytesizedsecurity.show/2026/06/25/google-cybersecurity-certification-review/)
+- 2026-06-25: [Is the Google Cybersecurity Certificate Worth It in 2026?](https://blog.bytesizedsecurity.show/2026/06/25/google-cybersecurity-certification-review/)
   CISSP's honest 2026 review of the Google Cybersecurity Certificate: real cost, two free paths, Security+ comparison, and whether it's worth it.
 
 - 2026-06-21: [Pokemon Go Trained Military Drone Tech: A Consent Failure](https://blog.bytesizedsecurity.show/2026/06/21/pokemon-go-military-drones-consent-laundering/)
