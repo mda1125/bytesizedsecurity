@@ -127,7 +127,8 @@ function assertSource() {
   check(!home.includes('name="a_password"'), 'homepage does not post a visible a_password field');
   check(!home.includes('newsletter_signup'), 'homepage no longer inlines the GA handler');
 
-  check(sidebar.includes('id="sendfox_form_email" name="email" required placeholder="email@domain.com" class="h-11 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full"'), 'sidebar email field styling unchanged');
+  check(sidebar.includes('<label for="sendfox_form_email" class="sr-only">Email address</label>'), 'sidebar email label is tied to the input');
+  check(sidebar.includes('id="sendfox_form_email" name="email" required autocomplete="email" inputmode="email" placeholder="email@domain.com" class="h-11 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-base px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full"'), 'sidebar email field is text-base with email autofill');
   check(sidebar.includes('data-newsletter-placement="sidebar"') && sidebar.includes('data-newsletter-src="sidebar"'), 'sidebar placement and src');
   check(attributeValues(sidebar, 'src').some(isSendFoxFormScript), 'sidebar still loads form.js');
   check(!sidebar.includes('newsletter_signup'), 'sidebar no longer inlines the GA handler');
