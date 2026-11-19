@@ -5,14 +5,14 @@ title: "How to Start a Career in Cybersecurity (2026 Guide)"
 category: DevSecOps
 tags: ["cybersecurity careers", "career guide", "job market", "hiring"]
 author: Marc
-excerpt: "Everyone says break into security. Almost nobody tells you the truth about how the path works now, or how to walk it anyway. This is the honest guide on how to start a career in cybersecurity — from someone who spent 19 years being told he lacked cyber experience."
+excerpt: "Everyone says break into security. Almost nobody tells you the truth about how the path works now, or how to walk it anyway. This is the honest guide on how to start a career in cybersecurity, from someone who spent 19 years being told he lacked cyber experience."
 image: "/assets/img/posts/cybersecurity-career-guide.webp"
 image_width: 1024
 image_height: 576
 permalink: /cybersecurity-career-guide/
 faq:
   - question: "Is there really a cybersecurity talent shortage?"
-    answer: "Not exactly. The industry has a trust problem, a pipeline problem, and a mentorship problem — not a talent shortage. Entry-level postings demand years of experience while companies stopped growing junior talent. Thousands of qualified graduates cannot land interviews while organizations insist nobody good is available."
+    answer: "Not exactly. The industry has a trust problem, a pipeline problem, and a mentorship problem, not a talent shortage. Entry-level postings demand years of experience while companies stopped growing junior talent. Thousands of qualified graduates cannot land interviews while organizations insist nobody good is available."
   - question: "How much do cybersecurity professionals make in 2026?"
     answer: "US cybersecurity salaries in 2026 range from roughly $75K for entry-level SOC analysts to $250K+ base for CISOs, with top CISO total-comp packages reaching $7–8M at major tech employers. Cloud security and application security engineers at the mid-senior level earn the steepest comp growth ($145K–$210K), per Robert Half's 2026 Tech Salary Guide and Levels.fyi data."
   - question: "Can you make $200K a year in cybersecurity?"
@@ -28,7 +28,7 @@ faq:
   - question: "How do I start a career in cybersecurity with no experience?"
     answer: "Start in any IT role that puts you near real systems (help desk, sysadmin, developer, cloud support). Become the security person in your current job by patching, hardening, and reading logs. Build a home lab with Active Directory and a SIEM, document it on GitHub, pick one specialty (cloud, appsec, or IR), and network with one person already doing your target role."
   - question: "What is the best cybersecurity career path?"
-    answer: "There is no single best path, but the most effective sequence is: (1) get into IT anywhere, (2) own security tasks in your current role, (3) build visible proof through a home lab and public write-ups, and (4) specialize in one area with unmet demand — cloud security, application security, or incident response — rather than staying a generalist."
+    answer: "There is no single best path, but the most effective sequence is: (1) get into IT anywhere, (2) own security tasks in your current role, (3) build visible proof through a home lab and public write-ups, and (4) specialize in one area with unmet demand (cloud security, application security, or incident response) rather than staying a generalist."
 last_modified_at: 2026-10-25
 # Hand-picked Related Briefings cards (see _includes/related-briefings.html).
 related:
@@ -95,10 +95,10 @@ Pay varies wildly by role, level, region, and industry, so any single "average" 
 | Security Engineer | Mid | $115K – $155K ([Robert Half 2026 Tech Salary Guide](https://www.roberthalf.com/us/en/insights/salary-guide/technology)) | CySA+ / SSCP | Build detection logic, harden infrastructure, run vulnerability management programs |
 | Penetration Tester | Mid – Senior | $120K – $170K ([Robert Half 2026](https://www.roberthalf.com/us/en/insights/salary-guide/technology)) | OSCP | Run engagements, write exploit chains, deliver findings and remediation to clients |
 | Cloud Security Engineer | Mid – Senior | $145K – $200K ([Levels.fyi composite, 2026](https://www.levels.fyi/t/security-engineer)) | AWS / Azure Security Specialty | Architect IAM, secure cloud workloads, automate guardrails and policy-as-code |
-| Application Security Engineer | Mid – Senior | $150K – $210K ([Levels.fyi composite, 2026](https://www.levels.fyi/t/security-engineer)) | (no single required cert — portfolio matters more) | SDLC reviews, threat modeling, secure-code training, SAST/DAST tooling ownership |
+| Application Security Engineer | Mid – Senior | $150K – $210K ([Levels.fyi composite, 2026](https://www.levels.fyi/t/security-engineer)) | (no single required cert: portfolio matters more) | SDLC reviews, threat modeling, secure-code training, SAST/DAST tooling ownership |
 | CISO / Director of Security | Executive | $250K – $500K+ base; top packages $7M – $8M ([NYT, 5/24/2026](https://www.nytimes.com/2026/05/24/technology/ai-cybersecurity-jobs.html)) | CISSP / CISM | Set security strategy, manage budget, brief the board, lead breach response |
 
-A few honest caveats on those numbers. CyberSeek and BLS lump many roles together under one occupation code, so the entry-level range understates what you can earn at a major tech company and overstates what you might be offered at a regional bank. Robert Half's guide is widely cited but skews toward roles their recruiters actually place — meaning Fortune 1000 and mid-market employers. Levels.fyi covers total comp (base + equity + bonus) at primarily tech-sector employers, which is why those numbers run higher. Use the table as a reality check on offers and counters, not as a single source of truth.
+A few honest caveats on those numbers. CyberSeek and BLS lump many roles together under one occupation code, so the entry-level range understates what you can earn at a major tech company and overstates what you might be offered at a regional bank. Robert Half's guide is widely cited but skews toward roles their recruiters actually place, meaning Fortune 1000 and mid-market employers. Levels.fyi covers total comp (base + equity + bonus) at primarily tech-sector employers, which is why those numbers run higher. Use the table as a reality check on offers and counters, not as a single source of truth.
 
 What this table tells you about strategy: the steepest comp curve sits in cloud security and application security at the mid-senior level, which is exactly the [niching advice in the breaking-in playbook](#how-to-break-in). The generalist SOC analyst path tops out earlier than the specialist paths do, and the gap widens every year.
 
@@ -176,7 +176,7 @@ Focus on segmentation, firewall best practices, and detection. You already under
 
 ### If you are switching careers from outside tech
 
-Computer science gives you a more versatile foundation than a narrow security degree, and starting in an IT role before pivoting is the path most successful security pros took. Learn how the systems work first. Learn to secure them second. The order matters more than the speed. If you want a structured, low-cost on-ramp before committing to a degree or bootcamp, see my honest [review of the Google Cybersecurity Certificate](/2026/06/25/google-cybersecurity-certification-review/) — including two paths that make it free.
+Computer science gives you a more versatile foundation than a narrow security degree, and starting in an IT role before pivoting is the path most successful security pros took. Learn how the systems work first. Learn to secure them second. The order matters more than the speed. If you want a structured, low-cost on-ramp before committing to a degree or bootcamp, see my honest [review of the Google Cybersecurity Certificate](/2026/06/25/google-cybersecurity-certification-review/), including two paths that make it free.
 
 ## Is 30, 40, or 50 too old to start a career in cybersecurity? {#too-old}
 
@@ -219,7 +219,7 @@ If you skipped the data-driven method and just want a quick reality check on the
 | [AWS Certified Security – Specialty](https://aws.amazon.com/certification/certified-security-specialty/) | Mid – Senior | $300 | 6 – 10 weeks (assumes prior AWS experience) | Cloud security engineers | High and growing |
 | [ISACA CISM](https://www.isaca.org/credentialing/cism) | Senior | $760 non-member / $575 member | 3 – 4 months | Audit, GRC, security management, regulated industries | High in finance and healthcare |
 
-Two things to read off this table before you spend money. First, the cost of the exam is the smallest line item in your real total — study guides, lab time, and the months of focused work after-hours add up to far more than the voucher. Plan for the full investment, not the sticker price. Second, demand is contextual. Security+ is mandatory for many DoD-adjacent roles and useless for many tech-startup roles. CISSP is gatekeeping for senior corporate roles and gets eye-rolled by some practitioner communities. Always run the [two-step method](#certifications) on real postings for *your* target role before you buy.
+Two things to read off this table before you spend money. First, the cost of the exam is the smallest line item in your real total. Study guides, lab time, and the months of focused work after-hours add up to far more than the voucher. Plan for the full investment, not the sticker price. Second, demand is contextual. Security+ is mandatory for many DoD-adjacent roles and useless for many tech-startup roles. CISSP is gatekeeping for senior corporate roles and gets eye-rolled by some practitioner communities. Always run the [two-step method](#certifications) on real postings for *your* target role before you buy.
 
 ## How do you get past automated cybersecurity hiring systems? {#ats-filters}
 
@@ -227,7 +227,7 @@ Two things to read off this table before you spend money. First, the cost of the
 
 You will send applications into what feels like a void. Two hundred submissions, zero replies, no feedback. The silence is not a verdict on you. Swipe culture infected hiring, and an algorithm now decides whether a human ever sees your resume. Understanding the machine is your first step to getting past it.
 
-We've written extensively about this problem. [The cybersecurity job market is fundamentally broken](/2026/02/18/navigating-the-broken-cybersecurity-job-market/) — AI filters reject qualified candidates while letting buzzword-stuffed fake resumes through. The hiring managers in that thread were clear: referrals bypass the filter entirely.
+We've written extensively about this problem. [The cybersecurity job market is fundamentally broken](/2026/02/18/navigating-the-broken-cybersecurity-job-market/). AI filters reject qualified candidates while letting buzzword-stuffed fake resumes through. The hiring managers in that thread were clear: referrals bypass the filter entirely.
 
 Most companies run an applicant tracking system. It scans your resume for keywords before a person reads a word of it. Miss the terms a role asks for and you vanish, no matter how qualified you are. So stop firing one generic resume at fifty openings. Read each job description, find the exact language it uses for skills and tools, and mirror those words honestly where they fit your real experience. You are not lying. You are translating your background into the language the filter recognizes.
 
@@ -265,7 +265,7 @@ What that means for you: the routine version of the entry-level job is going awa
 
 ## When are you actually ready to apply for cybersecurity jobs? {#when-ready}
 
-> **Direct answer:** Readiness is a set of behaviors, not a feeling or a year count. The candidate who gets the call is the one already acting like a defender today — patching, documenting in public, asking gap-exposing questions — before the title arrives.
+> **Direct answer:** Readiness is a set of behaviors, not a feeling or a year count. The candidate who gets the call is the one already acting like a defender today (patching, documenting in public, asking gap-exposing questions) before the title arrives.
 
 People wait to feel ready before they apply, before they call themselves a security person, before they claim the work. Readiness is not a feeling, and it does not arrive on a schedule. Readiness is how you show up where you stand right now.
 
