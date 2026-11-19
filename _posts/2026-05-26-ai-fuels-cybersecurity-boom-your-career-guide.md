@@ -1,7 +1,7 @@
 ---
 description: "AI-generated code created a new wave of security demand. Job postings up 11%, pay spiking. The skills, roles, and strategy that get you hired in 2026."
 layout: post
-title: "Cybersecurity Hiring Is Up 11% in 2026 — Here's What Changed"
+title: "Cybersecurity Hiring Is Up 11% in 2026: Here's What Changed"
 category: DevSecOps
 tags: ["AI in Cyber", "Cybersecurity Careers", "Future of Work"]
 author: Marc

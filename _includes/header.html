@@ -35,7 +35,7 @@
           <span class="text-[18px]">{% include icon.html name="podcasts" %}</span> Podcast
         </a>
         {% if site.nonprofit and site.donate_url %}
-        <a class="py-2 flex items-center gap-1 text-primary hover:underline transition-colors" href="{{ site.donate_url }}" target="_blank" rel="noopener" title="Donate — {{ site.title }} is a 501(c)(3) nonprofit">
+        <a class="py-2 flex items-center gap-1 text-primary hover:underline transition-colors" href="{{ site.donate_url }}" target="_blank" rel="noopener" title="Donate: {{ site.title }} is a 501(c)(3) nonprofit">
           <span class="text-[18px]">{% include icon.html name="favorite" %}</span> Donate
         </a>
         {% endif %}
