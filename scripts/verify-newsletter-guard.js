@@ -118,8 +118,10 @@ function assertSource() {
   const hp = read('_includes/newsletter-honeypot.html');
   const layout = read('_layouts/default.html');
 
-  check(home.includes('max-[375px]:min-w-0'), 'homepage keeps max-[375px]:min-w-0');
-  check(home.includes('class="h-10 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary flex-1 max-[375px]:min-w-0 sm:w-48"'), 'homepage email input classes unchanged');
+  check(home.includes('w-full min-w-0 sm:w-48'), 'homepage input is full width when stacked');
+  check(home.includes('<label for="home_briefing_email" class="sr-only">Email address</label>'), 'homepage email label is tied to the input');
+  check(home.includes('id="home_briefing_email" name="email" required autocomplete="email" inputmode="email"'), 'homepage email autofill attributes');
+  check(home.includes('class="h-10 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-base px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full min-w-0 sm:w-48"'), 'homepage email field is text-base');
   check(home.includes('>Get it free</button>'), 'homepage button text');
   check(home.includes('data-newsletter-placement="home"'), 'homepage placement');
   check(home.includes('data-newsletter-src="home"'), 'homepage src');
@@ -185,7 +187,7 @@ function formHtml(opts) {
 }
 
 function fixtureHtml() {
-  const homeEmail = '<input type="email" name="email" required placeholder="email@domain.com" class="h-10 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary flex-1 max-[375px]:min-w-0 sm:w-48">';
+  const homeEmail = '<input type="email" id="home_briefing_email" name="email" required autocomplete="email" inputmode="email" placeholder="email@domain.com" class="h-10 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-base px-3 focus:ring-1 focus:ring-primary focus:border-primary flex-1 min-w-0 sm:w-48">';
   const stackEmail = '<input type="email" name="email" required placeholder="email@domain.com" class="h-11 bg-white border border-gray-300 text-sm px-3 w-full">';
   const button = 'h-10 px-4 bg-gray-900 text-white text-sm font-bold uppercase tracking-wide whitespace-nowrap';
   return '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +

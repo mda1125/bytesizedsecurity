@@ -127,7 +127,7 @@ function assertSources() {
   check(signup.includes('class="h-11 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-base px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full"'), 'mid-post input classes unchanged');
   check(signup.includes('class="sr-only">Email address</label>'), 'mid-post screen-reader label unchanged');
   check(!signup.includes('inputmode="email"'), 'mid-post inputmode left alone');
-  check(home.includes('class="h-10 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-sm px-3 focus:ring-1 focus:ring-primary focus:border-primary flex-1 max-[375px]:min-w-0 sm:w-48"'), 'homepage input classes unchanged');
+  check(home.includes('class="h-10 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-base px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full min-w-0 sm:w-48"'), 'homepage input uses text-base');
 
   check(guard.includes('var MIN_MS = 3000;'), 'shared guard still waits 3 seconds');
   check(guard.includes("window.gtag('event', 'newsletter_signup'"), 'shared guard still fires newsletter_signup');
@@ -347,7 +347,7 @@ async function main() {
         sideFont: getComputedStyle(sideInput).fontSize
       };
     });
-    check(home.homeFont === '14px' && home.homeClass.includes('text-sm'), 'homepage input still renders at 14px (' + home.homeFont + ')');
+    check(home.homeFont === '16px' && home.homeClass.includes('text-base'), 'homepage input renders at 16px (' + home.homeFont + ')');
     check(home.sideFont === '16px', 'homepage sidebar input is 16px (' + home.sideFont + ')');
 
     await page.setViewportSize({ width: 1280, height: 900 });
