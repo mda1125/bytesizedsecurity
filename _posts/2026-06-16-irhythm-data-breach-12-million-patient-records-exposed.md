@@ -33,6 +33,8 @@ related:
 
 If a letter about iRhythm showed up in your mailbox, or one you have seen described as the "Cyberscout letter," here is what it means. Cyberscout is a breach-response company that organizations hire to handle notifications and call centers, which is why the two names travel together in searches. The letter itself comes from iRhythm.
 
+If your letter offers Cyberscout credit monitoring and names Boston Health Care for the Homeless Program, see [what the notice got wrong for 184,914 patients](/2026/08/12/data-breach-notification-184914-homeless/).
+
 **What was exposed.** According to [iRhythm's October 2 notice](https://investors.irhythmtech.com/news/news-details/2026/iRhythm-Provides-Update-on-Cybersecurity-Incident-Previously-Disclosed-in-June-2026/default.aspx), the data may include your:
 
 - Name, address, email address, and phone number
