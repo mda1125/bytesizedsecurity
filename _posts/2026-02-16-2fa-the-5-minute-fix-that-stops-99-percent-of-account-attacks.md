@@ -11,13 +11,13 @@ image_width: 1080
 image_height: 1350
 faq:
   - question: "What is two-factor authentication (2FA)?"
-    answer: "Two-factor authentication adds a second verification step when you log in. Instead of just a password (something you know), you also prove your identity with something you have — like your phone or a hardware security key. Even if an attacker gets your password, they cannot access your account without the second factor."
+    answer: "Two-factor authentication adds a second verification step when you log in. Instead of just a password (something you know), you also prove your identity with something you have, like your phone or a hardware security key. Even if an attacker gets your password, they cannot access your account without the second factor."
   - question: "Does 2FA really stop 99% of attacks?"
     answer: "Yes. <a href=\"https://arxiv.org/abs/2305.00945\">A 2023 Microsoft study of real-world Azure AD accounts found MFA reduces the risk of compromise by 99.22%</a>, and by 98.56% even when the password had already leaked. That updates <a href=\"https://www.microsoft.com/en-us/security/blog/2019/08/20/one-simple-action-you-can-take-to-prevent-99-9-percent-of-account-attacks/\">Microsoft's widely quoted 2019 figure of 99.9%</a>. <a href=\"https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html\">Google's research with NYU and UCSD showed device-based prompts blocked 100% of automated bot attacks</a> and 99% of bulk phishing attempts."
   - question: "What is the best type of 2FA?"
     answer: "Hardware security keys (like YubiKey or Google Titan) are the gold standard because they verify the website's identity and are virtually impossible to phish. Authenticator apps (Google Authenticator, Authy) are the best option for most people. SMS codes are better than nothing but vulnerable to SIM-swapping. Email-based codes are the weakest option."
   - question: "Which accounts should I enable 2FA on first?"
-    answer: "Start with email — it is the master key to everything else since password resets go through it. Then prioritize banking and financial accounts, social media, cloud storage (Google Drive, Dropbox, iCloud), and work accounts."
+    answer: "Start with email. It is the master key to everything else since password resets go through it. Then prioritize banking and financial accounts, social media, cloud storage (Google Drive, Dropbox, iCloud), and work accounts."
   - question: "Is two-factor authentication inconvenient?"
     answer: "Most authenticator apps auto-fill or require a single tap. Many services only ask for the second factor on new devices or after a set period. The 10 seconds it adds is nothing compared to the hours or days spent recovering a compromised account."
 last_modified_at: 2026-11-04
@@ -102,7 +102,7 @@ Most authenticator apps auto-fill or require a single tap. Many services only as
 Attackers don't just steal data -- they use compromised accounts to send phishing emails to your contacts, spread malware, or impersonate you. Your account has value even if you think it doesn't.
 
 "My password is strong enough."
-Even the strongest password in the world is useless if it's been leaked in a data breach. Over 24 billion credentials have been exposed in known breaches. Chances are, at least one of your passwords is already out there. Check at haveibeenpwned.com. And modern [infostealers don't just grab passwords — they harvest your entire identity](/2026/02/21/infostealers-from-passwords-to-your-full-identity/) from a single infection.
+Even the strongest password in the world is useless if it's been leaked in a data breach. Over 24 billion credentials have been exposed in known breaches. Chances are, at least one of your passwords is already out there. Check at haveibeenpwned.com. And modern [infostealers don't just grab passwords. They harvest your entire identity](/2026/02/21/infostealers-from-passwords-to-your-full-identity/) from a single infection.
 
 ## The Bottom Line
 
@@ -112,4 +112,4 @@ If you only make one security improvement this year, make it this one. Start wit
 
 That's the best ROI in personal security -- and you don't need a cert or a security degree to do it.
 
-While you're hardening your accounts, consider [freezing your credit](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/) as well — it takes 15 minutes and stops most identity theft before it starts.
+While you're hardening your accounts, consider [freezing your credit](/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/) as well. It takes 15 minutes and stops most identity theft before it starts.
