@@ -1,0 +1,41 @@
+{%- comment -%}
+  In-article Security Briefing box. Drop it into a post where readers
+  actually stop. The sidebar, homepage, and end-of-post forms stay as
+  they are. newsletter-form.js binds every form with
+  data-newsletter-placement, so this box gets the same honeypot,
+  3-second guard, capture-phase single submit, newsletter_signup event,
+  and /subscribed redirect. SendFox invisible reCAPTCHA is off, so the
+  form does not send a token.
+
+  One box per page unless you pass a distinct id. Defaults target a
+  mid-post placement.
+
+  Parameters:
+    heading    box title (default: Security Briefing)
+    copy       sentence under the title
+    id         id prefix (default: mid)
+    placement  gtag placement (default: mid_post)
+    src        query value on /subscribed (default: mid-post)
+{%- endcomment -%}
+{%- assign ns_id = include.id | default: "mid" -%}
+{%- assign ns_heading = include.heading | default: "Security Briefing" -%}
+{%- assign ns_copy = include.copy | default: "Get one breach breakdown a week, free. Unsubscribe in one click." -%}
+{%- assign ns_placement = include.placement | default: "mid_post" -%}
+{%- assign ns_src = include.src | default: "mid-post" -%}
+{%- assign ns_honeypot = ns_id | append: "-company-website" -%}
+<aside class="newsletter-signup mt-8 mb-8 bg-surface p-5 border border-gray-200 dark:border-gray-700" aria-labelledby="{{ ns_id | escape }}-briefing-heading">
+  {%- comment -%}
+    This box sits inside .prose. The prose h3 rule adds a top margin that
+    the end-of-post box never sees, because that box is outside .prose.
+    The inline margin cancels it so the title sits flush, same as the
+    other Security Briefing boxes.
+  {%- endcomment -%}
+  <h3 id="{{ ns_id | escape }}-briefing-heading" class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 border-b-2 border-primary pb-2 mb-4" style="margin-top: 0">{{ ns_heading | escape }}</h3>
+  <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ ns_copy | escape }}</p>
+  <form method="post" action="https://sendfox.com/form/3z6ooe/1ydnre" class="flex flex-col gap-3" id="{{ ns_id | escape }}-briefing-form" data-async="true" data-recaptcha="false" data-newsletter-placement="{{ ns_placement | escape }}" data-newsletter-src="{{ ns_src | escape }}" data-newsletter-subscribed="{{ '/subscribed' | relative_url }}" onsubmit="if(!this.dataset.newsletterBound){event.preventDefault();event.stopImmediatePropagation();}">
+    <label for="{{ ns_id | escape }}_briefing_email" class="sr-only">Email address</label>
+    <input type="email" id="{{ ns_id | escape }}_briefing_email" name="email" required autocomplete="email" placeholder="email@domain.com" class="h-11 bg-white dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-500 border border-gray-300 dark:border-gray-700 text-base px-3 focus:ring-1 focus:ring-primary focus:border-primary w-full">
+    {% include newsletter-honeypot.html id=ns_honeypot %}
+    <button type="submit" class="h-11 bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 text-sm font-bold uppercase tracking-wide hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition-colors cursor-pointer">Get it free</button>
+  </form>
+</aside>
