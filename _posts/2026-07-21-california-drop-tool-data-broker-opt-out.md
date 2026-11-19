@@ -9,7 +9,7 @@ excerpt: "One form. 614 data brokers. California's new DROP tool lets residents 
 image: "/assets/img/posts/california-drop-tool-data-broker-opt-out.webp"
 image_width: 1200
 image_height: 630
-last_modified_at: 2026-07-21
+last_modified_at: 2026-11-19
 slug: california-drop-tool-data-broker-opt-out
 faq:
   - question: "What is the California DROP tool?"
@@ -93,7 +93,7 @@ Filing before the deadline costs you nothing and puts you at the front of the li
 
 This is where honesty matters more than hype. DROP does a lot for what it covers, but it has clear edges.
 
-Brokers keep collecting. A deletion clears what they hold today. It does not stop them from rebuilding a profile from tomorrow's data. New brokers register with the state over time, which is why the covered count keeps rising past 614. And plenty of companies that hold huge amounts of your data, Google and Meta among them, are not on the broker registry at all, so DROP never reaches them.
+Brokers keep collecting. A deletion clears what they hold today. It does not stop them from rebuilding a profile from tomorrow's data. New brokers register with the state over time, which is why the covered count keeps rising past 614. And plenty of companies that hold huge amounts of your data, Google and Meta among them, are not on the broker registry at all, so DROP never reaches them. For Google, Meta, and brokers DROP does not cover, follow the guide to [remove personal information from the internet](/remove-personal-information-from-internet/).
 
 The way your data ends up with these brokers in the first place is often buried in consent screens you clicked through years ago. If you want to see how that pipeline works, read our breakdown of [how consent laundering moves your data from an app to a broker](/2026/06/21/pokemon-go-military-drones-consent-laundering/). The takeaway is that opting out is not a one-time chore. Plan to refile every several months and pair DROP with the rest of your privacy hygiene.
 

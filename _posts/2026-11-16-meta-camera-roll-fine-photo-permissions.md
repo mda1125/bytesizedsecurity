@@ -10,7 +10,7 @@ excerpt: "Italy's privacy regulator fined Meta €805 million over a Facebook fo
 image: "/assets/img/posts/meta-camera-roll-fine-photo-permissions.webp"
 image_width: 1200
 image_height: 630
-last_modified_at: 2026-11-16
+last_modified_at: 2026-11-19
 faq:
   - question: "Why did Italy fine Meta 805 million euros?"
     answer: "Per the <a href=\"https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10321080\">Garante's statement</a>, the Facebook app for Android accessed photos, videos, and related metadata on Italian users' phones for its camera roll suggestions feature without specific consent and without adequate information. The regulator found one app-wide permission, a generic notice about enabling other features, and the feature set to on by default. Meta says it will appeal."
@@ -132,7 +132,7 @@ Per [Apple's Photos and Privacy page](https://www.apple.com/legal/privacy/data/e
 3. Tap an app with Full Access.
 4. Choose Limited Access and pick the photos it needs, or choose None.
 
-Apple's page explains the stakes. Full access grants the app your photos and videos, including hidden photos even if the album is locked. Photo access also includes metadata such as location and depth information. When an app shows the system Photo Picker, you select only the photo you want to share.
+Apple's page explains the stakes. Full access grants the app your photos and videos, including hidden photos even if the album is locked. Photo access also includes metadata such as location and depth information. If a photo is already public, see our guide to [removing personal information from the internet](/remove-personal-information-from-internet/). When an app shows the system Photo Picker, you select only the photo you want to share.
 
 For a wider view, Apple's [iPhone User Guide](https://support.apple.com/guide/iphone/control-access-to-information-in-apps-iph251e92810/ios) describes the App Privacy Report under Settings > Privacy & Security. It shows how apps use the permissions you granted.
 
