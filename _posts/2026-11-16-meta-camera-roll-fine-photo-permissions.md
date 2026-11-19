@@ -132,7 +132,7 @@ Per [Apple's Photos and Privacy page](https://www.apple.com/legal/privacy/data/e
 3. Tap an app with Full Access.
 4. Choose Limited Access and pick the photos it needs, or choose None.
 
-Apple's page explains the stakes. Full access grants the app your photos and videos, including hidden photos even if the album is locked. Photo access also includes metadata such as location and depth information. When a photo is already public, [remove that personal information from the internet](/remove-personal-information-from-internet/) as a separate step from this permission setting. When an app shows the system Photo Picker, you select only the photo you want to share.
+Apple's page explains the stakes. Full access grants the app your photos and videos, including hidden photos even if the album is locked. Photo access also includes metadata such as location and depth information. If a photo is already public, see our guide to [removing personal information from the internet](/remove-personal-information-from-internet/). When an app shows the system Photo Picker, you select only the photo you want to share.
 
 For a wider view, Apple's [iPhone User Guide](https://support.apple.com/guide/iphone/control-access-to-information-in-apps-iph251e92810/ios) describes the App Privacy Report under Settings > Privacy & Security. It shows how apps use the permissions you granted.
 
