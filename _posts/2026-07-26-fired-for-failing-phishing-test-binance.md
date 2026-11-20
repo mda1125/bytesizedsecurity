@@ -1,7 +1,7 @@
 ---
-description: "Binance fires employees who repeatedly fail phishing tests. Is blaming the human fair, or does punishing clicks quietly break your security culture?"
+description: "Binance's red team runs monthly phishing tests. Repeat failures go on your review or lead to termination. One reported slip rarely ends a job."
 layout: post
-title: "Fired for Failing a Phishing Test: Binance's 2026 Policy"
+title: "Fired for Failing a Phishing Test: Repeat Failures Risk Your Job"
 category: "Threats"
 tags: ["Phishing", "Security Awareness Training", "Binance", "Social Engineering"]
 author: Marc
