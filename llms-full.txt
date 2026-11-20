@@ -15,7 +15,7 @@ LinkedIn: https://www.linkedin.com/in/marccdavid
 
 ## About
 
-ByteSizedSecurity is an independent cybersecurity blog covering threat intelligence, privacy, career guidance, and technical deep-dives for security professionals and enthusiasts. Published since 2024 with 70+ articles across 8 topic areas.
+ByteSizedSecurity is an independent cybersecurity blog covering threat intelligence, privacy, career guidance, and technical deep-dives for security professionals and enthusiasts. Published since 2024 with 80+ articles across 8 topic areas.
 
 ## Topic Taxonomy
 

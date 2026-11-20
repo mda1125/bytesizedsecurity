@@ -15,7 +15,7 @@ LinkedIn: https://www.linkedin.com/in/marccdavid
 
 ## About
 
-ByteSizedSecurity is an independent cybersecurity blog covering threat intelligence, privacy, career guidance, and technical deep-dives for security professionals and enthusiasts. Published since 2024 with 70+ articles across 8 topic areas.
+ByteSizedSecurity is an independent cybersecurity blog covering threat intelligence, privacy, career guidance, and technical deep-dives for security professionals and enthusiasts. Published since 2024 with 80+ articles across 8 topic areas.
 
 ## Topic Taxonomy
 
@@ -44,27 +44,26 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ## Recent Articles
 
-- 2026-07-10: [Why Employee Cybersecurity Training Fails: The 2026 Fix](https://blog.bytesizedsecurity.show/employee-cybersecurity-training-2026-fix/)
-- 2026-05-26: [AI Fuels Cybersecurity Boom: Your Career Guide](https://blog.bytesizedsecurity.show/2026/05/26/ai-fuels-cybersecurity-boom-your-career-guide/)
-- 2026-05-17: [Cybersecurity Job Market Broken? Network, Don't Apply](https://blog.bytesizedsecurity.show/2026/05/17/cybersecurity-job-market-broken-network-dont-apply/)
-- 2026-05-13: [Encryption Backdoors: Canada's Bill C-22 Threatens Global Security](https://blog.bytesizedsecurity.show/2026/05/13/encryption-backdoors-canada-bill-c22-threatens-global-security/)
-- 2026-05-05: [Utah's VPN Law: A Threat to Internet Privacy](https://blog.bytesizedsecurity.show/2026/05/05/utahs-vpn-law-a-threat-to-internet-privacy/)
-- 2026-04-12: [Credential Theft: The New Normal in Cyber Attacks](https://blog.bytesizedsecurity.show/2026/04/12/credential-theft-new-normal-cyber-attacks/)
-- 2026-04-12: [AI Simulations: A New Frontier for Cyber Threats](https://blog.bytesizedsecurity.show/2026/04/12/ai-simulations-a-new-frontier-for-cyber-threats/)
-- 2026-03-18: [The Ultimate Free Cybersecurity Career Roadmap](https://blog.bytesizedsecurity.show/2026/03/18/okurrrr-ultimate-free-cybersecurity-career-roadmap/)
-- 2026-03-06: [LexisNexis Breach: Unpatched App, Leaky IAM, and Your Data](https://blog.bytesizedsecurity.show/2026/03/06/lexisnexis-breach-unpatched-app-leaky-iam-and-your-data/)
-- 2026-02-26: [LexisNexis & Credit Freezes: Your Guide to Identity Protection](https://blog.bytesizedsecurity.show/2026/02/26/lexisnexis-credit-freezes-your-guide-to-identity-protection/)
-- 2026-02-24: [LinkedIn Blue Check: What You Sacrifice for a Badge](https://blog.bytesizedsecurity.show/2026/02/24/linkedin-blue-check-what-you-sacrifice-for-a-badge/)
-- 2026-02-22: [IDMerit Data Leak: 1 Billion Records Exposed](https://blog.bytesizedsecurity.show/2026/02/22/idmerit-data-leak-1-billion-records-exposed/)
-- 2026-02-21: [Infostealers: From Passwords to Your Full Identity](https://blog.bytesizedsecurity.show/2026/02/21/infostealers-from-passwords-to-your-full-identity/)
-- 2026-02-18: [Navigating the Broken Cybersecurity Job Market](https://blog.bytesizedsecurity.show/2026/02/18/navigating-the-broken-cybersecurity-job-market/)
-- 2026-02-17: [Ring Backtracks: Super Bowl Ad Sparks Privacy Pushback](https://blog.bytesizedsecurity.show/2026/02/17/ring-backtracks-super-bowl-ad-sparks-privacy-pushback/)
-- 2026-02-17: [Chrome First 2026 Zero-Day: Update Now](https://blog.bytesizedsecurity.show/2026/02/17/chrome-first-2026-zero-day-update-now/)
-- 2026-02-17: [287 Chrome Extensions Caught Spying on 37M Users](https://blog.bytesizedsecurity.show/2026/02/17/287-chrome-extensions-caught-spying-37m-users-what-to-do/)
-- 2026-02-16: [2FA: The 5-Minute Fix That Stops 99% of Account Attacks](https://blog.bytesizedsecurity.show/2026/02/16/2fa-the-5-minute-fix-that-stops-99-percent-of-account-attacks/)
-- 2026-02-16: [Cybersecurity Hiring: Portfolios Trump Pedigree Now](https://blog.bytesizedsecurity.show/2026/02/16/cybersecurity-hiring-portfolios-trump-pedigree-now/)
-- 2026-02-16: [CISA ChatGPT Incident: The Shadow AI Problem](https://blog.bytesizedsecurity.show/2026/02/16/cisa-chatgpt-incident-shadow-ai-problem/)
-- 2026-02-15: [Browser Extensions: Are They Spying On You?](https://blog.bytesizedsecurity.show/2026/02/15/browser-extensions-are-they-spying-on-you/)
+- 2026-11-19: [AI Debt Collection Flaws: New Agents, Old Bugs](https://blog.bytesizedsecurity.show/2026/11/19/ai-debt-collection-flaws-credit-nirvana/)
+- 2026-11-16: [Meta's Camera Roll Fine: Check Your Photo Permissions](https://blog.bytesizedsecurity.show/2026/11/16/meta-camera-roll-fine-photo-permissions/)
+- 2026-11-15: [Fireworks AI Breach: Third-Party Vendor Risk Lessons](https://blog.bytesizedsecurity.show/2026/11/15/fireworks-ai-breach-third-party-vendor-risk/)
+- 2026-11-13: [Don't Trust a Familiar Face in a Video Call Scam](https://blog.bytesizedsecurity.show/2026/11/13/video-call-scam-facestealer-webcam/)
+- 2026-11-12: [A Whiteboard, a Shared Login, and the Hotel Booking Scam](https://blog.bytesizedsecurity.show/2026/11/12/hotel-booking-scam-shared-login-whiteboard/)
+- 2026-11-09: [MCP Security Best Practices After the Mittwald Breach](https://blog.bytesizedsecurity.show/2026/11/09/mcp-security-best-practices-mittwald-breach/)
+- 2026-11-03: [LLMjacking: Why Cheap Unlimited AI Is a Red Flag](https://blog.bytesizedsecurity.show/2026/11/03/llmjacking-cheap-unlimited-ai-red-flag/)
+- 2026-10-30: [Third Party Scripts: Lessons From the Polymarket Hack (2026)](https://blog.bytesizedsecurity.show/2026/10/30/third-party-scripts-polymarket-hack/)
+- 2026-10-26: [AGENTS.md in Downloads: Keep AI Coding Agents Safe (2026)](https://blog.bytesizedsecurity.show/2026/10/26/agents-md-downloads-hijack-ai-coding-agents/)
+- 2026-10-22: [Check Your PHP Version: The 2024 Bug Behind PHP2Shell](https://blog.bytesizedsecurity.show/2026/10/22/php2shell-check-php-version-two-year-delay/)
+- 2026-10-15: [ChatGPT Ads in 2026: How Your Prompts Shape What You See](https://blog.bytesizedsecurity.show/2026/10/15/chatgpt-ads-targeting-prompts-email-phone/)
+- 2026-10-08: [Government Data Breach: What the Pentagon Leak Exposes](https://blog.bytesizedsecurity.show/2026/10/08/government-data-breach-dmdc-fbi-personnel-records/)
+- 2026-09-29: [Cyber Security Engineer Jobs: Where They Are, What They Pay](https://blog.bytesizedsecurity.show/2026/09/29/cyber-security-engineer-jobs-where-to-find-them/)
+- 2026-09-26: [Cyber Security Engineer Salary by Experience Level](https://blog.bytesizedsecurity.show/2026/09/26/cyber-security-engineer-salary-by-experience-level/)
+- 2026-09-25: [Astrana Vishing Attack: Why Caller ID Isn't Identity](https://blog.bytesizedsecurity.show/2026/09/25/astrana-vishing-attack-caller-id-spoofing/)
+- 2026-09-24: [AI Agent Governance Lessons From OpenAI's Australia Breach](https://blog.bytesizedsecurity.show/2026/09/24/ai-agent-governance-openai-australia-breach/)
+- 2026-09-14: [Security Engineer Salary, Jobs & Career Path Explained](https://blog.bytesizedsecurity.show/security-engineer-salary-jobs-career-path/)
+- 2026-09-13: [Why AI Risks Are Different From the Printing Press](https://blog.bytesizedsecurity.show/2026/09/13/why-ai-risks-are-different-from-the-printing-press/)
+- 2026-09-11: [Medicare AI Prior Authorization: 83-Day Waits, 20K Denials](https://blog.bytesizedsecurity.show/2026/09/11/medicare-ai-prior-authorization-wiser-foia/)
+- 2026-09-09: [98.5% of CVEs Are Never Exploited: How to Prioritize in 2026](https://blog.bytesizedsecurity.show/2026/09/09/vulnerability-prioritization-cves-never-exploited/)
 
 ## Full Article Index
 
