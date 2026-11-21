@@ -2,10 +2,16 @@
 <html lang="en">
 {% include head.html %}
 <body class="bg-background text-text-main font-serif antialiased">
+  {%- comment -%}
+    First focusable control on every page (home, post, and standalone
+    pages all use this shell; there is no 404 layout). Clipped until
+    keyboard focus. See the skip-link rules in head.html.
+  {%- endcomment -%}
+  <a class="skip-link sr-only" href="#main-content">Skip to main content</a>
   <div class="flex min-h-screen w-full flex-col">
     {% include header.html %}
-    
-    <main class="flex-1 max-w-6xl mx-auto w-full py-8 px-4 lg:px-8">
+
+    <main id="main-content" tabindex="-1" class="flex-1 max-w-6xl mx-auto w-full py-8 px-4 lg:px-8">
       {{ content }}
     </main>
     

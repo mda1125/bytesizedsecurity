@@ -229,6 +229,48 @@
   {%- assign tailwind_css = site.static_files | where: "path", "/assets/css/tailwind.min.css" | first -%}
   <link rel="stylesheet" href="{{ '/assets/css/tailwind.min.css' | relative_url }}{% if tailwind_css %}?v={{ tailwind_css.modified_time | date: '%s' }}{% endif %}">
 
+  {%- comment -%}
+    Skip link, shown only while it has keyboard focus. Hidden state is the
+    existing .sr-only clip (no layout box, nothing to paint). On focus it
+    is taken out of flow with position:fixed so the header does not move.
+
+    Colors follow the gray-900 / gray-100 buttons already used for CTAs.
+    The border and outline use --color-primary, which flips in .dark.
+    White on gray-900 and gray-900 on gray-100 both clear WCAG AA.
+  {%- endcomment -%}
+  <style>
+    .skip-link:focus {
+      position: fixed;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 50;
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 0.5rem 1rem;
+      overflow: visible;
+      clip-path: none;
+      white-space: normal;
+      border: 2px solid var(--color-primary);
+      background: var(--color-gray-900);
+      color: var(--color-white);
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      font-family: var(--font-sans);
+      font-size: var(--text-sm);
+      font-weight: var(--font-weight-bold);
+      line-height: var(--text-sm--line-height);
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .dark .skip-link:focus {
+      background: var(--color-gray-100);
+      color: var(--color-gray-900);
+    }
+  </style>
+
   {% if page.image %}
   <!-- Preload LCP hero image (post pages) -->
   {% include preload-image.html src=page.image sizes="(min-width: 1024px) 720px, 100vw" %}
