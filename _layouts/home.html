@@ -57,6 +57,19 @@ layout: default
         </div>
         {% endif %}
       </div>
+
+      {%- comment -%}
+        On a phone the signup form sits below the featured analysis,
+        past the first screen. This link only scrolls to that form.
+        It does not add a second SendFox form or another submit
+        handler. Hidden at lg and up, where the sidebar form is on screen.
+      {%- endcomment -%}
+      <p class="lg:hidden mt-3 font-sans text-sm">
+        <a href="#home-briefing" class="inline-flex items-center gap-1 min-h-[44px] font-semibold text-link hover:underline">
+          <span class="text-lg text-primary" aria-hidden="true">{% include icon.html name="mail" %}</span>
+          Get the weekly Security Briefing
+        </a>
+      </p>
     </header>
 
     {%- comment -%}
@@ -133,7 +146,7 @@ layout: default
     </article>
 
     <!-- Mobile-only newsletter CTA (sidebar is below the fold on mobile) -->
-    <div class="lg:hidden mb-12 bg-surface border border-gray-200 dark:border-gray-700 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+    <div id="home-briefing" tabindex="-1" class="lg:hidden mb-12 bg-surface border border-gray-200 dark:border-gray-700 p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
       <div class="flex-1">
         <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 mb-1">Security Briefing</h3>
         <p class="text-xs text-gray-600 dark:text-gray-400">The latest exploits in your inbox. Weekly. No spam. Unsubscribe in one click.</p>
