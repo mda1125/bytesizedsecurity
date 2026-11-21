@@ -17,14 +17,14 @@ editable without touching the template.
 
   <div class="flex flex-col sm:flex-row gap-5 items-start">
     {% if site.author.avatar %}
-    <a href="{{ '/about' | relative_url }}" class="shrink-0" aria-label="About {{ site.author.name }}">
+    <a href="{{ '/about/' | relative_url }}" class="shrink-0" aria-label="About {{ site.author.name }}">
       <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" width="80" height="80" loading="lazy" decoding="async" class="w-20 h-20 rounded-full object-cover border-2 border-primary">
     </a>
     {% endif %}
 
     <div class="flex-1 flex flex-col gap-3 font-sans">
       <div class="text-base">
-        <a href="{{ '/about' | relative_url }}" class="font-bold text-gray-900 dark:text-gray-100 hover:text-link no-underline">{{ site.author.name }}</a>{% if site.author.credentials %}<span class="text-sm text-gray-500 dark:text-gray-400">, {{ site.author.credentials }}</span>{% endif %}{% if site.author.title %}<span class="block text-xs text-gray-500 dark:text-gray-400 mt-0.5">{{ site.author.title }}</span>{% endif %}
+        <a href="{{ '/about/' | relative_url }}" class="font-bold text-gray-900 dark:text-gray-100 hover:text-link no-underline">{{ site.author.name }}</a>{% if site.author.credentials %}<span class="text-sm text-gray-500 dark:text-gray-400">, {{ site.author.credentials }}</span>{% endif %}{% if site.author.title %}<span class="block text-xs text-gray-500 dark:text-gray-400 mt-0.5">{{ site.author.title }}</span>{% endif %}
       </div>
 
       {% if site.author.bio %}
@@ -34,7 +34,7 @@ editable without touching the template.
       {% endif %}
 
       <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-bold uppercase tracking-wide">
-        <a href="{{ '/about' | relative_url }}" class="text-link hover:underline inline-flex items-center gap-1 min-h-[44px] py-2">Read more about {{ site.author.name | split: ' ' | first }} <span aria-hidden="true">→</span></a>
+        <a href="{{ '/about/' | relative_url }}" class="text-link hover:underline inline-flex items-center gap-1 min-h-[44px] py-2">Read more about {{ site.author.name | split: ' ' | first }} <span aria-hidden="true">→</span></a>
         {% if site.author.credly %}
         <span class="text-gray-300 dark:text-gray-700" aria-hidden="true">·</span>
         <a href="{{ site.author.credly }}" target="_blank" rel="noopener" class="text-link hover:underline inline-flex items-center gap-1 min-h-[44px] py-2"><span class="text-sm" aria-hidden="true">{% include icon.html name="verified" %}</span> Verify {{ site.author.credentials | default: "credentials" }}</a>
