@@ -21,7 +21,7 @@ layout: default
         in the visible text next to it.
       {%- endcomment -%}
       <div class="mt-5">
-        <a href="{{ '/about' | relative_url }}" class="inline-flex items-center gap-3 no-underline group">
+        <a href="{{ '/about/' | relative_url }}" class="inline-flex items-center gap-3 no-underline group">
           {% if site.author.avatar %}
           <img src="{{ site.author.avatar | relative_url }}" alt="" width="48" height="48" class="rounded-full border border-gray-200 dark:border-gray-700 shrink-0" loading="eager" decoding="async">
           {% endif %}
@@ -181,7 +181,7 @@ layout: default
           {% assign card_date_day = post.date | date: '%Y-%m-%d' %}
           {% assign card_modified_day = post.last_modified_at | date: '%Y-%m-%d' %}
           <div class="text-sm font-sans text-gray-500 dark:text-gray-400 mb-3">
-            Posted on {{ post.date | date: "%B %-d, %Y" }} by <a href="{{ '/about' | relative_url }}" class="text-gray-700 dark:text-gray-300 font-semibold no-underline hover:text-link">{{ card_author }}</a>{% if card_author == site.author.name and site.author.credentials %}, <span class="text-gray-500 dark:text-gray-400">{{ site.author.credentials }}</span>{% endif %} · <span class="text-gray-500 dark:text-gray-400">{{ card_minutes }} min read</span>{% if post.last_modified_at and card_modified_day != card_date_day %} · <span class="text-gray-500 dark:text-gray-400">Updated <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time></span>{% endif %}
+            Posted on {{ post.date | date: "%B %-d, %Y" }} by <a href="{{ '/about/' | relative_url }}" class="text-gray-700 dark:text-gray-300 font-semibold no-underline hover:text-link">{{ card_author }}</a>{% if card_author == site.author.name and site.author.credentials %}, <span class="text-gray-500 dark:text-gray-400">{{ site.author.credentials }}</span>{% endif %} · <span class="text-gray-500 dark:text-gray-400">{{ card_minutes }} min read</span>{% if post.last_modified_at and card_modified_day != card_date_day %} · <span class="text-gray-500 dark:text-gray-400">Updated <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%b %-d, %Y" }}</time></span>{% endif %}
           </div>
           <p class="text-gray-700 dark:text-gray-300 mb-3 line-clamp-3">
             {{ post.excerpt | strip_html | truncatewords: 30 }}
@@ -198,7 +198,7 @@ layout: default
     {% if posts.size > 5 %}
     <div class="flex items-center gap-2 mt-12 pt-6 border-t border-gray-300 dark:border-gray-700">
       <span class="text-sm font-sans text-gray-500 dark:text-gray-400 mr-2">{{ posts.size }} posts total</span>
-      <a href="{{ '/archive' | relative_url }}" class="px-3 py-1 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-link font-sans text-sm font-bold border border-gray-300 dark:border-gray-700 rounded-sm">View All »</a>
+      <a href="{{ '/archive/' | relative_url }}" class="px-3 py-1 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-link font-sans text-sm font-bold border border-gray-300 dark:border-gray-700 rounded-sm">View All »</a>
     </div>
     {% endif %}
     

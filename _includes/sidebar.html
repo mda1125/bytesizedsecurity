@@ -1,7 +1,7 @@
 <aside class="w-full lg:w-[300px] shrink-0 flex flex-col gap-10">
   {% unless page.hide_sidebar_search %}
   <!-- Search -->
-  <form action="{{ '/archive' | relative_url }}" method="get" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center gap-2 px-3 h-11 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-colors" role="search">
+  <form action="{{ '/archive/' | relative_url }}" method="get" class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center gap-2 px-3 h-11 focus-within:border-primary focus-within:ring-1 focus-within:ring-primary transition-colors" role="search">
     <label for="sidebar-search" class="sr-only">Search articles</label>
     <span class="text-gray-400 dark:text-gray-500 text-lg shrink-0">{% include icon.html name="search" %}</span>
     <input
@@ -21,7 +21,7 @@
     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
       <strong class="text-gray-900 dark:text-gray-100">{{ site.title }}</strong> is an independent blog dedicated to investigating cybercrime and security trends.
     </p>
-    <a class="text-xs font-bold text-link uppercase hover:underline" href="{{ '/about' | relative_url }}">Read about Marc »</a>
+    <a class="text-xs font-bold text-link uppercase hover:underline" href="{{ '/about/' | relative_url }}">Read about Marc »</a>
   </div>
 
   <!-- Newsletter Section -->
@@ -75,7 +75,7 @@
         {%- assign parts = entry | split: "|" -%}
         {%- assign cat_size = parts[0] | plus: 0 -%}
         {%- assign cat_name = parts[1] -%}
-      <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 dark:hover:bg-gray-800 px-1" href="{{ '/archive' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 dark:text-gray-400 text-xs ml-1">({{ cat_size }})</span></a></li>
+      <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 dark:hover:bg-gray-800 px-1" href="{{ '/archive/' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 dark:text-gray-400 text-xs ml-1">({{ cat_size }})</span></a></li>
       {%- endfor -%}
 
       {%- if cat_total > cat_collapse_threshold -%}
@@ -94,7 +94,7 @@
               {%- assign parts = entry | split: "|" -%}
               {%- assign cat_size = parts[0] | plus: 0 -%}
               {%- assign cat_name = parts[1] -%}
-            <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 dark:hover:bg-gray-800 px-1" href="{{ '/archive' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 dark:text-gray-400 text-xs ml-1">({{ cat_size }})</span></a></li>
+            <li><a class="block py-2 text-link hover:text-primary hover:underline hover:bg-gray-50 dark:hover:bg-gray-800 px-1" href="{{ '/archive/' | relative_url }}#{{ cat_name | slugify }}">{{ cat_name }} <span class="text-gray-500 dark:text-gray-400 text-xs ml-1">({{ cat_size }})</span></a></li>
             {%- endfor -%}
           </ul>
         </details>
@@ -122,7 +122,7 @@
     <h3 class="font-sans font-bold text-sm uppercase tracking-wider text-gray-900 dark:text-gray-100 border-b-2 border-gray-300 dark:border-gray-700 pb-2 mb-4">Meta</h3>
     <ul class="text-sm list-disc pl-4 text-link space-y-1">
       <li><a class="hover:underline" href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></li>
-      <li><a class="hover:underline" href="{{ '/archive' | relative_url }}">Archives</a></li>
+      <li><a class="hover:underline" href="{{ '/archive/' | relative_url }}">Archives</a></li>
       {% if site.github_username %}
       <li><a class="hover:underline" href="https://github.com/{{ site.github_username }}">GitHub</a></li>
       {% endif %}

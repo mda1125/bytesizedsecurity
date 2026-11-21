@@ -23,9 +23,9 @@
       <div class="flex flex-col">
         <h4 class="font-bold text-white uppercase tracking-wider mb-2">Sitemap</h4>
         <a class="py-2 hover:text-white hover:underline" href="{{ '/' | relative_url }}">Home</a>
-        <a class="py-2 hover:text-white hover:underline" href="{{ '/archive' | relative_url }}">Archives</a>
-        <a class="py-2 hover:text-white hover:underline" href="{{ '/about' | relative_url }}">About</a>
-        <a class="py-2 hover:text-white hover:underline" href="{{ '/contact' | relative_url }}">Contact</a>
+        <a class="py-2 hover:text-white hover:underline" href="{{ '/archive/' | relative_url }}">Archives</a>
+        <a class="py-2 hover:text-white hover:underline" href="{{ '/about/' | relative_url }}">About</a>
+        <a class="py-2 hover:text-white hover:underline" href="{{ '/contact/' | relative_url }}">Contact</a>
         <a class="py-2 hover:text-white hover:underline" href="https://bytesizedsecurity.show/" target="_blank" rel="noopener">Podcast</a>
       </div>
       {% if site.nonprofit and site.donate_url %}
@@ -34,15 +34,15 @@
         <a class="py-2 hover:text-white hover:underline flex items-center gap-1" href="{{ site.donate_url }}" target="_blank" rel="noopener">
           <span class="text-base text-primary">{% include icon.html name="favorite" %}</span> Donate
         </a>
-        <a class="py-2 hover:text-white hover:underline" href="{{ '/about' | relative_url }}#support">Our Mission</a>
-        <a class="py-2 hover:text-white hover:underline" href="{{ '/contact' | relative_url }}#support">Ways to Give</a>
+        <a class="py-2 hover:text-white hover:underline" href="{{ '/about/' | relative_url }}#support">Our Mission</a>
+        <a class="py-2 hover:text-white hover:underline" href="{{ '/contact/' | relative_url }}#support">Ways to Give</a>
       </div>
       {% endif %}
       <div class="flex flex-col">
         <h4 class="font-bold text-white uppercase tracking-wider mb-2">Legal</h4>
-        <a class="py-2 hover:text-white hover:underline" href="{{ '/privacy-policy' | relative_url }}">Privacy Policy</a>
-        <a class="py-2 hover:text-white hover:underline" href="{{ '/terms' | relative_url }}">Terms of Service</a>
-        <a class="py-2 hover:text-white hover:underline" href="{{ '/cookie-policy' | relative_url }}">Cookie Policy</a>
+        <a class="py-2 hover:text-white hover:underline" href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a>
+        <a class="py-2 hover:text-white hover:underline" href="{{ '/terms/' | relative_url }}">Terms of Service</a>
+        <a class="py-2 hover:text-white hover:underline" href="{{ '/cookie-policy/' | relative_url }}">Cookie Policy</a>
       </div>
     </div>
   </div>

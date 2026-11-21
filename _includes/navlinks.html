@@ -5,7 +5,7 @@
     <span class="block text-link font-bold mt-1 group-hover:underline">{{ page.previous.title }}</span>
   </a>
   {%- else -%}
-  <a class="flex-1 p-4 bg-surface border border-gray-200 dark:border-gray-700 hover:border-primary transition-colors group" href="{{ '/archive' | relative_url }}">
+  <a class="flex-1 p-4 bg-surface border border-gray-200 dark:border-gray-700 hover:border-primary transition-colors group" href="{{ '/archive/' | relative_url }}">
     <span class="text-xs font-sans font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 group-hover:text-primary">← Archive</span>
     <span class="block text-link font-bold mt-1 group-hover:underline">View all posts</span>
   </a>
@@ -17,7 +17,7 @@
     <span class="block text-link font-bold mt-1 group-hover:underline">{{ page.next.title }}</span>
   </a>
   {%- else -%}
-  <a class="flex-1 p-4 bg-surface border border-gray-200 dark:border-gray-700 hover:border-primary transition-colors group text-right" href="{{ '/archive' | relative_url }}">
+  <a class="flex-1 p-4 bg-surface border border-gray-200 dark:border-gray-700 hover:border-primary transition-colors group text-right" href="{{ '/archive/' | relative_url }}">
     <span class="text-xs font-sans font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 group-hover:text-primary">Archive →</span>
     <span class="block text-link font-bold mt-1 group-hover:underline">View all posts</span>
   </a>
