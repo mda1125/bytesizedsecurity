@@ -33,14 +33,29 @@ function arg(name) {
   return path.resolve(process.argv[i + 1]);
 }
 
-function serve(root) {
-  const rootResolved = path.resolve(root);
+function serve(rootDir) {
+  const root = path.resolve(rootDir);
   return new Promise((resolve) => {
     const server = http.createServer((req, res) => {
-      let urlPath = decodeURIComponent(req.url.split('?')[0]);
-      if (urlPath.endsWith('/')) urlPath += 'index.html';
-      const file = path.resolve(rootResolved, '.' + urlPath);
-      if (!file.startsWith(rootResolved + path.sep) && file !== rootResolved) {
+      let requestPath = req.url.split('?')[0];
+      try {
+        requestPath = decodeURIComponent(requestPath);
+      } catch (e) {
+        res.writeHead(400);
+        res.end();
+        return;
+      }
+      if (requestPath.indexOf('\0') !== -1) {
+        res.writeHead(400);
+        res.end();
+        return;
+      }
+      if (requestPath.endsWith('/')) requestPath += 'index.html';
+      // Stay inside the build directory. path.join normalizes ".." and an
+      // absolute request path, then the prefix check rejects anything that
+      // escaped root. Same shape CodeQL's path-injection example accepts.
+      const file = path.join(root, requestPath);
+      if (!file.startsWith(root + path.sep)) {
         res.writeHead(403);
         res.end();
         return;
