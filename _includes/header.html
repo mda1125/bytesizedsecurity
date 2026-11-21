@@ -20,7 +20,7 @@
       {% include theme-toggle.html %}
 
       <!-- Mobile hamburger button -->
-      <button id="mobile-menu-btn" class="lg:hidden flex items-center justify-center w-12 h-12 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-3xl" aria-label="Toggle menu">
+      <button id="mobile-menu-btn" class="lg:hidden flex items-center justify-center w-12 h-12 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors text-3xl" aria-label="Toggle menu" aria-controls="mobile-menu" aria-expanded="false">
         <span id="menu-icon-open">{% include icon.html name="menu" %}</span>
         <span id="menu-icon-close" class="hidden">{% include icon.html name="close" %}</span>
       </button>
@@ -75,5 +75,6 @@
     var isOpen = !menu.classList.contains('hidden');
     document.getElementById('menu-icon-open').classList.toggle('hidden', isOpen);
     document.getElementById('menu-icon-close').classList.toggle('hidden', !isOpen);
+    this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 </script>
