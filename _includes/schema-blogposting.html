@@ -6,13 +6,24 @@
   rich-result thumbnails site-wide. Posts declare real dims via image_width/image_height
   front matter; the fallback path uses default-og.png's actual size.
 {%- endcomment -%}
-{% if page.image %}
-  {% assign bp_image_width = page.image_width | default: 1200 %}
-  {% assign bp_image_height = page.image_height | default: 630 %}
-{% else %}
+{%- comment -%}
+  Prefer declared front matter dimensions (they match the post files).
+  The shared default card is default-og.png at 1536×1024. Config defaults
+  always set page.image, so a missing image still lands on that file —
+  do not label it 1200×630. Only guess 1200×630 for some other image
+  that has no declared size.
+{%- endcomment -%}
+{% if page.image_width and page.image_height %}
+  {% assign bp_image_width = page.image_width %}
+  {% assign bp_image_height = page.image_height %}
+{% elsif bp_image == "/assets/img/default-og.png" %}
   {% assign bp_image_width = 1536 %}
   {% assign bp_image_height = 1024 %}
+{% else %}
+  {% assign bp_image_width = 1200 %}
+  {% assign bp_image_height = 630 %}
 {% endif %}
+{% assign bp_url = page.url | replace: 'index.html', '' | prepend: site.url %}
 {%- comment -%}
   Entity-graph identifiers and article metrics.
 
@@ -37,6 +48,13 @@
   "@type": "BlogPosting",
   "@id": "{{ site.url }}{{ page.url }}#article",
   "headline": {{ page.title | jsonify }},
+  "url": {{ bp_url | jsonify }},
+  "inLanguage": "en-US",
+  {% if page.categories.size > 1 %}
+  "articleSection": {{ page.categories | jsonify }},
+  {% elsif page.category != blank %}
+  "articleSection": {{ page.category | jsonify }},
+  {% endif %}
   "description": {{ bp_description | jsonify }},
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
@@ -57,9 +75,15 @@
     ]
   },
   "publisher": {
-    "@type": "Organization",
+    "@type": "{% if site.nonprofit %}NGO{% else %}Organization{% endif %}",
     "@id": "{{ site.url }}/#organization",
     "name": "ByteSizedSecurity",
+    {% if site.nonprofit %}
+    "nonprofitStatus": "Nonprofit501c3",
+    {% if site.ein != blank %}
+    "taxID": {{ site.ein | jsonify }},
+    {% endif %}
+    {% endif %}
     "logo": {
       "@type": "ImageObject",
       "url": "{{ site.url }}/assets/img/bytesizedsecurity-logo-600x60.png",
