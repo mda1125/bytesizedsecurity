@@ -1,7 +1,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": {% if site.nonprofit %}["NGO", "Organization"]{% else %}"Organization"{% endif %},
+  "@type": {% if site.nonprofit %}"NGO"{% else %}"Organization"{% endif %},
   "@id": "{{ site.url }}/#organization",
   "name": "ByteSizedSecurity",
   "url": "{{ site.url }}",

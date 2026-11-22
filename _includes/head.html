@@ -119,6 +119,20 @@
   <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | prepend: site.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:image" content="{{ seo_image_url }}">
+  {%- comment -%}
+    og:image:width/height only when the pixel size is known.
+    Post front matter image_width/image_height matches the file.
+    Pages (and posts with no image of their own) use default-og.png,
+    measured at 1536×1024. Other images without declared dimensions
+    are left without these tags.
+  {%- endcomment -%}
+  {% if page.image_width and page.image_height %}
+  <meta property="og:image:width" content="{{ page.image_width }}">
+  <meta property="og:image:height" content="{{ page.image_height }}">
+  {% elsif seo_image == "/assets/img/default-og.png" %}
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  {% endif %}
   <meta property="og:locale" content="en_US">
   {% if page.layout == 'post' %}
   <meta property="og:type" content="article">
@@ -154,10 +168,16 @@
         }
       },
       {
-        "@type": "Organization",
+        "@type": "{% if site.nonprofit %}NGO{% else %}Organization{% endif %}",
         "@id": "{{ site.url }}/#organization",
         "name": "ByteSizedSecurity",
         "url": "{{ site.url }}/",
+        {% if site.nonprofit %}
+        "nonprofitStatus": "Nonprofit501c3",
+        {% if site.ein != blank %}
+        "taxID": {{ site.ein | jsonify }},
+        {% endif %}
+        {% endif %}
         "logo": {
           "@type": "ImageObject",
           "url": "{{ site.url }}/assets/img/bytesizedsecurity-logo-600x60.png",
@@ -194,6 +214,10 @@
     ]
   }
   </script>
+  {% endif %}
+
+  {% if page.schema_type == "WebPage" or page.schema_type == "CollectionPage" %}
+  {% include schema-webpage.html %}
   {% endif %}
 
   <!-- Self-hosted webfonts. @font-face declarations live in
