@@ -44,6 +44,7 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 
 ## Recent Articles
 
+- 2026-11-26: [1Password Breach: Why Zero-Knowledge Protected Vaults](https://blog.bytesizedsecurity.show/2026/11/26/1password-breach-github-zero-knowledge/)
 - 2026-11-25: [myColorado App Breach: Why Your Physical ID Still Matters](https://blog.bytesizedsecurity.show/2026/11/25/mycolorado-app-breach-physical-id/)
 - 2026-11-19: [AI Debt Collection Flaws: New Agents, Old Bugs](https://blog.bytesizedsecurity.show/2026/11/19/ai-debt-collection-flaws-credit-nirvana/)
 - 2026-11-16: [Meta's Camera Roll Fine: Check Your Photo Permissions](https://blog.bytesizedsecurity.show/2026/11/16/meta-camera-roll-fine-photo-permissions/)
@@ -63,7 +64,6 @@ ByteSizedSecurity is an independent cybersecurity blog covering threat intellige
 - 2026-09-24: [AI Agent Governance Lessons From OpenAI's Australia Breach](https://blog.bytesizedsecurity.show/2026/09/24/ai-agent-governance-openai-australia-breach/)
 - 2026-09-14: [Security Engineer Salary, Jobs & Career Path Explained](https://blog.bytesizedsecurity.show/security-engineer-salary-jobs-career-path/)
 - 2026-09-13: [Why AI Risks Are Different From the Printing Press](https://blog.bytesizedsecurity.show/2026/09/13/why-ai-risks-are-different-from-the-printing-press/)
-- 2026-09-11: [Medicare AI Prior Authorization: 83-Day Waits, 20K Denials](https://blog.bytesizedsecurity.show/2026/09/11/medicare-ai-prior-authorization-wiser-foia/)
 
 ## Full Article Index
 
