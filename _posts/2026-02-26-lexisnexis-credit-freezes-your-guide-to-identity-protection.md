@@ -1,7 +1,7 @@
 ---
-description: "A credit freeze blocks new accounts opened in your name. Here's how to freeze my credit at Equifax, Experian, and TransUnion in 15 minutes."
+description: "Freeze your credit at Equifax, Experian, and TransUnion for free in about 15 minutes. Then pull your free LexisNexis file, the one insurers and landlords check."
 layout: post
-title: "Credit Freeze in 2026: Lock My Credit in 15 Minutes"
+title: "Credit Freeze 2026: Lock 3 Bureaus, Then Check LexisNexis"
 slug: lexisnexis-credit-freezes-your-guide-to-identity-protection
 category: Privacy
 tags: ["Credit Freeze", "Identity Theft", "LexisNexis", "Privacy"]
